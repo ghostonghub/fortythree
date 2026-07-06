@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Love</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org45aade2">1. General</a></li>
+<li><a href="#orgdc72cda">2. STEMM</a>
+<ul>
+<li><a href="#org9fd3dbe">2.1. Mathematics</a></li>
+<li><a href="#orgdc21f92">2.2. Chemistry</a></li>
+<li><a href="#orgc59d363">2.3. Life Sciences</a></li>
+<li><a href="#org3c8edec">2.4. Computer Science and Engineering</a>
+<ul>
+<li><a href="#org9bc3e8c">2.4.1. Artificial Intelligence</a></li>
+</ul>
+</li>
+<li><a href="#orge9db255">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1747f0d">3. Worldly Matters</a>
+<ul>
+<li><a href="#org82b4fe1">3.1. History</a></li>
+<li><a href="#org8e2b167">3.2. Humanities</a>
+<ul>
+<li><a href="#orgdd4df92">3.2.1. Psychology</a></li>
+<li><a href="#org5f43c3d">3.2.2. Feminism</a></li>
+</ul>
+</li>
+<li><a href="#orgf97c6a1">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orgc6b10e0">3.4. Nation States</a>
+<ul>
+<li><a href="#org1fa8d6a">3.4.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orga2b5379">3.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdbcb015">4. Arts</a>
+<ul>
+<li><a href="#org7909154">4.1. Literature</a></li>
+<li><a href="#org8afc78c">4.2. Music, Misc</a>
+<ul>
+<li><a href="#org335f456">4.2.1. General</a></li>
+<li><a href="#orga307816">4.2.2. Playlists</a></li>
+<li><a href="#org7bcf0be">4.2.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org91287f1">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org45aade2" class="outline-2">
+<h2 id="org45aade2"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orgdc72cda" class="outline-2">
+<h2 id="orgdc72cda"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9fd3dbe" class="outline-3">
+<h3 id="org9fd3dbe"><span class="section-number-3">2.1.</span> Mathematics</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>H. Fry, <i>The Mathematics of Love.</i> Simon &amp; Schuster UK, 2015.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdc21f92" class="outline-3">
+<h3 id="orgdc21f92"><span class="section-number-3">2.2.</span> Chemistry</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>B. Mills and U. of Warwick, “Exploring the chemistry behind love this Valentine’s Day.” Accessed: Feb. 14, 2024. [Online]. Available: <a href="https://phys.org/news/2024-02-exploring-chemistry-valentine-day.html">https://phys.org/news/2024-02-exploring-chemistry-valentine-day.html</a></li>
+<li>Z. K. February 2024, “The chemistry of love,” Chemistry World. Accessed: Feb. 13, 2024. [Online]. Available: <a href="https://www.chemistryworld.com/features/the-chemistry-of-love/4018801.article">https://www.chemistryworld.com/features/the-chemistry-of-love/4018801.article</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc59d363" class="outline-3">
+<h3 id="orgc59d363"><span class="section-number-3">2.3.</span> Life Sciences</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li><i>“Love works its magic in mysterious biochemical ways – Barbara Fredrickson | Aeon Essays,”</i> Aeon. <a href="https://aeon.co/essays/love-works-its-magic-in-mysterious-biochemical-ways">https://aeon.co/essays/love-works-its-magic-in-mysterious-biochemical-ways</a> (accessed Dec. 18, 2020).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3c8edec" class="outline-3">
+<h3 id="org3c8edec"><span class="section-number-3">2.4.</span> Computer Science and Engineering</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org9bc3e8c" class="outline-4">
+<h4 id="org9bc3e8c"><span class="section-number-4">2.4.1.</span> Artificial Intelligence</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>S. Moseley, “Automating Deception: AI’s Evolving Role in Romance Fraud”, Accessed: Apr. 16, 2025. [Online]. Available: <a href="https://cetas.turing.ac.uk/publications/automating-deception-ais-evolving-role-romance-fraud">https://cetas.turing.ac.uk/publications/automating-deception-ais-evolving-role-romance-fraud</a></li>
+<li>“The true cost of AI romance: A 4.5-fold increase in emissions in one year,” Greenpeace International. Accessed: Apr. 28, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/74220/the-true-cost-of-ai-romance-a-4-5-fold-increase-in-emissions-in-one-year/">https://www.greenpeace.org/international/story/74220/the-true-cost-of-ai-romance-a-4-5-fold-increase-in-emissions-in-one-year/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge9db255" class="outline-3">
+<h3 id="orge9db255"><span class="section-number-3">2.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>T. Tashiro, <i>The Science of Happily Ever After: What Really Matters in the Quest for Enduring Love.</i> Harlequin, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1747f0d" class="outline-2">
+<h2 id="org1747f0d"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org82b4fe1" class="outline-3">
+<h3 id="org82b4fe1"><span class="section-number-3">3.1.</span> History</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“To understand what love is, read the stories that history tells | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/to-understand-what-love-is-read-the-stories-that-history-tells">https://aeon.co/essays/to-understand-what-love-is-read-the-stories-that-history-tells</a> (accessed Feb. 25, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e2b167" class="outline-3">
+<h3 id="org8e2b167"><span class="section-number-3">3.2.</span> Humanities</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgdd4df92" class="outline-4">
+<h4 id="orgdd4df92"><span class="section-number-4">3.2.1.</span> Psychology</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6539673"></a>Articles, Essays<br />
+<div class="outline-text-5" id="text-3-2-1-1">
+<ul class="org-ul">
+<li>“How to think differently about love | Psyche Guides,” Psyche. Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://psyche.co/guides/how-to-critique-stories-about-the-nature-of-romantic-love">https://psyche.co/guides/how-to-critique-stories-about-the-nature-of-romantic-love</a></li>
+<li>“Why it can be sublime to love someone who doesn’t love you back | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/why-it-can-be-sublime-to-love-someone-who-doesnt-love-you-back">https://psyche.co/ideas/why-it-can-be-sublime-to-love-someone-who-doesnt-love-you-back</a> (accessed Feb. 17, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgab587db"></a>Texts<br />
+<div class="outline-text-5" id="text-3-2-1-2">
+<ul class="org-ul">
+<li>E. Fromm, <i>The Art of Loving.</i> Open Road Media, 2013.</li>
+<li>A. D. Botton, <b>The Course of Love.</b> Penguin UK, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org5f43c3d" class="outline-4">
+<h4 id="org5f43c3d"><span class="section-number-4">3.2.2.</span> Feminism</h4>
+</div>
+</div>
+<div id="outline-container-orgf97c6a1" class="outline-3">
+<h3 id="orgf97c6a1"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“A Social Affair: How Meditation Benefits Ripple Through Romantic Relationships,” Mind &amp; Life Institute. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://www.mindandlife.org/media/a-social-affair-how-meditation-benefits-ripple-through-romantic-relationships/">https://www.mindandlife.org/media/a-social-affair-how-meditation-benefits-ripple-through-romantic-relationships/</a></li>
+
+<li>V. Burrus and C. Keller, Eds., Toward a Theology of Eros: Transfiguring Passion at the Limits of Discipline, 1st edition. Fordham University Press, 2009.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc6b10e0" class="outline-3">
+<h3 id="orgc6b10e0"><span class="section-number-3">3.4.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org1fa8d6a" class="outline-4">
+<h4 id="org1fa8d6a"><span class="section-number-4">3.4.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org74c36e7"></a>General<br /></li>
+<li><a id="orgaa223c2"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org65503c6"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgcb3d6b0"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org5213b73"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-1-3-1">
+<ul class="org-ul">
+<li>“Interfaith romance fiction in the era of love jihad.” Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://caravanmagazine.in/communities/interfaith-romance-fiction-in-the-era-of-love-jihad">https://caravanmagazine.in/communities/interfaith-romance-fiction-in-the-era-of-love-jihad</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgbb78a85"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org174bbdc"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-1-4-1">
+<ul class="org-ul">
+<li>F. Orsini, Ed., Love in South Asia: A Cultural History: 62. Cambridge ; New York: Cambridge University Press, 2006.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgf7ba565"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org838da38"></a>Food<br />
+<div class="outline-text-6" id="text-3-4-1-5-1">
+<ul class="org-ul">
+<li>P. Pant, Kama Bhog: Foods of Love, 1st edition. New Delhi: Allied Publishers Pvt Ltd, 2007.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org00648d6"></a>Misc<br />
+<div class="outline-text-5" id="text-3-4-1-6">
+<ul class="org-ul">
+<li>K. D. Bundelkhandi, “‘Society Fills Us With Fear, But Love Is A Kind Of Crazy Courage,’” BehanBox. Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://behanbox.com/2026/02/12/society-fills-us-with-fear-but-love-is-a-kind-of-crazy-courage/">https://behanbox.com/2026/02/12/society-fills-us-with-fear-but-love-is-a-kind-of-crazy-courage/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga2b5379" class="outline-3">
+<h3 id="orga2b5379"><span class="section-number-3">3.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>BY, “The Political Economy of Love in Capitalism.” Accessed: Dec. 09, 2025. [Online]. Available: <a href="https://jacobin.com/2025/12/love-capitalism-value-reciprocal-flow">https://jacobin.com/2025/12/love-capitalism-value-reciprocal-flow</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdbcb015" class="outline-2">
+<h2 id="orgdbcb015"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org7909154" class="outline-3">
+<h3 id="org7909154"><span class="section-number-3">4.1.</span> Literature</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“How Percy Shelley invented free love in 1792 | Aeon Essays,” Aeon. <a href="https://aeon.co/essays/how-percy-shelley-invented-free-love-in-1792">https://aeon.co/essays/how-percy-shelley-invented-free-love-in-1792</a> (accessed Dec. 11, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Kane, “8 romance novels for readers who love science, too,” Scientific American. Accessed: Feb. 14, 2026. [Online]. Available: <a href="https://www.scientificamerican.com/article/8-romance-novels-for-readers-who-love-science-too/">https://www.scientificamerican.com/article/8-romance-novels-for-readers-who-love-science-too/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8afc78c" class="outline-3">
+<h3 id="org8afc78c"><span class="section-number-3">4.2.</span> Music, Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org335f456" class="outline-4">
+<h4 id="org335f456"><span class="section-number-4">4.2.1.</span> General</h4>
+</div>
+<div id="outline-container-orga307816" class="outline-4">
+<h4 id="orga307816"><span class="section-number-4">4.2.2.</span> Playlists</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgf3ef748"></a>Western Music<br />
+<ol class="org-ol">
+<li><a id="orgeb69eed"></a>General<br /></li>
+<li><a id="org14cba67"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="orgb2eb224"></a>Soft Music, Misc<br />
+<div class="outline-text-7" id="text-orgb2eb224">
+<ul class="org-ul">
+<li>“SoftFolkRockLoveSongs,” YouTube. Accessed: Oct. 06, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmlsHCyWB1kRNi33IlhynKXo">http://www.youtube.com/playlist?list=PLP8c3pohkJmlsHCyWB1kRNi33IlhynKXo</a></li>
+<li>“SoftPopEngLoveSongs,” YouTube. Accessed: Oct. 06, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmmQOZqhggzqZ4o3r5G7eul9">http://www.youtube.com/playlist?list=PLP8c3pohkJmmQOZqhggzqZ4o3r5G7eul9</a></li>
+<li>“EngLoveSongsPopSoft - YouTube.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLP8c3pohkJmlzsHxn9lvM4W4rRn1eulgj">https://www.youtube.com/playlist?list=PLP8c3pohkJmlzsHxn9lvM4W4rRn1eulgj</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd38bc67"></a>Real Man, Misc<br />
+<div class="outline-text-7" id="text-orgd38bc67">
+<ul class="org-ul">
+<li>“AsliMardEnglishLoveSongs,” YouTube. Accessed: Oct. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmkLtb-I-shql16jsgIkR26Y">http://www.youtube.com/playlist?list=PLP8c3pohkJmkLtb-I-shql16jsgIkR26Y</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7380b4e"></a>Black, African American Pop Music, Misc<br />
+<div class="outline-text-7" id="text-org7380b4e">
+<ul class="org-ul">
+<li>“EngLoveSongsPopBlack,” YouTube. Accessed: Oct. 06, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmlVraqEhfvZjMSg3vhjo1pz">http://www.youtube.com/playlist?list=PLP8c3pohkJmlVraqEhfvZjMSg3vhjo1pz</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org28cf936"></a>Rock, Metal, Misc<br />
+<div class="outline-text-7" id="text-org28cf936">
+<ul class="org-ul">
+<li>“RockMetalLoveSongs,” YouTube. Accessed: Oct. 05, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmn1dw3M6qzHIVXkLhNtjmsq">http://www.youtube.com/playlist?list=PLP8c3pohkJmn1dw3M6qzHIVXkLhNtjmsq</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7f1e2ed"></a>Misc<br />
+<div class="outline-text-7" id="text-org7f1e2ed">
+<ul class="org-ul">
+<li>“PopEngLoveSongs,” YouTube. Accessed: Oct. 06, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmlzsHxn9lvM4W4rRn1eulgj">http://www.youtube.com/playlist?list=PLP8c3pohkJmlzsHxn9lvM4W4rRn1eulgj</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org2f630ce"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org640c9ac"></a>South Asian Music<br />
+<ol class="org-ol">
+<li><a id="org39c06dc"></a>Hindi, Urdu, Misc<br />
+<div class="outline-text-6" id="text-4-2-2-2-1">
+<ul class="org-ul">
+<li>“PakHindiLoveSongs,” YouTube. Accessed: Oct. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmm4pIYNkz_cq266TIlwM2Qd">http://www.youtube.com/playlist?list=PLP8c3pohkJmm4pIYNkz_cq266TIlwM2Qd</a></li>
+<li>“GhazalishLoveSongs,” YouTube. Accessed: Nov. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmklStBDdeHqZ4Fr-mxrDg9q">http://www.youtube.com/playlist?list=PLP8c3pohkJmklStBDdeHqZ4Fr-mxrDg9q</a></li>
+<li>“AsliMardHindiLoveSongs,” YouTube. Accessed: Oct. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmmTXuIW_VB9NkR1qC7ckMtD">http://www.youtube.com/playlist?list=PLP8c3pohkJmmTXuIW_VB9NkR1qC7ckMtD</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgeee2808"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="orgd32c3a4"></a>Amjad Ali Khan<br />
+<div class="outline-text-7" id="text-orgd32c3a4">
+<ul class="org-ul">
+<li>“SarodAmuLove,” YouTube. Accessed: Nov. 10, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmkvOlNSVjbQOVX5LNuWwTZF">http://www.youtube.com/playlist?list=PLP8c3pohkJmkvOlNSVjbQOVX5LNuWwTZF</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org94a32ad"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9af4eb2"></a>Traditional Music, Misc<br />
+<div class="outline-text-6" id="text-4-2-2-2-3">
+<ul class="org-ul">
+<li>“TradInLoveMusic,” YouTube. Accessed: Nov. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmniFhZPVst2iOd7KpMpwwh3">http://www.youtube.com/playlist?list=PLP8c3pohkJmniFhZPVst2iOd7KpMpwwh3</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdf57200"></a>Folk Music<br />
+<div class="outline-text-6" id="text-4-2-2-2-4">
+<ul class="org-ul">
+<li>T. O. • 59M views • 3 years ago, “IndianFolkLoveSongs,” YouTube. Accessed: Nov. 12, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmlovH9lvICTaRVa0zCowiGO">http://www.youtube.com/playlist?list=PLP8c3pohkJmlovH9lvICTaRVa0zCowiGO</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org34511f3"></a>Misc<br />
+<div class="outline-text-5" id="text-4-2-2-3">
+<ul class="org-ul">
+<li>“SexMusic - YouTube.” Accessed: May 27, 2026. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLP8c3pohkJmlTx6b4YzFJJWFayp6EED19">https://www.youtube.com/playlist?list=PLP8c3pohkJmlTx6b4YzFJJWFayp6EED19</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7bcf0be" class="outline-4">
+<h4 id="org7bcf0be"><span class="section-number-4">4.2.3.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org91287f1" class="outline-2">
+<h2 id="org91287f1"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>S. Eskelinen and U. of E. Finland, “Free love in communes? Not quite, says researcher,” Phys.org. Accessed: Jun. 25, 2026. [Online]. Available: <a href="https://phys.org/news/2026-06-free-communes.html">https://phys.org/news/2026-06-free-communes.html</a></li>
+
+<li>K. Barclay, “What makes the perfect passionate kiss? 5 tips from history,” The Conversation. Accessed: Feb. 13, 2026. [Online]. Available: <a href="http://theconversation.com/what-makes-the-perfect-passionate-kiss-5-tips-from-history-275225">http://theconversation.com/what-makes-the-perfect-passionate-kiss-5-tips-from-history-275225</a></li>
+
+<li>B. Ambridge, “Love Is Blind … but Are Your Hormones?,” JSTOR Daily. Accessed: Feb. 12, 2026. [Online]. Available: <a href="https://daily.jstor.org/love-is-blind-but-are-your-hormones/">https://daily.jstor.org/love-is-blind-but-are-your-hormones/</a></li>
+
+<li>“The Revolutionary Love Project,” The Revolutionary Love Project. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://revolutionarylove.org/">https://revolutionarylove.org/</a></li>
+<li>“See no Stranger,” Valarie Kaur. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://valariekaur.com/books/see-no-stranger/">https://valariekaur.com/books/see-no-stranger/</a></li>
+
+<li>V. Kaur, See No Stranger: A Memoir and Manifesto of Revolutionary Love. New York: One World, 2020.</li>
+
+<li>“All you need is love.” Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://theecologist.org/2026/feb/05/all-you-need-love">https://theecologist.org/2026/feb/05/all-you-need-love</a></li>
+
+<li>“For Iris Murdoch, morality is about love, not duties and rules | Aeon Essays,” Aeon. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://aeon.co/essays/for-iris-murdoch-morality-is-about-love-not-duties-and-rules">https://aeon.co/essays/for-iris-murdoch-morality-is-about-love-not-duties-and-rules</a></li>
+
+<li>K. Panegyres and T. Conversation, “Avoid bad breath, don’t pick partners when drunk: Ancient dating tips to find modern love.” Accessed: Jul. 06, 2025. [Online]. Available: <a href="https://phys.org/news/2025-07-bad-dont-partners-drunk-ancient.html">https://phys.org/news/2025-07-bad-dont-partners-drunk-ancient.html</a></li>
+
+<li>L. M. Walton, “Jenkins Center for Virtue Ethics receives grant to advance love-based ethical framework,” Notre Dame News. Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://news.nd.edu/news/jenkins-center-for-virtue-ethics-receives-grant-to-advance-love-based-ethical-framework/">https://news.nd.edu/news/jenkins-center-for-virtue-ethics-receives-grant-to-advance-love-based-ethical-framework/</a></li>
+
+<li>“The three laws of love, and how to follow them,” Big Think. Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://bigthink.com/the-well/a-philosophers-guide-to-love/">https://bigthink.com/the-well/a-philosophers-guide-to-love/</a></li>
+
+<li>“Does it matter if your romantic partner is similar to you? | Psyche Ideas.” Accessed: Jun. 04, 2025. [Online]. Available: <a href="https://psyche.co/ideas/does-it-matter-if-your-romantic-partner-is-similar-to-you">https://psyche.co/ideas/does-it-matter-if-your-romantic-partner-is-similar-to-you</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:50</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

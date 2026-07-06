@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Feminist Economics, Misc</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Feminist Economics, Misc</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb0fdf48">1. General</a></li>
+<li><a href="#org68082f3">2. STEMM</a>
+<ul>
+<li><a href="#org620d9eb">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgddb3f84">2.1.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org766379f">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org62be430">3. Worldly Matters</a>
+<ul>
+<li><a href="#org59a09aa">3.1. History</a></li>
+<li><a href="#org884ce9a">3.2. Orgs</a></li>
+<li><a href="#org6b06f9c">3.3. Nation States</a>
+<ul>
+<li><a href="#org51b6923">3.3.1. India</a></li>
+</ul>
+</li>
+<li><a href="#org27060a2">3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org28afd49">4. Core</a>
+<ul>
+<li><a href="#orgf5ea5ab">4.1. Handbooks, Companions, Readers</a></li>
+<li><a href="#org53f6bf0">4.2. Work, Jobs, Misc</a>
+<ul>
+<li><a href="#orgc104375">4.2.1. General</a></li>
+<li><a href="#org36710cd">4.2.2. STEMM</a></li>
+<li><a href="#org3e38e10">4.2.3. Worldly Matters</a></li>
+<li><a href="#org8842f6f">4.2.4. Core</a></li>
+<li><a href="#orgab49ba0">4.2.5. Arts</a></li>
+<li><a href="#org1e5efa4">4.2.6. Special Topics</a></li>
+<li><a href="#org088827e">4.2.7. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9c517f6">5. Arts</a>
+<ul>
+<li><a href="#org5e20ee6">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org063afe2">6. Special Topics</a>
+<ul>
+<li><a href="#org3ce5bad">6.1. Critical Studies</a></li>
+<li><a href="#orgc1ba3a8">6.2. Articles, Essays</a>
+<ul>
+<li><a href="#orgf6c0d62">6.2.1. Journal Articles</a></li>
+<li><a href="#org468fe33">6.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdc33ab8">6.3. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org763cc0a">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgb0fdf48" class="outline-2">
+<h2 id="orgb0fdf48"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org68082f3" class="outline-2">
+<h2 id="org68082f3"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org620d9eb" class="outline-3">
+<h3 id="org620d9eb"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgddb3f84" class="outline-4">
+<h4 id="orgddb3f84"><span class="section-number-4">2.1.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org766379f" class="outline-3">
+<h3 id="org766379f"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org62be430" class="outline-2">
+<h2 id="org62be430"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org59a09aa" class="outline-3">
+<h3 id="org59a09aa"><span class="section-number-3">3.1.</span> History</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>G. Becchio, A History of Feminist and Gender Economics. Routledge, 2019.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org884ce9a" class="outline-3">
+<h3 id="org884ce9a"><span class="section-number-3">3.2.</span> Orgs</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“Home.” Accessed: Nov. 15, 2023. [Online]. Available: <a href="https://www.iaffe.org/">https://www.iaffe.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6b06f9c" class="outline-3">
+<h3 id="org6b06f9c"><span class="section-number-3">3.3.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org51b6923" class="outline-4">
+<h4 id="org51b6923"><span class="section-number-4">3.3.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5ab6146"></a>General<br /></li>
+<li><a id="org05f8111"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org09c1ded"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org1733a26"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9ee8a47"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org31562c1"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org29c40c8"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org1aae8a7"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org3a8a563"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org535b522"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgbe85586"></a>Texts<br />
+<div class="outline-text-6" id="text-3-3-1-5-1">
+<ul class="org-ul">
+<li>J. Ghosh, Informal Women Workers in the Global South: Policies and Practices for the Formalisation of Women’s Employment in Developing Economies. Routledge, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org211d815"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="org5f8738f"></a>Journal Articles<br /></li>
+<li><a id="orgb211ada"></a>Misc<br />
+<div class="outline-text-7" id="text-orgb211ada">
+<ul class="org-ul">
+<li>S. Nigam, “Economic Abuse and Legal Remedies in India: A Qualitative Review.” Rochester, NY, Jan. 20, 2023. doi: 10.2139/ssrn.4350642.</li>
+<li>S. Singh, “Economic Abuse and Family Violence Across Cultures: Gendering Money and Assets Through Coercive Control,” in Criminalising Coercive Control : Family Violence and the Criminal Law, M. McMahon and P. McGorrery, Eds., Singapore: Springer, 2020, pp. 51–72. doi: 10.1007/978-981-15-0653-6<sub>3</sub>.</li>
+<li>P. Chowbey, “Women’s narratives of economic abuse and financial strategies in Britain and South Asia,” Psychology of Violence, vol. 7, no. 3, pp. 459–468, 2017, doi: 10.1037/vio0000110.</li>
+<li>P. Chowbey, “India: how COVID enabled new forms of economic abuse of women,” The Conversation. Accessed: Dec. 03, 2023. [Online]. Available: <a href="http://theconversation.com/india-how-covid-enabled-new-forms-of-economic-abuse-of-women-212822">http://theconversation.com/india-how-covid-enabled-new-forms-of-economic-abuse-of-women-212822</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“How Marriage and Motherhood Skew the Labour Market | The India Forum.” Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/public-policy/how-marriage-and-motherhood-skew-labour-market">https://www.theindiaforum.in/public-policy/how-marriage-and-motherhood-skew-labour-market</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org39a4c52"></a>Misc<br />
+<div class="outline-text-5" id="text-3-3-1-6">
+<ul class="org-ul">
+<li>K. S. &amp; S. Narla, “Tracing the journeys of India’s women economists and policymakers,” Scroll.in. <a href="https://scroll.in/article/1020656/tracing-the-journeys-of-indias-women-economists-policymakers">https://scroll.in/article/1020656/tracing-the-journeys-of-indias-women-economists-policymakers</a> (accessed Apr. 01, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org27060a2" class="outline-3">
+<h3 id="org27060a2"><span class="section-number-3">3.4.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org28afd49" class="outline-2">
+<h2 id="org28afd49"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf5ea5ab" class="outline-3">
+<h3 id="orgf5ea5ab"><span class="section-number-3">4.1.</span> Handbooks, Companions, Readers</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>G. Berik and E. Kongar, The Routledge Handbook of Feminist Economics. Routledge, 2021.</li>
+<li>“Routledge IAFFE Advances in Feminist Economics.” <a href="http://www.amazon.in/-/dp/B09S416W4R?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/-/dp/B09S416W4R?ref=dbs_m_mng_rwt_0000_share</a> (accessed Dec. 05, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org53f6bf0" class="outline-3">
+<h3 id="org53f6bf0"><span class="section-number-3">4.2.</span> Work, Jobs, Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgc104375" class="outline-4">
+<h4 id="orgc104375"><span class="section-number-4">4.2.1.</span> General</h4>
+</div>
+<div id="outline-container-org36710cd" class="outline-4">
+<h4 id="org36710cd"><span class="section-number-4">4.2.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org2bb9c50"></a>Systems Sciences<br />
+<ol class="org-ol">
+<li><a id="orgf750f4f"></a>Misc<br />
+<div class="outline-text-6" id="text-4-2-2-1-1">
+<ul class="org-ul">
+<li>“Analyzing how working mothers impact the workforce in China,” IIASA - International Institute for Applied Systems Analysis. Accessed: May 07, 2024. [Online]. Available: <a href="https://iiasa.ac.at/options-magazine/winter-2023/analyzing-how-working-mothers-impact-workforce-in-china">https://iiasa.ac.at/options-magazine/winter-2023/analyzing-how-working-mothers-impact-workforce-in-china</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4d3eaa6"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3e38e10" class="outline-4">
+<h4 id="org3e38e10"><span class="section-number-4">4.2.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-4-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org2f48ff1"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="org13627a4"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgfe1c191"></a>General<br /></li>
+<li><a id="orgfdfc1ff"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org7f2a04a"></a><b>Systems Sciences</b>, Misc<br />
+<ul class="org-ul">
+<li><a id="orga4f387c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2e631b2"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org3fc385e"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org031f161"></a>Misc<br />
+<div class="outline-text-8" id="text-org031f161">
+<ul class="org-ul">
+<li>“The Returnship Road » CEDA.” Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://ceda.ashoka.edu.in/the-returnship-report/">https://ceda.ashoka.edu.in/the-returnship-report/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgc3c4f0c"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orga1a8b12"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org5fdbd93"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org027db33"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="orgeffe77a"></a>Journal Articles<br /></li>
+<li><a id="org6684581"></a>Misc<br />
+<div class="outline-text-9" id="text-org6684581">
+<ul class="org-ul">
+<li>“Insights on Female Labour Force Participation in India | Economic and Political Weekly.” Accessed: Jun. 12, 2025. [Online]. Available: <a href="https://www.epw.in/engage/article/insights-female-labour-force-participation-india">https://www.epw.in/engage/article/insights-female-labour-force-participation-india</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3b5cba3"></a>Texts<br /></li>
+</ul>
+</li>
+<li><a id="org79a9853"></a>Misc<br />
+<div class="outline-text-7" id="text-org79a9853">
+<ul class="org-ul">
+<li>E. Samantroy and S. Nandi, Eds., Gender, Unpaid Work and Care in India, 1st edition. Routledge India, 2022.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org50f5118"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org8842f6f" class="outline-4">
+<h4 id="org8842f6f"><span class="section-number-4">4.2.4.</span> Core</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<ul class="org-ul">
+<li>C. Goldin, Career and Family: Women’s Century-Long Journey Toward Equality.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab49ba0" class="outline-4">
+<h4 id="orgab49ba0"><span class="section-number-4">4.2.5.</span> Arts</h4>
+<div class="outline-text-4" id="text-4-2-5">
+</div>
+<ol class="org-ol">
+<li><a id="org13de4b8"></a>Humour<br />
+<div class="outline-text-5" id="text-4-2-5-1">
+<ul class="org-ul">
+<li>The Onion’s Tips For Succeeding As A Woman In The Workplace, (Nov. 18, 2013). Accessed: Apr. 09, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GXZ6oDG9mnY">https://www.youtube.com/watch?v=GXZ6oDG9mnY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc176169"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org1e5efa4" class="outline-4">
+<h4 id="org1e5efa4"><span class="section-number-4">4.2.6.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-4-2-6">
+</div>
+<ol class="org-ol">
+<li><a id="org61c76c8"></a>Domestic Work<br />
+<div class="outline-text-5" id="text-4-2-6-1">
+<ul class="org-ul">
+<li>Domestic Work:</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgbb50d2d"></a>General<br />
+<div class="outline-text-6" id="text-4-2-6-1-1">
+<ul class="org-ul">
+<li>“Domestic worker,” Wikipedia. Jun. 15, 2025. Accessed: Jun. 18, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Domestic_worker&amp;oldid=1295734579">https://en.wikipedia.org/w/index.php?title=Domestic_worker&amp;oldid=1295734579</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbdfc20e"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orge36cbda"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org39babb0"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orga30b05d"></a>Space and Time<br /></li>
+<li><a id="org877c7b3"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="org1ef41d3"></a>Religions, Spirituality, Misc<br />
+<ul class="org-ul">
+<li><a id="org68b54d7"></a>Christianity<br />
+<div class="outline-text-8" id="text-org68b54d7">
+<ul class="org-ul">
+<li>“Zita,” Wikipedia. Feb. 27, 2025. Accessed: Jun. 18, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Zita&amp;oldid=1277921509">https://en.wikipedia.org/w/index.php?title=Zita&amp;oldid=1277921509</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7e92ccd"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org9885327"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="org990d518"></a>India<br />
+<ul class="org-ul">
+<li><a id="org202af8e"></a>General<br /></li>
+<li><a id="orgd0c9a58"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org5d966db"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8fb39da"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgff919f5"></a>Misc<br />
+<div class="outline-text-11" id="text-orgff919f5">
+<ul class="org-ul">
+<li>“Housekeeping Staff at Ashoka University ‘Forced’ to End Strike, Apologise After Salaries Withheld,” The Wire. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://thewire.in/labour/housekeeping-staff-at-ashoka-university-forced-to-end-strike-apologise-after-salaries-withheld">https://thewire.in/labour/housekeeping-staff-at-ashoka-university-forced-to-end-strike-apologise-after-salaries-withheld</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb73661f"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org513a4b9"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd0df979"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org4833639"></a>Texts<br />
+<div class="outline-text-11" id="text-org4833639">
+<ul class="org-ul">
+<li>T. Lahiri, Maid in India: Stories of Inequality and Opportunity Inside Our Homes. Aleph Book Company, 2017.</li>
+<li>N. N, Working at Others Homes. New Delhi: Tulika Books, 2019.</li>
+
+<li>U. Mahanta and I. Gupta, Eds., Recognition of the Rights of Domestic Workers in India: Challenges and the Way Forward, 1st ed. 2019 edition. Springer, 2019.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org54ed042"></a>Misc<br />
+<div class="outline-text-10" id="text-org54ed042">
+<ul class="org-ul">
+<li>N. Khan, “Long Work Hours, Less Pay, And No Legal Protection: Female Domestic Workers Most Vulnerable To Abuse,” Feminism in India. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://feminisminindia.com/?p=189578">https://feminisminindia.com/?p=189578</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orga875370"></a>Business Studies, Misc<br /></li>
+<li><a id="orge1f69ac"></a>Humanities, Misc<br /></li>
+<li><a id="org82774b3"></a>Security Studies, Misc<br /></li>
+<li><a id="org9af9c2a"></a>Communication, Misc<br /></li>
+<li><a id="org7931f1e"></a>Misc<br />
+<div class="outline-text-7" id="text-org7931f1e">
+<ul class="org-ul">
+<li>T. H. Bureau, “International Domestic Workers’ Day observed,” The Hindu, Jun. 16, 2025. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/kerala/international-domestic-workers-day-observed/article69702313.ece">https://www.thehindu.com/news/national/kerala/international-domestic-workers-day-observed/article69702313.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org049c43c"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org3353aab"></a>Misc<br />
+<div class="outline-text-7" id="text-org3353aab">
+<ul class="org-ul">
+<li>T. O. Staff, “Hilaria Baldwin Hires Nanny To Waltz For Her On ‘Dancing With The Stars,’” The Onion. Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://theonion.com/hilaria-baldwin-hires-nanny-to-waltz-for-her-on-dancing-with-the-stars/">https://theonion.com/hilaria-baldwin-hires-nanny-to-waltz-for-her-on-dancing-with-the-stars/</a></li>
+
+<li>R. Kukreja, “Netflix TV drama ‘Secrets We Keep’ exposes the dangers of domestic migrant work,” The Conversation. Accessed: Jun. 27, 2025. [Online]. Available: <a href="http://theconversation.com/netflix-tv-drama-secrets-we-keep-exposes-the-dangers-of-domestic-migrant-work-258556">http://theconversation.com/netflix-tv-drama-secrets-we-keep-exposes-the-dangers-of-domestic-migrant-work-258556</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3964848"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org419372b"></a>Migration, Domestic Work<br />
+<ul class="org-ul">
+<li><a id="org04e50a7"></a>Book Series<br />
+<div class="outline-text-8" id="text-org04e50a7">
+<ul class="org-ul">
+<li>“Studies in Migration and Diaspora.” Accessed: Jun. 18, 2025. [Online]. Available: <a href="http://www.amazon.in/Studies-in-Migration-and-Diaspora-71-book-series/dp/B08MJN53MC?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/Studies-in-Migration-and-Diaspora-71-book-series/dp/B08MJN53MC?ref=dbs_m_mng_rwt_0000_share</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org359a557"></a>Globalization<br />
+<div class="outline-text-8" id="text-org359a557">
+<ul class="org-ul">
+<li>R. S. Parrenas, Servants of Globalization: Migration and Domestic Work, Reprint edition. Stanford, California: Stanford Univ Pr, 2015.</li>
+<li>M. Romero, V. Preston, and W. Giles, Eds., When Care Work Goes Global: Locating the Social Relations of Domestic Work, 1st edition. Routledge, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc05af53"></a>Europe<br />
+<div class="outline-text-8" id="text-orgc05af53">
+<ul class="org-ul">
+<li>C. Giordano, Ethnicisation and Domesticisation: The Impact of Care, Gender and Migration Regimes on Paid Domestic Work in Europe. Palgrave Macmillan, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1ab2901"></a>Spain<br />
+<div class="outline-text-8" id="text-org1ab2901">
+<ul class="org-ul">
+<li>S. Issel-Dombert, Multilingualism, Migration and Domestic Work: On the Sociolinguistic Situation of Filipina Domestic Migrant Workers in Spain. De Gruyter, 2025.</li>
+</ul>
+</div>
+</li>
+<li><a id="org720331a"></a>UK, USA<br />
+<div class="outline-text-8" id="text-org720331a">
+<ul class="org-ul">
+<li>D. Perrons, M. Kilkey, and A. Plomien, Gender, Migration and Domestic Work: Masculinities, Male Labour and Fathering in the UK and USA, 2013th edition. Palgrave Macmillan, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfd30b77"></a>Misc<br />
+<div class="outline-text-8" id="text-orgfd30b77">
+<ul class="org-ul">
+<li>H. Lutz, Ed., Migration and Domestic Work: A European Perspective on a Global Theme, 1st edition. Routledge, 2016.</li>
+<li>S. Marchetti, Migration and Domestic Work: IMISCOE Short Reader. Springer, 2022.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>G. Yilmaz and S. Ledwith, Migration and Domestic Work: The Collective Organisation of Women and their Voices from the City, 1st ed. 2017 edition. Palgrave Macmillan, 2017.</li>
+<li>E. Gutiérrez-Rodríguez, Migration, Domestic Work and Affect: A Decolonial Approach on Value and the Feminization of Labor, 1st edition. Routledge, 2010.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga2493b0"></a>America Latin<br />
+<div class="outline-text-7" id="text-orga2493b0">
+<ul class="org-ul">
+<li>M. Blofield, Care Work and Class: Domestic Workers’ Struggle for Equal Rights in Latin America. University Park, Pa: Pennsylvania State University Press, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5827052"></a>France<br />
+<div class="outline-text-7" id="text-org5827052">
+<ul class="org-ul">
+<li>J. Windebank, Domestic and Care Work in Modern France: Gender, Family and the State. Palgrave Macmillan, 2023.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org74df578"></a>Misc<br />
+<ul class="org-ul">
+<li><a id="org8106c30"></a>Computer Science and Engineering<br />
+<div class="outline-text-7" id="text-org8106c30">
+<ul class="org-ul">
+<li>“Should One Even Consider Making Domestic Work Part of the Gig Economy?,” The India Forum. Accessed: Apr. 21, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/forum/platforming-domestic-work-will-amplify-existing-vulnerabilities-workers">https://www.theindiaforum.in/forum/platforming-domestic-work-will-amplify-existing-vulnerabilities-workers</a></li>
+<li>T. H. Bureau, “Domestic workers oppose new app-based ‘instant’ maid service,” The Hindu, Mar. 21, 2025. Accessed: Mar. 22, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/chennai/domestic-workers-oppose-new-app-based-instant-maid-service/article69357904.ece">https://www.thehindu.com/news/cities/chennai/domestic-workers-oppose-new-app-based-instant-maid-service/article69357904.ece</a></li>
+<li>T. H. Bureau, “‘Maid-in-15-minutes’ offer by Urban Company draws flak from domestic and gig workers,” The Hindu, Mar. 20, 2025. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/bangalore/domestic-and-gig-workers-condemn-maid-in-15-minutes-offer-by-urban-company/article69349627.ece">https://www.thehindu.com/news/cities/bangalore/domestic-and-gig-workers-condemn-maid-in-15-minutes-offer-by-urban-company/article69349627.ece</a></li>
+<li>“The apps were designed for home security. They’re being used to watch and harass domestic workers,” Rest of World. Accessed: Aug. 17, 2023. [Online]. Available: <a href="https://restofworld.org/2023/home-monitoring-mygate-digital-bias/">https://restofworld.org/2023/home-monitoring-mygate-digital-bias/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6909522"></a>COVID-19<br />
+<div class="outline-text-7" id="text-org6909522">
+<ul class="org-ul">
+<li>Impact of Covid-19 lockdown on domestic workers in India, 24th March to 4th May 2020. 2020. Accessed: Mar. 11, 2022. [Online]. Available: <a href="https://ruralindiaonline.org/en/library/resource/impact-of-covid-19-lockdown-on-domestic-workers-in-india-24th-march-to-4th-may-2020/">https://ruralindiaonline.org/en/library/resource/impact-of-covid-19-lockdown-on-domestic-workers-in-india-24th-march-to-4th-may-2020/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbf5eefd"></a>Misc<br />
+<div class="outline-text-7" id="text-orgbf5eefd">
+<ul class="org-ul">
+<li>‘They respect their animals more’: Voices of child domestic workers. 2008. Accessed: Aug. 31, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/library/resource/they-respect-their-animals-more-voices-of-child-domestic-workers/">https://ruralindiaonline.org/en/library/resource/they-respect-their-animals-more-voices-of-child-domestic-workers/</a></li>
+<li>“How Indians Are Endangering The Health of Their Domestic Workers: New Study.” Accessed: Aug. 27, 2023. [Online]. Available: <a href="https://www.article-14.com/post/how-indians-are-endangering-the-health-of-their-domestic-workers-new-study-64e8808c6dcfe">https://www.article-14.com/post/how-indians-are-endangering-the-health-of-their-domestic-workers-new-study-64e8808c6dcfe</a></li>
+<li>“Male Domestic Care Workers Also Face Employer Apathy,” The Wire. Accessed: Mar. 30, 2023. [Online]. Available: <a href="https://thewire.in/labour/male-domestic-care-workers-employer-apathy">https://thewire.in/labour/male-domestic-care-workers-employer-apathy</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgd96ba75"></a>Sex Work<br />
+<div class="outline-text-5" id="text-4-2-6-2">
+<ul class="org-ul">
+<li>Sex Work:</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orge39aa21"></a>General<br />
+<div class="outline-text-6" id="text-4-2-6-2-1">
+<ul class="org-ul">
+<li>“Sex work,” Wikipedia. Mar. 21, 2026. Accessed: Apr. 07, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sex_work&amp;oldid=1344617949">https://en.wikipedia.org/w/index.php?title=Sex_work&amp;oldid=1344617949</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgac35b5a"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org34a2179"></a><b>Systems Sciences</b>, Misc<br />
+<ul class="org-ul">
+<li><a id="orga3999a9"></a><b>Complexity Science</b><br />
+<div class="outline-text-8" id="text-orga3999a9">
+<ul class="org-ul">
+<li>A. Mergenthaler and T. Yasseri, <b>“Selling sex: what determines rates and popularity? An analysis of 11,500 online profiles,”</b> Culture, Health &amp; Sexuality, vol. 0, no. 0, pp. 1–15, Apr. 2021, doi: 10.1080/13691058.2021.1901145.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge3d9be6"></a><b>Ecology</b>, Misc<br /></li>
+<li><a id="org7a09904"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org1f1645f"></a>Computer Science And Engineering<br />
+<div class="outline-text-7" id="text-org1f1645f">
+<ul class="org-ul">
+<li>“About,” Hacking//Hustling. <a href="https://hackinghustling.org/">https://hackinghustling.org/</a> (accessed Sep. 18, 2021).</li>
+
+<li>S. Cole ·, “Laws About Deepfakes Can’t Leave Sex Workers Behind,” 404 Media. Accessed: Jun. 07, 2024. [Online]. Available: <a href="https://www.404media.co/laws-about-deepfakes-cant-leave-sex-workers-behind/">https://www.404media.co/laws-about-deepfakes-cant-leave-sex-workers-behind/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga58f857"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orga8ed0c3"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgf6c08c8"></a>Space and Time<br /></li>
+<li><a id="org1e93104"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="orgd3af01b"></a>Religions, Spirituality, Misc<br />
+<ul class="org-ul">
+<li><a id="org4ee22ca"></a>Christianity<br />
+<div class="outline-text-8" id="text-org4ee22ca">
+<ul class="org-ul">
+<li>A. Ipsen, Sex Working and the Bible. Hoboken: Routledge, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd6f0cf5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org734ae6a"></a>Humanities, Misc<br /></li>
+<li><a id="orgc719e9f"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org7214931"></a>Orgs<br />
+<ul class="org-ul">
+<li><a id="org6aea23b"></a>Brothels<br />
+<div class="outline-text-9" id="text-org6aea23b">
+<ul class="org-ul">
+<li>C. Weinhold, Sex as Work: Decriminalisation and The Management of Brothels in New Zealand, 1st ed. 2023 edition. Cham, Switzerland: Palgrave Macmillan, 2022.</li>
+<li>A. Schrager, An Economist Walks into a Brothel: And Other Unexpected Places to Understand Risk. New York: Portfolio, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb2afe64"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org30ff81f"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="org7525954"></a>Moms<br />
+<div class="outline-text-9" id="text-org7525954">
+<ul class="org-ul">
+<li>“Abused and denied help: Sex worker mums lose access to kids,” openDemocracy. <a href="https://www.opendemocracy.net/en/5050/sex-work-social-services-mothers-children/">https://www.opendemocracy.net/en/5050/sex-work-social-services-mothers-children/</a> (accessed Jul. 30, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6f7302c"></a>Law<br />
+<div class="outline-text-8" id="text-org6f7302c">
+<ul class="org-ul">
+<li><i>“Decriminalising sex work is better for everyone – Maria Laura Di Tommaso &amp; Marina Della Giusta | Aeon Ideas,”</i> Aeon. <a href="https://aeon.co/ideas/why-decriminalising-sex-work-is-better-for-everyone">https://aeon.co/ideas/why-decriminalising-sex-work-is-better-for-everyone</a> (accessed Dec. 15, 2020).</li>
+
+<li><i>“The sex trade can never be legalised without hurting women | Aeon Essays.”</i> <a href="https://aeon.co/essays/the-sex-trade-can-never-be-legalised-without-hurting-women">https://aeon.co/essays/the-sex-trade-can-never-be-legalised-without-hurting-women</a> (accessed Dec. 03, 2020).</li>
+</ul>
+</div>
+</li>
+<li><a id="org1246157"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="orgc766907"></a>India<br />
+<ul class="org-ul">
+<li><a id="org1d35fc7"></a>General<br /></li>
+<li><a id="orga57d66f"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org0ed9bbd"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org17f34e5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org92088d9"></a>CSE<br />
+<div class="outline-text-11" id="text-org92088d9">
+<ul class="org-ul">
+<li>O. Snow, “Are You Ready to Be Surveilled Like a Sex Worker?,” Wired. Accessed: Jul. 24, 2022. [Online]. Available: <a href="https://www.wired.com/story/roe-abortion-sex-worker-policy/">https://www.wired.com/story/roe-abortion-sex-worker-policy/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2297f9e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgb394862"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org2228b63"></a>Space, Earth, Life Sciences, Environment, Ecology, Health, Misc<br /></li>
+
+<li><a id="orgeddfa7b"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-11" id="text-orgeddfa7b">
+<ul class="org-ul">
+<li>“Why is soil from a brothel necessary to create Durga? Here’s a message loud and clear&#x2026;” Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://www.telegraphindia.com/video/why-is-soil-from-a-brothel-necessary-to-create-durga-heres-a-message-loud-and-clear/cid/2053243">https://www.telegraphindia.com/video/why-is-soil-from-a-brothel-necessary-to-create-durga-heres-a-message-loud-and-clear/cid/2053243</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org616d534"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org5428006"></a>Law<br />
+<div class="outline-text-12" id="text-org5428006">
+<ul class="org-ul">
+<li>P. Kotiswaran, Dangerous Sex, Invisible Labor: Sex Work and the Law in India. Princeton University Press, 2011.</li>
+
+<li>K. Rajagopal, “Supreme Court recognises sex work as a ‘profession,’” The Hindu, New Delhi, May 25, 2022. Accessed: Jul. 24, 2022. [Online]. Available: <a href="https://www.thehindu.com/news/national/supreme-court-recognises-sex-work-as-a-profession/article65461331.ece">https://www.thehindu.com/news/national/supreme-court-recognises-sex-work-as-a-profession/article65461331.ece</a></li>
+
+<li>“Echoes of Bedanbala: Anti-Prostitution Laws in India,” NewsClick. Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.newsclick.in/echoes-bedanbala-anti-prostitution-laws-india">https://www.newsclick.in/echoes-bedanbala-anti-prostitution-laws-india</a></li>
+<li>P. Kotiswaran, Dangerous Sex, Invisible Labor: Sex Work and the Law in India. Princeton University Press, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf40089e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgef65f64"></a>Business Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="org2156ebe"></a>Misc<br />
+<div class="outline-text-12" id="text-org2156ebe">
+<ul class="org-ul">
+<li>S. P and S. Deb, Commercial Sex Workers in India: Addressing Legal, Health, and Social Issues. Singapore: Springer, 2026.</li>
+
+<li>I. Mitra, “‘Nautch Boy’: Manish Gaekwad’s memoir is also a social document about the politics of respectability,” Scroll.in. Accessed: Oct. 12, 2025. [Online]. Available: <a href="https://scroll.in/article/1087227/nautch-boy-manish-gaekwads-memoir-is-also-a-social-document-about-the-politics-of-respectability">https://scroll.in/article/1087227/nautch-boy-manish-gaekwads-memoir-is-also-a-social-document-about-the-politics-of-respectability</a></li>
+
+<li>“Where Land Disappears: Bangladesh’s Banishanta Sex Workers Confront Climate Change’s Mental Toll.” Accessed: Oct. 31, 2025. [Online]. Available: <a href="https://www.asiandispatch.net//where-land-disappears">https://www.asiandispatch.net//where-land-disappears</a></li>
+
+<li>“Unmaking the Figure of the Working Girl: Finding Agency in Precarious Spaces in Paromita Vohra’s Working Girls,” Countercurrents. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/09/unmaking-the-figure-of-the-working-girl-finding-agency-in-precarious-spaces-in-paromita-vohras-working-girls/">https://countercurrents.org/2025/09/unmaking-the-figure-of-the-working-girl-finding-agency-in-precarious-spaces-in-paromita-vohras-working-girls/</a></li>
+
+<li>S. Chatterjee, “India’s biggest red-light area in Kolkata’s Sonagachi celebrates Durga Puja with a call for workers’ rights,” The Hindu, Sep. 27, 2025. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/kolkata/indias-biggest-red-light-area-in-kolkatas-sonagachi-celebrates-durga-puja-with-a-call-for-workers-rights/article70097726.ece">https://www.thehindu.com/news/cities/kolkata/indias-biggest-red-light-area-in-kolkatas-sonagachi-celebrates-durga-puja-with-a-call-for-workers-rights/article70097726.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga444c17"></a>Misc<br />
+<div class="outline-text-11" id="text-orga444c17">
+<ul class="org-ul">
+<li>L. Kaur, “What began as classifieds, Locanto and Skokka are now hotspots for organised prostitution, cyber frauds,” The Hindu, Sep. 04, 2025. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Hyderabad/what-began-as-classifieds-locanto-and-skokka-are-now-hotspots-for-organised-prostitution-cyber-frauds/article70007546.ece">https://www.thehindu.com/news/cities/Hyderabad/what-began-as-classifieds-locanto-and-skokka-are-now-hotspots-for-organised-prostitution-cyber-frauds/article70007546.ece</a></li>
+<li>R. Parmar, “Lights, camera, liberation: Kalighat’s sex workers debut on global stage,” Newslaundry. Accessed: Jul. 06, 2025. [Online]. Available: <a href="https://www.newslaundry.com/2025/07/05/lights-camera-liberation-kalighats-sex-workers-debut-on-global-stage">https://www.newslaundry.com/2025/07/05/lights-camera-liberation-kalighats-sex-workers-debut-on-global-stage</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org386efa9"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orga4c8e20"></a>Films<br />
+<div class="outline-text-11" id="text-orga4c8e20">
+<ul class="org-ul">
+<li>“Tawaif (film),” Wikipedia. Nov. 16, 2022. Accessed: Nov. 17, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tawaif_(film)&amp;oldid=1122241997">https://en.wikipedia.org/w/index.php?title=Tawaif_(film)&amp;oldid=1122241997</a></li>
+
+<li>“Pakeezah,” Wikipedia. Nov. 09, 2022. Accessed: Nov. 17, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Pakeezah&amp;oldid=1120822761">https://en.wikipedia.org/w/index.php?title=Pakeezah&amp;oldid=1120822761</a></li>
+
+<li>N. Ramnath, “What brothel set design tells us about films that explore sex work,” Scroll.in. <a href="https://scroll.in/reel/1018901/what-brothel-set-design-tells-us-about-films-that-explore-sex-work">https://scroll.in/reel/1018901/what-brothel-set-design-tells-us-about-films-that-explore-sex-work</a> (accessed Mar. 09, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org171486a"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org6c5b13a"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org65e6350"></a>Bedia<br />
+<div class="outline-text-11" id="text-org65e6350">
+<ul class="org-ul">
+<li>“Bedia (Muslim clan) - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Bedia_(Muslim_clan)">https://en.wikipedia.org/wiki/Bedia_(Muslim_clan)</a> (accessed Aug. 11, 2022).</li>
+
+<li>“Bedia (caste),” Wikipedia. Oct. 14, 2021. Accessed: Aug. 11, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bedia_(caste)&amp;oldid=1049932537">https://en.wikipedia.org/w/index.php?title=Bedia_(caste)&amp;oldid=1049932537</a></li>
+
+<li>A. Agrawal, Chaste Wives and Prostitute Sisters: Patriarchy and Prostitution among the Bedias of India. Taylor &amp; Francis, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org49677e8"></a>Texts<br />
+<div class="outline-text-11" id="text-org49677e8">
+<ul class="org-ul">
+<li>P. Kotiswaran, Dangerous Sex, Invisible Labor: Sex Work and the Law in India. Princeton University Press, 2011.</li>
+<li>R. Sahni, V. K. Shankar, and H. Apte, Prostitution and Beyond: An Analysis of Sex Workers in India. SAGE Publications India, 2008.</li>
+</ul>
+</div>
+</li>
+<li><a id="org52e8442"></a>Articles, Essays<br />
+<div class="outline-text-11" id="text-org52e8442">
+<ul class="org-ul">
+<li>“The Indian village where girls are groomed for sex work,” South China Morning Post. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.scmp.com/news/asia/south-asia/article/2182004/indian-village-where-girls-are-groomed-life-sex-work">https://www.scmp.com/news/asia/south-asia/article/2182004/indian-village-where-girls-are-groomed-life-sex-work</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org656d792"></a>Misc<br />
+<div class="outline-text-10" id="text-org656d792">
+<ul class="org-ul">
+<li>“Untold Stories of the Undesirables | Economic and Political Weekly.” Accessed: May 20, 2024. [Online]. Available: <a href="https://www.epw.in/journal/book-reviews/untold-stories-undesirables.html">https://www.epw.in/journal/book-reviews/untold-stories-undesirables.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Jeelani, “Life in the capital’s expanding market for high-end sexual commerce,” The Caravan. <a href="https://caravanmagazine.in/reportage/supply-demand">https://caravanmagazine.in/reportage/supply-demand</a> (accessed Mar. 07, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org7e370dd"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgc4fb65b"></a>Business Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="org860100d"></a>Finance<br />
+<div class="outline-text-8" id="text-org860100d">
+<ul class="org-ul">
+<li>A. Mergenthaler and T. Yasseri, <b>“Selling sex: what determines rates and popularity? An analysis of 11,500 online profiles,”</b> Culture, Health &amp; Sexuality, vol. 0, no. 0, pp. 1–15, Apr. 2021, doi: 10.1080/13691058.2021.1901145.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4adbc34"></a>Economics<br />
+<div class="outline-text-8" id="text-org4adbc34">
+<ul class="org-ul">
+<li>S. Cunningham and M. Shah, The Oxford Handbook of the Economics of Prostitution. Oxford University Press, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc9690b2"></a>Misc<br />
+<div class="outline-text-8" id="text-orgc9690b2">
+<ul class="org-ul">
+<li>S. Strøm, Sex Markets: A Denied Industry, 1st edition. Routledge, 2008.</li>
+</ul>
+</div>
+</li>
+<li><a id="org69ab80d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org1078bd7"></a>Security Studies, Misc<br /></li>
+<li><a id="org524403b"></a>Communication, Misc<br /></li>
+<li><a id="org98bd5a5"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org2a15e62"></a>Formal Education<br />
+<div class="outline-text-8" id="text-org2a15e62">
+<ul class="org-ul">
+<li>T. J. Stewart and T. J. (Iowa S. U. S. USA), Sex Work on Campus. Taylor &amp; Francis Limited, 2022.</li>
+<li>J. S. Hirsch and S. Khan, Sexual Citizens: A Landmark Study of Sex, Power, and Assault on Campus. W. W. Norton &amp; Company, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgaae2de1"></a>Misc<br />
+<div class="outline-text-7" id="text-orgaae2de1">
+<ul class="org-ul">
+<li>L. Caviglia, Sex Work in Nepal: The Making and Unmaking of a Category. Milton: Routledge India, 2017.</li>
+
+<li>S. M. Goldenberg, R. M. Thomas, A. Forbes, and S. Baral, Eds., Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action. Cham, Switzerland: Springer Nature Switzerland AG, 2021.</li>
+
+<li>“Romania, UK Bust Alleged Sex Trafficking Network,” OCCRP. Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://www.occrp.org/en/news/romania-uk-bust-alleged-sex-trafficking-network">https://www.occrp.org/en/news/romania-uk-bust-alleged-sex-trafficking-network</a></li>
+
+<li>“Between Choice and Coercion | Economic and Political Weekly.” Accessed: Oct. 24, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/42/perspectives/between-choice-and-coercion.html">https://www.epw.in/journal/2025/42/perspectives/between-choice-and-coercion.html</a></li>
+
+<li>“‘A Global Transit Point’: Investigating Human Trafficking and People Smuggling in South Asia.” Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://gijn.org/stories/asia-focus-investigating-human-trafficking-people-smuggling/">https://gijn.org/stories/asia-focus-investigating-human-trafficking-people-smuggling/</a></li>
+
+<li>“‘Everything they earn by killing, they throw away on prostitutes’ How Russian soldiers returning from Ukraine are reshaping St. Petersburg’s sex trade,” Meduza. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://meduza.io/en/feature/2025/09/12/everything-they-earn-by-killing-they-throw-away-on-prostitutes">https://meduza.io/en/feature/2025/09/12/everything-they-earn-by-killing-they-throw-away-on-prostitutes</a></li>
+
+<li>“Monthly Review | Read Revolting Prostitutes,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/2019/04/01/read-revolting-prostitutes/">https://monthlyreview.org/2019/04/01/read-revolting-prostitutes/</a></li>
+
+<li>K. L. Kharas, “Watch Live: Interviewing the CEO of a Giant Euro Brothel,” VICE. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://www.vice.com/en/article/watch-live-interviewing-the-ceo-of-a-giant-euro-brothel/">https://www.vice.com/en/article/watch-live-interviewing-the-ceo-of-a-giant-euro-brothel/</a></li>
+
+<li>“PACE Is Closing After 31 Years of Supporting Sex Workers,” The Tyee. Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://thetyee.ca/News/2025/07/30/PACE-Closing-After-31-Years/">https://thetyee.ca/News/2025/07/30/PACE-Closing-After-31-Years/</a></li>
+
+<li>“When do anti-trafficking pros listen to their critics?,” openDemocracy. Accessed: Jun. 04, 2025. [Online]. Available: <a href="https://www.opendemocracy.net/en/beyond-trafficking-and-slavery/what-helps-practitioners-listen-to-their-critics-an-interview-with-nick-grono/">https://www.opendemocracy.net/en/beyond-trafficking-and-slavery/what-helps-practitioners-listen-to-their-critics-an-interview-with-nick-grono/</a></li>
+
+<li>“Selling Sexual Services: A Socialist Feminist Perspective | Radical Socialist.” Accessed: May 12, 2025. [Online]. Available: <a href="https://radicalsocialist.in/selling-sexual-services-a-socialist-feminist-perspective/">https://radicalsocialist.in/selling-sexual-services-a-socialist-feminist-perspective/</a></li>
+
+<li>“‘Mom, is it true?’ What happens when children find out their mother is a sex worker. A report from Russia’s heartland.,” Meduza. Accessed: Apr. 24, 2025. [Online]. Available: <a href="https://meduza.io/en/feature/2020/11/24/mom-is-it-true">https://meduza.io/en/feature/2020/11/24/mom-is-it-true</a></li>
+
+<li>“International Day to End Violence Against Sex Workers,” Wikipedia. May 31, 2024. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Day_to_End_Violence_Against_Sex_Workers&amp;oldid=1226544916">https://en.wikipedia.org/w/index.php?title=International_Day_to_End_Violence_Against_Sex_Workers&amp;oldid=1226544916</a></li>
+
+<li>“Belgium’s sex workers get maternity leave and pensions under world-first law.” Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.bbc.com/news/articles/c5ygn31ypdlo">https://www.bbc.com/news/articles/c5ygn31ypdlo</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org77239f2"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org159bd60"></a>Films<br /></li>
+<li><a id="org74e08c3"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org078d6d4"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org8e57ae4"></a>Articles, Essays<br />
+<div class="outline-text-7" id="text-org8e57ae4">
+<ul class="org-ul">
+<li>“The reality of prostitution is not complex. It is simple | Psyche Ideas,” Psyche. <a href="https://psyche.co/ideas/the-reality-of-prostitution-is-not-complex-it-is-simple">https://psyche.co/ideas/the-reality-of-prostitution-is-not-complex-it-is-simple</a> (accessed Jun. 08, 2022).</li>
+
+<li><i>“In an unstable economy, I found freedom and security in sex work | Psyche Ideas,”</i> Psyche. <a href="https://psyche.co/ideas/in-an-unstable-economy-i-found-freedom-and-security-in-sex-work">https://psyche.co/ideas/in-an-unstable-economy-i-found-freedom-and-security-in-sex-work</a> (accessed Dec. 16, 2020).</li>
+
+<li><i>“What the sex trade has in common with the slave trade | Aeon Essays.”</i> <a href="https://aeon.co/essays/what-the-sex-trade-has-in-common-with-the-slave-trade">https://aeon.co/essays/what-the-sex-trade-has-in-common-with-the-slave-trade</a> (accessed Dec. 03, 2020).</li>
+
+<li><i>“Lolita understood that some sex is transactional. So did I | Aeon Ideas.”</i> <a href="https://aeon.co/ideas/lolita-understood-that-some-sex-is-transactional-so-did-i">https://aeon.co/ideas/lolita-understood-that-some-sex-is-transactional-so-did-i</a> (accessed Dec. 03, 2020).</li>
+
+<li><i>“Why do young rural women in China become mistresses? – James Palmer | Aeon Essays,”</i> Aeon. <a href="https://aeon.co/essays/why-do-young-rural-women-in-china-become-mistresses">https://aeon.co/essays/why-do-young-rural-women-in-china-become-mistresses</a> (accessed Dec. 15, 2020).</li>
+
+<li><i>“When it comes to buying sex, are women any different from men? | Aeon Essays.”</i> <a href="https://aeon.co/essays/when-it-comes-to-buying-sex-are-women-any-different-from-men">https://aeon.co/essays/when-it-comes-to-buying-sex-are-women-any-different-from-men</a> (accessed Dec. 03, 2020).</li>
+</ul>
+</div>
+</li>
+<li><a id="org6ac4a69"></a>Texts<br />
+<div class="outline-text-7" id="text-org6ac4a69">
+<ul class="org-ul">
+<li>S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., <b>Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action.</b> Cham: Springer International Publishing, 2021. doi: 10.1007/978-3-030-64171-9.
+<ul class="org-ul">
+<li>C. H. Logie, Y. Wang, P. Lalor, K. Levermore, and D. Williams, “Exploring the Protective Role of Sex Work Social Cohesion in Contexts of Violence and Criminalisation: A Case Study with Gender-Diverse Sex Workers in Jamaica,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 79–94. doi: 10.1007/978-3-030-64171-9<sub>5</sub>.</li>
+<li>B. McBride and T. Janushev, “Criminalisation, Health, and Labour Rights Among Im/migrant Sex Workers Globally,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 153–171. doi: 10.1007/978-3-030-64171-9<sub>9</sub>.</li>
+<li>N. Viswasam, J. Rivera, C. Comins, A. Rao, C. E. Lyons, and S. Baral, “The Epidemiology of HIV Among Sex Workers Around the World: Implications for Research, Programmes, and Policy,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 15–39. doi: 10.1007/978-3-030-64171-9<sub>2</sub>.</li>
+<li>B. S. West, A. M. Montgomery, and A. R. Ebben, “Reimagining Sex Work Venues: Occupational Health, Safety, and Rights in Indoor Workplaces,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 207–230. doi: 10.1007/978-3-030-64171-9<sub>12</sub>.</li>
+<li>M. Richter and K. Buthelezi, “Stigma, Denial of Health Services, and Other Human Rights Violations Faced by Sex Workers in Africa: ‘My Eyes Were Full of Tears Throughout Walking Towards the Clinic that I Was Referred to,’” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 141–152. doi: 10.1007/978-3-030-64171-9<sub>8</sub>.</li>
+<li>C. Navarrete Gil, M. Ramaiah, A. Mantsios, C. Barrington, and D. Kerrigan, “Best Practices and Challenges to Sex Worker Community Empowerment and Mobilisation Strategies to Promote Health and Human Rights,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 189–206. doi: 10.1007/978-3-030-64171-9<sub>11</sub>.</li>
+<li>A. Shapiro and P. Duff, “Sexual and Reproductive Health and Rights Inequities Among Sex Workers Across the Life Course,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 61–77. doi: 10.1007/978-3-030-64171-9<sub>4</sub>.</li>
+<li>E. Argento, K. T. Win, B. McBride, and K. Shannon, “Global Burden of Violence and Other Human Rights Violations Against Sex Workers,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 41–59. doi: 10.1007/978-3-030-64171-9<sub>3</sub>.</li>
+<li>A. Krüsi, K. D’Adamo, and A. Sernick, “Criminalised Interactions with Law Enforcement and Impacts on Health and Safety in the Context of Different Legislative Frameworks Governing Sex Work Globally,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 121–140. doi: 10.1007/978-3-030-64171-9<sub>7</sub>.</li>
+<li>J. Iversen, P. Long, A. Lutnick, and L. Maher, “Patterns and Epidemiology of Illicit Drug Use Among Sex Workers Globally: A Systematic Review,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 95–118. doi: 10.1007/978-3-030-64171-9<sub>6</sub>.</li>
+<li>G. Abel and C. Healy, “Sex Worker-Led Provision of Services in New Zealand: Optimising Health and Safety in a Decriminalised Context,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 175–187. doi: 10.1007/978-3-030-64171-9<sub>10</sub>.</li>
+<li>S. Schwartz, N. Viswasam, and P. Abdalla, “Integrated Interventions to Address Sex Workers’ Needs and Realities: Academic and Community Insights on Incorporating Structural, Behavioural, and Biomedical Approaches,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 231–253. doi: 10.1007/978-3-030-64171-9<sub>13</sub>.</li>
+<li>S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, “Overview and Evidence-Based Recommendations to Address Health and Human Rights Inequities Faced by Sex Workers,” in Sex Work, Health, and Human Rights: Global Inequities, Challenges, and Opportunities for Action, S. M. Goldenberg, R. Morgan Thomas, A. Forbes, and S. Baral, Eds., Cham: Springer International Publishing, 2021, pp. 1–11. doi: 10.1007/978-3-030-64171-9<sub>1</sub>.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org263cb4f"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgf9b1b2a"></a>Care Work<br />
+<div class="outline-text-5" id="text-4-2-6-3">
+<ul class="org-ul">
+<li>Care Work:</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org31a1998"></a>General<br />
+<div class="outline-text-6" id="text-4-2-6-3-1">
+<ul class="org-ul">
+<li>“Care work,” Wikipedia. Oct. 22, 2024. Accessed: Nov. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Care_work&amp;oldid=1252652451">https://en.wikipedia.org/w/index.php?title=Care_work&amp;oldid=1252652451</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc803a11"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org5a2f69c"></a>Misc<br />
+<div class="outline-text-7" id="text-org5a2f69c">
+<ul class="org-ul">
+<li>“Expert Comment: How concerned should we be about ‘carebots’? | University of Oxford.” Accessed: Nov. 25, 2025. [Online]. Available: <a href="https://www.ox.ac.uk/news/2025-11-18-expert-comment-how-concerned-should-we-be-about-carebots">https://www.ox.ac.uk/news/2025-11-18-expert-comment-how-concerned-should-we-be-about-carebots</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgafca402"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org163d91f"></a>Misc<br />
+<div class="outline-text-7" id="text-org163d91f">
+<ul class="org-ul">
+<li>V. Held, The Ethics of Care: Personal, Political, and Global. Oxford University Press, 2005. doi: 10.1093/0195180992.001.0001.</li>
+
+<li>T. Jackson, “Prosperity as health: Why we need an economy of care for a liveable future,” BMJ, vol. 392, p. r2573, Jan. 2026, doi: 10.1136/bmj.r2573.</li>
+
+<li>“Caste and Care Work | Economic and Political Weekly.” Accessed: Jan. 10, 2026. [Online]. Available: <a href="https://www.epw.in/journal/2026/2/commentary/caste-and-care-work.html">https://www.epw.in/journal/2026/2/commentary/caste-and-care-work.html</a></li>
+
+<li>“Why care is the foundation of a thriving society | Mindvalley Book Club with Tim Jackson.” Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://cusp.ac.uk/themes/aetw/tj-mindvalley-bookclub/">https://cusp.ac.uk/themes/aetw/tj-mindvalley-bookclub/</a></li>
+
+<li>“The Risks of Caring,” The India Forum. Accessed: Nov. 03, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/tiffin/risks-caring">https://www.theindiaforum.in/tiffin/risks-caring</a></li>
+
+<li>“Paradox of Care | Economic and Political Weekly.” Accessed: Oct. 18, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/42/special-articles/paradox-care.html">https://www.epw.in/journal/2025/42/special-articles/paradox-care.html</a></li>
+
+<li>“Would my relationship with dad survive his predatory caregiver? | Psyche Turning points.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://psyche.co/turning-points/would-my-relationship-with-dad-survive-his-predatory-caregiver">https://psyche.co/turning-points/would-my-relationship-with-dad-survive-his-predatory-caregiver</a></li>
+
+<li>“Monthly Review | Care is a relative term,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/2023/12/01/care-is-a-relative-term/">https://monthlyreview.org/2023/12/01/care-is-a-relative-term/</a></li>
+
+<li>Council on Urban Initiatives, Council on Urban Initiatives - Bogotá’s Care System, (Sep. 26, 2022). Accessed: Aug. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AdlNk0adDAk">https://www.youtube.com/watch?v=AdlNk0adDAk</a></li>
+
+<li>“Perils of Care Work | Economic and Political Weekly.” Accessed: Jul. 19, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/26-27/book-reviews/perils-care-work.html">https://www.epw.in/journal/2025/26-27/book-reviews/perils-care-work.html</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4e3d771"></a>Core<br /></li>
+<li><a id="orgcad2196"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgcdc4eb3"></a>Transdisciplinary Studies, Interdisciplinary Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="org051b3c5"></a>Feminist Political Ecology<br />
+<div class="outline-text-8" id="text-org051b3c5">
+<ul class="org-ul">
+<li>M. Gómez, A. K. Voss, and E. Farrelly, “Meanings and Practices of Care in Feminist Political Ecology: An Intergenerational Conversation with Khayaat Fakier and Wendy Harcourt,” in Contours of Feminist Political Ecology, W. Harcourt, A. Agostino, R. Elmhirst, M. Gómez, and P. Kotsila, Eds., Cham: Springer International Publishing, 2023, pp. 155–176. doi: 10.1007/978-3-031-20928-4<sub>7</sub>.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbf68052"></a>NeuroScience, Economics<br />
+<div class="outline-text-8" id="text-orgbf68052">
+<ul class="org-ul">
+<li>T. Singer and M. Ricard, Caring Economics. New York: St Martin’s Press, 2015.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org0efbf73"></a>Texts<br />
+<div class="outline-text-7" id="text-org0efbf73">
+<ul class="org-ul">
+<li>T. Jackson, The Care Economy. Cambridge, UK Hoboken, NJ, USA: Polity Pr, 2025.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. Lutz, The Backstage of the Care Economy: Transnational Perspectives on the Commercialisation of Care. London Las Vegas, NV: Pluto Pr, 2025.</li>
+<li>S. Barca, Workers of the Earth: Labour, Ecology and Reproduction in the Age of Climate Change. Erscheinungsort nicht ermittelbar: Pluto Pr, 2024.</li>
+<li>N. Folbre, Making Care Work: Why Our Economy Should Put People First. Oakland, California: University of California Press, 2026.</li>
+<li>P. Nadasen, Care: The Highest Stage of Capitalism. Chicago, IL: Haymarket Books, 2023.</li>
+<li>S. Razavi, “The Political and Social Economy of Care in a Development Context: Conceptual Issues, Research Questions and Policy Options”.</li>
+
+<li>M. Daly, Ed., Care Work: The Quest for Security. London: International Labour Office, 2002.</li>
+<li>M. H. Meyer, Ed., Care Work: Gender, Labor, and the Welfare State, 1st edition. Routledge, 2002.</li>
+
+<li>J. Boddy, C. Cameron, and P. Moss, Eds., Care Work: Present and Future, 1st edition. London New York: Routledge, 2005.</li>
+
+<li>C. Benoit and H. Hallgrimsdottir, Valuing Care Work: Comparative Perspectives. University of Toronto Press, 2011.</li>
+
+<li>T. Kröger and S. Yeandle, Eds., Combining Paid Work and Family Care: Policies and Experiences in International Perspective, 1st edition. Policy Press, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd34c009"></a>Geisha<br />
+<div class="outline-text-7" id="text-orgd34c009">
+<ul class="org-ul">
+<li>Geisha: <a href="https://tinyurl.com/258mn5xz">https://tinyurl.com/258mn5xz</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8c482c0"></a>Brave AI<br />
+<ul class="org-ul">
+<li><a id="orgb48db9e"></a>Q<br />
+<div class="outline-text-8" id="text-orgb48db9e">
+<ul class="org-ul">
+<li>Care Work Books Written By Post Modern Economists</li>
+</ul>
+</div>
+</li>
+<li><a id="org5f9b058"></a>A<br />
+<ul class="org-ul">
+<li><a id="orga4f4414"></a>Annotated Resources<br />
+<div class="outline-text-9" id="text-orga4f4414">
+<ul class="org-ul">
+<li>The search results do not explicitly categorize authors of care work
+books as "post-modern economists," but they highlight several
+contemporary economists and scholars who approach the care economy
+through narrative, philosophical, feminist, and critical lenses
+rather than traditional neoclassical models.</li>
+
+<li><b><b>Tim Jackson</b></b> is a prominent economist whose recent work, <b><b><b>The
+Care Economy</b></b></b>, shifts away from standard economic analysis toward
+a narrative-driven, philosophical approach. He argues that
+<b><b>prosperity should be understood in terms of health rather than
+wealth</b></b> and that the economy’s purpose should be care rather than
+growth. His writing blends economics with history, poetry, and
+mythology, reflecting a post-modern or post-growth sensibility that
+critiques capitalist growth paradigms.</li>
+
+<li><b><b>Helma Lutz</b></b>, a sociologist and former professor of Women’s and
+Gender Studies, authored <b><b><b>The Backstage of the Care Economy</b></b></b>
+(published May 2025). This work examines the <b><b>commercialization of
+migrant care work</b></b> and transnational motherhood, grounding its
+analysis in radical social thought and feminist critiques of
+capitalism. While sociological rather than strictly economic, it is
+cited as a key text in reshaping economic thinking on care and
+migration.</li>
+
+<li><b><b>Premilla Nadasen</b></b>, a historian, wrote <b><b><b>Care</b></b></b>, which traces
+the care economy’s roots in <b><b>racial capitalism</b></b> and slavery to the
+modern "care-industrial complex." Her work highlights how the
+exploitation of reproductive labor serves profit motives and
+emphasizes <b><b>collective care and resistance</b></b> by low-wage workers,
+immigrants, and women of color.</li>
+
+<li>Other relevant perspectives include:
+<ul class="org-ul">
+<li><b><b>Feminist Economics</b></b>: Scholars like <b><b>Naila Razavi</b></b> and <b><b>Nancy
+Folbre</b></b> are cited for establishing that unpaid care work is
+crucial to human wellbeing and for developing models like the
+<b><b>care diamond</b></b> to link market accumulation with social
+reproduction.</li>
+<li><b><b>Ecological Economics</b></b>: Researchers like <b><b>Paola Barca</b></b> and
+<b><b>Lang</b></b> discuss <b><b>"Earthcare"</b></b> and indigenous care ethics,
+linking care for the environment and community to social
+reproduction and climate resilience.</li>
+<li><b><b>Health Care Reform</b></b>: Economists <b><b>Liran Einav</b></b> and <b><b>Amy
+Finkelstein</b></b> propose a <b><b>reboot of U.S. health care</b></b> with
+universal basic coverage, focusing on systemic efficiency rather
+than traditional care economy theory.</li>
+</ul></li>
+
+<li>These works collectively represent a shift in economic thought
+toward <b><b>care, sustainability, and social reproduction</b></b>, often
+employing interdisciplinary methods that challenge conventional
+economic assumptions.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org51b96d9"></a>Misc<br />
+<div class="outline-text-6" id="text-4-2-6-3-6">
+<ul class="org-ul">
+<li>“Analysing the Co-constitution of Unpaid Care Labour and Paid Work | Economic and Political Weekly.” Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/26-27/review-gender-studies/analysing-co-constitution-unpaid-care-labour-and.html">https://www.epw.in/journal/2025/26-27/review-gender-studies/analysing-co-constitution-unpaid-care-labour-and.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How Care Shapes Work | Economic and Political Weekly.” Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/26-27/review-gender-studies/how-care-shapes-work.html">https://www.epw.in/journal/2025/26-27/review-gender-studies/how-care-shapes-work.html</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>K. Faulke, Every Kind of People: A Journey into the Heart of Care Work. The BBC Radio 4 Book of the Week. Penguin, 2024.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Recognising Care Work(ers) | Economic and Political Weekly.” Accessed: May 31, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2024/26-27/review-womens-studies/recognising-care-workers.html">https://www.epw.in/journal/2024/26-27/review-womens-studies/recognising-care-workers.html</a></li>
+
+<li>“How to get the most out of caregiving | Psyche Guides,” Psyche. Accessed: Jul. 11, 2024. [Online]. Available: <a href="https://psyche.co/guides/how-to-get-the-most-out-of-caregiving">https://psyche.co/guides/how-to-get-the-most-out-of-caregiving</a></li>
+
+<li>B. P. Cumbers Lavinia Steinfort,Jerry van den Berge,Andrew, “Care, public services and the importance of integrated local public ownership | Transnational Institute.” Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://www.tni.org/en/publication/care-public-services-and-the-importance-of-integrated-local-public-ownership">https://www.tni.org/en/publication/care-public-services-and-the-importance-of-integrated-local-public-ownership</a></li>
+
+<li>“No Time for Care Work? - L!NX | was sonst.” Accessed: Mar. 25, 2025. [Online]. Available: <a href="https://linx.rosalux.de/en/no-time-for-care-work">https://linx.rosalux.de/en/no-time-for-care-work</a></li>
+
+<li>“Putting care at the center | inGenere.” Accessed: Oct. 06, 2024. [Online]. Available: <a href="https://www.ingenere.it/en/articles/putting-care-center">https://www.ingenere.it/en/articles/putting-care-center</a></li>
+
+<li>“Humans are uniquely reliant on caregivers. This isn’t a weakness, but a wondrous gift | Psyche Videos.” Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://psyche.co/videos/humans-are-uniquely-reliant-on-caregivers-this-isnt-a-weakness-but-a-wondrous-gift">https://psyche.co/videos/humans-are-uniquely-reliant-on-caregivers-this-isnt-a-weakness-but-a-wondrous-gift</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4d1466e"></a>Parenting - 'Mother'ing<br />
+<ol class="org-ol">
+<li><a id="org2b3ca47"></a>Moms<br />
+<div class="outline-text-6" id="text-4-2-6-4-1">
+<ul class="org-ul">
+<li>Moms:</li>
+</ul>
+</div>
+</li>
+<li><a id="orge7dfcaf"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org088827e" class="outline-4">
+<h4 id="org088827e"><span class="section-number-4">4.2.7.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-2-7">
+<ul class="org-ul">
+<li>T. M. P. Reader, “For Women in the Workplace, the Struggle Is Real,” The MIT Press Reader. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/for-women-in-the-workplace-the-struggle-is-real/">https://thereader.mitpress.mit.edu/for-women-in-the-workplace-the-struggle-is-real/</a></li>
+
+<li>S. R. Suman, “Why We Celebrate Overworked Mothers Instead Of Rested Ones And Why It Needs to Change,” Feminism in India. Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/02/04/why-we-celebrate-overworked-mothers-instead-of-rested-ones-and-why-it-needs-to-change/">https://feminisminindia.com/2025/02/04/why-we-celebrate-overworked-mothers-instead-of-rested-ones-and-why-it-needs-to-change/</a></li>
+
+<li>“Putting care at the center | inGenere.” Accessed: Oct. 06, 2024. [Online]. Available: <a href="https://www.ingenere.it/en/articles/putting-care-center">https://www.ingenere.it/en/articles/putting-care-center</a></li>
+
+<li>L. Frankel, Nice Girls Don’t Get the Corner Office: 101 Unconscious Mistakes Women Make That Sabotage Their Careers. Grand Central Publishing, 2004.</li>
+<li>L. P. Frankel, Nice Girls Don’t Get the Corner Office: Unconscious Mistakes Women Make That Sabotage Their Careers. Hachette UK, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9c517f6" class="outline-2">
+<h2 id="org9c517f6"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org5e20ee6" class="outline-3">
+<h3 id="org5e20ee6"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org063afe2" class="outline-2">
+<h2 id="org063afe2"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org3ce5bad" class="outline-3">
+<h3 id="org3ce5bad"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+</div>
+<div id="outline-container-orgc1ba3a8" class="outline-3">
+<h3 id="orgc1ba3a8"><span class="section-number-3">6.2.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-orgf6c0d62" class="outline-4">
+<h4 id="orgf6c0d62"><span class="section-number-4">6.2.1.</span> Journal Articles</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>“Feminist Economics – Feminist Economics journal official website.” Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://feministeconomics.org/">https://feministeconomics.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org468fe33" class="outline-4">
+<h4 id="org468fe33"><span class="section-number-4">6.2.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgdc33ab8" class="outline-3">
+<h3 id="orgdc33ab8"><span class="section-number-3">6.3.</span> Texts</h3>
+</div>
+</div>
+<div id="outline-container-org763cc0a" class="outline-2">
+<h2 id="org763cc0a"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>L. Parramore, “Study Finds Male and Female Economists See the Economy Differently &#x2013; Even When Politically Aligned. It Matters for Everyone.,” Institute for New Economic Thinking. Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/blog/study-finds-male-and-female-economists-see-the-economy-differently-even-when-politically-aligned-it-matters-for-everyone">https://www.ineteconomics.org/perspectives/blog/study-finds-male-and-female-economists-see-the-economy-differently-even-when-politically-aligned-it-matters-for-everyone</a></li>
+
+<li>M. Javdani, “Engendering Pluralism: How Gender Diversity Can Transform Economics,” Institute for New Economic Thinking. Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/blog/engendering-pluralism-how-gender-diversity-can-transform-economics">https://www.ineteconomics.org/perspectives/blog/engendering-pluralism-how-gender-diversity-can-transform-economics</a></li>
+
+<li>M. Javdani, “Engendering Pluralism: How Gender Diversity Can Transform Economics,” Institute for New Economic Thinking. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/blog/engendering-pluralism-how-gender-diversity-can-transform-economics">https://www.ineteconomics.org/perspectives/blog/engendering-pluralism-how-gender-diversity-can-transform-economics</a></li>
+
+<li>K. Marçal, Mother of Invention: How Good Ideas Get Ignored in an Economy Built for Men. HarperCollins UK, 2021.</li>
+
+<li>T. C. Collective, A. Chatzidakis, J. Hakim, J. Litter, and C. Rottenberg, The Care Manifesto: The Politics of Interdependence. Verso Books, 2020.</li>
+
+<li>C. Beasley, Sexual Economyths: Conceiving a Feminist Economics. St. Martin’s Press, 1994.</li>
+
+<li>C. Bauhardt and W. Harcourt, Feminist Political Ecology and the Economics of Care: In Search of Economic Alternatives. Routledge, 2018.</li>
+
+<li>J. Ghosh, Ed., Informal Women Workers in the Global South: Policies and Practices for the Formalisation of Women’s Employment in Developing Economies, 1st edition. Routledge, 2021.</li>
+
+<li>Y. Varoufakis, “Economics Is Irredeemably Sexist | by Yanis Varoufakis,” Project Syndicate. Accessed: Mar. 12, 2024. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/philosophical-sexism-deters-women-from-economics-by-yanis-varoufakis-2024-03">https://www.project-syndicate.org/commentary/philosophical-sexism-deters-women-from-economics-by-yanis-varoufakis-2024-03</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:50</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

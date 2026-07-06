@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Abortion</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Abortion</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org905caed">1. General</a></li>
+<li><a href="#org4a8a755">2. STEMM</a>
+<ul>
+<li><a href="#orgfb518d0">2.1. Computer Science And Engineering</a>
+<ul>
+<li><a href="#org29df540">2.1.1. Fair Tech</a></li>
+<li><a href="#org6012e8b">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org22e8a9c">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org017205c">3. Worldly Matters</a>
+<ul>
+<li><a href="#org53ad538">3.1. Nation States</a>
+<ul>
+<li><a href="#org75ab04d">3.1.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orge336a2e">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgda05179">4. Arts</a>
+<ul>
+<li><a href="#orgbcd4b28">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgfe5ae1b">5. Special Topics</a></li>
+<li><a href="#orgbece333">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org905caed" class="outline-2">
+<h2 id="org905caed"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org4a8a755" class="outline-2">
+<h2 id="org4a8a755"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgfb518d0" class="outline-3">
+<h3 id="orgfb518d0"><span class="section-number-3">2.1.</span> Computer Science And Engineering</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org29df540" class="outline-4">
+<h4 id="org29df540"><span class="section-number-4">2.1.1.</span> Fair Tech</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org87b5350"></a>Electronic Frontier Foundation<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li>C. Romero, “❌ How Meta Is Censoring Abortion | EFFector 37.13,” Electronic Frontier Foundation. Accessed: Oct. 02, 2025. [Online]. Available: <a href="https://www.eff.org/deeplinks/2025/10/how-meta-censoring-abortion-effector-3713">https://www.eff.org/deeplinks/2025/10/how-meta-censoring-abortion-effector-3713</a></li>
+
+<li>“Decoding Meta’s Advertising Policies for Abortion Content,” Electronic Frontier Foundation. Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://www.eff.org/pages/decoding-metas-advertising-policies-abortion-content">https://www.eff.org/pages/decoding-metas-advertising-policies-abortion-content</a></li>
+<li>L. Femia, “Location Tracking Tools Endanger Abortion Access. Lawmakers Must Act Now.,” Electronic Frontier Foundation. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.eff.org/deeplinks/2024/12/location-tracking-tools-endanger-abortion-access-lawmakers-must-act-now">https://www.eff.org/deeplinks/2024/12/location-tracking-tools-endanger-abortion-access-lawmakers-must-act-now</a></li>
+<li>“Stop Censoring Abortion: Help EFF and Repro Uncensored End Digital Suppression,” Electronic Frontier Foundation. Accessed: Jun. 22, 2025. [Online]. Available: <a href="https://www.eff.org/pages/stop-censoring-abortion">https://www.eff.org/pages/stop-censoring-abortion</a></li>
+<li>D. Barnett, “Digital Security and Privacy Tips for Those Involved in Abortion Access,” Electronic Frontier Foundation, May 04, 2022. <a href="https://www.eff.org/deeplinks/2022/05/digital-security-and-privacy-tips-those-involved-abortion-access">https://www.eff.org/deeplinks/2022/05/digital-security-and-privacy-tips-those-involved-abortion-access</a> (accessed May 06, 2022).</li>
+<li>D. Barnett, “Security and Privacy Tips for People Seeking An Abortion,” Electronic Frontier Foundation, Jun. 23, 2022. <a href="https://www.eff.org/deeplinks/2022/06/security-and-privacy-tips-people-seeking-abortion">https://www.eff.org/deeplinks/2022/06/security-and-privacy-tips-people-seeking-abortion</a> (accessed Jun. 27, 2022).</li>
+<li>H. Tsukayama, “Reproductive Privacy Requires Data Privacy,” Electronic Frontier Foundation, May 10, 2022. <a href="https://www.eff.org/deeplinks/2022/05/reproductive-privacy-requires-data-privacy">https://www.eff.org/deeplinks/2022/05/reproductive-privacy-requires-data-privacy</a> (accessed May 11, 2022).</li>
+<li>K. Gullo, “Location Data Tracks Abortion Clinic Visits. Here’s What to Know,” Electronic Frontier Foundation. Accessed: Mar. 16, 2024. [Online]. Available: <a href="https://www.eff.org/deeplinks/2024/03/location-data-tracks-abortion-clinic-visits-heres-what-know">https://www.eff.org/deeplinks/2024/03/location-data-tracks-abortion-clinic-visits-heres-what-know</a></li>
+<li>P. Release, “EFF and Repro Uncensored Launch #StopCensoringAbortion Campaign,” Electronic Frontier Foundation. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://www.eff.org/press/releases/eff-and-repro-uncensored-launch-stopcensoringabortion-campaign">https://www.eff.org/press/releases/eff-and-repro-uncensored-launch-stopcensoringabortion-campaign</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0a441c1"></a>Privacy International<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“Privacy and the Body: Privacy International’s response to the U.S. Supreme Court’s attack on reproductive rights,” Privacy International. <a href="http://privacyinternational.org/news-analysis/4938/privacy-and-body-privacy-internationals-response-us-supreme-courts-attack">http://privacyinternational.org/news-analysis/4938/privacy-and-body-privacy-internationals-response-us-supreme-courts-attack</a> (accessed Aug. 01, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6012e8b" class="outline-4">
+<h4 id="org6012e8b"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“Guide to Abortion Privacy,” Digital Defense Fund. <a href="https://digitaldefensefund.org/ddf-guides/abortion-privacy">https://digitaldefensefund.org/ddf-guides/abortion-privacy</a> (accessed Jul. 08, 2022).</li>
+<li>S. Bushwick, “Yes, Phones Can Reveal if Someone Gets an Abortion,” Scientific American. <a href="https://www.scientificamerican.com/article/yes-phones-can-reveal-if-someone-gets-an-abortion/">https://www.scientificamerican.com/article/yes-phones-can-reveal-if-someone-gets-an-abortion/</a> (accessed May 20, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org22e8a9c" class="outline-3">
+<h3 id="org22e8a9c"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>K. Thomas, “The Abortion Hotline Meta Wants to Go Dark,” Electronic Frontier Foundation. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.eff.org/pages/silencing-abortion-providers-meta">https://www.eff.org/pages/silencing-abortion-providers-meta</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org017205c" class="outline-2">
+<h2 id="org017205c"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org53ad538" class="outline-3">
+<h3 id="org53ad538"><span class="section-number-3">3.1.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org75ab04d" class="outline-4">
+<h4 id="org75ab04d"><span class="section-number-4">3.1.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org48cc714"></a>General<br /></li>
+<li><a id="orga65c42a"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org607e757"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org512637e"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="orgec12c9b"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org97cdcb6"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="orgb9a18e5"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgbf6bf6e"></a>Special Topics<br /></li>
+<li><a id="org5b534c3"></a>Misc<br />
+<div class="outline-text-5" id="text-3-1-1-6">
+<ul class="org-ul">
+<li>F. I. I. Team, “Safe Abortion Advocates Call For Urgent Action To Ensure Universal, Stigma-free Access To Services In India,” Feminism in India. Accessed: Sep. 28, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/28/safe-abortion-advocates-call-for-urgent-action-to-ensure-universal-stigma-free-access-to-services-in-india/">https://feminisminindia.com/2025/09/28/safe-abortion-advocates-call-for-urgent-action-to-ensure-universal-stigma-free-access-to-services-in-india/</a></li>
+
+<li>A. Prasad, “Study Finds Inconsistencies, Delays And Rights Violations In Abortion Court Rulings,” Feminism in India. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/27/study-finds-inconsistencies-delays-rights-violations-court-rulings-abortion/">https://feminisminindia.com/2025/08/27/study-finds-inconsistencies-delays-rights-violations-court-rulings-abortion/</a></li>
+
+<li>A. Sahgal, “Pro-Life Or Anti-Choice? Reading Between The Signs At India’s ‘March For Life,’” Feminism in India. Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/11/pro-life-or-anti-choice-reading-between-the-signs-at-indias-march-for-life/">https://feminisminindia.com/2025/08/11/pro-life-or-anti-choice-reading-between-the-signs-at-indias-march-for-life/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Dasgupta, “Abortion And Autonomy: A Look Into The Extent Of Control Women Possess Over Their Bodies,” Feminism in India. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/02/20/abortion-and-autonomy-a-look-into-the-extent-of-control-women-possess-over-their-bodies/">https://feminisminindia.com/2025/02/20/abortion-and-autonomy-a-look-into-the-extent-of-control-women-possess-over-their-bodies/</a></li>
+<li>S. Kumar, “Religion And Abortion In India: A Journey Of Contradictions,” Feminism in India. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/02/20/religion-and-abortion-in-india-a-journey-of-contradictions/">https://feminisminindia.com/2025/02/20/religion-and-abortion-in-india-a-journey-of-contradictions/</a></li>
+<li>T. Sinha, “Abortions Are Still Traumatic For Pregnant People In India,” Feminism in India. Accessed: Apr. 03, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/04/03/abortions-are-still-traumatic-for-pregnant-people-in-india/">https://feminisminindia.com/2024/04/03/abortions-are-still-traumatic-for-pregnant-people-in-india/</a></li>
+<li>D. Dhar, “Supreme Court Of India Grants Woman Permission To Abort At 24 Weeks,” Feminism In India, Jul. 28, 2022. <a href="https://feminisminindia.com/2022/07/29/supreme-court-of-india-grants-woman-permission-to-abort-at-24-weeks/">https://feminisminindia.com/2022/07/29/supreme-court-of-india-grants-woman-permission-to-abort-at-24-weeks/</a> (accessed Aug. 01, 2022).</li>
+
+<li>“How Biases amongst Heathcare Workers in Kerala Impede Access to Abortion,” The India Forum. Accessed: Aug. 22, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/health/how-biases-amongst-heathcare-workers-kerala-impede-access-abortion">https://www.theindiaforum.in/health/how-biases-amongst-heathcare-workers-kerala-impede-access-abortion</a></li>
+<li>“When Voices for the ‘Unborn Child’ Silence Women,” The India Forum. Accessed: Mar. 16, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/gender/voices-unborn-child-silence-women">https://www.theindiaforum.in/gender/voices-unborn-child-silence-women</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge336a2e" class="outline-3">
+<h3 id="orge336a2e"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>W. H. Women, “WHW: abortion and contraceptives,” Women Help Women. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://womenhelp.org/en/">https://womenhelp.org/en/</a></li>
+<li>“Meta is Removing Abortion Advocates’ Accounts Without Warning,” Electronic Frontier Foundation. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.eff.org/pages/meta-removing-abortion-advocates-accounts-without-warning">https://www.eff.org/pages/meta-removing-abortion-advocates-accounts-without-warning</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Monthly Review | Abortion—The Real Irish Lessons,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/2023/02/01/abortion-the-real-irish-lessons/">https://monthlyreview.org/2023/02/01/abortion-the-real-irish-lessons/</a></li>
+
+<li>“Inside the Abortion Underground: Rebecca Grant on Why Outlawing Abortion ‘Does Not Make It Go Away,’” Democracy Now! Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/6/27/inside_the_abortion_underground_rebecca_grant">https://www.democracynow.org/2025/6/27/inside_the_abortion_underground_rebecca_grant</a></li>
+
+<li>“Coercion,” Pluto Press. Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://www.plutobooks.com/9780745350615/coercion/">https://www.plutobooks.com/9780745350615/coercion/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda05179" class="outline-2">
+<h2 id="orgda05179"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgbcd4b28" class="outline-3">
+<h3 id="orgbcd4b28"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgfe5ae1b" class="outline-2">
+<h2 id="orgfe5ae1b"><span class="section-number-2">5.</span> Special Topics</h2>
+</div>
+<div id="outline-container-orgbece333" class="outline-2">
+<h2 id="orgbece333"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>L. Femia, “Four Years After Dobbs, Anti-Abortion Lawmakers Keep Coming for Online Speech,” Electronic Frontier Foundation. Accessed: Jun. 26, 2026. [Online]. Available: <a href="https://www.eff.org/deeplinks/2026/06/four-years-after-dobbs-anti-abortion-lawmakers-keep-coming-online-speech">https://www.eff.org/deeplinks/2026/06/four-years-after-dobbs-anti-abortion-lawmakers-keep-coming-online-speech</a></li>
+
+<li>T. I. Briefing, “Beyond Dobbs: How Abortion Bans Enforce State-Sanctioned Violence,” The Intercept. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://theintercept.com/2025/08/15/briefing-podcast-dobbs-abortion-bans/">https://theintercept.com/2025/08/15/briefing-podcast-dobbs-abortion-bans/</a></li>
+
+<li>“Liberté, If Not Yet Égalité - IAS News | Institute for Advanced Study.” Accessed: Mar. 09, 2024. [Online]. Available: <a href="https://www.ias.edu/news/liberte-if-not-yet-egalite">https://www.ias.edu/news/liberte-if-not-yet-egalite</a></li>
+
+<li>V. Shiva and M. Mies, Ecofeminism. Zed Books Ltd., 2014.</li>
+
+<li>“The Science of Abortion Rights,” Scientific American. <a href="https://www.scientificamerican.com/report/the-science-of-abortion-rights/">https://www.scientificamerican.com/report/the-science-of-abortion-rights/</a> (accessed May 10, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Nature’s 10.” <a href="https://www.nature.com/immersive/d41586-022-04185-3/index.html">https://www.nature.com/immersive/d41586-022-04185-3/index.html</a> (accessed Dec. 16, 2022).</li>
+<li>“Diana Greene Foster, PhD | Bixby Center for Global Reproductive Health.” <a href="https://bixbycenter.ucsf.edu/diana-greene-foster-phd">https://bixbycenter.ucsf.edu/diana-greene-foster-phd</a> (accessed Dec. 16, 2022).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

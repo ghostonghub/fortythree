@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gender</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Gender</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org973256b">1. General</a></li>
+<li><a href="#org8cbcf30">2. STEMM</a>
+<ul>
+<li><a href="#orgae92309">2.1. Mathematics</a></li>
+<li><a href="#org537dde7">2.2. CSE</a></li>
+<li><a href="#org69c2a21">2.3. Bulletin of the Atomic Scientists</a></li>
+<li><a href="#orgb19706d">2.4. Biology</a></li>
+<li><a href="#org72f7659">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc64d4de">3. Worldly Matters</a>
+<ul>
+<li><a href="#org6370cf5">3.1. Space and Time</a></li>
+<li><a href="#org5e7fa56">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#orgbdce855">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orgf7e7889">3.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orga0c8918">3.4.1. Events</a></li>
+<li><a href="#org4cdc4d4">3.4.2. Nation States</a></li>
+</ul>
+</li>
+<li><a href="#orgd9f6070">3.5. Business Studies, Misc</a></li>
+<li><a href="#org6403323">3.6. Humanities, Misc</a></li>
+<li><a href="#org54b0373">3.7. Security Studies, Misc</a></li>
+<li><a href="#org67cfab3">3.8. Communication, Misc</a></li>
+<li><a href="#orgfd3b8dd">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org602e3fe">4. Core</a>
+<ul>
+<li><a href="#org12b785d">4.1. Education</a></li>
+<li><a href="#orge3b242e">4.2. Women</a></li>
+<li><a href="#org457b411">4.3. Men</a>
+<ul>
+<li><a href="#orgf6e3e5e">4.3.1. General</a></li>
+<li><a href="#orgb308e89">4.3.2. STEMM</a></li>
+<li><a href="#org6892d7a">4.3.3. Worldly Matters</a></li>
+<li><a href="#orgf374961">4.3.4. Arts</a></li>
+<li><a href="#orgd4d9f86">4.3.5. Special Topics</a></li>
+<li><a href="#orge3ab751">4.3.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgab62ac0">4.4. Non Binary Gender</a>
+<ul>
+<li><a href="#org374c52f">4.4.1. General</a></li>
+<li><a href="#org8377fbd">4.4.2. Philosophy</a></li>
+<li><a href="#orgcdec7c3">4.4.3. STEMM</a></li>
+<li><a href="#orgda4ea46">4.4.4. Worldly Matters</a></li>
+<li><a href="#org3875256">4.4.5. Arts</a></li>
+<li><a href="#orgbed765a">4.4.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgdecb4d3">5. Arts</a>
+<ul>
+<li><a href="#org8ce340f">5.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7b2a23e">6. Special Topics</a>
+<ul>
+<li><a href="#org0d08a75">6.1. Book Series</a></li>
+<li><a href="#org22acbb2">6.2. People's Archive of Rural India</a></li>
+</ul>
+</li>
+<li><a href="#orgf67fe21">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org973256b" class="outline-2">
+<h2 id="org973256b"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org8cbcf30" class="outline-2">
+<h2 id="org8cbcf30"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgae92309" class="outline-3">
+<h3 id="orgae92309"><span class="section-number-3">2.1.</span> Mathematics</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>E. Cheng, <b>x+y: A Mathematician’s Manifesto for Rethinking Gender.</b> Profile Books, 2020.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org537dde7" class="outline-3">
+<h3 id="org537dde7"><span class="section-number-3">2.2.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>K. P. L. Coopamootoo, E. M. Redmiles, and M. Wei, “Online Safety Through the Lens of Gender and Sexuality,” IEEE Security &amp; Privacy, vol. 23, no. 04, pp. 8–10, Jul. 2025, doi: 10.1109/MSEC.2025.3585752.</li>
+
+<li>“Online Gender Based Violence Multilingual Guide • Software Freedom Law Center, India.” Accessed: Jun. 11, 2024. [Online]. Available: <a href="https://sflc.in/online-gender-based-violence-multilingual-guide/">https://sflc.in/online-gender-based-violence-multilingual-guide/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org69c2a21" class="outline-3">
+<h3 id="org69c2a21"><span class="section-number-3">2.3.</span> Bulletin of the Atomic Scientists</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>D. Stover, “Gender equality: Why is it still up for debate?,” Bulletin of the Atomic Scientists. Accessed: Jun. 22, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/06/gender-equality-why-is-it-still-up-for-debate/">https://thebulletin.org/2024/06/gender-equality-why-is-it-still-up-for-debate/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb19706d" class="outline-3">
+<h3 id="orgb19706d"><span class="section-number-3">2.4.</span> Biology</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>Eve: How The Female Body Drove 200 Million Years of Human Evolution. London, 2023.</li>
+<li>B. Erickson and C. Mortimer-Sandilands, Queer Ecologies: Sex, Nature, Politics, Desire. Bloomington, Ind.: Indiana University Press, 2010.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org72f7659" class="outline-3">
+<h3 id="org72f7659"><span class="section-number-3">2.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>C. Simms, “Brain differences between sexes get more pronounced from puberty,” Nature, Feb. 2026, doi: 10.1038/d41586-026-00349-7.</li>
+
+<li>“Social Institutions &amp; Gender Index Dashboard,” OECD. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://www.oecd.org/en/data/dashboards/social-institutions-gender-index.html">https://www.oecd.org/en/data/dashboards/social-institutions-gender-index.html</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc64d4de" class="outline-2">
+<h2 id="orgc64d4de"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6370cf5" class="outline-3">
+<h3 id="org6370cf5"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-org5e7fa56" class="outline-3">
+<h3 id="org5e7fa56"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-orgbdce855" class="outline-3">
+<h3 id="orgbdce855"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orgf7e7889" class="outline-3">
+<h3 id="orgf7e7889"><span class="section-number-3">3.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orga0c8918" class="outline-4">
+<h4 id="orga0c8918"><span class="section-number-4">3.4.1.</span> Events</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>“International Non-Binary People’s Day,” Wikipedia. Jul. 22, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Non-Binary_People%27s_Day&amp;oldid=1099843501">https://en.wikipedia.org/w/index.php?title=International_Non-Binary_People%27s_Day&amp;oldid=1099843501</a></li>
+<li>“International Women’s Day,” Wikipedia. Nov. 03, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Women%27s_Day&amp;oldid=1119811588">https://en.wikipedia.org/w/index.php?title=International_Women%27s_Day&amp;oldid=1119811588</a></li>
+<li>“International Men’s Day,” Wikipedia. Nov. 19, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Men%27s_Day&amp;oldid=1122696772">https://en.wikipedia.org/w/index.php?title=International_Men%27s_Day&amp;oldid=1122696772</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4cdc4d4" class="outline-4">
+<h4 id="org4cdc4d4"><span class="section-number-4">3.4.2.</span> Nation States</h4>
+<div class="outline-text-4" id="text-3-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgeda1cdb"></a>India<br />
+<ol class="org-ol">
+<li><a id="orgb7f412f"></a>General<br /></li>
+<li><a id="org2e2c3af"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org25d620d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org1a8c45f"></a>World<br />
+<ul class="org-ul">
+<li><a id="org9120140"></a>Misc<br />
+<div class="outline-text-7" id="text-org9120140">
+<ul class="org-ul">
+<li>M. Chari, “New Transgender Bill Will Have Us Believe A Whole, Vibrant Community Does Not Exist,” BehanBox. Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://behanbox.com/2026/03/20/new-transgender-bill-will-have-us-believe-a-whole-vibrant-community-does-not-exist/">https://behanbox.com/2026/03/20/new-transgender-bill-will-have-us-believe-a-whole-vibrant-community-does-not-exist/</a></li>
+
+<li>Z. Hasan, Forging Identities: Gender, Communities, And The State In India. Routledge.</li>
+
+<li>M. Chongtham, “The Karnataka Reservation Bill And The Politics Of Caste And Gender Inclusion,” Feminism in India. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/28/the-karnataka-reservation-bill-and-the-politics-of-caste-and-gender-inclusion/">https://feminisminindia.com/2025/08/28/the-karnataka-reservation-bill-and-the-politics-of-caste-and-gender-inclusion/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org5d7beee"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org24d33b2"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org07a2183"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgda4ce75"></a>Texts<br />
+<div class="outline-text-7" id="text-orgda4ce75">
+<ul class="org-ul">
+<li>L. Fernandes, Routledge Handbook of Gender in South Asia. Routledge, 2021.</li>
+<li>“Gender in South Asia And Beyond: Essays in Honour of Patricia Jeffery,” Zubaan. Accessed: Mar. 19, 2024. [Online]. Available: <a href="https://zubaanbooks.com/shop/gender-in-south-asia-and-beyond-essays-in-honour-of-patricia-jeffery/">https://zubaanbooks.com/shop/gender-in-south-asia-and-beyond-essays-in-honour-of-patricia-jeffery/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd821b4b"></a>Articles, Essays<br />
+<div class="outline-text-7" id="text-orgd821b4b">
+<ul class="org-ul">
+<li>Evans, Alice. <b>“Why Are North and South India so Different on Gender?”</b> Alice Evans, October 6, 2020. <a href="https://www.draliceevans.com/post/why-are-southern-north-eastern-indian-states-more-gender-equal">https://www.draliceevans.com/post/why-are-southern-north-eastern-indian-states-more-gender-equal</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org58ef1fe"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-2-1-6">
+<ul class="org-ul">
+<li>A. Prasad, “‘Queer India Now’: Charting The Diverse, Intersectional Indian Queer Experience,” Feminism in India. Accessed: Jun. 29, 2026. [Online]. Available: <a href="https://feminisminindia.com/2026/06/29/queer-india-now-book-review/">https://feminisminindia.com/2026/06/29/queer-india-now-book-review/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>“Gender-Responsive Just Transition Pathways for India’s Fossil Fuel Regions | Heinrich Böll Stiftung | Regional Office New Delhi.” Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://in.boell.org/en/gender-responsive-jt">https://in.boell.org/en/gender-responsive-jt</a></li>
+<li>“Gender Just Transition | Heinrich Böll Stiftung | Regional Office New Delhi.” Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://in.boell.org/en/2025/02/14/gender-just-transition-toolkit">https://in.boell.org/en/2025/02/14/gender-just-transition-toolkit</a></li>
+<li>“Gender Just Transition | Heinrich Böll Stiftung | Regional Office New Delhi.” Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://in.boell.org/en/gender-just-transition">https://in.boell.org/en/gender-just-transition</a></li>
+<li>“Framing the Gender and Just Transition Discourse in India | Heinrich Böll Stiftung | Regional Office New Delhi.” Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://in.boell.org/en/2025/02/14/framing-gender-and-just-transition-discourse-india">https://in.boell.org/en/2025/02/14/framing-gender-and-just-transition-discourse-india</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd9f6070" class="outline-3">
+<h3 id="orgd9f6070"><span class="section-number-3">3.5.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-org6403323" class="outline-3">
+<h3 id="org6403323"><span class="section-number-3">3.6.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org54b0373" class="outline-3">
+<h3 id="org54b0373"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org67cfab3" class="outline-3">
+<h3 id="org67cfab3"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-orgfd3b8dd" class="outline-3">
+<h3 id="orgfd3b8dd"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>N. Marsicovetere, “Countering gender panic | Transnational Institute.” Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://www.tni.org/en/article/countering-gender-panic">https://www.tni.org/en/article/countering-gender-panic</a></li>
+
+<li>C. Kasif and T. Conversation, “Not just ‘eunuchs’ or sex workers: In ancient Mesopotamia, gender-diverse people held positions of power.” Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://phys.org/news/2026-01-eunuchs-sex-workers-ancient-mesopotamia.html">https://phys.org/news/2026-01-eunuchs-sex-workers-ancient-mesopotamia.html</a></li>
+
+<li>P. Agarwal, “How DEI is misunderstood — and the real route to gender equality,” Nature, vol. 642, no. 8067, pp. 292–294, Jun. 2025, doi: 10.1038/d41586-025-01772-y.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Agarwal, Gender and Green Governance: The Political Economy of Women’s Presence Within and Beyond Community Forestry. Oxford University Press, 2010.</li>
+<li>B. Agarwal and A. Bina, A Field of One’s Own: Gender and Land Rights in South Asia. Cambridge University Press, 1994.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org602e3fe" class="outline-2">
+<h2 id="org602e3fe"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org12b785d" class="outline-3">
+<h3 id="org12b785d"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“Home,” Women’s &amp; Gender Studies at MIT. <a href="http://wgs.mit.edu/home">http://wgs.mit.edu/home</a> (accessed Apr. 04, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge3b242e" class="outline-3">
+<h3 id="orge3b242e"><span class="section-number-3">4.2.</span> Women</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>D. Morris, The Naked Woman. Random House, 2011.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org457b411" class="outline-3">
+<h3 id="org457b411"><span class="section-number-3">4.3.</span> Men</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orgf6e3e5e" class="outline-4">
+<h4 id="orgf6e3e5e"><span class="section-number-4">4.3.1.</span> General</h4>
+</div>
+<div id="outline-container-orgb308e89" class="outline-4">
+<h4 id="orgb308e89"><span class="section-number-4">4.3.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org31f86df"></a>Ecology<br />
+<div class="outline-text-5" id="text-4-3-2-1">
+<ul class="org-ul">
+<li>M. Hultman and P. M. Pulé, Ecological Masculinities: Theoretical Foundations and Practical Guidance, 1st edition. Abingdon New york, NY: Routledge, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge6b79a8"></a>Misc<br />
+<div class="outline-text-5" id="text-4-3-2-2">
+<ul class="org-ul">
+<li>“A psychologist and biologist debate the significance of testosterone | Aeon Essays,” Aeon. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://aeon.co/essays/a-psychologist-and-biologist-debate-the-significance-of-testosterone">https://aeon.co/essays/a-psychologist-and-biologist-debate-the-significance-of-testosterone</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6892d7a" class="outline-4">
+<h4 id="org6892d7a"><span class="section-number-4">4.3.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-4-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org9a01886"></a>Events<br />
+<div class="outline-text-5" id="text-4-3-3-1">
+<ul class="org-ul">
+<li>“International Men’s Day,” Wikipedia. Nov. 18, 2024. Accessed: Nov. 19, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Men%27s_Day&amp;oldid=1258093364">https://en.wikipedia.org/w/index.php?title=International_Men%27s_Day&amp;oldid=1258093364</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orged52644"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="org141ae82"></a>India<br />
+<ul class="org-ul">
+<li><a id="org6b9c351"></a>General<br /></li>
+<li><a id="orgbe2ab63"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orge7e24d1"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgfc0a459"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orge29eb5a"></a>Misc<br />
+<div class="outline-text-8" id="text-orge29eb5a">
+<ul class="org-ul">
+<li>“Masculinities in Asia | Heinrich Böll Stiftung.” Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.boell.de/en/masculinities-in-asia">https://www.boell.de/en/masculinities-in-asia</a></li>
+<li>“A Glimpse Into Masculinity and Domestic Life in Post-Colonial India,” The Wire. Accessed: Mar. 25, 2025. [Online]. Available: <a href="https://thewire.in/books/a-glimpse-into-masculinity-and-domestic-life-in-post-colonial-india">https://thewire.in/books/a-glimpse-into-masculinity-and-domestic-life-in-post-colonial-india</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org9cd1fec"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgc2a2f35"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgbaa0812"></a>Special Topics<br /></li>
+<li><a id="org57f768e"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org660bd05"></a>Misc<br />
+<div class="outline-text-5" id="text-4-3-3-3">
+<ul class="org-ul">
+<li>BY, “Solving the ‘Crisis of Men’ Requires Tackling Inequality.” Accessed: Jul. 28, 2025. [Online]. Available: <a href="https://jacobin.com/2025/07/masculinity-crisis-gender-inequality-class-war">https://jacobin.com/2025/07/masculinity-crisis-gender-inequality-class-war</a></li>
+
+<li>“How Manosphere Content Placates Disenfranchised Men.” Accessed: May 02, 2025. [Online]. Available: <a href="https://jacobin.com/2025/05/manosphere-tate-gender-wealth-inequality">https://jacobin.com/2025/05/manosphere-tate-gender-wealth-inequality</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf374961" class="outline-4">
+<h4 id="orgf374961"><span class="section-number-4">4.3.4.</span> Arts</h4>
+<div class="outline-text-4" id="text-4-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="org565c7f5"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgd4d9f86" class="outline-4">
+<h4 id="orgd4d9f86"><span class="section-number-4">4.3.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-4-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgf6475c5"></a>Texts<br />
+<div class="outline-text-5" id="text-4-3-5-1">
+<ul class="org-ul">
+<li>D. Morris, <b>The Naked Man: A Study Of The Male Body.</b> Random House, 2012.</li>
+<li>D. Deida, The Way of the Superior Man: A Spiritual Guide to Mastering the Challenges of Women, Work, and Sexual Desire, Reprint edition. Sounds True, 2020.</li>
+<li>M. Hultman and P. M. Pulé, Ecological Masculinities: Theoretical Foundations and Practical Guidance, 1st edition. Abingdon New york, NY: Routledge, 2019.</li>
+<li>R. W. Connell, Masculinities, 2nd edition. Routledge, 2005.</li>
+<li>J. S. B. M.D, <i>Gods in Everyman: Archetypes That Shape Men's Lives.</i> Harper Collins, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5b2a934"></a>Articles, Essays<br />
+<div class="outline-text-5" id="text-4-3-5-2">
+<ul class="org-ul">
+<li>“The ‘masculinity crisis’ is actually a crisis of self-esteem | Psyche Ideas,” Psyche. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://psyche.co/ideas/the-masculinity-crisis-is-actually-a-crisis-of-self-esteem">https://psyche.co/ideas/the-masculinity-crisis-is-actually-a-crisis-of-self-esteem</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge3ab751" class="outline-4">
+<h4 id="orge3ab751"><span class="section-number-4">4.3.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-3-6">
+<ul class="org-ul">
+<li>J. J. Bola, Mask Off: Masculinity Redefined. London: Pluto Press, 2019.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Plato’s challenge to the meaning of manliness still resonates | Psyche Ideas.” Accessed: Jun. 19, 2025. [Online]. Available: <a href="https://psyche.co/ideas/platos-challenge-to-the-meaning-of-manliness-still-resonates">https://psyche.co/ideas/platos-challenge-to-the-meaning-of-manliness-still-resonates</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab62ac0" class="outline-3">
+<h3 id="orgab62ac0"><span class="section-number-3">4.4.</span> Non Binary Gender</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org374c52f" class="outline-4">
+<h4 id="org374c52f"><span class="section-number-4">4.4.1.</span> General</h4>
+</div>
+<div id="outline-container-org8377fbd" class="outline-4">
+<h4 id="org8377fbd"><span class="section-number-4">4.4.2.</span> Philosophy</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>P. Zurn, “Trans Philosophy,” in The Stanford Encyclopedia of Philosophy, Winter 2024., E. N. Zalta and U. Nodelman, Eds., Metaphysics Research Lab, Stanford University, 2024. Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://plato.stanford.edu/archives/win2024/entriesrans/">https://plato.stanford.edu/archives/win2024/entriesrans/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcdec7c3" class="outline-4">
+<h4 id="orgcdec7c3"><span class="section-number-4">4.4.3.</span> STEMM</h4>
+<div class="outline-text-4" id="text-4-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="org3d0319b"></a>CSE<br />
+<div class="outline-text-5" id="text-4-4-3-1">
+<ul class="org-ul">
+<li>A. Schwartz, “Data Sanctuary for Trans People,” Electronic Frontier Foundation, Jun. 28, 2023. <a href="https://www.eff.org/deeplinks/2023/06/data-sanctuary-trans-people">https://www.eff.org/deeplinks/2023/06/data-sanctuary-trans-people</a> (accessed Jun. 29, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc2a2fca"></a>Misc<br />
+<div class="outline-text-5" id="text-4-4-3-2">
+<ul class="org-ul">
+<li>P. Collings, “LGBT Q&amp;A: Your Online Speech and Privacy Questions, Answered,” Electronic Frontier Foundation. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://www.eff.org/deeplinks/2025/06/lgbt-qa-your-online-speech-and-privacy-questions-answered">https://www.eff.org/deeplinks/2025/06/lgbt-qa-your-online-speech-and-privacy-questions-answered</a></li>
+
+<li>D. Barnett, “Strategies for Resisting Tech-Enabled Violence Facing Transgender People,” Electronic Frontier Foundation. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://www.eff.org/deeplinks/2025/06/strategies-resisting-tech-enabled-violence-facing-transgender-people">https://www.eff.org/deeplinks/2025/06/strategies-resisting-tech-enabled-violence-facing-transgender-people</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgda4ea46" class="outline-4">
+<h4 id="orgda4ea46"><span class="section-number-4">4.4.4.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-4-4-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgb4f4cb4"></a>Space and Time<br />
+<ol class="org-ol">
+<li><a id="orgcc379e9"></a>History<br />
+<div class="outline-text-6" id="text-4-4-4-1-1">
+<ul class="org-ul">
+<li>J. Manion, Female Husbands: A Trans History. Cambridge University Press, 2020.</li>
+<li><i>“May we all be so brave as 19th-century female husbands – Jen Manion | Aeon Essays,”</i> Aeon. <a href="https://aeon.co/essays/may-we-all-be-so-brave-as-19th-century-female-husbands">https://aeon.co/essays/may-we-all-be-so-brave-as-19th-century-female-husbands</a> (accessed Dec. 03, 2020).</li>
+
+<li>S. Stryker, Transgender History. Hachette UK, 2009.</li>
+
+<li>L. DeVun, The Shape of Sex: Nonbinary Gender from Genesis to the Renaissance. Columbia University Press, 2021.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org9b01d04"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="org4cf4a59"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgf668c70"></a>General<br /></li>
+<li><a id="org53d9b13"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orge697658"></a>Misc<br />
+<div class="outline-text-8" id="text-orge697658">
+<ul class="org-ul">
+<li>“Making Rainbows in the Andamans: Creating queer community in the Andamans is a struggle,” Vikalp Sangam. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/making-rainbows-in-the-andamans-creating-queer-community-in-the-andamans-is-a-struggle/">https://vikalpsangam.org/article/making-rainbows-in-the-andamans-creating-queer-community-in-the-andamans-is-a-struggle/</a></li>
+
+<li>A. Seth, “How Grindr’s Safety Failures Endanger Queer Lives In India,” Feminism in India. Accessed: Jun. 16, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/16/how-grindrs-safety-failures-endanger-queer-lives-in-india/">https://feminisminindia.com/2025/06/16/how-grindrs-safety-failures-endanger-queer-lives-in-india/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org314f8ca"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgc021af0"></a>Misc<br />
+<div class="outline-text-8" id="text-orgc021af0">
+<ul class="org-ul">
+<li>“All the Rightful Inheritors of the Classroom | IT for Change.” Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://itforchange.net/all-rightful-inheritors-of-classroom">https://itforchange.net/all-rightful-inheritors-of-classroom</a></li>
+
+<li>S. Paul, “Plea In Supreme Court For Trans Inclusive Education In Schools: Binary Education Marginalises Transgender Students,” Feminism in India. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/10/trans-discrimination-in-schools-ending-bullyinggendered-discrimination-and-bullying-in-how-binary-education-marginalises-transgendered-individuals/">https://feminisminindia.com/2025/09/10/trans-discrimination-in-schools-ending-bullyinggendered-discrimination-and-bullying-in-how-binary-education-marginalises-transgendered-individuals/</a></li>
+
+<li>“Grace Banu on why the struggle for transgender rights must evolve beyond tokenism.” Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/grace-banu-on-transgender-rights-and-horizontal-reservations">https://caravanmagazine.in/politics/grace-banu-on-transgender-rights-and-horizontal-reservations</a></li>
+
+<li>A. Prasad, “Manipur’s First Trans Doctor’s Legal Victory Highlights The Need For Policy Reform,” Feminism in India. Accessed: Sep. 02, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/02/manipur-first-transgender-doctor-legal-victory-policy-reform/">https://feminisminindia.com/2025/09/02/manipur-first-transgender-doctor-legal-victory-policy-reform/</a></li>
+
+<li>S. Paul, “Queer Couples’ Petition Challenging Section 56 Of The Income Tax Act: A Fight Against Tax Discrimination,” Feminism in India. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/27/queer-couples-petition-challenging-section-56-income-tax-act/">https://feminisminindia.com/2025/08/27/queer-couples-petition-challenging-section-56-income-tax-act/</a></li>
+
+<li>M. Dhar, “In The Name Of Faith And Family: The Mental Health Impact Of Conversion Therapy On Queer Individuals In India,” Feminism in India. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/14/in-the-name-of-faith-and-family-the-mental-health-impact-of-conversion-therapy-on-queer-individuals-in-india/">https://feminisminindia.com/2025/08/14/in-the-name-of-faith-and-family-the-mental-health-impact-of-conversion-therapy-on-queer-individuals-in-india/</a></li>
+
+<li>A. Ray, “Queering The Campus: Exploring The Reality Of Transitioning As A Student In The Indian University Space,” Feminism in India. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/12/queering-the-campus-exploring-the-reality-of-transitioning-as-a-student-in-the-indian-university-space/">https://feminisminindia.com/2025/08/12/queering-the-campus-exploring-the-reality-of-transitioning-as-a-student-in-the-indian-university-space/</a></li>
+
+<li>S. S, “What Happens When The Margins Are Marginalised? Mx. Yashika, Caste, And The Crisis Within India’s Trans Movement,” Feminism in India. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/29/mx-yashika-dalit-trans-activist-india/">https://feminisminindia.com/2025/07/29/mx-yashika-dalit-trans-activist-india/</a></li>
+
+<li>L. Yazhini, “The Epidemic And The Excluded: A Historical Analysis Of Queer Community Resilience During The AIDS Crisis,” Feminism in India. Accessed: Jun. 11, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/11/the-epidemic-and-the-excluded-a-historical-analysis-of-queer-community-resilience-during-the-aids-crisis/">https://feminisminindia.com/2025/06/11/the-epidemic-and-the-excluded-a-historical-analysis-of-queer-community-resilience-during-the-aids-crisis/</a></li>
+
+<li>J. Sanduja, “From Magic To Malice: How Rowling’s Harry Potter Revival Fuels Transphobia,” Feminism in India. Accessed: Jun. 10, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/10/from-magic-to-malice-how-rowlings-harry-potter-revival-fuels-transphobia/">https://feminisminindia.com/2025/06/10/from-magic-to-malice-how-rowlings-harry-potter-revival-fuels-transphobia/</a></li>
+
+<li>R. Khan, “Beyond Binaries: The Kerala High Court Judgement On Transgender Parenthood,” Feminism in India. Accessed: Jun. 10, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/10/beyond-binaries-the-kerala-high-court-judgement-on-transgender-parenthood/">https://feminisminindia.com/2025/06/10/beyond-binaries-the-kerala-high-court-judgement-on-transgender-parenthood/</a></li>
+
+<li>S. Sengupta, A. D. Roy, and S. S. and A. D. Roy, “Celebrating The Secret ‘Ulti’ Language Of The Hijra Community,” Feminism in India. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/02/23/celebrating-the-secret-ulti-language-of-the-hijra-community/">https://feminisminindia.com/2024/02/23/celebrating-the-secret-ulti-language-of-the-hijra-community/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org901d3fb"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org6756844"></a>Misc<br />
+<div class="outline-text-8" id="text-org6756844">
+<ul class="org-ul">
+<li>“Remembering Dayamma: In Grief, Celebration And Protest,” Vikalp Sangam. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://behanbox.com/2025/08/15/remembering-dayamma-in-grief-celebration-and-protest/">https://behanbox.com/2025/08/15/remembering-dayamma-in-grief-celebration-and-protest/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge939869"></a>Special Topics<br /></li>
+<li><a id="org4804e0d"></a>Misc<br />
+<div class="outline-text-7" id="text-org4804e0d">
+<ul class="org-ul">
+<li>M. Nabi, “Blood Rules And Human Rights: Why India Still Bars LGBTQ+ From Donating,” Feminism in India. Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/01/blood-rules-and-human-rights-why-india-still-bars-lgbtq-from-donating/">https://feminisminindia.com/2025/09/01/blood-rules-and-human-rights-why-india-still-bars-lgbtq-from-donating/</a></li>
+
+<li>S. Shrivastava, “The Role Of Grassroots Communities In Providing Emotional Support For Queer People,” Feminism in India. Accessed: Jul. 07, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/07/the-role-of-grassroots-communities-in-providing-emotional-support-for-queer-people/">https://feminisminindia.com/2025/07/07/the-role-of-grassroots-communities-in-providing-emotional-support-for-queer-people/</a></li>
+
+<li>“Visibilizing the Invisible | Heinrich Böll Stiftung | India Office.” Accessed: Apr. 08, 2024. [Online]. Available: <a href="https://in.boell.org/en/visibilizing-invisible">https://in.boell.org/en/visibilizing-invisible</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. Aggarwal, “The Crumbling Promise Of Trans Shelters: Garima Grehs At Risk Of Shut Down With No Funding,” Feminism in India. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/30/the-crumbling-promise-of-trans-shelters-garima-grehs-at-risk-of-shut-down-with-no-funding/">https://feminisminindia.com/2025/07/30/the-crumbling-promise-of-trans-shelters-garima-grehs-at-risk-of-shut-down-with-no-funding/</a></li>
+<li>M. Manoj, “The Body I Live In, The Pride I Carry,” Feminism in India. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/30/the-body-i-live-in-the-pride-i-carry/">https://feminisminindia.com/2025/07/30/the-body-i-live-in-the-pride-i-carry/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org27702c4"></a>Africa<br />
+<div class="outline-text-6" id="text-4-4-4-2-2">
+<ul class="org-ul">
+<li>P. I. Amadiume, Male Daughters, Female Husbands: Gender and Sex in an African Society. Zed Books Ltd., 2015.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org2ef9580"></a>Misc<br />
+<div class="outline-text-5" id="text-4-4-4-3">
+<ul class="org-ul">
+<li>L. Song, “The Trump Administration Is Promoting Its Anti-Trans Agenda Globally at the United Nations,” ProPublica. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.propublica.org/article/trump-un-anti-trans-agenda">https://www.propublica.org/article/trump-un-anti-trans-agenda</a></li>
+
+<li>S. Kerry, “The Dalai Lama is a cisgender man – yet he has an unexpected connection to the trans community,” The Conversation. Accessed: Jul. 03, 2025. [Online]. Available: <a href="http://theconversation.com/the-dalai-lama-is-a-cisgender-man-yet-he-has-an-unexpected-connection-to-the-trans-community-260106">http://theconversation.com/the-dalai-lama-is-a-cisgender-man-yet-he-has-an-unexpected-connection-to-the-trans-community-260106</a></li>
+
+<li>S. Shrivastava, “What’s In A Name?: Examining Deadnaming As A Form Of Subtle Transphobia,” Feminism in India. Accessed: Jun. 27, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/27/whats-in-a-name-examining-deadnaming-as-a-form-of-subtle-transphobia/">https://feminisminindia.com/2025/06/27/whats-in-a-name-examining-deadnaming-as-a-form-of-subtle-transphobia/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3875256" class="outline-4">
+<h4 id="org3875256"><span class="section-number-4">4.4.5.</span> Arts</h4>
+<div class="outline-text-4" id="text-4-4-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgeb1a9d5"></a>Misc<br />
+<div class="outline-text-5" id="text-4-4-5-1">
+<ul class="org-ul">
+<li>“Pluralistic: Charlie Jane Anders’ ‘Lessons in Magic and Disaster.’ (19 Aug 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/08/19/revenge-magic/">https://pluralistic.net/2025/08/19/revenge-magic/</a></li>
+
+<li>T. Editors, “Queer Representation in Pre-Code Hollywood,” JSTOR Daily. Accessed: Jun. 26, 2025. [Online]. Available: <a href="https://daily.jstor.org/queer-representation-in-pre-code-hollywood/">https://daily.jstor.org/queer-representation-in-pre-code-hollywood/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgbed765a" class="outline-4">
+<h4 id="orgbed765a"><span class="section-number-4">4.4.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-4-6">
+<ul class="org-ul">
+<li>D. Dhruv, “Reimagining Love: A Queer-Disabled Perspective,” Feminism in India. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/20/reimagining-love-a-queer-disabled-perspective/">https://feminisminindia.com/2025/06/20/reimagining-love-a-queer-disabled-perspective/</a></li>
+
+<li>L. Yazhini, “Decision Paralysis Caused By Fund Freeze: How Suspension Of USAID Affects Transgender Healthcare In India,” Feminism in India. Accessed: May 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/05/30/decision-paralysis-caused-by-fund-freeze-how-suspension-of-usaid-affects-transgender-healthcare-in-india/">https://feminisminindia.com/2025/05/30/decision-paralysis-caused-by-fund-freeze-how-suspension-of-usaid-affects-transgender-healthcare-in-india/</a></li>
+
+<li>“How do transgender people remember their earlier selves? | Psyche Ideas.” Accessed: May 22, 2025. [Online]. Available: <a href="https://psyche.co/ideas/how-do-transgender-people-remember-their-earlier-selves">https://psyche.co/ideas/how-do-transgender-people-remember-their-earlier-selves</a></li>
+
+<li>“Transgender Guidance.” Accessed: Apr. 01, 2024. [Online]. Available: <a href="https://edu.web.ox.ac.uk/transgender-guidance">https://edu.web.ox.ac.uk/transgender-guidance</a></li>
+<li>“Transgender Policy.” Accessed: Apr. 01, 2024. [Online]. Available: <a href="https://edu.web.ox.ac.uk/transgender-policy">https://edu.web.ox.ac.uk/transgender-policy</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Beyond Visibility – Assessing Your Transgender and Nonbinary Workplace Inclusion,” Out &amp; Equal, Mar. 15, 2022. <a href="https://outandequal.org/beyond-visibility-assessing-your-transgender-and-nonbinary-workplace-inclusion/">https://outandequal.org/beyond-visibility-assessing-your-transgender-and-nonbinary-workplace-inclusion/</a> (accessed Apr. 04, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdecb4d3" class="outline-2">
+<h2 id="orgdecb4d3"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org8ce340f" class="outline-3">
+<h3 id="org8ce340f"><span class="section-number-3">5.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org7b2a23e" class="outline-2">
+<h2 id="org7b2a23e"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org0d08a75" class="outline-3">
+<h3 id="org0d08a75"><span class="section-number-3">6.1.</span> Book Series</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>“Routledge Research in Gender and Society.” Accessed: Jun. 18, 2025. [Online]. Available: <a href="http://www.amazon.in/Routledge-Research-in-Gender-and-Society-44-book-series/dp/B0CZ9NR4M8?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/Routledge-Research-in-Gender-and-Society-44-book-series/dp/B0CZ9NR4M8?ref=dbs_m_mng_rwt_0000_share</a></li>
+<li>“Gender in a Global/Local World.” Accessed: Jun. 18, 2025. [Online]. Available: <a href="http://www.amazon.in/Gender-in-a-Global-Local-World-40-book-series/dp/B08Q7MHJS8?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/Gender-in-a-Global-Local-World-40-book-series/dp/B08Q7MHJS8?ref=dbs_m_mng_rwt_0000_share</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org22acbb2" class="outline-3">
+<h3 id="org22acbb2"><span class="section-number-3">6.2.</span> People's Archive of Rural India</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>Findings from the 2024 SDG Gender Index: A gender equal future in crisis? 2024. Accessed: Nov. 11, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/library/resource/findings-from-the-2024-sdg-gender-index/">https://ruralindiaonline.org/en/library/resource/findings-from-the-2024-sdg-gender-index/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf67fe21" class="outline-2">
+<h2 id="orgf67fe21"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“‘Second Nature’: Elliot Page on New Film Exploring Animal World Beyond the Binary,” Democracy Now! Accessed: Jun. 25, 2026. [Online]. Available: <a href="https://www.democracynow.org/2026/6/24/second_nature_elliot_page">https://www.democracynow.org/2026/6/24/second_nature_elliot_page</a></li>
+
+<li>“What the evolution of ‘bitch’ says about gender and power | Aeon Essays.” Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://aeon.co/essays/what-the-evolution-of-bitch-says-about-gender-and-power">https://aeon.co/essays/what-the-evolution-of-bitch-says-about-gender-and-power</a></li>
+
+<li><i>“Gender is dead, long live gender: just what is ‘performativity’? – Will Fraker | Aeon Ideas,”</i> Aeon. <a href="https://aeon.co/ideas/gender-is-dead-long-live-gender-just-what-is-performativity">https://aeon.co/ideas/gender-is-dead-long-live-gender-just-what-is-performativity</a> (accessed Dec. 18, 2020).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Agarwal, Gender Challenges. Oxford University Press, 2015.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:50</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
