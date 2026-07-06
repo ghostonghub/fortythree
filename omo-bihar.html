@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 15:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bihar</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bihar</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge436c85">1. General</a></li>
+<li><a href="#org23ae775">2. STEMM</a>
+<ul>
+<li><a href="#orgb81bd20">2.1. Environment</a>
+<ul>
+<li><a href="#org1a47bbf">2.1.1. Misc</a></li>
+<li><a href="#orge9568c9">2.1.2. Elements</a></li>
+<li><a href="#orgfde10b8">2.1.3. Temperature</a></li>
+<li><a href="#orgfe02740">2.1.4. Energy</a></li>
+<li><a href="#orgd233be1">2.1.5. Waste</a></li>
+<li><a href="#org6318f96">2.1.6. Climate</a></li>
+<li><a href="#orga1dcf61">2.1.7. Biological Sciences, Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf9f5cef">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org59cae1e">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgbf5f9f7">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org94a0cef">4. Arts</a>
+<ul>
+<li><a href="#org0343fef">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org69ba95f">5. Special Topics</a></li>
+<li><a href="#orge0dfe20">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orge436c85" class="outline-2">
+<h2 id="orge436c85"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org23ae775" class="outline-2">
+<h2 id="org23ae775"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb81bd20" class="outline-3">
+<h3 id="orgb81bd20"><span class="section-number-3">2.1.</span> Environment</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org1a47bbf" class="outline-4">
+<h4 id="org1a47bbf"><span class="section-number-4">2.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>K. Pandey, “Climate extremes in Bihar affect its people, but not politics,” Mongabay-India. Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/10/climate-extremes-in-bihar-affect-its-people-but-not-politics/">https://india.mongabay.com/2025/10/climate-extremes-in-bihar-affect-its-people-but-not-politics/</a></li>
+
+<li>D. K. Rajendra Kushagra, “Bihar’s indigenous languages hold the key to water resilience,” Down To Earth. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/water/bihars-indigenous-languages-hold-the-key-to-water-resilience">https://www.downtoearth.org.in/water/bihars-indigenous-languages-hold-the-key-to-water-resilience</a></li>
+
+<li>S. Manocha, “Gaya: Event Organiser Booked for Cruelty to Wildlife Following PETA India Complaint - Blog,” PETA India. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/gaya-event-organiser-booked-for-cruelty-to-wildlife-following-peta-india-complaint/">https://www.petaindia.com/blog/gaya-event-organiser-booked-for-cruelty-to-wildlife-following-peta-india-complaint/</a></li>
+<li>A. K, “Book Excerpt: Of algorithms we use and a small town in Bihar,” Down To Earth. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/science-technology/book-excerpt-of-algorithms-we-use-and-a-small-town-in-bihar">https://www.downtoearth.org.in/science-technology/book-excerpt-of-algorithms-we-use-and-a-small-town-in-bihar</a></li>
+<li>“Solar Pumps are Key to Bihar’s Rural Electrification Strategy,” The India Forum. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/public-policy/solar-pumps-are-key-bihars-rural-electrification-strategy">https://www.theindiaforum.in/public-policy/solar-pumps-are-key-bihars-rural-electrification-strategy</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge9568c9" class="outline-4">
+<h4 id="orge9568c9"><span class="section-number-4">2.1.2.</span> Elements</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3f8df7f"></a>Earth<br />
+<ol class="org-ol">
+<li><a id="orgc58b1b1"></a>Earthquakes<br /></li>
+<li><a id="orgbd8d371"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org8c9142f"></a>Water<br /></li>
+<li><a id="orgdfa37a9"></a>Air<br />
+<ol class="org-ol">
+<li><a id="org7c35e76"></a>Air Pollution<br /></li>
+<li><a id="org0992868"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org3c717f4"></a>Fire<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgfde10b8" class="outline-4">
+<h4 id="orgfde10b8"><span class="section-number-4">2.1.3.</span> Temperature</h4>
+</div>
+<div id="outline-container-orgfe02740" class="outline-4">
+<h4 id="orgfe02740"><span class="section-number-4">2.1.4.</span> Energy</h4>
+</div>
+<div id="outline-container-orgd233be1" class="outline-4">
+<h4 id="orgd233be1"><span class="section-number-4">2.1.5.</span> Waste</h4>
+</div>
+<div id="outline-container-org6318f96" class="outline-4">
+<h4 id="org6318f96"><span class="section-number-4">2.1.6.</span> Climate</h4>
+</div>
+<div id="outline-container-orga1dcf61" class="outline-4">
+<h4 id="orga1dcf61"><span class="section-number-4">2.1.7.</span> Biological Sciences, Misc</h4>
+<div class="outline-text-4" id="text-2-1-7">
+</div>
+<ol class="org-ol">
+<li><a id="orgb4a908e"></a>Genetically Modified Organisms<br /></li>
+<li><a id="org1a44220"></a>Pandemics<br /></li>
+<li><a id="org76790f8"></a>BioDiversity<br /></li>
+<li><a id="orga5b479e"></a>Zoology<br /></li>
+<li><a id="org58a1204"></a>Botany<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf9f5cef" class="outline-3">
+<h3 id="orgf9f5cef"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>M. I. Khan, “After arsenic &amp; lead, now uranium in breast milk in Bihar,” Down To Earth. Accessed: Nov. 25, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/health/after-arsenic-lead-now-uranium-in-breast-milk-in-bihar">https://www.downtoearth.org.in/health/after-arsenic-lead-now-uranium-in-breast-milk-in-bihar</a></li>
+
+<li>“Bihar: Goats Are ATMs That Farmers Rely on to Hedge Climate Risks,” NewsClick. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://www.newsclick.in/bihar-goats-are-atms-farmers-rely-hedge-climate-risks">https://www.newsclick.in/bihar-goats-are-atms-farmers-rely-hedge-climate-risks</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org59cae1e" class="outline-2">
+<h2 id="org59cae1e"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgbf5f9f7" class="outline-3">
+<h3 id="orgbf5f9f7"><span class="section-number-3">3.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“बिहार चुनाव 2025: प्रचार से ग़ायब रहे मूल मुद्दे,” Tricontinental: Institute for Social Research. Accessed: Feb. 05, 2026. [Online]. Available: <a href="https://thetricontinental.org/asia/hindi-bulletin-bihar-chuvaav-2025/">https://thetricontinental.org/asia/hindi-bulletin-bihar-chuvaav-2025/</a></li>
+
+<li>N. Sethi and A. Kar, “Verified: ECI’s top West Bengal officer sent orders to state officials for SIR on WhatsApp.” Accessed: Jan. 15, 2026. [Online]. Available: <a href="https://www.reporters-collective.in/trc/ecis-top-wb-officer-sent-orders-to-state-officials-on-whatsapp">https://www.reporters-collective.in/trc/ecis-top-wb-officer-sent-orders-to-state-officials-on-whatsapp</a></li>
+
+<li>“SIR could roll back decades of progress in women’s political participation,” The Indian Express. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://indianexpress.com/article/opinion/columns/sir-could-roll-back-decades-of-progress-in-womens-political-participation-10457286/">https://indianexpress.com/article/opinion/columns/sir-could-roll-back-decades-of-progress-in-womens-political-participation-10457286/</a></li>
+
+<li>“When the Electorate Itself Is Edited: The Constitutional Crisis of Mass Disenfranchisement,” The Wire. Accessed: Jan. 12, 2026. [Online]. Available: <a href="https://thewire.in/rights/when-the-electorate-itself-is-edited-the-constitutional-crisis-of-mass-disenfranchisement">https://thewire.in/rights/when-the-electorate-itself-is-edited-the-constitutional-crisis-of-mass-disenfranchisement</a></li>
+
+<li>A. Kar and V. Narayan, “ECI Skipped its Fraud-Busting Software, Flooding Bihar Voter Roll with Lakhs of Suspect Duplicates.” Accessed: Oct. 12, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/eci-skipped-its-fraud-busting-software-lakhs-of-duplicates">https://www.reporters-collective.in/trc/eci-skipped-its-fraud-busting-software-lakhs-of-duplicates</a></li>
+
+<li>T. Franco, “How Banks Have Contributed to the Election Victory in Bihar,” Centre for Financial Accountability. Accessed: Nov. 28, 2025. [Online]. Available: <a href="https://www.cenfa.org/how-banks-have-contributed-to-the-election-victory-in-bihar/">https://www.cenfa.org/how-banks-have-contributed-to-the-election-victory-in-bihar/</a></li>
+
+<li>“The NDA in Bihar: The Paradoxical Victory of Maldevelopment,” The Wire. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://thewire.in/economy/the-nda-in-bihar-the-paradoxical-victory-of-maldevelopment">https://thewire.in/economy/the-nda-in-bihar-the-paradoxical-victory-of-maldevelopment</a></li>
+
+<li>“Bihar elections 2025: Towards a one-party system,” Mid-day. Accessed: Nov. 19, 2025. [Online]. Available: <a href="https://www.mid-day.com/news/opinion/article/towards-a-one-party-system-23603541">https://www.mid-day.com/news/opinion/article/towards-a-one-party-system-23603541</a></li>
+
+<li>“The ‘Business as Usual’ Inertia of the Opposition and the Loss of Bihar,” The Wire. Accessed: Nov. 18, 2025. [Online]. Available: <a href="https://thewire.in/politics/the-business-as-usual-inertia-of-the-opposition-and-the-loss-of-bihar">https://thewire.in/politics/the-business-as-usual-inertia-of-the-opposition-and-the-loss-of-bihar</a></li>
+
+<li>“Bihar 2025 - The anatomy of a stolen election,” Countercurrents. Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/11/bihar-2025-the-anatomy-of-a-stolen-election/">https://countercurrents.org/2025/11/bihar-2025-the-anatomy-of-a-stolen-election/</a></li>
+
+<li>“Meta’s Algorithms of Exclusion in Bihar,” The Wire. Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://thewire.in/tech/metas-algorithms-of-exclusion-in-bihar">https://thewire.in/tech/metas-algorithms-of-exclusion-in-bihar</a></li>
+
+<li>Apoorvanand, “Bihar Election Results 2025: NDA Victory Hides Malnutrition Crisis and Poverty Reality,” Frontline. Accessed: Nov. 17, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/politics/bihar-election-2025-nda-victory-masks-malnutrition-poverty-crisis/article70286529.ece">https://frontline.thehindu.com/politics/bihar-election-2025-nda-victory-masks-malnutrition-poverty-crisis/article70286529.ece</a></li>
+<li>“Bihar Election Results: Bribery Working at a Grand Scale,” The Wire. Accessed: Nov. 17, 2025. [Online]. Available: <a href="https://thewire.in/politics/bihar-election-results-bribery-working-at-a-grand-scale">https://thewire.in/politics/bihar-election-results-bribery-working-at-a-grand-scale</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The 2025 Bihar assembly election explained.” Accessed: Nov. 13, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/2025-bihar-assembly-election-explained">https://caravanmagazine.in/politics/2025-bihar-assembly-election-explained</a></li>
+
+<li>“In Bihar: ‘dead’ Adivasis tell their tales.” Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://beta.ruralindiaonline.org/article/in-bihar-dead-adivasis-tell-their-tales">https://beta.ruralindiaonline.org/article/in-bihar-dead-adivasis-tell-their-tales</a></li>
+
+<li>A. Kar and V. Narayan, “ECI Skipped its Fraud-Busting Software, Flooding Bihar Voter Roll with Lakhs of Suspect Duplicates.” Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/eci-skipped-its-fraud-busting-software-lakhs-of-duplicates">https://www.reporters-collective.in/trc/eci-skipped-its-fraud-busting-software-lakhs-of-duplicates</a></li>
+
+<li>A. Teltumbde, “Anand Teltumbde: The Opposition’s Bihar delusion and the illusion of democracy,” Scroll.in. Accessed: Nov. 11, 2025. [Online]. Available: <a href="https://scroll.in/article/1088405/anand-teltumbde-the-oppositions-bihar-delusion-and-the-illusion-of-democracy">https://scroll.in/article/1088405/anand-teltumbde-the-oppositions-bihar-delusion-and-the-illusion-of-democracy</a></li>
+
+<li>“The many betrayals of Nitish Kumar.” Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/many-betrayals-nitish-kumar">https://caravanmagazine.in/politics/many-betrayals-nitish-kumar</a></li>
+
+<li>“Importance of Extremely Backward Classes in Bihar’s Electoral Landscape,” The India Forum. Accessed: Oct. 16, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/politics/importance-extremely-backward-classes-bihars-electoral-landscape">https://www.theindiaforum.in/politics/importance-extremely-backward-classes-bihars-electoral-landscape</a></li>
+
+<li>S. Kumar, “Bihar Elections 2025 And Financial Inclusion: How Focus On Women Is Shaping The Politics,” Feminism in India. Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/10/23/bihar-elections-2025-and-financial-inclusion-how-focus-on-women-is-shaping-the-politics/">https://feminisminindia.com/2025/10/23/bihar-elections-2025-and-financial-inclusion-how-focus-on-women-is-shaping-the-politics/</a></li>
+
+<li>A. Kar and V. Narayan, “The Mess, called ECI’s Final Voter List for Bihar.” Accessed: Oct. 09, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/ecis-final-voter-list-for-bihar">https://www.reporters-collective.in/trc/ecis-final-voter-list-for-bihar</a></li>
+
+<li>A. Kar and V. Narayan, “In BJP’s Name, Repeated Attempts Were Made to Delete Nearly 80,000 Muslim Voters in One Bihar Constituency.” Accessed: Sep. 28, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/repeated-attempts-made-to-delete-muslim-voters">https://www.reporters-collective.in/trc/repeated-attempts-made-to-delete-muslim-voters</a></li>
+
+<li>D. T. E. Staff, “Bihar land controversy: Adani Group faces farmers’ allegations,” Down To Earth. Accessed: Sep. 24, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/bihar-land-controversy-adani-group-faces-farmers-allegations">https://www.downtoearth.org.in/governance/bihar-land-controversy-adani-group-faces-farmers-allegations</a></li>
+
+<li>A. Kar, V. Narayan, G. Sapru, and H. Manwani, “Photo-Matched Duplicates Abound on ECI’s Draft Voter List of Bihar.” Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/photo-matched-duplicates-abound-on-ecis-draft-voter-list-of-bihar">https://www.reporters-collective.in/trc/photo-matched-duplicates-abound-on-ecis-draft-voter-list-of-bihar</a></li>
+
+<li>A. Kar, V. Narayan, G. Sapru, and H. Manwani, “1.88 lakh cases of dubious double voters in 39 assembly constituencies of Bihar.” Accessed: Sep. 02, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/1-88-lakh-cases-of-double-voters-in-39-constituencies">https://www.reporters-collective.in/trc/1-88-lakh-cases-of-double-voters-in-39-constituencies</a></li>
+
+<li>V. Narayan, A. Kar, and G. Sapru, “On ECI’s ‘Purified’ Bihar Voter List: 67,826 cases of dubious double voters in merely 15 constituencies, registered with identical credentials.” Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/on-ecis-bihar-voter-list-cases-of-double-voters">https://www.reporters-collective.in/trc/on-ecis-bihar-voter-list-cases-of-double-voters</a></li>
+
+<li>A. Kar and V. Narayan, “Bihar: ECI bundled and registered 80,000 voters on fake and wrong addresses in just 3 constituencies.” Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/bihar-eci-registered-80k-wrong-addresses-in-3-constituencies">https://www.reporters-collective.in/trc/bihar-eci-registered-80k-wrong-addresses-in-3-constituencies</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Prasad, “Bihar Elections: ECI’s SIR Disproportionately Removes Women Voters From Rolls,” Feminism in India. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/14/bihar-elections-sir-dispropotionately-removes-women-voters/">https://feminisminindia.com/2025/08/14/bihar-elections-sir-dispropotionately-removes-women-voters/</a></li>
+
+<li>Apoorvanand, “Can a Secular State Build Temples? Bihar Poses the Test,” Frontline. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/indian-secularism-sita-temple-bihar-hindutva-politics/article69923891.ece">https://frontline.thehindu.com/society/indian-secularism-sita-temple-bihar-hindutva-politics/article69923891.ece</a></li>
+
+<li>A. Kar, H. Manwani, and G. Sapru, “Investigation: More than 5,000 Double and Dubious Voters from Uttar Pradesh make it to ECI’s Voter List for a Bihar Constituency.” Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/5-000-dubious-voters-from-up-make-it-to-bihar-constituency">https://www.reporters-collective.in/trc/5-000-dubious-voters-from-up-make-it-to-bihar-constituency</a></li>
+
+<li>“Workshop report: Design your road map for Angika Language digital activism in Bihar, India,” Global Voices. Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://globalvoices.org/2025/08/11/workshop-report-design-your-road-map-for-angika-language-digital-activism-in-bihar-india/">https://globalvoices.org/2025/08/11/workshop-report-design-your-road-map-for-angika-language-digital-activism-in-bihar-india/</a></li>
+
+<li>“Revising electoral rolls could disenfranchise millions and threaten their citizenship.” Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/revising-electoral-rolls-disenfranchise-millions-threaten-citizenship">https://caravanmagazine.in/politics/revising-electoral-rolls-disenfranchise-millions-threaten-citizenship</a></li>
+
+<li>“Bihar SIR Process ‘Capable of Subverting Electoral Process’, Warn Former Top Civil Servants,” NewsClick. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://www.newsclick.in/bihar-sir-process-capable-subverting-electoral-process-warn-former-top-civil-servants">https://www.newsclick.in/bihar-sir-process-capable-subverting-electoral-process-warn-former-top-civil-servants</a></li>
+
+<li>“Revising electoral rolls could disenfranchise millions and threaten their citizenship.” Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/revising-electoral-rolls-disenfranchise-millions-threaten-citizenship">https://caravanmagazine.in/politics/revising-electoral-rolls-disenfranchise-millions-threaten-citizenship</a></li>
+
+<li>A. Raj, “The Disenfranchisement of Migrants: Representation And Democracy In The Bihar Electoral Roll,” Feminism in India. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/29/the-disenfranchisement-of-migrants-representation-and-democracy-in-the-bihar-electoral-roll/">https://feminisminindia.com/2025/07/29/the-disenfranchisement-of-migrants-representation-and-democracy-in-the-bihar-electoral-roll/</a></li>
+
+<li>H. Mander, “Harsh Mander: Hollowed-out EC has shrunk Indian democracy further with Bihar voter roll revision,” Scroll.in. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://scroll.in/article/1084915/harsh-mander-hollowed-out-ec-has-shrunk-indian-democracy-further-with-bihar-voter-roll-revision">https://scroll.in/article/1084915/harsh-mander-hollowed-out-ec-has-shrunk-indian-democracy-further-with-bihar-voter-roll-revision</a></li>
+
+<li>“The Ministry of Law and Justice caught lying on the Election Commission’s controversial SIR of the voter roll.” Accessed: Jul. 28, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/twitter-threads/ministry-of-law-and-justice-caught-lying-on-controversial-sir-of-voter-roll">https://www.reporters-collective.in/twitter-threads/ministry-of-law-and-justice-caught-lying-on-controversial-sir-of-voter-roll</a></li>
+
+<li>CFA, “The Crisis of Bihar’s Special Intensive Revision (SIR) I Finance Matters, 18 July 2025 | Editorial,” Centre for Financial Accountability. Accessed: Jul. 24, 2025. [Online]. Available: <a href="https://www.cenfa.org/the-crisis-of-bihars-special-intensive-revision-sir-i-finance-matters-18-july-2025-editorial/">https://www.cenfa.org/the-crisis-of-bihars-special-intensive-revision-sir-i-finance-matters-18-july-2025-editorial/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Bihar’s Electoral Revision Puts the Poor’s Rights at Risk,” The India Forum. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/politics/bihars-electoral-revision-puts-poors-rights-risk">https://www.theindiaforum.in/politics/bihars-electoral-revision-puts-poors-rights-risk</a></li>
+
+<li>N. Sethi and A. Kar, “The Bihar Electoral Roll Investigation.” Accessed: Jul. 07, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/bihar-electoral-roll-investigation">https://www.reporters-collective.in/trc/bihar-electoral-roll-investigation</a></li>
+
+<li>“Who is expected to win the upcoming bihar election&#x2026;,” Google Docs. Accessed: May 26, 2025. [Online]. Available: <a href="https://docs.google.com/document/d/19IXe94Jb3vGyE7jC9JkXOfMdHbEEc8WQPu99u7Mva9g/edit?usp=drivesdk&amp;usp=embed_facebook">https://docs.google.com/document/d/19IXe94Jb3vGyE7jC9JkXOfMdHbEEc8WQPu99u7Mva9g/edit?usp=drivesdk&amp;usp=embed_facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org94a0cef" class="outline-2">
+<h2 id="org94a0cef"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org0343fef" class="outline-3">
+<h3 id="org0343fef"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org69ba95f" class="outline-2">
+<h2 id="org69ba95f"><span class="section-number-2">5.</span> Special Topics</h2>
+</div>
+<div id="outline-container-orge0dfe20" class="outline-2">
+<h2 id="orge0dfe20"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>J. Yadav, “Covid chronicles: Patna Doms displaced, erased,” PARI - People’s Archive of Rural India. Accessed: Jun. 30, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/covid-chronicles-patna-doms-displaced-erased">https://ruralindiaonline.org/article/covid-chronicles-patna-doms-displaced-erased</a></li>
+
+<li>“SIR - A Violation of the Spirit of Universal Suffrage,” Countercurrents. Accessed: Jan. 08, 2026. [Online]. Available: <a href="https://countercurrents.org/2026/01/sir-a-violation-of-the-spirit-of-universal-suffrage/">https://countercurrents.org/2026/01/sir-a-violation-of-the-spirit-of-universal-suffrage/</a></li>
+
+<li>“The unlikely success of a novel justice delivery system in Bihar,” Vikalp Sangam. Accessed: May 30, 2025. [Online]. Available: <a href="https://scroll.in/article/1079886/">https://scroll.in/article/1079886/</a></li>
+
+<li>“Hopelessness and Despair in Bihar: Misgovernance does not Matter, Caste does,” The India Forum. Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/society/hopelessness-and-despair-bihar-misgovernance-does-not-matter-caste-does">https://www.theindiaforum.in/society/hopelessness-and-despair-bihar-misgovernance-does-not-matter-caste-does</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Bihar: String of Bridge Collapses Exposes Rampant Corruption,” NewsClick. Accessed: Jul. 06, 2024. [Online]. Available: <a href="https://www.newsclick.in/bihar-string-bridge-collapses-exposes-rampant-corruption">https://www.newsclick.in/bihar-string-bridge-collapses-exposes-rampant-corruption</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Did Bakhtiyar Khilji Destroy Nalanda University?,” The Wire. Accessed: Jun. 28, 2024. [Online]. Available: <a href="https://thewire.in/history/did-bakhtiyar-khilji-destroy-nalanda-university">https://thewire.in/history/did-bakhtiyar-khilji-destroy-nalanda-university</a></li>
+<li>A. Singh, Primus Books - Nalanda A Glorious Past. Primus Books, 2024.</li>
+<li>Indians | Ep 5: Nalanda and the Decline of Buddhism | A Brief History of a Civilization, (Feb. 02, 2024). Accessed: Jun. 24, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GKe4pENohWk">https://www.youtube.com/watch?v=GKe4pENohWk</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 15:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

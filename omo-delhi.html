@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 15:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Delhi</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Delhi</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd270afb">1. General</a></li>
+<li><a href="#orgcde33b3">2. STEMM</a>
+<ul>
+<li><a href="#org1402d25">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgb55047b">2.1.1. Complexity Science</a></li>
+<li><a href="#org4f9a787">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgaaaee2e">2.2. Biological Sciences, Misc</a>
+<ul>
+<li><a href="#org9f45a1e">2.2.1. Environment</a></li>
+</ul>
+</li>
+<li><a href="#org89004ca">2.3. Basic Sciences, Misc</a></li>
+<li><a href="#orge75c11c">2.4. Mathematical, Computational Sciences, Misc</a>
+<ul>
+<li><a href="#org6172ac9">2.4.1. CSE</a></li>
+</ul>
+</li>
+<li><a href="#org756300c">2.5. Advanced Sciences, Misc</a></li>
+<li><a href="#orgaa4585c">2.6. Technology, Misc</a></li>
+<li><a href="#org5238a2f">2.7. Special Topics</a></li>
+<li><a href="#org7a01e8f">2.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb132986">3. Worldly Matters</a>
+<ul>
+<li><a href="#org6f7c5ff">3.1. Space and Time</a>
+<ul>
+<li><a href="#orgae8f8c2">3.1.1. History</a></li>
+</ul>
+</li>
+<li><a href="#orgc491c67">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org7956b61">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#org13926e1">3.4. Humanities, Misc</a></li>
+<li><a href="#org98cbfbc">3.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org6732adc">3.5.1. Politics</a></li>
+</ul>
+</li>
+<li><a href="#org2c021c9">3.6. Business Studies, Misc</a></li>
+<li><a href="#orge1bea61">3.7. Security Studies, Misc</a></li>
+<li><a href="#orgf2e1a5e">3.8. Communication, Misc</a>
+<ul>
+<li><a href="#org35cfe72">3.8.1. News</a></li>
+</ul>
+</li>
+<li><a href="#org29d682d">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2afa508">4. Arts</a>
+<ul>
+<li><a href="#org6500da9">4.1. Music</a></li>
+<li><a href="#org7837961">4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbbfc0c0">5. Special Topics</a>
+<ul>
+<li><a href="#org19d8ddd">5.1. Texts</a></li>
+<li><a href="#org884ddd2">5.2. Food, Misc</a></li>
+<li><a href="#org09082a6">5.3. Communal Violence</a></li>
+</ul>
+</li>
+<li><a href="#org10efcac">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgd270afb" class="outline-2">
+<h2 id="orgd270afb"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orgcde33b3" class="outline-2">
+<h2 id="orgcde33b3"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org1402d25" class="outline-3">
+<h3 id="org1402d25"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgb55047b" class="outline-4">
+<h4 id="orgb55047b"><span class="section-number-4">2.1.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-org4f9a787" class="outline-4">
+<h4 id="org4f9a787"><span class="section-number-4">2.1.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgaaaee2e" class="outline-3">
+<h3 id="orgaaaee2e"><span class="section-number-3">2.2.</span> Biological Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org9f45a1e" class="outline-4">
+<h4 id="org9f45a1e"><span class="section-number-4">2.2.1.</span> Environment</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgc74117d"></a>Elements<br />
+<ol class="org-ol">
+<li><a id="org12b25fc"></a>Earth<br />
+<ul class="org-ul">
+<li><a id="org1e4f34f"></a>Earthquakes<br /></li>
+<li><a id="org964e6aa"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9cb5435"></a>Water<br />
+<div class="outline-text-6" id="text-2-2-1-1-2">
+<ul class="org-ul">
+<li>“The poisoned taps of Peeragarhi.” Accessed: Apr. 10, 2025. [Online]. Available: <a href="https://beta.ruralindiaonline.org/article/the-poisoned-taps-of-peeragarhi">https://beta.ruralindiaonline.org/article/the-poisoned-taps-of-peeragarhi</a></li>
+<li>PTI, “Heavy rains likely in Delhi, IMD issues orange alert till July 2,” The Hindu, Jun. 30, 2024. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/heavy-rains-likely-in-delhi-imd-issues-orange-alert-till-july-2/article68351317.ece">https://www.thehindu.com/news/cities/Delhi/heavy-rains-likely-in-delhi-imd-issues-orange-alert-till-july-2/article68351317.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>N. M. Babu, “DDA flouts NGT’s guidelines, continues construction on crowded Yamuna floodplain in Delhi,” The Hindu, Apr. 16, 2024. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/dda-flouts-ngts-guidelines-continues-construction-on-crowded-yamuna-floodplain-in-delhi/article68068418.ece">https://www.thehindu.com/news/cities/Delhi/dda-flouts-ngts-guidelines-continues-construction-on-crowded-yamuna-floodplain-in-delhi/article68068418.ece</a></li>
+<li>N. M. Babu, “Nine years after NGT’s directions, Yamuna floodplain yet to be demarcated,” The Hindu, Apr. 16, 2024. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/nine-years-after-ngts-directions-yamuna-floodplain-yet-to-be-demarcated/article68072355.ece">https://www.thehindu.com/news/cities/Delhi/nine-years-after-ngts-directions-yamuna-floodplain-yet-to-be-demarcated/article68072355.ece</a></li>
+<li>N. M. Babu, “DDA ignores directions to remove official constructions on floodplain, builds more,” The Hindu, Apr. 18, 2024. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/dda-ignores-directions-to-remove-official-constructions-on-floodplain-builds-more/article68079888.ece">https://www.thehindu.com/news/cities/Delhi/dda-ignores-directions-to-remove-official-constructions-on-floodplain-builds-more/article68079888.ece</a></li>
+<li>N. M. Babu, “The curious case of Delhi’s disappearing water bodies,” The Hindu, Apr. 25, 2024. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/the-curious-case-of-delhis-disappearing-water-bodies/article68105156.ece">https://www.thehindu.com/news/cities/Delhi/the-curious-case-of-delhis-disappearing-water-bodies/article68105156.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Tanker economy revealed: It’s not just Delhi; Lucknow too has a thriving water mafia.” Accessed: Jun. 29, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/water/tanker-economy-revealed-it-s-not-just-delhi-lucknow-too-has-a-thriving-water-mafia-96914">https://www.downtoearth.org.in/news/water/tanker-economy-revealed-it-s-not-just-delhi-lucknow-too-has-a-thriving-water-mafia-96914</a></li>
+<li>“Tanker economy revealed: DTE uncovers how water suppliers openly exploit the poor across Delhi.” Accessed: Jun. 29, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/water/tanker-economy-revealed-dte-uncovers-how-water-suppliers-openly-exploit-the-poor-across-delhi-96913">https://www.downtoearth.org.in/news/water/tanker-economy-revealed-dte-uncovers-how-water-suppliers-openly-exploit-the-poor-across-delhi-96913</a></li>
+<li>“No end in sight for Delhi’s water shortage as Himachal does U-turn; says ‘No surplus water left.’” Accessed: Jun. 14, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/water/no-end-in-sight-for-delhi-s-water-shortage-as-himachal-does-u-turn-says-no-surplus-water-left--96683">https://www.downtoearth.org.in/news/water/no-end-in-sight-for-delhi-s-water-shortage-as-himachal-does-u-turn-says-no-surplus-water-left--96683</a></li>
+<li>“Delhi’s water woes: Megacity should control wastage, regulate industrial usage &amp; address disparity to combat shortage.” Accessed: Jun. 13, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/blog/water/delhi-s-water-woes-megacity-should-control-wastage-regulate-industrial-usage-address-disparity-to-combat-shortage-96655">https://www.downtoearth.org.in/blog/water/delhi-s-water-woes-megacity-should-control-wastage-regulate-industrial-usage-address-disparity-to-combat-shortage-96655</a></li>
+<li>“Reuse of treated wastewater: Faecal coliform is a challenge in Delhi.” Accessed: Jun. 02, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/blog/waste/reuse-of-treated-wastewater-faecal-coliform-is-a-challenge-in-delhi-96461">https://www.downtoearth.org.in/blog/waste/reuse-of-treated-wastewater-faecal-coliform-is-a-challenge-in-delhi-96461</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Chatterjee, S. P. Singh, and A. C. and S. P. Singh, “Behind The Scenes Of ‘Urban’ Delhi: A Tale Of Water And Life In Kusumpur Pahadi,” Feminism in India. Accessed: Feb. 10, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/02/09/behind-the-scenes-of-urban-delhi-a-tale-of-water-and-life-in-kusumpur-pahadi/">https://feminisminindia.com/2024/02/09/behind-the-scenes-of-urban-delhi-a-tale-of-water-and-life-in-kusumpur-pahadi/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7bc34a1"></a>Air<br />
+<ul class="org-ul">
+<li><a id="orgcb7989a"></a>Air Pollution<br /></li>
+<li><a id="orge00c46e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcda05f0"></a>Fire<br /></li>
+</ol>
+</li>
+<li><a id="org5dc835f"></a>Temperature<br />
+<ol class="org-ol">
+<li><a id="orgcf8bd59"></a>Cooling<br />
+<div class="outline-text-6" id="text-2-2-1-2-1">
+<ul class="org-ul">
+<li>“Heat Proofing Delhi: The Challenges and Solutions in the Capital&amp;#8217;s Heat Action Plan,” Greenpeace India. Accessed: Apr. 01, 2024. [Online]. Available: <a href="https://www.greenpeace.org/india/en/story/15963/heat-proofing-delhi-the-challenges-and-solutions-in-the-capitals-heat-action-plan/">https://www.greenpeace.org/india/en/story/15963/heat-proofing-delhi-the-challenges-and-solutions-in-the-capitals-heat-action-plan/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgca41369"></a>Energy<br />
+<div class="outline-text-5" id="text-2-2-1-3">
+<ul class="org-ul">
+<li>D. T. E. Staff, “Toxins from Okhla waste-to-energy plant endanger millions of lives in Delhi,” Down To Earth. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/toxins-from-okhla-waste-to-energy-plant-endanger-millions-of-lives-in-delhi">https://www.downtoearth.org.in/waste/toxins-from-okhla-waste-to-energy-plant-endanger-millions-of-lives-in-delhi</a></li>
+<li>“Will an affordable public charging ecosystem boost electric mobility in Delhi?,” Mongabay-India, Jul. 21, 2022. <a href="https://india.mongabay.com/2022/07/electric-vehicle-delhi/">https://india.mongabay.com/2022/07/electric-vehicle-delhi/</a> (accessed Jul. 22, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org7d5d749"></a>Waste<br />
+<div class="outline-text-5" id="text-2-2-1-4">
+<ul class="org-ul">
+<li>V. Choudhary, “Janakpuri is a classic case of Delhi’s affluence coexisting with third world waste woes,” Down To Earth. Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/janakpuri-is-a-classic-case-of-delhis-affluence-coexisting-with-third-world-waste-woes">https://www.downtoearth.org.in/waste/janakpuri-is-a-classic-case-of-delhis-affluence-coexisting-with-third-world-waste-woes</a></li>
+<li>D. T. E. Staff, “Toxins from Okhla waste-to-energy plant endanger millions of lives in Delhi,” Down To Earth. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/toxins-from-okhla-waste-to-energy-plant-endanger-millions-of-lives-in-delhi">https://www.downtoearth.org.in/waste/toxins-from-okhla-waste-to-energy-plant-endanger-millions-of-lives-in-delhi</a></li>
+<li>“Delhi Waste Pickers: Integrating Social Protection, Climate Justice, Labour Rights,” NewsClick. Accessed: Jun. 17, 2024. [Online]. Available: <a href="https://www.newsclick.in/delhi-waste-pickers-integrating-social-protection-climate-justice-labour-rights">https://www.newsclick.in/delhi-waste-pickers-integrating-social-protection-climate-justice-labour-rights</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3bb0b6c"></a>Climate<br /></li>
+<li><a id="org5b572c5"></a>Genetically Modified Organisms<br /></li>
+<li><a id="orga17d4e1"></a>Pandemics<br /></li>
+<li><a id="org2b796a6"></a>BioDiversity<br /></li>
+<li><a id="org8733ec0"></a>Zoology<br />
+<div class="outline-text-5" id="text-2-2-1-9">
+<ul class="org-ul">
+<li>R. Lal, <i>Birds of Delhi.</i> Oxford University Press, 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="org59ce59b"></a>Botany<br />
+<div class="outline-text-5" id="text-2-2-1-10">
+<ul class="org-ul">
+<li>P. Krishen, <i>Trees of Delhi: A Field Guide.</i> Penguin Books India, 2006.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgefab9ac"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgbf37ab3"></a>Texts<br />
+<div class="outline-text-6" id="text-2-2-1-11-1">
+<ul class="org-ul">
+<li>A. Baviskar, <b>Uncivil City: Ecology, Equity and the Commons in Delhi.</b> SAGE Publishing India, 2020.</li>
+<li>A. B. Sharan, In the City, Out of Place: Nuisance, Pollution, and Dwelling in Delhi, C.1850-2000. Oxford University Press, 2014.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgfb5013b"></a>Misc<br />
+<div class="outline-text-5" id="text-2-2-1-12">
+<ul class="org-ul">
+<li>arathimenon, “Delhi witnesses a travesty of ecological restoration [Commentary],” Mongabay India. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://india.mongabay.com/2026/07/delhi-witnesses-a-travesty-of-ecological-restoration-commentary/">https://india.mongabay.com/2026/07/delhi-witnesses-a-travesty-of-ecological-restoration-commentary/</a></li>
+
+<li>PTI, “Monsoon arrives in Delhi, IMD forecasts thunderstorms accompanied by rain,” The Hindu, Jul. 02, 2026. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/southwest-monsoon-in-delhi/article71173530.ece">https://www.thehindu.com/news/cities/Delhi/southwest-monsoon-in-delhi/article71173530.ece</a></li>
+
+<li>V. Choudhary, “How much can Delhi’s roads accommodate?,” Down To Earth. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/how-much-can-delhis-roads-accommodate">https://www.downtoearth.org.in/governance/how-much-can-delhis-roads-accommodate</a></li>
+
+<li>M. Talapatra, “Anxiety in a warming world: My goodbye to Delhi’s toxic embrace,” Down To Earth. Accessed: Jan. 16, 2026. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/anxiety-in-a-warming-world-my-goodbye-to-delhis-toxic-embrace">https://www.downtoearth.org.in/environment/anxiety-in-a-warming-world-my-goodbye-to-delhis-toxic-embrace</a></li>
+
+<li>V. Choudhary, “Delhi’s winter double whammy,” Down To Earth. Accessed: Jan. 14, 2026. [Online]. Available: <a href="https://www.downtoearth.org.in/air/delhis-winter-double-whammy">https://www.downtoearth.org.in/air/delhis-winter-double-whammy</a></li>
+
+<li>SANDRP, “Open Letter Regarding Water Polluting Activities Around WYC in Bawana, Delhi,” SANDRP. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://sandrp.in/2025/10/26/open-letter-regarding-water-polluting-activities-around-wyc-in-bawana-delhi/">https://sandrp.in/2025/10/26/open-letter-regarding-water-polluting-activities-around-wyc-in-bawana-delhi/</a></li>
+
+<li>S. Tandon, “Delhi faces a deluge of waste on its roads,” Down To Earth. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/delhi-faces-a-deluge-of-waste-on-its-roads">https://www.downtoearth.org.in/waste/delhi-faces-a-deluge-of-waste-on-its-roads</a></li>
+
+<li>S. Tandon, “Delhi’s drainage in the doldrums,” Down To Earth. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/delhis-drainage-in-the-doldrums">https://www.downtoearth.org.in/governance/delhis-drainage-in-the-doldrums</a></li>
+
+<li>S. Oliver, “Dozens of Animals Rescued from Delhi Flood,” PETA. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://www.peta.org/news/delhi-flood-peta-rescue/">https://www.peta.org/news/delhi-flood-peta-rescue/</a></li>
+
+<li>S. Karnal, “Dozens of Animals Rescued from Floods in Delhi National Capital Region (NCR) by PETA India - Blog,” PETA India. Accessed: Sep. 15, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/dozens-of-animals-rescued-from-floods-in-delhi-national-capital-region-ncr-by-peta-india/">https://www.petaindia.com/blog/dozens-of-animals-rescued-from-floods-in-delhi-national-capital-region-ncr-by-peta-india/</a></li>
+
+<li>S. Manocha, “Dogs are Delhiites, NOT ‘Strays’—PETA India’s New Billboard Campaign Reminds Citizens It’s Their City, Too! - Blog,” PETA India. Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/dogs-are-delhiites-not-strays-peta-indias-new-billboard-campaign-reminds-citizens-its-their-city-too/">https://www.petaindia.com/blog/dogs-are-delhiites-not-strays-peta-indias-new-billboard-campaign-reminds-citizens-its-their-city-too/</a></li>
+<li>S. Karnal, “Dozens of Animals Rescued from Floods in Delhi National Capital Region (NCR) by PETA India - Blog,” PETA India. Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/dozens-of-animals-rescued-from-floods-in-delhi-national-capital-region-ncr-by-peta-india/">https://www.petaindia.com/blog/dozens-of-animals-rescued-from-floods-in-delhi-national-capital-region-ncr-by-peta-india/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Death and Degree: A report on establishing a relationship between Heat and Deaths in Delhi revealing urgent need for Climate Action,” Greenpeace India. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.greenpeace.org/india/en/publication/19723/death-and-degree-a-report-on-establishing-a-relationship-between-heat-and-deaths-in-delhi-revealing-urgent-need-for-climate-action/">https://www.greenpeace.org/india/en/publication/19723/death-and-degree-a-report-on-establishing-a-relationship-between-heat-and-deaths-in-delhi-revealing-urgent-need-for-climate-action/</a></li>
+
+<li>Delhi Flood: Jahangirpuri Cries For Help, No Power, Water! | NewsClick, (Sep. 07, 2025). Accessed: Sep. 08, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=xt8vbryxul8&amp;t=6s">https://www.youtube.com/watch?v=xt8vbryxul8&amp;t=6s</a></li>
+
+<li>V. Choudhary, “Yamuna floods parts of Delhi,” Down To Earth. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/rivers/yamuna-floods-parts-of-delhi">https://www.downtoearth.org.in/rivers/yamuna-floods-parts-of-delhi</a></li>
+
+<li>“Delhi: Between Flood and Survival, Life on the Edge of Yamuna River,” NewsClick. Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://www.newsclick.in/delhi-between-flood-and-survival-life-edge-yamuna-river">https://www.newsclick.in/delhi-between-flood-and-survival-life-edge-yamuna-river</a></li>
+
+<li>V. Choudhary, “Delhi plans to stop waste dumping in its overflowing landfills by next year,” Down To Earth. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/delhi-plans-to-stop-waste-dumping-in-its-overflowing-landfills-by-next-year">https://www.downtoearth.org.in/waste/delhi-plans-to-stop-waste-dumping-in-its-overflowing-landfills-by-next-year</a></li>
+
+<li>“The Journey of Shade,” Greenpeace India. Accessed: Aug. 03, 2025. [Online]. Available: <a href="https://www.greenpeace.org/india/en/story/19568/the-journey-of-shade/">https://www.greenpeace.org/india/en/story/19568/the-journey-of-shade/</a></li>
+
+<li>“Park Audit: Heatwave and green spaces in Delhi,” Greenpeace India. Accessed: Jul. 14, 2025. [Online]. Available: <a href="https://www.greenpeace.org/india/en/publication/19323/park-audit-heatwave-and-green-spaces-in-delhi/">https://www.greenpeace.org/india/en/publication/19323/park-audit-heatwave-and-green-spaces-in-delhi/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>PTI, “Delhi weather forecast: Yellow alert issued for rain and thunderstorms,” The Hindu, Jul. 08, 2025. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/yellow-alert-in-delhi-for-rain-thunderstorms/article69786306.ece">https://www.thehindu.com/news/cities/Delhi/yellow-alert-in-delhi-for-rain-thunderstorms/article69786306.ece</a></li>
+
+<li>T. H. Bureau, “Artificial rain trial postponed to August 30: Minister,” The Hindu, Jul. 01, 2025. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/artificial-rain-trial-postponed-to-august-30-minister/article69761459.ece">https://www.thehindu.com/news/cities/Delhi/artificial-rain-trial-postponed-to-august-30-minister/article69761459.ece</a></li>
+
+<li>S. Sanyal, “Who Gets To Stay Dry? Delhi’s Monsoon Crisis And The Gendered Effect Of Urban Flooding,” Feminism in India. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/25/who-gets-to-stay-dry-delhis-monsoon-crisis-and-the-gendered-effect-of-urban-flooding/">https://feminisminindia.com/2025/06/25/who-gets-to-stay-dry-delhis-monsoon-crisis-and-the-gendered-effect-of-urban-flooding/</a></li>
+
+<li>D. T. E. Staff, “Delhi prepares for Monsoon 2025,” Down To Earth. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/delhi-prepares-for-monsoon-2025">https://www.downtoearth.org.in/governance/delhi-prepares-for-monsoon-2025</a></li>
+
+<li>D. T. E. Staff, “Delhi prepares for Monsoon 2025,” Down To Earth. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/delhi-prepares-for-monsoon-2025">https://www.downtoearth.org.in/governance/delhi-prepares-for-monsoon-2025</a></li>
+
+<li>PTI, “Delhi Weather: IMD issues ‘yellow’ warning for rain, thunderstorm in Delhi on Monday,” The Hindu, Jun. 23, 2025. Accessed: Jun. 23, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/imd-issues-yellow-warning-for-rain-thunderstorm-in-delhi-on-monday/article69726373.ece">https://www.thehindu.com/news/cities/Delhi/imd-issues-yellow-warning-for-rain-thunderstorm-in-delhi-on-monday/article69726373.ece</a></li>
+
+<li>S. Mishra, “Why the decline of the Okhla Bird Sanctuary is a wake-up call for man’s relationship with Nature in urban areas,” The Hindu, Jun. 21, 2025. Accessed: Jun. 22, 2025. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/energy-and-environment/why-the-decline-of-the-okhla-bird-sanctuary-is-a-wake-up-call-for-mans-relationship-with-nature-in-urban-areas/article69618832.ece">https://www.thehindu.com/sci-tech/energy-and-environment/why-the-decline-of-the-okhla-bird-sanctuary-is-a-wake-up-call-for-mans-relationship-with-nature-in-urban-areas/article69618832.ece</a></li>
+
+<li>R. Ghai, “In Delhi, the air is clean, and temperatures are comfortable for just 259 hours in a year: Study,” Down To Earth. Accessed: Jun. 18, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/air/in-delhi-the-air-is-clean-and-temperatures-are-comfortable-for-just-259-hours-in-a-year-study">https://www.downtoearth.org.in/air/in-delhi-the-air-is-clean-and-temperatures-are-comfortable-for-just-259-hours-in-a-year-study</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Banerji, “Ozone replaces particulate matter as Delhi’s top pollutant this summer: CSE,” Down To Earth. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/air/ozone-replaces-particulate-matter-as-delhis-top-pollutant-this-summer-Computer">https://www.downtoearth.org.in/air/ozone-replaces-particulate-matter-as-delhis-top-pollutant-this-summer-Computer</a> Science and Engineering</li>
+
+<li>D. T. E. Staff, “Grey wolf seen in Delhi for the first time after the 1940s,” Down To Earth. Accessed: May 21, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/wildlife-biodiversity/young-grey-wolf-seen-in-delhi-for-the-first-time-after-the-1940s">https://www.downtoearth.org.in/wildlife-biodiversity/young-grey-wolf-seen-in-delhi-for-the-first-time-after-the-1940s</a></li>
+
+<li>“How Communities in Delhi Are Rising Together Against Extreme Heat,” Greenpeace India. Accessed: May 10, 2025. [Online]. Available: <a href="https://www.greenpeace.org/india/en/story/18265/how-communities-in-delhi-are-rising-together-against-extreme-heat/">https://www.greenpeace.org/india/en/story/18265/how-communities-in-delhi-are-rising-together-against-extreme-heat/</a></li>
+
+<li>First Rain Halts Delhi; Workers Enter Sewers Sans Safety! | NewsClick, (May 03, 2025). Accessed: May 05, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pM6HH1vf6lA">https://www.youtube.com/watch?v=pM6HH1vf6lA</a></li>
+
+<li>V. Kaul, “Delhi Sewer Deaths: The Lethal Cost of Contractual Sanitation Work,” Frontline. Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/delhi-sewer-deaths-manual-scavenging-contract-labour/article69396866.ece">https://frontline.thehindu.com/society/delhi-sewer-deaths-manual-scavenging-contract-labour/article69396866.ece</a></li>
+
+<li>M. Mohanty, “Delhi EV Policy 2.0: It’s bold, but not yet beautiful,” Down To Earth. Accessed: Mar. 26, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/energy/delhi-ev-policy-20-its-bold-but-not-yet-beautiful">https://www.downtoearth.org.in/energy/delhi-ev-policy-20-its-bold-but-not-yet-beautiful</a></li>
+
+<li>V. Bhalla, “How one man is battling to save the Dwarka forest in Delhi,” Scroll.in. Accessed: Mar. 26, 2025. [Online]. Available: <a href="https://scroll.in/article/1079856/how-one-man-is-battling-to-save-the-dwarka-forest-in-delhi">https://scroll.in/article/1079856/how-one-man-is-battling-to-save-the-dwarka-forest-in-delhi</a></li>
+
+<li>MONGABAY.COM, “New Delhi transforms degraded lands into biodiversity parks,” Mongabay Environmental News. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://news.mongabay.com/short-article/2025/03/new-delhi-transforms-degraded-lands-into-biodiversity-parks/">https://news.mongabay.com/short-article/2025/03/new-delhi-transforms-degraded-lands-into-biodiversity-parks/</a></li>
+
+<li>“Delhi: BJP Romps to Victory After 27 Years, Kejriwal Among Top AAP Leaders Who Lose,” NewsClick. Accessed: Feb. 09, 2025. [Online]. Available: <a href="https://www.newsclick.in/delhi-bjp-romps-victory-after-27-years-kejriwal-among-top-aap-leaders-who-lose">https://www.newsclick.in/delhi-bjp-romps-victory-after-27-years-kejriwal-among-top-aap-leaders-who-lose</a></li>
+
+<li>V. L. &amp; V. Kaul, “Delhi Waste-to-Energy Plant Faces Fierce Local Opposition in Bawana Industrial Area,” Frontline. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/environment/delhi-waste-energy-plant-bawana-residents-protest-environmental-concerns/article69191497.ece">https://frontline.thehindu.com/environment/delhi-waste-energy-plant-bawana-residents-protest-environmental-concerns/article69191497.ece</a></li>
+<li>V. Choudhary, “‘Where do you dispose Delhi’s 3,000 MT of daily waste’ — SC asks MCD,” Down To Earth. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/where-do-you-dispose-delhis-3000-mt-of-daily-waste-sc-asks-mcd">https://www.downtoearth.org.in/waste/where-do-you-dispose-delhis-3000-mt-of-daily-waste-sc-asks-mcd</a></li>
+<li>“Delhi says NO to Waste-to-Energy Plant in Bawana.” Accessed: Dec. 18, 2024. [Online]. Available: <a href="https://act.jhatkaa.org/campaigns/bawana-wte-delhi?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=thankyou_page_20241216--3703">https://act.jhatkaa.org/campaigns/bawana-wte-delhi?utm_source=whatsapp&amp;utm_medium=social&amp;utm_campaign=thankyou_page_20241216--3703</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>PTI, “BJP’s ‘dirty politics’ responsible for growing air, water pollution in Delhi: CM Atishi,” The Hindu, Oct. 20, 2024. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/bjps-dirty-politics-responsible-for-growing-air-water-pollution-in-delhi-cm-atishi/article68775522.ece">https://www.thehindu.com/news/cities/Delhi/bjps-dirty-politics-responsible-for-growing-air-water-pollution-in-delhi-cm-atishi/article68775522.ece</a></li>
+<li>T. H. Bureau, “BJP-ruled Haryana, U.P. to blame for Delhi’s pollution: Atishi,” The Hindu, Oct. 20, 2024. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/bjp-ruled-haryana-up-to-blame-for-delhis-pollution-atishi/article68777078.ece">https://www.thehindu.com/news/cities/Delhi/bjp-ruled-haryana-up-to-blame-for-delhis-pollution-atishi/article68777078.ece</a></li>
+
+<li>S. Richhariya, “In Delhi, A Different Kind Of Heat Worries Slum Dwellers.” Accessed: Jul. 31, 2024. [Online]. Available: <a href="https://www.indiaspend.com/cover-story/in-delhi-a-different-kind-of-heat-worries-slum-dwellers-918070">https://www.indiaspend.com/cover-story/in-delhi-a-different-kind-of-heat-worries-slum-dwellers-918070</a></li>
+
+<li>S. M. &amp; N. M. Babu, “A hole in Delhi’s green lung,” The Hindu, Jul. 21, 2024. Accessed: Jul. 22, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/a-hole-in-delhis-green-lung/article68426117.ece">https://www.thehindu.com/news/cities/Delhi/a-hole-in-delhis-green-lung/article68426117.ece</a></li>
+
+<li>T. H. Bureau, “AAP slams BJP over ‘silence’ on illegal felling of trees in Ridge area,” The Hindu, Jul. 04, 2024. Accessed: Jul. 05, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/aap-slams-bjp-over-silence-on-illegal-felling-of-trees-in-ridge-area/article68367506.ece">https://www.thehindu.com/news/cities/Delhi/aap-slams-bjp-over-silence-on-illegal-felling-of-trees-in-ridge-area/article68367506.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Another searing day in Delhi, ‘real feel’ hits 50°C,” Hindustan Times. Accessed: Jun. 18, 2024. [Online]. Available: <a href="https://www.hindustantimes.com/cities/delhi-news/another-searing-day-in-delhi-real-feel-hits-50c-101718648746467.html">https://www.hindustantimes.com/cities/delhi-news/another-searing-day-in-delhi-real-feel-hits-50c-101718648746467.html</a></li>
+
+<li>Living in the shadows of a waste mountain: Bandhwari landfill, (Jun. 30, 2022). Accessed: Jun. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8I6C52AqFt0">https://www.youtube.com/watch?v=8I6C52AqFt0</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org89004ca" class="outline-3">
+<h3 id="org89004ca"><span class="section-number-3">2.3.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-orge75c11c" class="outline-3">
+<h3 id="orge75c11c"><span class="section-number-3">2.4.</span> Mathematical, Computational Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org6172ac9" class="outline-4">
+<h4 id="org6172ac9"><span class="section-number-4">2.4.1.</span> CSE</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>“IT Act: Delhi Police gets nod to issue ‘takedown orders,’” Hindustan Times. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://www.hindustantimes.com/cities/delhi-news/itactdelhi-police-gets-nod-to-issue-takedown-orders-101736395311791.html">https://www.hindustantimes.com/cities/delhi-news/itactdelhi-police-gets-nod-to-issue-takedown-orders-101736395311791.html</a></li>
+
+<li>K. Pandey, “Delhi Govt to Verify Street Vendors via Aadhaar to Create Database,” MEDIANAMA. Accessed: Aug. 28, 2024. [Online]. Available: <a href="https://www.medianama.com/2024/08/223-delhi-verify-street-vendors-aadhaar-create-database-schemes/">https://www.medianama.com/2024/08/223-delhi-verify-street-vendors-aadhaar-create-database-schemes/</a></li>
+
+<li>“Digital Walls in Lutyens Delhi: How L&amp;DO’s Land Rules Favour the Elite,” NewsClick. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://www.newsclick.in/digital-walls-lutyens-delhi-how-ldos-land-rules-favour-elite">https://www.newsclick.in/digital-walls-lutyens-delhi-how-ldos-land-rules-favour-elite</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org756300c" class="outline-3">
+<h3 id="org756300c"><span class="section-number-3">2.5.</span> Advanced Sciences, Misc</h3>
+</div>
+<div id="outline-container-orgaa4585c" class="outline-3">
+<h3 id="orgaa4585c"><span class="section-number-3">2.6.</span> Technology, Misc</h3>
+</div>
+<div id="outline-container-org5238a2f" class="outline-3">
+<h3 id="org5238a2f"><span class="section-number-3">2.7.</span> Special Topics</h3>
+</div>
+<div id="outline-container-org7a01e8f" class="outline-3">
+<h3 id="org7a01e8f"><span class="section-number-3">2.8.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>D. T. E. Staff, “H3N2 influenza cases spike in Delhi,” Down To Earth. Accessed: Oct. 02, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/health/h3n2-influenza-cases-spike-in-delhi">https://www.downtoearth.org.in/health/h3n2-influenza-cases-spike-in-delhi</a></li>
+
+<li>T. H. Bureau, “Delhi CM launches health initiatives to offer patients timely care,” The Hindu, Jul. 24, 2025. Accessed: Jul. 25, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/cm-launches-health-initiatives-to-offer-patients-timely-care/article69852133.ece">https://www.thehindu.com/news/cities/Delhi/cm-launches-health-initiatives-to-offer-patients-timely-care/article69852133.ece</a></li>
+
+<li>T. H. Bureau, “CM says previous AAP govt. could not manage COVID-19,” The Hindu, Jun. 10, 2025. Accessed: Jun. 11, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/cm-says-previous-aap-govt-could-not-manage-covid-19/article69680320.ece">https://www.thehindu.com/news/cities/Delhi/cm-says-previous-aap-govt-could-not-manage-covid-19/article69680320.ece</a></li>
+
+<li>H. Zaffar, “The rise of ‘Frankenstein’ laptops in New Delhi’s repair markets,” The Verge. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://www.theverge.com/tech/639126/india-frankenstein-laptops">https://www.theverge.com/tech/639126/india-frankenstein-laptops</a></li>
+
+<li>A. R. Nath Sanchayan, “Mohalla Clinics have democratised healthcare but their unregulated biomedical waste is potentially an ecological time bomb,” Down To Earth. Accessed: Apr. 08, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/health/mohalla-clinics-have-democratised-healthcare-but-their-unregulated-biomedical-waste-is-potentially-an-ecological-time-bomb">https://www.downtoearth.org.in/health/mohalla-clinics-have-democratised-healthcare-but-their-unregulated-biomedical-waste-is-potentially-an-ecological-time-bomb</a></li>
+
+<li>A. Agarwal, “Bishnois v Delhiites: Two different mindsets,” Down To Earth. Accessed: Dec. 28, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/bishnois-v-delhiites-two-different-mindsets">https://www.downtoearth.org.in/governance/bishnois-v-delhiites-two-different-mindsets</a></li>
+<li>S. Staff, “Eco India: Pedestrian-friendly or not: What is Delhi’s walkability quotient?,” Scroll.in. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://scroll.in/video/1076014/eco-india-pedestrian-friendly-or-not-what-is-delhi-s-walkability-quotient">https://scroll.in/video/1076014/eco-india-pedestrian-friendly-or-not-what-is-delhi-s-walkability-quotient</a></li>
+<li>C. P. Verma, “Drowning in disappointment: Delhi coaching institute deaths symbolic of all that’s wrong with disaster preparedness in India,” Down To Earth. Accessed: Jul. 30, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/drowning-in-disappointment-delhi-coaching-institute-deaths-symbolic-of-all-thats-wrong-with-disaster-preparedness-in-india">https://www.downtoearth.org.in/natural-disasters/drowning-in-disappointment-delhi-coaching-institute-deaths-symbolic-of-all-thats-wrong-with-disaster-preparedness-in-india</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb132986" class="outline-2">
+<h2 id="orgb132986"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6f7c5ff" class="outline-3">
+<h3 id="org6f7c5ff"><span class="section-number-3">3.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgae8f8c2" class="outline-4">
+<h4 id="orgae8f8c2"><span class="section-number-4">3.1.1.</span> History</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>U. Singh, <i>Ancient Delhi.</i> OUP India, 2006.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc491c67" class="outline-3">
+<h3 id="orgc491c67"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org7956b61" class="outline-3">
+<h3 id="org7956b61"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“GNOSTIC.” Accessed: Apr. 07, 2024. [Online]. Available: <a href="https://gnostic.in/">https://gnostic.in/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org13926e1" class="outline-3">
+<h3 id="org13926e1"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org98cbfbc" class="outline-3">
+<h3 id="org98cbfbc"><span class="section-number-3">3.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org6732adc" class="outline-4">
+<h4 id="org6732adc"><span class="section-number-4">3.5.1.</span> Politics</h4>
+<div class="outline-text-4" id="text-3-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="org7da8fae"></a>Down To Earth<br />
+<div class="outline-text-5" id="text-3-5-1-1">
+<ul class="org-ul">
+<li>R. Sajwan, “Delhi Assembly Elections 2025: There are ‘villages’ in the national capital. And they are angry at being ignored for long,” Down To Earth. Accessed: Jan. 27, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/delhi-assembly-elections-2025-there-are-villages-in-the-national-capital-and-they-are-angry-at-being-ignored-for-long">https://www.downtoearth.org.in/governance/delhi-assembly-elections-2025-there-are-villages-in-the-national-capital-and-they-are-angry-at-being-ignored-for-long</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7e56c24"></a>The Caravan Magazine<br />
+<div class="outline-text-5" id="text-3-5-1-2">
+<ul class="org-ul">
+<li>“The BJP’s strategy to unseat the AAP in Delhi.” Accessed: Feb. 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/bjp's-strategy-to-unseat-the-aap-in-delhi">https://caravanmagazine.in/politics/bjp's-strategy-to-unseat-the-aap-in-delhi</a></li>
+<li>“The 2025 Delhi assembly election explained.” Accessed: Jan. 27, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/2025-delhi-assembly-election-explained">https://caravanmagazine.in/politics/2025-delhi-assembly-election-explained</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgea4c24a"></a>The Hindu, The Frontline<br />
+<div class="outline-text-5" id="text-3-5-1-3">
+<ul class="org-ul">
+<li>PTI, “Delhi Assembly elections: Congress fought as BJP’s ‘B’ team, says Mayawati; hits back at Rahul Gandhi,” The Hindu, Feb. 21, 2025. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-assembly-elections-congress-fought-as-bjps-b-team-says-mayawati-hits-back-at-rahul-gandhi/article69245960.ece">https://www.thehindu.com/news/cities/Delhi/delhi-assembly-elections-congress-fought-as-bjps-b-team-says-mayawati-hits-back-at-rahul-gandhi/article69245960.ece</a></li>
+<li>“Watch | Delhi CM Rekha Gupta announces cabinet portfolio allocation: Who got what portfolio?,” The Hindu, Feb. 20, 2025. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/videos/watch-delhi-cm-rekha-gupta-announces-cabinet-portfolio-allocation-who-got-what-portfolio/article69244393.ece">https://www.thehindu.com/videos/watch-delhi-cm-rekha-gupta-announces-cabinet-portfolio-allocation-who-got-what-portfolio/article69244393.ece</a></li>
+<li>T. H. Bureau, “Delhi Cabinet ministers 2025: Full list,” The Hindu, Feb. 20, 2025. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/full-list-of-delhi-cabinet-and-council-of-ministers/article69241892.ece">https://www.thehindu.com/news/cities/Delhi/full-list-of-delhi-cabinet-and-council-of-ministers/article69241892.ece</a></li>
+<li>S. Mishra, “Who Is Rekha Gupta? BJP’s First Delhi Chief Minister in 27 Years,” Frontline. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/politics/delhi-chief-minister-rekha-gupta-bjp-aap/article69243260.ece">https://frontline.thehindu.com/politics/delhi-chief-minister-rekha-gupta-bjp-aap/article69243260.ece</a></li>
+<li>S. Mahajan, “All the CM’s men: a ‘balanced’ mix in Rekha Gupta’s Delhi Cabinet,” The Hindu, Feb. 20, 2025. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/all-the-cms-men-a-balanced-mix/article69244468.ece">https://www.thehindu.com/news/cities/Delhi/all-the-cms-men-a-balanced-mix/article69244468.ece</a></li>
+<li>A. Butani, “Shalimar Bagh rejoices at ‘helpful’ neighbour’s ascent to CM post,” The Hindu, Feb. 20, 2025. Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/shalimar-bagh-rejoices-at-helpful-neighbours-ascent-to-cm-post/article69244454.ece">https://www.thehindu.com/news/cities/Delhi/shalimar-bagh-rejoices-at-helpful-neighbours-ascent-to-cm-post/article69244454.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>S. M. &amp; A. Butani, “Delhi CM pick Rekha Gupta is a grassroots leader with RSS–ABVP background,” The Hindu, Feb. 19, 2025. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-cm-pick-rekha-gupta-is-a-grassroots-leader-with-rssabvp-background/article69239906.ece">https://www.thehindu.com/news/cities/Delhi/delhi-cm-pick-rekha-gupta-is-a-grassroots-leader-with-rssabvp-background/article69239906.ece</a></li>
+<li>“Rekha Gupta Chosen to Lead Delhi Government, Becoming Only Woman Among BJP’s 14 CMs,” The Wire. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://thewire.in/politics/rekha-gupta-chosen-bjp-delhi-cm">https://thewire.in/politics/rekha-gupta-chosen-bjp-delhi-cm</a></li>
+<li>S. Staff, “Rush Hour: Rekha Gupta is next Delhi CM, Adityanath says river water at Kumbh fit to drink &amp; more,” Scroll.in. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://scroll.in/latest/1079385/rush-hour-rekha-gupta-is-next-delhi-cm-adityanath-says-river-water-at-kumbh-fit-to-drink-more">https://scroll.in/latest/1079385/rush-hour-rekha-gupta-is-next-delhi-cm-adityanath-says-river-water-at-kumbh-fit-to-drink-more</a></li>
+<li>T. H. Bureau, “Delhi CM oath-taking ceremony LIVE updates: Rekha Gupta to be sworn in as Delhi’s 4th woman Chief Minister today,” The Hindu, Feb. 20, 2025. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/elections/delhi-assembly/delhi-chief-minister-rekha-gupta-oath-taking-ceremony-live-updates-february-20-bjp-ramlila-ground/article69241153.ece">https://www.thehindu.com/elections/delhi-assembly/delhi-chief-minister-rekha-gupta-oath-taking-ceremony-live-updates-february-20-bjp-ramlila-ground/article69241153.ece</a></li>
+</ul>
+
+
+
+
+
+
+
+
+<ul class="org-ul">
+<li>V. L. &amp; V. Kaul, “DUSU election: What the Surprise Comeback of Congress’ NSUI Means for Student Politics,” Frontline. Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/congress-nsui-delhi-university-student-union-election-rss-abvp-aisa-sfi/article68938539.ece">https://frontline.thehindu.com/politics/congress-nsui-delhi-university-student-union-election-rss-abvp-aisa-sfi/article68938539.ece</a></li>
+<li>T. H. Bureau, “People left at ‘mercy of gangsters’ in national capital, alleges Kejriwal,” The Hindu, Dec. 03, 2024. Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/people-left-at-mercy-of-gangsters-in-national-capital-alleges-kejriwal/article68939910.ece">https://www.thehindu.com/news/cities/Delhi/people-left-at-mercy-of-gangsters-in-national-capital-alleges-kejriwal/article68939910.ece</a></li>
+<li>S. Mishra, “Delhi Assembly Election: The Shape-Shifting Arvind Kejriwal,” Frontline. Accessed: Nov. 21, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/delhi-elections-aap-arvind-kejriwal-corruption-allegations-party-workers-bjp/article68889385.ece">https://frontline.thehindu.com/politics/delhi-elections-aap-arvind-kejriwal-corruption-allegations-party-workers-bjp/article68889385.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfbc2e0d"></a>NewsClick<br />
+<div class="outline-text-5" id="text-3-5-1-4">
+<ul class="org-ul">
+<li>“Delhi Poll Jolt: INDIA Bloc Needs to Put up Joint Resistance,” NewsClick. Accessed: Feb. 19, 2025. [Online]. Available: <a href="https://www.newsclick.in/delhi-poll-jolt-india-bloc-needs-put-joint-resistance">https://www.newsclick.in/delhi-poll-jolt-india-bloc-needs-put-joint-resistance</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgff1f96f"></a>Politics: Right<br />
+<div class="outline-text-5" id="text-3-5-1-5">
+<ul class="org-ul">
+<li>A. Sehgal, “Delhi Assembly Elections 2025 —what is good for citizens?,” Organiser. Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/15/269227/bharat/delhi-assembly-elections-2025-what-is-good-for-citizens/">https://organiser.org/2024/12/15/269227/bharat/delhi-assembly-elections-2025-what-is-good-for-citizens/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org66b01b5"></a>Misc<br />
+<div class="outline-text-5" id="text-3-5-1-6">
+<ul class="org-ul">
+<li>A. S. Chauhan, “Watch: Power play in Delhi: will Purvanchali voters decide the winner?,” The Hindu, Feb. 04, 2025. Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/watch-polluted-river-polluted-promises-the-yamunas-silent-crisis/article69179973.ece">https://www.thehindu.com/news/cities/Delhi/watch-polluted-river-polluted-promises-the-yamunas-silent-crisis/article69179973.ece</a></li>
+
+<li>“Yogendra Yadav writes: Ahead of polls, let’s talk about the real problem in Delhi,” The Indian Express. Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://indianexpress.com/article/opinion/columns/yogendra-yadav-writes-ahead-of-polls-lets-talk-about-the-real-problem-in-delhi-9802524/">https://indianexpress.com/article/opinion/columns/yogendra-yadav-writes-ahead-of-polls-lets-talk-about-the-real-problem-in-delhi-9802524/</a></li>
+<li>S. Gatade, “Whether AAP’s Defeat Can Become a Wake Up Call for New Cheerleaders of Hindutva Lite Politics!,” KAFILA - COLLECTIVE EXPLORATIONS SINCE 2006. Accessed: Feb. 17, 2025. [Online]. Available: <a href="https://kafila.online/2025/02/15/whether-aaps-defeat-can-become-a-wake-up-call-for-new-cheerleaders-of-hindutva-lite-politics/">https://kafila.online/2025/02/15/whether-aaps-defeat-can-become-a-wake-up-call-for-new-cheerleaders-of-hindutva-lite-politics/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2c021c9" class="outline-3">
+<h3 id="org2c021c9"><span class="section-number-3">3.6.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-orge1bea61" class="outline-3">
+<h3 id="orge1bea61"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgf2e1a5e" class="outline-3">
+<h3 id="orgf2e1a5e"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-3-8">
+</div>
+<div id="outline-container-org35cfe72" class="outline-4">
+<h4 id="org35cfe72"><span class="section-number-4">3.8.1.</span> News</h4>
+<div class="outline-text-4" id="text-3-8-1">
+</div>
+<ol class="org-ol">
+<li><a id="org2206b6b"></a>MainStream Media<br />
+<div class="outline-text-5" id="text-3-8-1-1">
+<ul class="org-ul">
+<li>“Delhi Latest News: Today’s Edition on Delhi Politics, Events &amp; Entertainment,” The Hindu. Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/">https://www.thehindu.com/news/cities/Delhi/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0fc89f7"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org29d682d" class="outline-3">
+<h3 id="org29d682d"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“Turkman Gate: Demolition, Midnight Policing, Stone-Pelting, Arrests,” NewsClick. Accessed: Jan. 10, 2026. [Online]. Available: <a href="https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests">https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests</a></li>
+
+<li>“Why Modi did not go on a Pakistan-bashing spree after the Delhi blast.” Accessed: Nov. 28, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/modi-pakistan-delhi-blast">https://caravanmagazine.in/politics/modi-pakistan-delhi-blast</a></li>
+
+<li>A. Sharma, “Delhi Red Fort Blast 2025: India’s Security Gaps Exposed,” Frontline. Accessed: Nov. 14, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/politics/inside-delhi-blast-white-collar-terror-module/article70270827.ece">https://frontline.thehindu.com/politics/inside-delhi-blast-white-collar-terror-module/article70270827.ece</a></li>
+
+<li>“Com. Mahendra Singh: Organiser and Teacher of the Democratic Movement in Delhi,” NewsClick. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://www.newsclick.in/com-mahendra-singh-organiser-and-teacher-democratic-movement-delhi">https://www.newsclick.in/com-mahendra-singh-organiser-and-teacher-democratic-movement-delhi</a></li>
+
+<li>Red Fort Blast: Chaos in LNJP, Family Members Clueless! | NewsClick, (Nov. 11, 2025). Accessed: Nov. 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eh4nEoY2ouk">https://www.youtube.com/watch?v=eh4nEoY2ouk</a></li>
+
+<li>M. Liddle, “‘Sheher Mein Gaon’: A compelling articulation of the many tangled issues of Delhi’s ‘urban villages,’” Scroll.in. Accessed: Nov. 10, 2025. [Online]. Available: <a href="https://scroll.in/article/1087774/sheher-mein-gaon-a-compelling-articulation-of-the-many-tangled-issues-of-delhis-urban-villages">https://scroll.in/article/1087774/sheher-mein-gaon-a-compelling-articulation-of-the-many-tangled-issues-of-delhis-urban-villages</a></li>
+
+<li>Delhi: How Many People Will You Jail? | NewsClick, (Sep. 20, 2025). Accessed: Sep. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YRpSEkXxHcI">https://www.youtube.com/watch?v=YRpSEkXxHcI</a></li>
+
+<li>“How Delhi Violence Conspiracy Case Ritualises Silence,” NewsClick. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://www.newsclick.in/how-delhi-violence-conspiracy-case-ritualises-silence">https://www.newsclick.in/how-delhi-violence-conspiracy-case-ritualises-silence</a></li>
+
+<li>“The Wasted Nationalism of a Delhi Museum-Park,” The India Forum. Accessed: Aug. 10, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/society/wasted-nationalism-delhi-park">https://www.theindiaforum.in/society/wasted-nationalism-delhi-park</a></li>
+
+<li>S. K. &amp; D. Kumar, “Delhi’s street vendors aren’t ‘illegal’ – sweeping evictions violate rights, crush livelihoods,” Scroll.in. Accessed: Aug. 04, 2025. [Online]. Available: <a href="https://scroll.in/article/1083709/delhis-street-vendors-arent-illegal-sweeping-evictions-violate-rights-crush-livelihoods">https://scroll.in/article/1083709/delhis-street-vendors-arent-illegal-sweeping-evictions-violate-rights-crush-livelihoods</a></li>
+
+<li>M. Nabi, “Promises Without Presence: Why Delhi’s Homeless Women Don’t Trust The SMILE Scheme,” Feminism in India. Accessed: Aug. 04, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/04/promises-without-presence-why-delhis-homeless-women-dont-trust-the-smile-scheme/">https://feminisminindia.com/2025/08/04/promises-without-presence-why-delhis-homeless-women-dont-trust-the-smile-scheme/</a></li>
+
+<li>V. Lakhera, “Delhi’s Invisible Citizens: The Politics Behind Jai Hind Camp’s Power Cut and Evictions,” Frontline. Accessed: Jul. 26, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/delhi-slum-evictions-jai-hind-camp-housing-crisis-2025/article69849776.ece">https://frontline.thehindu.com/social-issues/delhi-slum-evictions-jai-hind-camp-housing-crisis-2025/article69849776.ece</a></li>
+
+<li>DELHI: Indira Colony People Protest Demolitions at CM’s Residence | NewsClick, (Jul. 23, 2025). Accessed: Jul. 24, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8T0UMXLRCFg">https://www.youtube.com/watch?v=8T0UMXLRCFg</a></li>
+
+<li>T. H. Bureau, “Delhi CM to inaugurate 34 new AAMs, 8 Jan Aushadhi Kendras,” The Hindu, Jul. 23, 2025. Accessed: Jul. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-cm-to-inaugurate-34-new-aams-8-jan-aushadhi-kendras/article69848137.ece">https://www.thehindu.com/news/cities/Delhi/delhi-cm-to-inaugurate-34-new-aams-8-jan-aushadhi-kendras/article69848137.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Kaul, “Juvenile Justice Under Fire After Delhi Teen’s Death,” Frontline. Accessed: Jul. 13, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/social-justice/juvenile-justice-crisis-delhi/article69787858.ece">https://frontline.thehindu.com/social-issues/social-justice/juvenile-justice-crisis-delhi/article69787858.ece</a></li>
+
+<li>V. Bhalla, “How the judiciary paved the way for the current spate of slum demolitions in Delhi,” Scroll.in. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://scroll.in/article/1084230/why-the-judiciary-is-responsible-for-the-current-spate-of-slum-demolitions-in-delhi">https://scroll.in/article/1084230/why-the-judiciary-is-responsible-for-the-current-spate-of-slum-demolitions-in-delhi</a></li>
+
+<li>“Uttarakhand: Uprooted by Climate Change, Villagers Battle for Survival in Delhi,” NewsClick. Accessed: Jul. 03, 2025. [Online]. Available: <a href="https://www.newsclick.in/uttarakhand-uprooted-climate-change-villagers-battle-survival-delhi">https://www.newsclick.in/uttarakhand-uprooted-climate-change-villagers-battle-survival-delhi</a></li>
+
+<li>“Special | As AI Took Over Policing in Delhi, Who Bore the Brunt?,” The Wire. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://thewire.in/government/delhi-police-ai-facial-recognition">https://thewire.in/government/delhi-police-ai-facial-recognition</a></li>
+
+<li>S. Pathak, “‘Basti and Durbar’: This fiction anthology paints a comprehensive picture of Delhi and its people,” Scroll.in. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://scroll.in/article/1083185/basti-and-durbar-this-fiction-anthology-paints-a-comprehensive-picture-of-delhi-and-its-people">https://scroll.in/article/1083185/basti-and-durbar-this-fiction-anthology-paints-a-comprehensive-picture-of-delhi-and-its-people</a></li>
+
+<li>T. Anwar, “Unequal Charges, Unequal Access: Gender Bias In Delhi Metro Washrooms,” Feminism in India. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/24/unequal-charges-unequal-access-gender-bias-in-delhi-metro-washrooms/">https://feminisminindia.com/2025/06/24/unequal-charges-unequal-access-gender-bias-in-delhi-metro-washrooms/</a></li>
+
+<li>P. Prakash, “The 300-year-old Anglo-Arabic School is Delhi’s oldest academic institution with history in every stone,” The Hindu, Jun. 21, 2025. Accessed: Jun. 22, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/the-300-year-old-anglo-arabic-school-is-delhis-oldest-academic-institution-with-history-in-every-stone/article69651705.ece">https://www.thehindu.com/news/cities/Delhi/the-300-year-old-anglo-arabic-school-is-delhis-oldest-academic-institution-with-history-in-every-stone/article69651705.ece</a></li>
+
+<li>Jyoti, “Madrasi Camp Demolition: Broken Promise Of ‘Jaha Jhuggi, Wahi Makan,’” Feminism in India. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/17/madrasi-camp-demolition-broken-promise-of-jaha-jhuggi-wahi-makan/">https://feminisminindia.com/2025/06/17/madrasi-camp-demolition-broken-promise-of-jaha-jhuggi-wahi-makan/</a></li>
+
+<li>A. Sharma, “₹2,500 To Delhi’s Women: The BJP Government’s Unfulfilled Promise,” Feminism in India. Accessed: Jun. 06, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/05/bjp-governments-unfulfilled-promise-of-%E2%82%B92500-to-delhis-women/">https://feminisminindia.com/2025/06/05/bjp-governments-unfulfilled-promise-of-%E2%82%B92500-to-delhis-women/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Kaul, “Demolished and Displaced: How Delhi’s Madrasi Camp Fell to Bulldozers and Bureaucracy,” Frontline. Accessed: Jun. 05, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/madrasi-camp-delhi-demolition-tamil-migrants-rehabilitation/article69656342.ece">https://frontline.thehindu.com/social-issues/madrasi-camp-delhi-demolition-tamil-migrants-rehabilitation/article69656342.ece</a></li>
+
+<li>“DU: CCS-Based Periodic Review a Threat to Academic Freedom,” NewsClick. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://www.newsclick.in/du-ccs-based-periodic-review-threat-academic-freedom">https://www.newsclick.in/du-ccs-based-periodic-review-threat-academic-freedom</a></li>
+
+<li>“Delhi: Okhla’s Long-Time Residents Face Bulldozer Threat,” NewsClick. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://www.newsclick.in/delhi-okhlas-long-time-residents-face-bulldozer-threat">https://www.newsclick.in/delhi-okhlas-long-time-residents-face-bulldozer-threat</a></li>
+
+<li>‘Won’t Tolerate Terror of Bulldozers,’ Say Delhi Slumdwellers | NewsClick, (May 30, 2025). Accessed: May 31, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kXMTgvCFZ9w">https://www.youtube.com/watch?v=kXMTgvCFZ9w</a></li>
+
+<li>“Neighborhood public transit services: Situational analysis of bus-based public transport supply in Delhi,” International Council on Clean Transportation. Accessed: May 09, 2025. [Online]. Available: <a href="https://theicct.org/publication/neighborhood-public-transit-services-situational-analysis-of-bus-based-public-transport-supply-in-delhi-apr25/">https://theicct.org/publication/neighborhood-public-transit-services-situational-analysis-of-bus-based-public-transport-supply-in-delhi-apr25/</a></li>
+
+<li>T. H. Bureau, “AAP alleges ‘major scam’ in DEVi buses, seeks CBI probe,” The Hindu, May 03, 2025. Accessed: May 04, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/aap-alleges-major-scam-in-devi-buses-seeks-cbi-probe/article69535732.ece">https://www.thehindu.com/news/cities/Delhi/aap-alleges-major-scam-in-devi-buses-seeks-cbi-probe/article69535732.ece</a></li>
+<li>A. Dutta, “CM Gupta inaugurates 400 electric DEVi buses,” The Hindu, May 02, 2025. Accessed: May 04, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/cm-gupta-inaugurates-400-electric-devi-buses/article69531939.ece">https://www.thehindu.com/news/cities/Delhi/cm-gupta-inaugurates-400-electric-devi-buses/article69531939.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Rohini Slum Fire: Innocents Dead, Where’s Govt? | NewsClick, (Apr. 29, 2025). Accessed: Apr. 30, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0alI4LoXMKc">https://www.youtube.com/watch?v=0alI4LoXMKc</a></li>
+
+<li>Delhi: 400 Families Face Demolition Threat in Madrasi Camp | NewsClick, (Apr. 21, 2025). Accessed: Apr. 21, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-F4_0RCDhV8">https://www.youtube.com/watch?v=-F4_0RCDhV8</a></li>
+
+<li>PTI, “Delhi Budget 2025: You made ‘Sheesh Mahal’, we will build houses for the poor, Rekha Gupta attacks Arvind Kejriwal,” The Hindu, Mar. 25, 2025. Accessed: Mar. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-chief-minister-rekha-gupta-presents-maiden-budget-on-march-25-2026/article69372530.ece">https://www.thehindu.com/news/cities/Delhi/delhi-chief-minister-rekha-gupta-presents-maiden-budget-on-march-25-2026/article69372530.ece</a></li>
+
+<li>“Clash Of Titans! Really? Who Can Hate The ‘Other’ More!| Countercurrents.” Accessed: Feb. 05, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/02/clash-of-titans-really-who-can-hate-the-other-more/">https://countercurrents.org/2025/02/clash-of-titans-really-who-can-hate-the-other-more/</a></li>
+
+<li>A. Ahmed, “All That Went Wrong With The Mahila Mohalla Clinics In Delhi,” Feminism in India. Accessed: Feb. 03, 2025. [Online]. Available: <a href="https://feminisminindia.com/?p=181744">https://feminisminindia.com/?p=181744</a></li>
+
+<li>R. Kapoor, “Delhi’s Last Surviving Zenana Bagh Illustrates How A Modern City Can Bring Those on the Margins to the Centre,” Frontline. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/delhi-daryaganj-purdah-bagh-public-spaces-indian-city-women-safety-inclusive-segregated-spaces/article69085670.ece">https://frontline.thehindu.com/society/delhi-daryaganj-purdah-bagh-public-spaces-indian-city-women-safety-inclusive-segregated-spaces/article69085670.ece</a></li>
+
+<li>J. Shah, The Delhi Model. Penguin, 2024.
+<ul class="org-ul">
+<li>S. Mishra, “INTERVIEW | ‘Gujarat Model Undesirable, Should Be Replaced by Delhi Model’: Jasmine Shah, AAP leader,” Frontline. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/jasmine-shah-interview-aap-the-delhi-model-assembly-election-2025-health-education-trickle-down-appraoch/article69052703.ece">https://frontline.thehindu.com/books/jasmine-shah-interview-aap-the-delhi-model-assembly-election-2025-health-education-trickle-down-appraoch/article69052703.ece</a></li>
+</ul></li>
+
+<li>V. L. &amp; V. Kaul, “Delhi’s Historical and Cultural Legacy Inaccessible due to Pricey Heritage Walks and Privatisation of Monuments,” Frontline. Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/heritage/delhi-heritage-walks-monuments-privatisation-mughal-legacy-asi-winter-tourism-humayuns-tomb-red-fort/article69049821.ece">https://frontline.thehindu.com/arts-and-culture/heritage/delhi-heritage-walks-monuments-privatisation-mughal-legacy-asi-winter-tourism-humayuns-tomb-red-fort/article69049821.ece</a></li>
+
+<li>“The New, the Old, and a Mall in Chandni Chowk,” The Wire. Accessed: Jul. 28, 2024. [Online]. Available: <a href="https://thewire.in/urban/chandni-chowk-shopping-mall-air-conditioned">https://thewire.in/urban/chandni-chowk-shopping-mall-air-conditioned</a></li>
+
+<li>T. H. Bureau, “DDA defers demolition drive in Majnu ka Tila,” The Hindu, Jul. 13, 2024. Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/dda-defers-demolition-drive-in-majnu-ka-tila/article68401180.ece">https://www.thehindu.com/news/cities/Delhi/dda-defers-demolition-drive-in-majnu-ka-tila/article68401180.ece</a></li>
+
+<li>PTI, “Bharatiya Nyaya Sanhita: First case under new penal code registered in Delhi against street vendor under Section 285,” The Hindu, Jul. 01, 2024. Accessed: Jul. 02, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/first-case-under-new-penal-code-bharatiya-nyaya-sanhita-registered-in-delhi/article68354160.ece">https://www.thehindu.com/news/national/first-case-under-new-penal-code-bharatiya-nyaya-sanhita-registered-in-delhi/article68354160.ece</a></li>
+
+<li>A. Dutta, “Over 20 FIRs registered in Delhi under new criminal law,” The Hindu, Jul. 01, 2024. Accessed: Jul. 02, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/over-20-firs-registered-in-delhi-under-new-criminal-law/article68356926.ece">https://www.thehindu.com/news/cities/Delhi/over-20-firs-registered-in-delhi-under-new-criminal-law/article68356926.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2afa508" class="outline-2">
+<h2 id="org2afa508"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org6500da9" class="outline-3">
+<h3 id="org6500da9"><span class="section-number-3">4.1.</span> Music</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Delhi Music: <a href="https://tinyurl.com/4ejsthvp">https://tinyurl.com/4ejsthvp</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7837961" class="outline-3">
+<h3 id="org7837961"><span class="section-number-3">4.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>V. Choudhary, “Delhi’s cow dung cakes: A necessary evil?,” Down To Earth. Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://www.downtoearth.org.in/air/delhis-cow-dung-cakes-a-necessary-evil">https://www.downtoearth.org.in/air/delhis-cow-dung-cakes-a-necessary-evil</a></li>
+
+<li>“In New Delhi, surviving home,” PARI - People’s Archive of Rural India. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/in-new-delhi-surviving-home">https://ruralindiaonline.org/article/in-new-delhi-surviving-home</a></li>
+
+<li>“Turkman Gate: Demolition, Midnight Policing, Stone-Pelting, Arrests,” NewsClick. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests">https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests</a></li>
+
+<li>T. H. Bureau, “Yamuna rejuvenation: Shah asks Delhi govt. to double its sewage treatment capacity by 2028,” The Hindu, Jul. 11, 2025. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/yamuna-rejuvenation-shah-asks-delhi-govt-to-double-its-sewage-treatment-capacity-by-2028/article69801937.ece">https://www.thehindu.com/news/cities/Delhi/yamuna-rejuvenation-shah-asks-delhi-govt-to-double-its-sewage-treatment-capacity-by-2028/article69801937.ece</a></li>
+<li>T. H. Bureau, “Delhi HC stays release of Udaipur Files, refers petitioners to Centre,” The Hindu, Jul. 10, 2025. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/movies/delhi-hc-stays-release-of-udaipur-files-refers-petitioners-to-centre/article69797363.ece">https://www.thehindu.com/entertainment/movies/delhi-hc-stays-release-of-udaipur-files-refers-petitioners-to-centre/article69797363.ece</a></li>
+<li>A. Behal, “Delhi Slum Demolitions: Who Is Left Behind?,” Frontline. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/delhi-slum-demolition-drive-madrasi-camp-evictions/article69792100.ece">https://frontline.thehindu.com/society/delhi-slum-demolition-drive-madrasi-camp-evictions/article69792100.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Delhi Demolitions: ‘We Are City Builders, Not Illegals’! | NewsClick, (Jun. 27, 2025). Accessed: Jun. 27, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=w7WP_KA9bd4">https://www.youtube.com/watch?v=w7WP_KA9bd4</a></li>
+
+<li>V. Kaul, “A Tale of Two Markets: Class, Control, and the Crackdown on Delhi’s Fish Vendors,” Frontline. Accessed: Apr. 21, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/economy/urban-poor-delhi-fish-market-demolition-govindpuri-mcd-crackdown/article69467912.ece">https://frontline.thehindu.com/economy/urban-poor-delhi-fish-market-demolition-govindpuri-mcd-crackdown/article69467912.ece</a></li>
+
+<li>T. H. Bureau, “Atishi asks BJP to explain source of ₹1-lakh-crore budget,” The Hindu, Mar. 28, 2025. Accessed: Mar. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/atishi-asks-bjp-to-explain-source-of-1-lakh-crore-budget/article69387720.ece">https://www.thehindu.com/news/cities/Delhi/atishi-asks-bjp-to-explain-source-of-1-lakh-crore-budget/article69387720.ece</a></li>
+<li>T. H. Bureau, “Delhi govt. to bring in cow protection law,” The Hindu, Mar. 28, 2025. Accessed: Mar. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-govt-to-bring-in-cow-protection-law/article69387633.ece">https://www.thehindu.com/news/cities/Delhi/delhi-govt-to-bring-in-cow-protection-law/article69387633.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>PTI, “Gas pipeline in Delhi’s Najafgarh catches fire,” The Hindu, Feb. 28, 2025. Accessed: Feb. 28, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/gas-pipeline-in-delhis-najafgarh-catches-fire/article69273628.ece">https://www.thehindu.com/news/cities/Delhi/gas-pipeline-in-delhis-najafgarh-catches-fire/article69273628.ece</a></li>
+<li>“5 Years of Delhi Riots: Some Punished, Some Rewarded!,” NewsClick. Accessed: Feb. 28, 2025. [Online]. Available: <a href="https://www.newsclick.in/5-years-delhi-riots-some-punished-some-rewarded">https://www.newsclick.in/5-years-delhi-riots-some-punished-some-rewarded</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Connaught Place, New Delhi,” Wikipedia. Feb. 21, 2025. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Connaught_Place,_New_Delhi&amp;oldid=1276923012">https://en.wikipedia.org/w/index.php?title=Connaught_Place,_New_Delhi&amp;oldid=1276923012</a></li>
+
+<li>“India International Centre,” Wikipedia. Nov. 05, 2023. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=India_International_Centre&amp;oldid=1183664813">https://en.wikipedia.org/w/index.php?title=India_International_Centre&amp;oldid=1183664813</a></li>
+<li>“India Habitat Centre,” Wikipedia. Jul. 10, 2024. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=India_Habitat_Centre&amp;oldid=1233724692">https://en.wikipedia.org/w/index.php?title=India_Habitat_Centre&amp;oldid=1233724692</a></li>
+
+<li>“Khan Market,” Wikipedia. Jan. 24, 2025. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Khan_Market&amp;oldid=1271471575">https://en.wikipedia.org/w/index.php?title=Khan_Market&amp;oldid=1271471575</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Big Chill Cafe,” Wikipedia. Jun. 30, 2024. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=The_Big_Chill_Cafe&amp;oldid=1231861395">https://en.wikipedia.org/w/index.php?title=The_Big_Chill_Cafe&amp;oldid=1231861395</a></li>
+<li>“Indulge in Premium Quality American Desserts &amp; Italian Cuisine | The Big Chill,” The Big Chill Cafe. Accessed: Feb. 23, 2025. [Online]. Available: <a href="http://thebigchillonline.com">http://thebigchillonline.com</a></li>
+
+<li>R. Ghai, “As Delhi votes on a glorious spring day, here’s what Amir Khusro had to say on his beloved city’s beauty,” Down To Earth. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/as-delhi-votes-on-a-glorious-spring-day-heres-what-amir-khusro-had-to-say-on-his-beloved-citys-beauty">https://www.downtoearth.org.in/environment/as-delhi-votes-on-a-glorious-spring-day-heres-what-amir-khusro-had-to-say-on-his-beloved-citys-beauty</a></li>
+
+<li>P. Pant, From The King’s Table to Street Food : A Food History of Delhi. Speaking Tiger, 2024.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbbfc0c0" class="outline-2">
+<h2 id="orgbbfc0c0"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org19d8ddd" class="outline-3">
+<h3 id="org19d8ddd"><span class="section-number-3">5.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>M. Dayal, <i>Celebrating Delhi.</i> Penguin UK, 2010.</li>
+
+<li>S. Chakravorty and N. Sircar, Eds., Colossus : The Anatomy of Delhi: 15. Cambridge, United Kingdom ; New York, NY: Cambridge University Press, 2022.</li>
+
+<li>R. Dasgupta, Capital: The Eruption of Delhi. Penguin Press, 2014.
+<ul class="org-ul">
+<li>J. Burke, “Capital review – Rana Dasgupta’s perceptive exploration of modern Delhi,” The Observer, Mar. 23, 2014. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://www.theguardian.com/books/2014/mar/23/capital-review-rana-dasgupta-modern-delhi">https://www.theguardian.com/books/2014/mar/23/capital-review-rana-dasgupta-modern-delhi</a></li>
+<li>“Rana Dasgupta,” Wikipedia. Aug. 27, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rana_Dasgupta&amp;oldid=1106998512">https://en.wikipedia.org/w/index.php?title=Rana_Dasgupta&amp;oldid=1106998512</a></li>
+<li>“Capital: The Eruption of Delhi,” Wikipedia. Apr. 16, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Capital:_The_Eruption_of_Delhi&amp;oldid=1083038493">https://en.wikipedia.org/w/index.php?title=Capital:_The_Eruption_of_Delhi&amp;oldid=1083038493</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org884ddd2" class="outline-3">
+<h3 id="org884ddd2"><span class="section-number-3">5.2.</span> Food, Misc</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>Food: <a href="https://tinyurl.com/yju5jffd">https://tinyurl.com/yju5jffd</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09082a6" class="outline-3">
+<h3 id="org09082a6"><span class="section-number-3">5.3.</span> Communal Violence</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>V. G. Gowda, Delhi’s Agony: Essays on the February 2020 Communal Violence. LeftWord, 2021.
+<ul class="org-ul">
+<li>“Delhi’s Agony.” <a href="https://mayday.leftword.com/delhi-s-agony.html">https://mayday.leftword.com/delhi-s-agony.html</a> (accessed Mar. 11, 2022).</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org10efcac" class="outline-2">
+<h2 id="org10efcac"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>V. Choudhary, “Delhi’s cow dung cakes: A necessary evil?,” Down To Earth. Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://www.downtoearth.org.in/air/delhis-cow-dung-cakes-a-necessary-evil">https://www.downtoearth.org.in/air/delhis-cow-dung-cakes-a-necessary-evil</a></li>
+
+<li>“In New Delhi, surviving home,” PARI - People’s Archive of Rural India. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/in-new-delhi-surviving-home">https://ruralindiaonline.org/article/in-new-delhi-surviving-home</a></li>
+
+<li>“Turkman Gate: Demolition, Midnight Policing, Stone-Pelting, Arrests,” NewsClick. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests">https://www.newsclick.in/turkman-gate-demolition-midnight-policing-stone-pelting-arrests</a></li>
+
+<li>T. H. Bureau, “Yamuna rejuvenation: Shah asks Delhi govt. to double its sewage treatment capacity by 2028,” The Hindu, Jul. 11, 2025. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/yamuna-rejuvenation-shah-asks-delhi-govt-to-double-its-sewage-treatment-capacity-by-2028/article69801937.ece">https://www.thehindu.com/news/cities/Delhi/yamuna-rejuvenation-shah-asks-delhi-govt-to-double-its-sewage-treatment-capacity-by-2028/article69801937.ece</a></li>
+<li>T. H. Bureau, “Delhi HC stays release of Udaipur Files, refers petitioners to Centre,” The Hindu, Jul. 10, 2025. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/movies/delhi-hc-stays-release-of-udaipur-files-refers-petitioners-to-centre/article69797363.ece">https://www.thehindu.com/entertainment/movies/delhi-hc-stays-release-of-udaipur-files-refers-petitioners-to-centre/article69797363.ece</a></li>
+<li>A. Behal, “Delhi Slum Demolitions: Who Is Left Behind?,” Frontline. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/delhi-slum-demolition-drive-madrasi-camp-evictions/article69792100.ece">https://frontline.thehindu.com/society/delhi-slum-demolition-drive-madrasi-camp-evictions/article69792100.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Delhi Demolitions: ‘We Are City Builders, Not Illegals’! | NewsClick, (Jun. 27, 2025). Accessed: Jun. 27, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=w7WP_KA9bd4">https://www.youtube.com/watch?v=w7WP_KA9bd4</a></li>
+
+<li>V. Kaul, “A Tale of Two Markets: Class, Control, and the Crackdown on Delhi’s Fish Vendors,” Frontline. Accessed: Apr. 21, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/economy/urban-poor-delhi-fish-market-demolition-govindpuri-mcd-crackdown/article69467912.ece">https://frontline.thehindu.com/economy/urban-poor-delhi-fish-market-demolition-govindpuri-mcd-crackdown/article69467912.ece</a></li>
+
+<li>T. H. Bureau, “Atishi asks BJP to explain source of ₹1-lakh-crore budget,” The Hindu, Mar. 28, 2025. Accessed: Mar. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/atishi-asks-bjp-to-explain-source-of-1-lakh-crore-budget/article69387720.ece">https://www.thehindu.com/news/cities/Delhi/atishi-asks-bjp-to-explain-source-of-1-lakh-crore-budget/article69387720.ece</a></li>
+<li>T. H. Bureau, “Delhi govt. to bring in cow protection law,” The Hindu, Mar. 28, 2025. Accessed: Mar. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/delhi-govt-to-bring-in-cow-protection-law/article69387633.ece">https://www.thehindu.com/news/cities/Delhi/delhi-govt-to-bring-in-cow-protection-law/article69387633.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>PTI, “Gas pipeline in Delhi’s Najafgarh catches fire,” The Hindu, Feb. 28, 2025. Accessed: Feb. 28, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/gas-pipeline-in-delhis-najafgarh-catches-fire/article69273628.ece">https://www.thehindu.com/news/cities/Delhi/gas-pipeline-in-delhis-najafgarh-catches-fire/article69273628.ece</a></li>
+<li>“5 Years of Delhi Riots: Some Punished, Some Rewarded!,” NewsClick. Accessed: Feb. 28, 2025. [Online]. Available: <a href="https://www.newsclick.in/5-years-delhi-riots-some-punished-some-rewarded">https://www.newsclick.in/5-years-delhi-riots-some-punished-some-rewarded</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Connaught Place, New Delhi,” Wikipedia. Feb. 21, 2025. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Connaught_Place,_New_Delhi&amp;oldid=1276923012">https://en.wikipedia.org/w/index.php?title=Connaught_Place,_New_Delhi&amp;oldid=1276923012</a></li>
+
+<li>“India International Centre,” Wikipedia. Nov. 05, 2023. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=India_International_Centre&amp;oldid=1183664813">https://en.wikipedia.org/w/index.php?title=India_International_Centre&amp;oldid=1183664813</a></li>
+<li>“India Habitat Centre,” Wikipedia. Jul. 10, 2024. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=India_Habitat_Centre&amp;oldid=1233724692">https://en.wikipedia.org/w/index.php?title=India_Habitat_Centre&amp;oldid=1233724692</a></li>
+
+<li>“Khan Market,” Wikipedia. Jan. 24, 2025. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Khan_Market&amp;oldid=1271471575">https://en.wikipedia.org/w/index.php?title=Khan_Market&amp;oldid=1271471575</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Big Chill Cafe,” Wikipedia. Jun. 30, 2024. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=The_Big_Chill_Cafe&amp;oldid=1231861395">https://en.wikipedia.org/w/index.php?title=The_Big_Chill_Cafe&amp;oldid=1231861395</a></li>
+<li>“Indulge in Premium Quality American Desserts &amp; Italian Cuisine | The Big Chill,” The Big Chill Cafe. Accessed: Feb. 23, 2025. [Online]. Available: <a href="http://thebigchillonline.com">http://thebigchillonline.com</a></li>
+
+<li>R. Ghai, “As Delhi votes on a glorious spring day, here’s what Amir Khusro had to say on his beloved city’s beauty,” Down To Earth. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/as-delhi-votes-on-a-glorious-spring-day-heres-what-amir-khusro-had-to-say-on-his-beloved-citys-beauty">https://www.downtoearth.org.in/environment/as-delhi-votes-on-a-glorious-spring-day-heres-what-amir-khusro-had-to-say-on-his-beloved-citys-beauty</a></li>
+
+<li>P. Pant, From The King’s Table to Street Food : A Food History of Delhi. Speaking Tiger, 2024.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 15:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 15:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Punjab</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Punjab</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org006ed92">1. General</a></li>
+<li><a href="#org1844592">2. STEMM</a>
+<ul>
+<li><a href="#org4ef91a1">2.1. Environment</a>
+<ul>
+<li><a href="#orgd1443ba">2.1.1. Misc</a></li>
+<li><a href="#org5d76c17">2.1.2. Elements</a></li>
+<li><a href="#org505cd34">2.1.3. Temperature</a></li>
+<li><a href="#org97b6244">2.1.4. Energy</a></li>
+<li><a href="#org9d5030a">2.1.5. Waste</a></li>
+<li><a href="#org000da59">2.1.6. Climate</a></li>
+<li><a href="#org42e4b47">2.1.7. Biological Sciences, Misc</a></li>
+<li><a href="#org610aef4">2.1.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb64806a">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org21a9efd">3. Worldly Matters</a>
+<ul>
+<li><a href="#org0b0e393">3.1. Feminism</a></li>
+<li><a href="#orgc2225f0">3.2. Spirituality</a></li>
+<li><a href="#orgf1f6a28">3.3. Misc</a>
+<ul>
+<li><a href="#org90de944">3.3.1. 9</a></li>
+<li><a href="#org63f092b">3.3.2. Texts</a></li>
+<li><a href="#orgcfacee4">3.3.3. Articles, Essays</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8f3c5de">4. Arts</a>
+<ul>
+<li><a href="#orge6c9d18">4.1. Art</a></li>
+<li><a href="#org609d675">4.2. Music</a></li>
+<li><a href="#org3b3dc50">4.3. Literature</a>
+<ul>
+<li><a href="#orgefe5f8c">4.3.1. General</a></li>
+<li><a href="#orge7f727a">4.3.2. Works</a></li>
+<li><a href="#orgf2cef5e">4.3.3. Artists</a></li>
+<li><a href="#orgaef4cf3">4.3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8ad2f7d">4.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge62113a">5. Special Topics</a>
+<ul>
+<li><a href="#org5aa9d0e">5.1. Food</a></li>
+<li><a href="#orgc811974">5.2. Jallianwala Bagh Massacre</a></li>
+<li><a href="#org9b57b16">5.3. Operation BlueStar</a></li>
+<li><a href="#org945df8b">5.4. 1984 Sikh Pogroms</a>
+<ul>
+<li><a href="#org9a65114">5.4.1. General</a></li>
+<li><a href="#orgb98b980">5.4.2. Some Context</a></li>
+<li><a href="#orgb9c644c">5.4.3. 1984</a></li>
+<li><a href="#org66f989a">5.4.4. Literature</a></li>
+<li><a href="#org6ae0cad">5.4.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc49b389">5.5. Khalistan Movement</a>
+<ul>
+<li><a href="#org51da3ff">5.5.1. General</a></li>
+<li><a href="#org8d2047c">5.5.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0ef478f">5.6. Nijjar</a></li>
+<li><a href="#orgb10a64c">5.7. Terrorism</a></li>
+<li><a href="#org2497836">5.8. Violence</a></li>
+<li><a href="#orgd71e2a2">5.9. Drugs, Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6cc520a">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org006ed92" class="outline-2">
+<h2 id="org006ed92"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Punjab,” Wikipedia. Jul. 22, 2022. Accessed: Jul. 23, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Punjab&amp;oldid=1099745163">https://en.wikipedia.org/w/index.php?title=Punjab&amp;oldid=1099745163</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1844592" class="outline-2">
+<h2 id="org1844592"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4ef91a1" class="outline-3">
+<h3 id="org4ef91a1"><span class="section-number-3">2.1.</span> Environment</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgd1443ba" class="outline-4">
+<h4 id="orgd1443ba"><span class="section-number-4">2.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>A. Tandon, “July rainfall worsened August floods in Punjab in 2023, says study,” Mongabay-India. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://india.mongabay.com/2026/01/july-rainfall-worsened-august-floods-in-punjab-in-2023-says-study/">https://india.mongabay.com/2026/01/july-rainfall-worsened-august-floods-in-punjab-in-2023-says-study/</a></li>
+
+<li>“A union-led dam board and BJP-ruled states watched as Punjab flooded.” Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/drown-state-punjab-floods-bhakra-beas-management-pong-haryana-rajasthan-bbmb-bjp">https://caravanmagazine.in/politics/drown-state-punjab-floods-bhakra-beas-management-pong-haryana-rajasthan-bbmb-bjp</a></li>
+<li>R. K. Sinha, “पंजाब : बाढ़ के समय बांध से पानी छोड़ा जाना काल बन गया,” Centre for Financial Accountability. Accessed: Sep. 11, 2025. [Online]. Available: <a href="https://www.cenfa.org/punjab-release-of-water-from-dams-during-floods-turned-into-a-catastrophe/">https://www.cenfa.org/punjab-release-of-water-from-dams-during-floods-turned-into-a-catastrophe/</a></li>
+
+<li>Bhagirath, “Punjab Floods 2025: How a lack of culverts on highways and ill-timed decisions on dam water release worsened the disaster,” Down To Earth. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-how-a-lack-of-culverts-on-highways-and-ill-timed-decisions-on-dam-water-release-worsened-the-disaster">https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-how-a-lack-of-culverts-on-highways-and-ill-timed-decisions-on-dam-water-release-worsened-the-disaster</a></li>
+<li>V. Mishra, “Punjab Floods 2025: Were state and central agencies on the same page regarding information exchange and disaster response?,” Down To Earth. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-were-state-and-central-agencies-on-the-same-page-regarding-information-exchange-and-disaster-response">https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-were-state-and-central-agencies-on-the-same-page-regarding-information-exchange-and-disaster-response</a></li>
+<li>V. Mishra, “Punjab Floods 2025: Flood-affected farmers to get compensation of Rs 20,000 per acre; can sell soil and silt deposited in their fields,” Down To Earth. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-flood-affected-farmers-to-get-compensation-of-rs-20000-per-acre-can-sell-soil-and-silt-deposited-in-their-fields">https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-flood-affected-farmers-to-get-compensation-of-rs-20000-per-acre-can-sell-soil-and-silt-deposited-in-their-fields</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Thakur, “Punjab Floods 2025 Ground Report: Not the administration, people are helping each other in Patiala’s villages,” Down To Earth. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-ground-report-not-the-administration-people-are-helping-each-other-in-patialas-villages">https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-ground-report-not-the-administration-people-are-helping-each-other-in-patialas-villages</a></li>
+<li>M. Punia, “Punjab Floods 2025 Ground Report: The government may be missing from the scene, but people have stepped in to fill to void,” Down To Earth. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-ground-report-the-government-may-be-missing-from-the-scene-but-people-have-stepped-in-to-fill-to-void">https://www.downtoearth.org.in/natural-disasters/punjab-floods-2025-ground-report-the-government-may-be-missing-from-the-scene-but-people-have-stepped-in-to-fill-to-void</a></li>
+
+<li>A. Sharma, “Punjab Floods 2024: Mismanagement, Political Fallout, and the Agrarian Crisis,” Frontline. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/agriculture/punjab-floods-2024-political-fallout-farmer-crisis/article70003741.ece">https://frontline.thehindu.com/the-nation/agriculture/punjab-floods-2024-political-fallout-farmer-crisis/article70003741.ece</a></li>
+<li>A. Tanveer, B. Dogar, and A. P. C. M. E. E. T. C. WeatherFloodingPakistan, “Mass evacuations in flood-hit Punjab hit 300,000 following alerts by India,” Mongabay Environmental News. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://news.mongabay.com/short-article/2025/09/mass-evacuations-in-flood-hit-punjab-hit-300000-following-alerts-by-india/">https://news.mongabay.com/short-article/2025/09/mass-evacuations-in-flood-hit-punjab-hit-300000-following-alerts-by-india/</a></li>
+<li>V. Shiva, <b>The Violence of Green Revolution: Third World Agriculture, Ecology and Politics.</b> Zed Books, 1991.</li>
+<li>Down To Earth, Punjab Floods 2025: Rains Ravage Both India &amp; Pakistan, (Sep. 03, 2025). Accessed: Sep. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qYb7e0U3rRc">https://www.youtube.com/watch?v=qYb7e0U3rRc</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5d76c17" class="outline-4">
+<h4 id="org5d76c17"><span class="section-number-4">2.1.2.</span> Elements</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgfc2efd5"></a>Earth<br />
+<ol class="org-ol">
+<li><a id="org0e0c845"></a>Earthquakes<br /></li>
+<li><a id="org93a3ac5"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org4dc44b5"></a>Water<br /></li>
+<li><a id="org9fc3b75"></a>Air<br />
+<ol class="org-ol">
+<li><a id="org44df38b"></a>Air Pollution<br /></li>
+<li><a id="org77b25b3"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org0dab814"></a>Fire<br /></li>
+</ol>
+</div>
+<div id="outline-container-org505cd34" class="outline-4">
+<h4 id="org505cd34"><span class="section-number-4">2.1.3.</span> Temperature</h4>
+</div>
+<div id="outline-container-org97b6244" class="outline-4">
+<h4 id="org97b6244"><span class="section-number-4">2.1.4.</span> Energy</h4>
+</div>
+<div id="outline-container-org9d5030a" class="outline-4">
+<h4 id="org9d5030a"><span class="section-number-4">2.1.5.</span> Waste</h4>
+</div>
+<div id="outline-container-org000da59" class="outline-4">
+<h4 id="org000da59"><span class="section-number-4">2.1.6.</span> Climate</h4>
+</div>
+<div id="outline-container-org42e4b47" class="outline-4">
+<h4 id="org42e4b47"><span class="section-number-4">2.1.7.</span> Biological Sciences, Misc</h4>
+<div class="outline-text-4" id="text-2-1-7">
+</div>
+<ol class="org-ol">
+<li><a id="org5e9fbf7"></a>Genetically Modified Organisms<br /></li>
+<li><a id="orgae3d064"></a>Pandemics<br /></li>
+<li><a id="orga54ddd5"></a>BioDiversity<br /></li>
+<li><a id="org4816013"></a>Zoology<br /></li>
+<li><a id="org6f85163"></a>Botany<br /></li>
+</ol>
+</div>
+<div id="outline-container-org610aef4" class="outline-4">
+<h4 id="org610aef4"><span class="section-number-4">2.1.8.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgb64806a" class="outline-3">
+<h3 id="orgb64806a"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org21a9efd" class="outline-2">
+<h2 id="org21a9efd"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org0b0e393" class="outline-3">
+<h3 id="org0b0e393"><span class="section-number-3">3.1.</span> Feminism</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Women in Punjab, India,” Wikipedia. Jan. 20, 2026. Accessed: Apr. 08, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Women_in_Punjab,_India&amp;oldid=1333833699">https://en.wikipedia.org/w/index.php?title=Women_in_Punjab,_India&amp;oldid=1333833699</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc2225f0" class="outline-3">
+<h3 id="orgc2225f0"><span class="section-number-3">3.2.</span> Spirituality</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>M. Juergensmeyer, Religious Rebels in the Punjab: The Ad Dharm Challenge to Caste. Navayana, 2010.
+<ul class="org-ul">
+<li>“Religious Rebels in the Punjab,” Navayana Publishing. <a href="https://navayana.org/products/religious-rebels-in-the-punjab/">https://navayana.org/products/religious-rebels-in-the-punjab/</a> (accessed May 09, 2022).</li>
+</ul></li>
+
+<li>J. Singh, Religious Pluralism in Punjab: A Contemporary Account of Sikh Sants, Babas, Gurus and Satgurus, 1st edition. Routledge, 2017.</li>
+
+<li>D. A. Malhotra, Gender, Caste, and Religious Identities: Restructuring Class in Colonial Punjab. New Delhi ; New York: OUP India, 2002.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf1f6a28" class="outline-3">
+<h3 id="orgf1f6a28"><span class="section-number-3">3.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org90de944" class="outline-4">
+<h4 id="org90de944"><span class="section-number-4">3.3.1.</span> 9</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li>“Punjab’s new media suffers from old problems.” Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://caravanmagazine.in/media/punjab's-new-media-suffers-from-old-problems">https://caravanmagazine.in/media/punjab's-new-media-suffers-from-old-problems</a></li>
+
+<li>“Punjab: What Remains After Ethanol Factory Shuts Down,” NewsClick. Accessed: Jan. 18, 2026. [Online]. Available: <a href="https://www.newsclick.in/punjab-what-remains-after-ethanol-factory-shuts-down">https://www.newsclick.in/punjab-what-remains-after-ethanol-factory-shuts-down</a></li>
+
+<li>“On Punjab’s Economic Deceleration | Economic and Political Weekly.” Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/39/letters/punjabs-economic-deceleration.html">https://www.epw.in/journal/2025/39/letters/punjabs-economic-deceleration.html</a></li>
+
+<li>“Why are girls in South Punjab, Pakistan, still being married off before the age of 15?,” Global Voices. Accessed: Sep. 21, 2025. [Online]. Available: <a href="https://globalvoices.org/2025/09/21/why-girls-in-south-punjab-pakistan-are-still-being-married-off-before-the-age-of-15/">https://globalvoices.org/2025/09/21/why-girls-in-south-punjab-pakistan-are-still-being-married-off-before-the-age-of-15/</a></li>
+
+<li>“Punjab: Why Proposed 'Law Against Blasphemy’ Needs to be Discarded,” NewsClick. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://www.newsclick.in/punjab-why-proposed-law-against-blasphemy-needs-be-discarded">https://www.newsclick.in/punjab-why-proposed-law-against-blasphemy-needs-be-discarded</a></li>
+
+<li>“Punjab’s Land Pooling: Exclusive not Inclusive Urban Development,” The India Forum. Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/forum/punjabs-land-pooling-exclusive-not-inclusive-urban-development">https://www.theindiaforum.in/forum/punjabs-land-pooling-exclusive-not-inclusive-urban-development</a></li>
+
+<li>A. Sharma, “Why Influencer Kanchan Kumari Was Killed: Inside a Punjab Vigilante Murder,” Frontline. Accessed: Jul. 03, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/kanchan-kumari-murder-punjab-2025/article69754792.ece">https://frontline.thehindu.com/society/kanchan-kumari-murder-punjab-2025/article69754792.ece</a></li>
+
+<li>“In Punjab: a tale of two immigrants.” Accessed: Apr. 15, 2025. [Online]. Available: <a href="https://beta.ruralindiaonline.org/article/in-punjab-a-tale-of-two-immigrants">https://beta.ruralindiaonline.org/article/in-punjab-a-tale-of-two-immigrants</a></li>
+
+<li>“Farmers Across Country Observe ‘Anti-Repression Day’ Against ‘Police Raj’ in Punjab,” NewsClick. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://www.newsclick.in/farmers-across-country-observe-anti-repression-day-against-police-raj-punjab">https://www.newsclick.in/farmers-across-country-observe-anti-repression-day-against-police-raj-punjab</a></li>
+
+<li>A. Behal, “The Changing Face Of Women’s Migration In Punjab.” Accessed: Mar. 06, 2025. [Online]. Available: <a href="https://www.indiaspend.com/punjab/the-changing-face-of-womens-migration-in-punjab-943808">https://www.indiaspend.com/punjab/the-changing-face-of-womens-migration-in-punjab-943808</a></li>
+
+<li>“Proxy Propaganda Targets AAP Government’s Critics in Punjab.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/proxy-propaganda-targets-aap-governments-critics-in-punjab">https://www.reporters-collective.in/trc/proxy-propaganda-targets-aap-governments-critics-in-punjab</a></li>
+
+<li>R. Bhatia, “Seventh river of Punjab: Wokeism,” Organiser. Accessed: Dec. 28, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/27/271068/bharat/seventh-river-of-punjab-wokeism/">https://organiser.org/2024/12/27/271068/bharat/seventh-river-of-punjab-wokeism/</a></li>
+
+<li>“Punjab: Jawaharke Khap Resolution Undermines Women’s Autonomy,” NewsClick. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.newsclick.in/punjab-jawaharke-khap-resolution-undermines-womens-autonomy">https://www.newsclick.in/punjab-jawaharke-khap-resolution-undermines-womens-autonomy</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org63f092b" class="outline-4">
+<h4 id="org63f092b"><span class="section-number-4">3.3.2.</span> Texts</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>D. A. Malhotra, Gender, Caste, and Religious Identities: Restructuring Class in Colonial Punjab. New Delhi ; New York: OUP India, 2002.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcfacee4" class="outline-4">
+<h4 id="orgcfacee4"><span class="section-number-4">3.3.3.</span> Articles, Essays</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<ul class="org-ul">
+<li>A. Malhotra, “This new book explains why ‘Punjabiyat’ or ‘Punjabiness’ is both emotionally and culturally complex,” Scroll.in. Accessed: Jun. 20, 2024. [Online]. Available: <a href="https://scroll.in/article/1069391/this-new-book-explains-why-punjabiyat-or-punjabiness-is-both-emotionally-and-culturally-complex">https://scroll.in/article/1069391/this-new-book-explains-why-punjabiyat-or-punjabiness-is-both-emotionally-and-culturally-complex</a></li>
+
+<li>G. Dheer, “Contrarian Punjab may throw up a surprise again,” Frontline. Accessed: Jun. 02, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/punjab-lok-sabha-election-aap-bjp-narendra-modi-farmers-protest-congress-arvind-kejriwal/article68210672.ece">https://frontline.thehindu.com/politics/punjab-lok-sabha-election-aap-bjp-narendra-modi-farmers-protest-congress-arvind-kejriwal/article68210672.ece</a></li>
+
+<li>“Reviving Punjab’s Economy: The Potential and Pitfalls of Resuming Trade with Pakistan,” The Wire. Accessed: Aug. 02, 2024. [Online]. Available: <a href="https://thewire.in/news/reviving-punjabs-economy-the-potential-and-pitfalls-of-resuming-trade-with-pakistan">https://thewire.in/news/reviving-punjabs-economy-the-potential-and-pitfalls-of-resuming-trade-with-pakistan</a></li>
+
+<li>“Why The BJP Scored A Zero In Punjab: Farmers’ Fury Flattens Party After Boycott Of Candidates.” Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://www.article-14.com/post/why-the-bjp-scored-a-zero-in-punjab-farmers-fury-flattens-party-after-boycott-of-candidates--665fd6432807a">https://www.article-14.com/post/why-the-bjp-scored-a-zero-in-punjab-farmers-fury-flattens-party-after-boycott-of-candidates--665fd6432807a</a></li>
+
+<li>“The religious paranoia behind Punjab’s sacrilege killings.” Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://caravanmagazine.in/crime/the-religious-paranoia-behind-punjab-sacrilege-killings">https://caravanmagazine.in/crime/the-religious-paranoia-behind-punjab-sacrilege-killings</a></li>
+
+<li>“The Caravan Collection #13 | The Caravan.” <a href="https://caravanmagazine.in/tag/the-caravan-collection-13">https://caravanmagazine.in/tag/the-caravan-collection-13</a> (accessed Apr. 16, 2023).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8f3c5de" class="outline-2">
+<h2 id="org8f3c5de"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge6c9d18" class="outline-3">
+<h3 id="orge6c9d18"><span class="section-number-3">4.1.</span> Art</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>P. S. Khanuja, Splendors of Punjab Heritage: Art from the Khanuja Family Collection. New Delhi: Roli Books, 2022.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org609d675" class="outline-3">
+<h3 id="org609d675"><span class="section-number-3">4.2.</span> Music</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Punjab Music: <a href="https://tinyurl.com/j483r8b6">https://tinyurl.com/j483r8b6</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b3dc50" class="outline-3">
+<h3 id="org3b3dc50"><span class="section-number-3">4.3.</span> Literature</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orgefe5f8c" class="outline-4">
+<h4 id="orgefe5f8c"><span class="section-number-4">4.3.1.</span> General</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>“Punjabi literature,” Wikipedia. Nov. 18, 2022. Accessed: Nov. 22, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Punjabi_literature&amp;oldid=1122600813">https://en.wikipedia.org/w/index.php?title=Punjabi_literature&amp;oldid=1122600813</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge7f727a" class="outline-4">
+<h4 id="orge7f727a"><span class="section-number-4">4.3.2.</span> Works</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<ul class="org-ul">
+<li>“Sohni Mahiwal,” Wikipedia. Apr. 07, 2024. Accessed: May 10, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sohni_Mahiwal&amp;oldid=1217663739">https://en.wikipedia.org/w/index.php?title=Sohni_Mahiwal&amp;oldid=1217663739</a></li>
+<li>“Heer Ranjha,” Wikipedia. Apr. 23, 2024. Accessed: May 10, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Heer_Ranjha&amp;oldid=1220381331">https://en.wikipedia.org/w/index.php?title=Heer_Ranjha&amp;oldid=1220381331</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf2cef5e" class="outline-4">
+<h4 id="orgf2cef5e"><span class="section-number-4">4.3.3.</span> Artists</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<ul class="org-ul">
+<li>A. Sharma, “Surjit Patar (1945–2024): The poet who sang of Punjab’s collective consciousness,” Frontline. Accessed: May 15, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/society/obituary-surjit-patar-the-poet-who-explored-punjab-struggles/article68173588.ece">https://frontline.thehindu.com/society/obituary-surjit-patar-the-poet-who-explored-punjab-struggles/article68173588.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaef4cf3" class="outline-4">
+<h4 id="orgaef4cf3"><span class="section-number-4">4.3.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org8ad2f7d" class="outline-3">
+<h3 id="org8ad2f7d"><span class="section-number-3">4.4.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge62113a" class="outline-2">
+<h2 id="orge62113a"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org5aa9d0e" class="outline-3">
+<h3 id="org5aa9d0e"><span class="section-number-3">5.1.</span> Food</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Food: <a href="https://tinyurl.com/czfj8nb5">https://tinyurl.com/czfj8nb5</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc811974" class="outline-3">
+<h3 id="orgc811974"><span class="section-number-3">5.2.</span> Jallianwala Bagh Massacre</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Jallianwala Bagh massacre,” Wikipedia. Apr. 13, 2023. Accessed: Apr. 14, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jallianwala_Bagh_massacre&amp;oldid=1149693394">https://en.wikipedia.org/w/index.php?title=Jallianwala_Bagh_massacre&amp;oldid=1149693394</a></li>
+
+<li>R. Sanjay, Jallianwala Bagh. Amar Chitra Katha Private Limited, 1986.</li>
+
+<li>N. Singh and N. Suri, Khooni Vaisakhi: A Poem from the Jallianwala Bagh Massacre, 1919, in Urdu Script, 1st edition. Noida: Harper India, 2019.</li>
+
+<li>K. A. Wagner, Jallianwala Bagh: An Empire of Fear. Penguin Viking, 2019.</li>
+
+<li>V. N. Datta, Jallianwala Bagh: A Groundbreaking History Of The 1919 Massacre. Penguin, 2021.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b57b16" class="outline-3">
+<h3 id="org9b57b16"><span class="section-number-3">5.3.</span> Operation BlueStar</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>“Operation Blue Star,” Wikipedia. Aug. 15, 2023. Accessed: Aug. 16, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Operation_Blue_Star&amp;oldid=1170559273">https://en.wikipedia.org/w/index.php?title=Operation_Blue_Star&amp;oldid=1170559273</a></li>
+
+<li>“Why 1984 Golden Temple raid still rankles for Sikhs,” BBC News, Aug. 01, 2013. Accessed: Aug. 16, 2023. [Online]. Available: <a href="https://www.bbc.com/news/world-asia-23514583">https://www.bbc.com/news/world-asia-23514583</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org945df8b" class="outline-3">
+<h3 id="org945df8b"><span class="section-number-3">5.4.</span> 1984 Sikh Pogroms</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-org9a65114" class="outline-4">
+<h4 id="org9a65114"><span class="section-number-4">5.4.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6c45887"></a>Wikipedia<br />
+<div class="outline-text-5" id="text-5-4-1-1">
+<ul class="org-ul">
+<li>“1984 anti-Sikh riots,” Wikipedia. Oct. 30, 2022. Accessed: Nov. 04, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=1984_anti-Sikh_riots&amp;oldid=1119014429">https://en.wikipedia.org/w/index.php?title=1984_anti-Sikh_riots&amp;oldid=1119014429</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb98b980" class="outline-4">
+<h4 id="orgb98b980"><span class="section-number-4">5.4.2.</span> Some Context</h4>
+<div class="outline-text-4" id="text-5-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org455a9a8"></a>Riots and Pogroms<br />
+<div class="outline-text-5" id="text-5-4-2-1">
+<ul class="org-ul">
+<li>P. R. Brass, Riots and Pogroms. Springer, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga04cd59"></a>India<br />
+<div class="outline-text-5" id="text-5-4-2-2">
+<ul class="org-ul">
+<li>P. R. Brass, Language, Religion and Politics in North India. iUniverse, 2005.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf208a6e"></a>Punjab<br />
+<div class="outline-text-5" id="text-5-4-2-3">
+<ul class="org-ul">
+<li>H. Deol, Religion and Nationalism in India: The Case of the Punjab. Routledge, 2003.</li>
+<li>I. Singh, Punjab Under Siege: A Critical Analysis. Allen, McMillan, and Enderson, 1986.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdf690ba"></a>Green Revolution<br />
+<div class="outline-text-5" id="text-5-4-2-4">
+<ul class="org-ul">
+<li>V. Shiva, <b>The Violence of Green Revolution: Third World Agriculture, Ecology and Politics.</b> Zed Books, 1991.</li>
+</ul>
+</div>
+</li>
+<li><a id="org494f0d7"></a>Sikhs<br />
+<div class="outline-text-5" id="text-5-4-2-5">
+<ul class="org-ul">
+<li>P. Singh, The Sikhs. Crown Publishing Group, 2007.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6fbbe82"></a>Sikh Militants<br />
+<div class="outline-text-5" id="text-5-4-2-6">
+<ul class="org-ul">
+<li>J. Pettigrew, The Sikhs of the Punjab: Unheard Voices of State and Guerilla Violence. Bloomsbury Academic, 1995.</li>
+
+<li>C. K. Mahmood, Fighting for Faith and Nation: Dialogues with Sikh Militants. University of Pennsylvania Press, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga955abb"></a>Khalistan Movement<br />
+<div class="outline-text-5" id="text-5-4-2-7">
+<ul class="org-ul">
+<li>“Khalistan movement,” Wikipedia. Nov. 04, 2022. Accessed: Nov. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Khalistan_movement&amp;oldid=1120014225">https://en.wikipedia.org/w/index.php?title=Khalistan_movement&amp;oldid=1120014225</a></li>
+<li>G. B. S. Sidhu, The Khalistan Conspiracy: A Former R&amp;AW Officer Unravels the Path to 1984, 1st edition. Noida, Uttar Pradesh, India: HarperCollins, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org2830c22"></a>Operation Blue Star<br />
+<div class="outline-text-5" id="text-5-4-2-8">
+<ul class="org-ul">
+<li>“Operation Blue Star,” Wikipedia. Nov. 03, 2022. Accessed: Nov. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Operation_Blue_Star&amp;oldid=1119751449">https://en.wikipedia.org/w/index.php?title=Operation_Blue_Star&amp;oldid=1119751449</a></li>
+<li>K. Nayar and K. Singh, Tragedy of Punjab: Operation Bluestar &amp; After. Vision Books, 1984.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb9c644c" class="outline-4">
+<h4 id="orgb9c644c"><span class="section-number-4">5.4.3.</span> 1984</h4>
+<div class="outline-text-4" id="text-5-4-3">
+<ul class="org-ul">
+<li>J. Grewal, Betrayed by the State: The Anti-Sikh Pogrom of 1984. Penguin Books, 2007.</li>
+
+<li>U. Chakravarti and N. Haksar, The Delhi Riots: Three Days in the Life of a Nation. Lancer International, 1987.</li>
+
+<li>H. S. Phoolka and M. Mitta, When a Tree Shook Delhi. Roli Books Private Limited, 2013.</li>
+
+<li>J. Singh, I Accuse &#x2026;: The Anti-Sikh Violence of 1984. Penguin Books India, 2011.</li>
+
+<li>P. Singh, 1984: India’s Guilty Secret. New Delhi: Rupa Publications India, 2017.</li>
+
+<li>V. Kapur, 1984: In Memory and Imagination – Personal Essays and Stories on the 1984 Anti-Sikh Riots. New Delhi: Amaryllis, 2016.</li>
+
+<li>S. Suri, 1984: The Anti-Sikh Riots and After, 1st edition. Noida, Uttar Pradesh: HarperCollins, 2015.</li>
+
+<li>“Amitav Ghosh Recounts 1984 Anti-Sikh Riots In His Essay ‘The Ghosts Of Mrs Gandhi,’” HuffPost, Nov. 01, 2019. <a href="https://www.huffpost.com/archive/in/entry/amitav-ghosh-recounts-1984-anti-sikh-riots-ghosts-of-mrs-gandhi_in_5db34c5fe4b05df62ebed26b">https://www.huffpost.com/archive/in/entry/amitav-ghosh-recounts-1984-anti-sikh-riots-ghosts-of-mrs-gandhi_in_5db34c5fe4b05df62ebed26b</a> (accessed Nov. 03, 2022).</li>
+
+<li>M. N. Swamy, “A reporter’s account of the 1984 anti-Sikh violence,” The Caravan. <a href="https://caravanmagazine.in/crime/reporters-account-of-the-1984-anti-sikh-violence">https://caravanmagazine.in/crime/reporters-account-of-the-1984-anti-sikh-violence</a> (accessed Nov. 03, 2022).</li>
+
+<li>“Why is the Anniversary of the 1984 Massacre of Sikhs Not a Time of Remembrance For Us All?,” The Wire. <a href="https://thewire.in/rights/1984-sikh-massacre-remembrance">https://thewire.in/rights/1984-sikh-massacre-remembrance</a> (accessed Nov. 05, 2022).</li>
+
+<li>“'We Were Abandoned. We Never Mattered’: A Sikh Woman’s Story From 1984,” The Wire. Accessed: Jun. 27, 2024. [Online]. Available: <a href="https://thewire.in/books/we-were-abandoned-we-never-mattered-a-sikh-womans-story-from-1984">https://thewire.in/books/we-were-abandoned-we-never-mattered-a-sikh-womans-story-from-1984</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66f989a" class="outline-4">
+<h4 id="org66f989a"><span class="section-number-4">5.4.4.</span> Literature</h4>
+<div class="outline-text-4" id="text-5-4-4">
+<ul class="org-ul">
+<li>J. Singh, Helium. Bloomsbury Publishing, 2013.
+<ul class="org-ul">
+<li>A. Sandhu, “‘A huge crime against humanity,’” The Hindu, Nov. 10, 2013. Accessed: Nov. 06, 2022. [Online]. Available: <a href="https://www.thehindu.com/books/books-authors/a-huge-crime-against-humanity/article5335298.ece">https://www.thehindu.com/books/books-authors/a-huge-crime-against-humanity/article5335298.ece</a></li>
+</ul></li>
+
+<li>S. Singh, Night of the Restless Spirits: Stories from 1984. Penguin Random House India Private Limited, 2020.</li>
+
+<li>M. R. Goswāmī, Pages Stained with Blood. Katha, 2002.
+<ul class="org-ul">
+<li>“Pages Stained with Blood,” Wikipedia. Feb. 03, 2022. Accessed: Nov. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Pages_Stained_with_Blood&amp;oldid=1069659186">https://en.wikipedia.org/w/index.php?title=Pages_Stained_with_Blood&amp;oldid=1069659186</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Love in the time of riots,” Frontline. Accessed: Dec. 09, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/books/love-in-the-time-of-riots/article10094530.ece">https://frontline.thehindu.com/books/love-in-the-time-of-riots/article10094530.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6ae0cad" class="outline-4">
+<h4 id="org6ae0cad"><span class="section-number-4">5.4.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-4-5">
+<ul class="org-ul">
+<li>M. Kesavan, “‘How far would I have gone to get away?’: Mukul Kesavan remembers the 1984 violence against Sikhs,” Scroll.in. Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://scroll.in/article/1087530/how-far-would-i-have-gone-to-get-away-mukul-kesavan-remembers-the-1984-violence-against-sikhs">https://scroll.in/article/1087530/how-far-would-i-have-gone-to-get-away-mukul-kesavan-remembers-the-1984-violence-against-sikhs</a></li>
+
+<li>I. Mishra, “1984 anti-Sikh riots: Former Congress MP Sajjan Kumar gets life imprisonment in murder case,” The Hindu, Feb. 25, 2025. Accessed: Feb. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/sajjan-kumar-ex-congress-mp-gets-life-imprisonment-in-1984-anti-sikh-riots-case/article69261515.ece">https://www.thehindu.com/news/national/sajjan-kumar-ex-congress-mp-gets-life-imprisonment-in-1984-anti-sikh-riots-case/article69261515.ece</a></li>
+
+<li>V. K. &amp; V. Lakhera, “Delhi Grants Jobs to 1984 Anti-Sikh Riot Survivors After 40-Year Wait,” Frontline. Accessed: Dec. 09, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/delhi-1984-anti-sikh-riots-survivors-job-letters-justice-delayed/article68963795.ece">https://frontline.thehindu.com/politics/delhi-1984-anti-sikh-riots-survivors-job-letters-justice-delayed/article68963795.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. S. Wazir, “This book brings oral testimonies of women who survived the 1984 anti-Sikh violence in Delhi,” Scroll.in. Accessed: Jun. 10, 2024. [Online]. Available: <a href="https://scroll.in/article/1068865/this-book-brings-oral-testimonies-of-women-who-survived-the-1984-anti-sikh-violence-in-delhi">https://scroll.in/article/1068865/this-book-brings-oral-testimonies-of-women-who-survived-the-1984-anti-sikh-violence-in-delhi</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc49b389" class="outline-3">
+<h3 id="orgc49b389"><span class="section-number-3">5.5.</span> Khalistan Movement</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-org51da3ff" class="outline-4">
+<h4 id="org51da3ff"><span class="section-number-4">5.5.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-5-1">
+<ul class="org-ul">
+<li>“Khalistan movement,” Wikipedia. Sep. 06, 2022. Accessed: Sep. 12, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Khalistan_movement&amp;oldid=1108784548">https://en.wikipedia.org/w/index.php?title=Khalistan_movement&amp;oldid=1108784548</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8d2047c" class="outline-4">
+<h4 id="org8d2047c"><span class="section-number-4">5.5.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-5-2">
+<ul class="org-ul">
+<li>O. Staff, “Khalistani Gurpatwant Singh Pannun threatens Russia for supporting India,” OpIndia. Accessed: Dec. 26, 2024. [Online]. Available: <a href="https://www.opindia.com/2024/12/khalistani-gurpatwant-singh-pannun-threatens-russia-for-supporting-india/">https://www.opindia.com/2024/12/khalistani-gurpatwant-singh-pannun-threatens-russia-for-supporting-india/</a></li>
+
+<li>W. DESK, “Modi Govt’s action halts online radicalisation, blocks 28,079 Pro-Khalistani URLs over three years,” Organiser. Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/02/267742/bharat/modi-govts-action-halts-online-radicalisation-blocks-28079-pro-khalistani-urls-over-three-years/">https://organiser.org/2024/12/02/267742/bharat/modi-govts-action-halts-online-radicalisation-blocks-28079-pro-khalistani-urls-over-three-years/</a></li>
+
+<li>T. FRONTLINE, “India, Canada, and the Khalistan conundrum,” Frontline. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/news/khalistan-issue-india-canada-terrorism-diplomatic-tension/article67352975.ece">https://frontline.thehindu.com/news/khalistan-issue-india-canada-terrorism-diplomatic-tension/article67352975.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0ef478f" class="outline-3">
+<h3 id="org0ef478f"><span class="section-number-3">5.6.</span> Nijjar</h3>
+<div class="outline-text-3" id="text-5-6">
+<ul class="org-ul">
+<li>“Nijjar, Pannun, the Khalistan itch and its consequences,” The Morning Context. Accessed: Dec. 01, 2023. [Online]. Available: <a href="https://themorningcontext.com/chaos/nijjar-pannun-the-khalistan-itch-and-its-consequences">https://themorningcontext.com/chaos/nijjar-pannun-the-khalistan-itch-and-its-consequences</a></li>
+
+<li>L. G. P. Menon, “Nijjar-Pannun saga is just a temptation to project a strong state. Arthashastra has answers,” ThePrint. Accessed: Dec. 07, 2023. [Online]. Available: <a href="https://theprint.in/opinion/nijjar-pannun-saga-is-just-a-temptation-to-project-a-strong-state-arthashastra-has-answers/1872481/">https://theprint.in/opinion/nijjar-pannun-saga-is-just-a-temptation-to-project-a-strong-state-arthashastra-has-answers/1872481/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“US Justice Department alleges Indian intelligence agent plotted assassinations in North America,” World Socialist Web Site. Accessed: Dec. 07, 2023. [Online]. Available: <a href="https://www.wsws.org/en/articles/2023/12/06/yidv-d06.html">https://www.wsws.org/en/articles/2023/12/06/yidv-d06.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Nijjar Killing: British Sikhs Asked To Write to MPs About Lack of Security Advice,” The Wire. Accessed: Sep. 30, 2023. [Online]. Available: <a href="https://thewire.in/world/nijjar-killing-british-sikhs-concern-lack-of-security-advice">https://thewire.in/world/nijjar-killing-british-sikhs-concern-lack-of-security-advice</a></li>
+
+<li>N. L. Team, “‘Papas, don’t preach’: On Nijjar case, editorials criticise Western ‘double standards,’” Newslaundry. Accessed: Sep. 29, 2023. [Online]. Available: <a href="https://www.newslaundry.com/2023/09/28/papas-dont-preach-on-nijjar-case-editorials-criticise-western-double-standards">https://www.newslaundry.com/2023/09/28/papas-dont-preach-on-nijjar-case-editorials-criticise-western-double-standards</a></li>
+
+<li>H. S. Bal, “The Sikhs are the proverbial bone stuck in the RSS’s gullet,” The Caravan. Accessed: Sep. 29, 2023. [Online]. Available: <a href="https://caravanmagazine.in/politics/khalistan-stick-rss">https://caravanmagazine.in/politics/khalistan-stick-rss</a></li>
+
+<li>T. FRONTLINE, “The Khalistan issue: All you wanted to know about,” Frontline. Accessed: Sep. 28, 2023. [Online]. Available: <a href="https://frontline.thehindu.com/news/khalistan-issue-india-canada-terrorism-diplomatic-tension/article67352975.ece">https://frontline.thehindu.com/news/khalistan-issue-india-canada-terrorism-diplomatic-tension/article67352975.ece</a></li>
+
+<li>“Protesters at Indian Embassies in Canada Demand Justice for Assassinated Sikh Leader,” Democracy Now! Accessed: Sep. 28, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/9/26/headlines/protesters_at_indian_embassies_in_canada_demand_justice_for_assassinated_sikh_leader">https://www.democracynow.org/2023/9/26/headlines/protesters_at_indian_embassies_in_canada_demand_justice_for_assassinated_sikh_leader</a></li>
+
+<li>N. Subramanian, “Canadian intelligence has been probing R&amp;AW long before Nijjar case, suggests review,” Newslaundry. Accessed: Sep. 26, 2023. [Online]. Available: <a href="https://www.newslaundry.com/2023/09/25/2018-parliamentary-review-suggests-canada-eye-on-indian-intelligence-long-before-nijjar-case">https://www.newslaundry.com/2023/09/25/2018-parliamentary-review-suggests-canada-eye-on-indian-intelligence-long-before-nijjar-case</a></li>
+
+<li>“U.S. Surveillance Helped Canada Conclude India Was Involved in June Killing of Canadian Sikh Leader,” Democracy Now! Accessed: Sep. 26, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/9/25/headlines/us_surveillance_helped_canada_conclude_india_was_involved_in_june_killing_of_canadian_sikh_leader">https://www.democracynow.org/2023/9/25/headlines/us_surveillance_helped_canada_conclude_india_was_involved_in_june_killing_of_canadian_sikh_leader</a></li>
+<li>“The Observer view on Hardeep Singh Nijjar’s killing: Narendra Modi’s hubris is ill-judged,” The Observer, Sep. 24, 2023. Accessed: Sep. 26, 2023. [Online]. Available: <a href="https://www.theguardian.com/commentisfree/2023/sep/24/the-observer-view-on-hardeep-singh-nijjar-killing-narendra-modi-hubris-ill-judged">https://www.theguardian.com/commentisfree/2023/sep/24/the-observer-view-on-hardeep-singh-nijjar-killing-narendra-modi-hubris-ill-judged</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Hussain, “FBI Warned Sikhs in the U.S. About Death Threats After Killing of Canadian Activist,” The Intercept, Sep. 23, 2023. <a href="https://theintercept.com/2023/09/23/sikhs-fbi-canada-india-nijjar/">https://theintercept.com/2023/09/23/sikhs-fbi-canada-india-nijjar/</a> (accessed Sep. 24, 2023).</li>
+
+<li>“Canada’s Allegation Creates a Dissonance in the Post-G20 Narratives About India,” The Wire. <a href="https://thewire.in/diplomacy/india-canada-nijjar-modi">https://thewire.in/diplomacy/india-canada-nijjar-modi</a> (accessed Sep. 23, 2023).</li>
+
+<li>“NIA Releases Pictures of Pro-Khalistan Accused in Attack on Indian Consulate in San Francisco,” The Wire. <a href="https://thewire.in/government/nia-releases-pictures-of-pro-khalistan-accused-in-attack-on-indian-consulate-in-san-francisco">https://thewire.in/government/nia-releases-pictures-of-pro-khalistan-accused-in-attack-on-indian-consulate-in-san-francisco</a> (accessed Sep. 23, 2023).</li>
+
+<li>“Why Would India Assassinate a Sikh Leader on Canadian Soil? | The Walrus,” Sep. 22, 2023. <a href="https://thewalrus.ca/india-canada-relations/">https://thewalrus.ca/india-canada-relations/</a> (accessed Sep. 23, 2023).</li>
+
+<li>“India Suspends Visas for Canadians After Trudeau Accuses Modi Government of Killing Sikh Leader,” Democracy Now! <a href="https://www.democracynow.org/2023/9/22/headlines/india_suspends_visas_for_canadians_after_trudeau_accuses_modi_government_of_killing_sikh_leader">https://www.democracynow.org/2023/9/22/headlines/india_suspends_visas_for_canadians_after_trudeau_accuses_modi_government_of_killing_sikh_leader</a> (accessed Sep. 23, 2023).</li>
+
+<li>“‘No Special Exemption’ for Any Country: US on Canada’s Allegations Against India,” The Wire. <a href="https://thewire.in/diplomacy/nijjar-killing-us-canada-no-special-exemption">https://thewire.in/diplomacy/nijjar-killing-us-canada-no-special-exemption</a> (accessed Sep. 23, 2023).</li>
+
+<li>“Canadian PM Justin Trudeau Reiterates Allegations of India’s Role in Sikh Leader’s Murder,” The Wire. <a href="https://thewire.in/diplomacy/canadian-pm-justin-trudeau-reiterates-allegations-of-indias-role-in-sikh-leaders-murder">https://thewire.in/diplomacy/canadian-pm-justin-trudeau-reiterates-allegations-of-indias-role-in-sikh-leaders-murder</a> (accessed Sep. 23, 2023).</li>
+
+<li>“The Obstinacy of Caste Followed Sikh Immigrants to Britain Too,” The Wire. <a href="https://thewire.in/books/the-obstinacy-of-caste-followed-sikh-immigrants-to-britain-too">https://thewire.in/books/the-obstinacy-of-caste-followed-sikh-immigrants-to-britain-too</a> (accessed Sep. 22, 2023).</li>
+
+<li>E. Dyer and A. P. · C. News ·, “Canada has Indian diplomats’ communications in bombshell murder probe: sources | CBC News,” CBC, Sep. 21, 2023. <a href="https://www.cbc.ca/news/politics/sikh-nijjar-india-canada-trudeau-modi-1.6974607">https://www.cbc.ca/news/politics/sikh-nijjar-india-canada-trudeau-modi-1.6974607</a> (accessed Sep. 22, 2023).</li>
+
+<li>“Canada-India relations in turmoil after Ottawa accuses Modi regime of assassinating Sikh separatist in BC,” World Socialist Web Site, Sep. 22, 2023. <a href="https://www.wsws.org/en/articles/2023/09/22/left-s22.html">https://www.wsws.org/en/articles/2023/09/22/left-s22.html</a> (accessed Sep. 22, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Mogul, “Canada and India are enmeshed in an unprecedented diplomatic row. Here’s how it happened,” CNN, Sep. 20, 2023. <a href="https://www.cnn.com/2023/09/20/india/india-canada-hardeep-singh-nijjar-explained-intl-hnk/index.html">https://www.cnn.com/2023/09/20/india/india-canada-hardeep-singh-nijjar-explained-intl-hnk/index.html</a> (accessed Sep. 21, 2023).</li>
+<li>K. Bhattacherjee, “India issues tit-for-tat travel advisory for Canada,” The Hindu, Sep. 20, 2023. Accessed: Sep. 21, 2023. [Online]. Available: <a href="https://www.thehindu.com/news/national/india-issues-tit-for-tat-travel-advisory-for-canada/article67325790.ece">https://www.thehindu.com/news/national/india-issues-tit-for-tat-travel-advisory-for-canada/article67325790.ece</a></li>
+<li>“Murder of Sikh Leader in Canada Highlights Modi’s Embrace of Authoritarianism in India &amp; Abroad,” Democracy Now! <a href="https://www.democracynow.org/2023/9/20/canada_india_hardeep_singh_nijjar_murder">https://www.democracynow.org/2023/9/20/canada_india_hardeep_singh_nijjar_murder</a> (accessed Sep. 21, 2023).</li>
+<li>T. C. Saira Bano, “Escalating Canada-India row complicates efforts by West to counter China,” Scroll.in, Sep. 20, 2023. <a href="https://scroll.in/article/1056280/escalating-canada-india-row-complicates-efforts-by-west-to-counter-china">https://scroll.in/article/1056280/escalating-canada-india-row-complicates-efforts-by-west-to-counter-china</a> (accessed Sep. 21, 2023).</li>
+<li>“India-Canada Standoff: Khalistan Not an Issue in Today’s Punjab,” The Wire. <a href="https://thewire.in/communalism/india-canada-khalistan-punjab-sikh">https://thewire.in/communalism/india-canada-khalistan-punjab-sikh</a> (accessed Sep. 21, 2023).</li>
+<li>“India Media Attack Canada PM Trudeau Over Claim of Killing of Sikh Leader - Bloomberg.” <a href="https://www.bloomberg.com/news/articles/2023-09-20/indian-media-attacks-trudeau-over-claim-of-extrajudicial-killing#xj4y7vzkg">https://www.bloomberg.com/news/articles/2023-09-20/indian-media-attacks-trudeau-over-claim-of-extrajudicial-killing#xj4y7vzkg</a> (accessed Sep. 21, 2023).</li>
+<li>D. Block, “The Killing in Canada Shows What India Has Become,” The Atlantic, Sep. 20, 2023. <a href="https://www.theatlantic.com/international/archive/2023/09/canada-nijjar-killing-india-trudeau-sikh/675383/">https://www.theatlantic.com/international/archive/2023/09/canada-nijjar-killing-india-trudeau-sikh/675383/</a> (accessed Sep. 21, 2023).</li>
+
+<li>“Who Was Hardeep Nijjar, Whose Killing Has Created a Diplomatic Crisis Between India and Canada?,” The Wire. <a href="https://thewire.in/world/hardeep-singh-nijjar-killing-khalistan-speculation">https://thewire.in/world/hardeep-singh-nijjar-killing-khalistan-speculation</a> (accessed Sep. 20, 2023).</li>
+<li>N. Deuskar, “Allegations of Khalistani separatist’s assassination signal a collapse in India-Canada ties,” Scroll.in, Sep. 19, 2023. <a href="https://scroll.in/article/1056200/allegations-of-khalistani-separatists-assassination-signal-a-collapse-in-india-canada-ties">https://scroll.in/article/1056200/allegations-of-khalistani-separatists-assassination-signal-a-collapse-in-india-canada-ties</a> (accessed Sep. 20, 2023).</li>
+
+<li>J. P. T. · C. News ·, “Trudeau accuses India’s government of involvement in killing of Canadian Sikh leader | CBC News,” CBC, Sep. 18, 2023. <a href="https://www.cbc.ca/news/politics/trudeau-indian-government-nijjar-1.6970498">https://www.cbc.ca/news/politics/trudeau-indian-government-nijjar-1.6970498</a> (accessed Sep. 19, 2023).</li>
+<li>“‘Always Suspected Indian Government’: Hardeep Singh Nijjar’s Son on Trudeau’s Allegation,” The Wire. <a href="https://thewire.in/world/canadian-sikhs-seek-protection-after-trudeau-alleges-indian-hand-in-pro-khalistan-leaders-death">https://thewire.in/world/canadian-sikhs-seek-protection-after-trudeau-alleges-indian-hand-in-pro-khalistan-leaders-death</a> (accessed Sep. 20, 2023).</li>
+<li>“Is the Modi Govt Guilty of Assassinating a Canadian Citizen? RAW Ex-Chief Responds to Trudeau,” The Wire. <a href="https://thewire.in/diplomacy/raw-modi-government-canada-karan-thapar">https://thewire.in/diplomacy/raw-modi-government-canada-karan-thapar</a> (accessed Sep. 20, 2023).</li>
+<li>PressProgress, “Facebook is Blocking Canadians’ Posts About the Assassination of a BC Sikh Leader. Their Posts Were Targeted by India’s Government.,” PressProgress, Sep. 19, 2023. <a href="https://pressprogress.ca/facebook-is-blocking-canadians-posts-about-the-assassination-of-a-bc-sikh-leader-their-posts-were-targeted-by-indias-government/">https://pressprogress.ca/facebook-is-blocking-canadians-posts-about-the-assassination-of-a-bc-sikh-leader-their-posts-were-targeted-by-indias-government/</a> (accessed Sep. 20, 2023).</li>
+<li>A. Coletta, G. Shih, and K. Mehrotra, “India expels Canadian diplomat as dispute over alleged assassination escalates,” Washington Post, Sep. 20, 2023. Accessed: Sep. 20, 2023. [Online]. Available: <a href="https://www.washingtonpost.com/world/2023/09/19/india-expels-canada-diplomat-sikh-assassination/">https://www.washingtonpost.com/world/2023/09/19/india-expels-canada-diplomat-sikh-assassination/</a></li>
+<li>“Justin Trudeau Accuses Indian Government of Involvement in Killing of Sikh Leader in Canada,” Democracy Now! <a href="https://www.democracynow.org/2023/9/19/headlines/justin_trudeau_accuses_indian_government_of_involvement_in_killing_of_sikh_leader_in_canada">https://www.democracynow.org/2023/9/19/headlines/justin_trudeau_accuses_indian_government_of_involvement_in_killing_of_sikh_leader_in_canada</a> (accessed Sep. 20, 2023).</li>
+<li>T. A. Press, “India expels senior Canadian diplomat in tit-for-tat row over Sikh activist’s killing,” NPR, Sep. 19, 2023. Accessed: Sep. 20, 2023. [Online]. Available: <a href="https://www.npr.org/2023/09/18/1200202102/canada-is-investigating-whether-india-is-linked-to-the-slaying-of-a-sikh-activis">https://www.npr.org/2023/09/18/1200202102/canada-is-investigating-whether-india-is-linked-to-the-slaying-of-a-sikh-activis</a></li>
+<li>“Justin Trudeau Accuses Indian Government of Involvement in Killing of Sikh Leader in Canada,” Democracy Now! <a href="https://www.democracynow.org/2023/9/19/headlines/justin_trudeau_accuses_indian_government_of_involvement_in_killing_of_sikh_leader_in_canada">https://www.democracynow.org/2023/9/19/headlines/justin_trudeau_accuses_indian_government_of_involvement_in_killing_of_sikh_leader_in_canada</a> (accessed Sep. 20, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb10a64c" class="outline-3">
+<h3 id="orgb10a64c"><span class="section-number-3">5.7.</span> Terrorism</h3>
+<div class="outline-text-3" id="text-5-7">
+<ul class="org-ul">
+<li>Terrorism: <a href="https://tinyurl.com/yscmnbw5">https://tinyurl.com/yscmnbw5</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2497836" class="outline-3">
+<h3 id="org2497836"><span class="section-number-3">5.8.</span> Violence</h3>
+<div class="outline-text-3" id="text-5-8">
+<ul class="org-ul">
+<li>Violence: <a href="https://tinyurl.com/yckh7cvp">https://tinyurl.com/yckh7cvp</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd71e2a2" class="outline-3">
+<h3 id="orgd71e2a2"><span class="section-number-3">5.9.</span> Drugs, Misc</h3>
+<div class="outline-text-3" id="text-5-9">
+<ul class="org-ul">
+<li>Drugs, Misc: <a href="https://tinyurl.com/3m9a6f82">https://tinyurl.com/3m9a6f82</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6cc520a" class="outline-2">
+<h2 id="org6cc520a"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>N. L. Team, “Let’s Talk About: Punjab, Part 1,” Newslaundry. Accessed: Nov. 30, 2024. [Online]. Available: <a href="https://www.newslaundry.com/2024/11/29/lets-talk-about-punjab-part-1">https://www.newslaundry.com/2024/11/29/lets-talk-about-punjab-part-1</a></li>
+
+<li>“In Punjab’s Grain Mandis, the Afterlife of the Farm Protests is Playing Out,” The India Forum. Accessed: Nov. 24, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/public-policy/punjabs-grain-mandis-afterlife-farm-protests-playing-out">https://www.theindiaforum.in/public-policy/punjabs-grain-mandis-afterlife-farm-protests-playing-out</a></li>
+
+<li>V. Shiva, <b>The Violence of Green Revolution: Third World Agriculture, Ecology and Politics.</b> Zed Books, 1991.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 15:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

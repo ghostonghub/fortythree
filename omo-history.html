@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 15:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>History</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">History</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgad6fa9c">1. General</a></li>
+<li><a href="#orgfb1094f">2. STEMM</a>
+<ul>
+<li><a href="#org598ee70">2.1. Systems Sciences</a>
+<ul>
+<li><a href="#org7491570">2.1.1. Complexity Science</a></li>
+<li><a href="#org2ce1534">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc9d04cb">2.2. Biology</a></li>
+<li><a href="#org37ff5f1">2.3. CSE</a>
+<ul>
+<li><a href="#org216df53">2.3.1. Data Science</a></li>
+<li><a href="#org5250bfe">2.3.2. AI</a></li>
+<li><a href="#org4e5301b">2.3.3. Games</a></li>
+<li><a href="#org4681771">2.3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org488d468">2.4. Special Topics</a>
+<ul>
+<li><a href="#org286aa5c">2.4.1. People</a></li>
+<li><a href="#orgad16557">2.4.2. Nation States</a></li>
+</ul>
+</li>
+<li><a href="#org00b259b">2.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org5433dc6">3. World</a>
+<ul>
+<li><a href="#org99cacbb">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6ec7636">4. Core</a>
+<ul>
+<li><a href="#orge77049d">4.1. Education</a>
+<ul>
+<li><a href="#orga0887b2">4.1.1. Courses</a></li>
+</ul>
+</li>
+<li><a href="#orgc8e590b">4.2. Regional</a>
+<ul>
+<li><a href="#orgce29829">4.2.1. World</a></li>
+<li><a href="#orgb28ff25">4.2.2. South Asia</a></li>
+<li><a href="#orgd9cc16c">4.2.3. USA</a></li>
+<li><a href="#orga33b83a">4.2.4. UK</a></li>
+<li><a href="#org70e2224">4.2.5. Europe</a></li>
+<li><a href="#org2d1f442">4.2.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgdf87a30">5. Special Topics</a>
+<ul>
+<li><a href="#orgef951f1">5.1. Classics</a></li>
+<li><a href="#org055e0ed">5.2. Oral History</a>
+<ul>
+<li><a href="#org7729fe7">5.2.1. General</a></li>
+<li><a href="#orgcca5164">5.2.2. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge4a99dc">6. Miscellaneous</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgad6fa9c" class="outline-2">
+<h2 id="orgad6fa9c"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>D. J. Boorstin, <i>The Seekers: The Story of Man’s Continuing Quest to Understand His World.</i> Knopf Doubleday Publishing Group, 1998.</li>
+
+<li>E. H. Carr, <i>What is History?</i> Penguin UK, 2018.</li>
+
+<li>N. Faulkner, A Radical History of the World. Pluto Press, 2018.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb1094f" class="outline-2">
+<h2 id="orgfb1094f"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org598ee70" class="outline-3">
+<h3 id="org598ee70"><span class="section-number-3">2.1.</span> Systems Sciences</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org7491570" class="outline-4">
+<h4 id="org7491570"><span class="section-number-4">2.1.1.</span> Complexity Science</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org367d958"></a>Santa Fe Institute<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li>D. C. Krakauer, J. L. Gaddis, and K. Pomeranz, <b>History, Big History, &amp; Metahistory.</b> SFI Press, 2018.</li>
+
+<li>“Study: To make sense of history, embrace uncertainty | Santa Fe Institute.” Accessed: Mar. 15, 2024. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/to-make-sense-of-history-embrace-uncertainty">https://www.santafe.edu/news-center/news/to-make-sense-of-history-embrace-uncertainty</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org75143bd"></a>Complexity Science Hub Vienna<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“Daniel Hoyer,” CSH. Accessed: Nov. 10, 2023. [Online]. Available: <a href="https://www.csh.ac.at/researcher/daniel-hoyer/">https://www.csh.ac.at/researcher/daniel-hoyer/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc964e1d"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org2ce1534" class="outline-4">
+<h4 id="org2ce1534"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“Pioneering Historian Caroline Walker Bynum to Receive Honorary Doctorate from University of St Andrews | IAS News | Institute for Advanced Study.” Accessed: Jun. 26, 2026. [Online]. Available: <a href="https://www.ias.edu/news/pioneering-historian-caroline-walker-bynum-receive-honorary-doctorate-university-st-andrews">https://www.ias.edu/news/pioneering-historian-caroline-walker-bynum-receive-honorary-doctorate-university-st-andrews</a></li>
+
+<li>D. Hoyer and J. S. B. et Al, “CRISES AVERTED. How A Few Past Societies Found Adaptive Reforms in the Face of Structural-Demographic Crises,” Cliodynamics: The Journal of Quantitative History and Cultural Evolution, vol. 16, no. 1, Jan. 2025, Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://csh.ac.at/publication/crises-averted-how-a-few-past-societies-found-adaptive-reforms-in-the-face-of-structural-demographic-crises/">https://csh.ac.at/publication/crises-averted-how-a-few-past-societies-found-adaptive-reforms-in-the-face-of-structural-demographic-crises/</a></li>
+
+<li>“*CSH * News * The Great Holocene Transformation By Turchin.” Accessed: Oct. 07, 2025. [Online]. Available: <a href="https://csh.ac.at/news/the-great-holocene-transformation/">https://csh.ac.at/news/the-great-holocene-transformation/</a></li>
+
+<li>“Review: Thinking Through Archaeological Complexity | Santa Fe Institute.” Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/review-how-complexity-science-is-reshaping-archaeology">https://www.santafe.edu/news-center/news/review-how-complexity-science-is-reshaping-archaeology</a></li>
+
+<li>“Visions of Power in Mesoamerica | Santa Fe Institute.” Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/visions-of-power-in-mesoamerica">https://www.santafe.edu/news-center/news/visions-of-power-in-mesoamerica</a></li>
+<li>“Events: Collaborative Visions of Power in Mesoamerica: Teotihuacan and the Lowland Maya | Santa Fe Institute.” Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://www.santafe.edu/events/collaborative-visions-of-power-in-mesoamerica-teotihuacan-and-the-lowland-maya">https://www.santafe.edu/events/collaborative-visions-of-power-in-mesoamerica-teotihuacan-and-the-lowland-maya</a></li>
+
+<li>“Secular Cycles | Princeton University Press.” Accessed: Aug. 18, 2025. [Online]. Available: <a href="https://press.princeton.edu/books/hardcover/9780691136967/secular-cycles">https://press.princeton.edu/books/hardcover/9780691136967/secular-cycles</a></li>
+
+<li>P. Turchin, “Cliodynamics and Cybernetics II,” Cliodynamica by Peter Turchin. Accessed: Aug. 18, 2025. [Online]. Available: <a href="https://peterturchin.substack.com/p/cliodynamics-and-cybernetics-ii">https://peterturchin.substack.com/p/cliodynamics-and-cybernetics-ii</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>P. Turchin, “Analytic Narratives,” Cliodynamica by Peter Turchin. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://peterturchin.substack.com/p/analytic-narratives">https://peterturchin.substack.com/p/analytic-narratives</a></li>
+
+<li>“Beresta Books.” Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://berestabooks.com/books/the-great-holocene-transformation">https://berestabooks.com/books/the-great-holocene-transformation</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9d04cb" class="outline-3">
+<h3 id="orgc9d04cb"><span class="section-number-3">2.2.</span> Biology</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>D. Reich, <b>Who We Are And How We Got Here: Ancient DNA And The New Science Of The Human Past.</b> Oxford University Press, 2018.
+<ul class="org-ul">
+<li>David Reich, “A Tale of Two Subcontinents: The Parallel Prehistories of Europe and South Asia,” (Apr. 14, 2020). Accessed: Aug. 09, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pra7YZWVc-s">https://www.youtube.com/watch?v=pra7YZWVc-s</a></li>
+</ul></li>
+
+<li>I. Lazaridis et al., “The Genetic Origin of the Indo-Europeans.” bioRxiv, p. 2024.04.17.589597, Apr. 18, 2024. doi: 10.1101/2024.04.17.589597.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37ff5f1" class="outline-3">
+<h3 id="org37ff5f1"><span class="section-number-3">2.3.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org216df53" class="outline-4">
+<h4 id="org216df53"><span class="section-number-4">2.3.1.</span> Data Science</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>P. Turchin and D. Hoyer, <b>Figuring Out the Past: The 3,495 Vital Statistics that Explain World History.</b> PublicAffairs, 2020.</li>
+<li>Seshat Databank, <a href="http://seshatdatabank.info/databrowser/">http://seshatdatabank.info/databrowser/</a> (accessed Aug. 23, 2021).
+<ul class="org-ul">
+<li>CrisisDB</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5250bfe" class="outline-4">
+<h4 id="org5250bfe"><span class="section-number-4">2.3.2.</span> AI</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li>“Creating Digital Replicas of History with AI – Communications of the ACM.” Accessed: Oct. 18, 2025. [Online]. Available: <a href="https://cacm.acm.org/news/creating-digital-replicas-of-history-with-ai/">https://cacm.acm.org/news/creating-digital-replicas-of-history-with-ai/</a></li>
+
+<li>“Researchers Tap AI to Dig Into the Past – Communications of the ACM.” Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://cacm.acm.org/news/researchers-tap-ai-to-dig-into-the-past/">https://cacm.acm.org/news/researchers-tap-ai-to-dig-into-the-past/</a></li>
+
+<li>“Can-chatgpt-pass-a-phd-level-history-test.” Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://csh.ac.at/news/can-chatgpt-pass-a-phd-level-history-test/">https://csh.ac.at/news/can-chatgpt-pass-a-phd-level-history-test/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4e5301b" class="outline-4">
+<h4 id="org4e5301b"><span class="section-number-4">2.3.3.</span> Games</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<ul class="org-ul">
+<li>L. Gershon, “History and Civilization,” JSTOR Daily. Accessed: Aug. 25, 2025. [Online]. Available: <a href="https://daily.jstor.org/history-and-civilization/">https://daily.jstor.org/history-and-civilization/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4681771" class="outline-4">
+<h4 id="org4681771"><span class="section-number-4">2.3.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org488d468" class="outline-3">
+<h3 id="org488d468"><span class="section-number-3">2.4.</span> Special Topics</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org286aa5c" class="outline-4">
+<h4 id="org286aa5c"><span class="section-number-4">2.4.1.</span> People</h4>
+<div class="outline-text-4" id="text-2-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org78e5e19"></a>Peter Turchin<br />
+<div class="outline-text-5" id="text-2-4-1-1">
+<ul class="org-ul">
+<li>“Books,” Peter Turchin. Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://peterturchin.com/book/">https://peterturchin.com/book/</a></li>
+<li>“My Blog Has Moved to Substack,” Peter Turchin. Accessed: Apr. 20, 2025. [Online]. Available: <a href="https://peterturchin.com/my-blog-has-moved-to-substack/">https://peterturchin.com/my-blog-has-moved-to-substack/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgad16557" class="outline-4">
+<h4 id="orgad16557"><span class="section-number-4">2.4.2.</span> Nation States</h4>
+<div class="outline-text-4" id="text-2-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9436447"></a>India<br />
+<div class="outline-text-5" id="text-2-4-2-1">
+<ul class="org-ul">
+<li>I. Lazaridis et al., “The Genetic Origin of the Indo-Europeans.” bioRxiv, p. 2024.04.17.589597, Apr. 18, 2024. doi: 10.1101/2024.04.17.589597.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org00b259b" class="outline-3">
+<h3 id="org00b259b"><span class="section-number-3">2.5.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>K. Kavanagh, “‘Google Maps’ for Roman roads reveals vast extent of ancient network,” Nature, Nov. 2025, doi: 10.1038/d41586-025-03626-z.</li>
+
+<li>“What the old folk teach us.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://theecologist.org/2025/oct/27/what-old-folk-teach-us">https://theecologist.org/2025/oct/27/what-old-folk-teach-us</a></li>
+
+<li>“Tech for Reclaiming our Oral Histories,” DAIR (Distributed AI Research Institute). Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://www.dair-institute.org/blog/tech-for-reclaiming-our-oral-histories/">https://www.dair-institute.org/blog/tech-for-reclaiming-our-oral-histories/</a></li>
+
+<li>“Computational Narratology,” Cambridge Core. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://www.cambridge.org/core/journals/computational-humanities-research/announcements/call-for-papers/computational-narratology">https://www.cambridge.org/core/journals/computational-humanities-research/announcements/call-for-papers/computational-narratology</a></li>
+
+<li>“Exploring a science of history | Santa Fe Institute.” Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/exploring-a-science-of-history">https://www.santafe.edu/news-center/news/exploring-a-science-of-history</a></li>
+
+<li>“Beresta Books.” Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://berestabooks.com/">https://berestabooks.com/</a></li>
+
+<li>J. Marchant, “How AI is unlocking ancient texts — and could rewrite history,” Nature, vol. 637, no. 8044, pp. 14–17, Dec. 2024, doi: 10.1038/d41586-024-04161-z.</li>
+
+<li>L. N. M. Iasi et al., “Neanderthal ancestry through time: Insights from genomes of ancient and present-day humans,” Science, vol. 386, no. 6727, p. eadq3010, Dec. 2024, doi: 10.1126/science.adq3010.</li>
+
+<li>“Past Member Rubina Raja Receives Carlsberg Foundation’s Research Prize - IAS News | Institute for Advanced Study.” Accessed: Sep. 13, 2024. [Online]. Available: <a href="https://www.ias.edu/news/past-member-rubina-raja-receives-carlsberg-foundations-research-prize">https://www.ias.edu/news/past-member-rubina-raja-receives-carlsberg-foundations-research-prize</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. Whitehouse, Inheritance: The Evolutionary Origins of the Modern World. Belknap Press, 2024.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>P. Turchin, <b>Ultrasociety: How 10,000 Years of War Made Humans the Greatest Cooperators on Earth.</b> Beresta Books, 2016.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>cxdig, “How human history shapes scientific inquiry,” Complexity Digest. Accessed: Mar. 30, 2024. [Online]. Available: <a href="https://comdig.unam.mx/2024/03/28/how-human-history-shapes-scientific-inquiry/">https://comdig.unam.mx/2024/03/28/how-human-history-shapes-scientific-inquiry/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5433dc6" class="outline-2">
+<h2 id="org5433dc6"><span class="section-number-2">3.</span> World</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org99cacbb" class="outline-3">
+<h3 id="org99cacbb"><span class="section-number-3">3.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Insiders to Premodern South Asian History - শুদ্ধস্বর.” Accessed: May 20, 2025. [Online]. Available: <a href="https://shuddhashar.com/insiders-to-premodern-south-asian-history/">https://shuddhashar.com/insiders-to-premodern-south-asian-history/</a></li>
+
+<li>“History is always political, and contest over it is a good thing | Aeon Essays,” Aeon. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://aeon.co/essays/history-is-always-political-and-contest-over-it-is-a-good-thing">https://aeon.co/essays/history-is-always-political-and-contest-over-it-is-a-good-thing</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ec7636" class="outline-2">
+<h2 id="org6ec7636"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge77049d" class="outline-3">
+<h3 id="orge77049d"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orga0887b2" class="outline-4">
+<h4 id="orga0887b2"><span class="section-number-4">4.1.1.</span> Courses</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li><i>“History | MIT OpenCourseWare | Free Online Course Materials.”</i> <a href="https://ocw.mit.edu/courses/history/">https://ocw.mit.edu/courses/history/</a> (accessed Aug. 20, 2021).</li>
+
+<li><i>“Undergraduate - Department of History, University of Delhi.”</i> <a href="http://history.du.ac.in/academic-programmes/undergraduate/">http://history.du.ac.in/academic-programmes/undergraduate/</a> (accessed Aug. 20, 2021).</li>
+
+<li><i>“CHS Courses | Welcome to Jawaharlal Nehru University.”</i> <a href="https://www.jnu.ac.in/sss/chs_courses">https://www.jnu.ac.in/sss/chs_courses</a> (accessed Aug. 20, 2021).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc8e590b" class="outline-3">
+<h3 id="orgc8e590b"><span class="section-number-3">4.2.</span> Regional</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgce29829" class="outline-4">
+<h4 id="orgce29829"><span class="section-number-4">4.2.1.</span> World</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>R. Dalal, <i>The Puffin History Of The World.</i> Penguin UK, 2013.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb28ff25" class="outline-4">
+<h4 id="orgb28ff25"><span class="section-number-4">4.2.2.</span> South Asia</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org86b9506"></a>General<br />
+<div class="outline-text-5" id="text-4-2-2-1">
+<ul class="org-ul">
+<li>S. Bose and A. Jalal, <i>Modern South Asia: History, Culture, Political Economy, 3rd edition.</i> London ; New York: Routledge, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga737ca3"></a>India<br />
+<ol class="org-ol">
+<li><a id="org4752723"></a>General<br />
+<div class="outline-text-6" id="text-4-2-2-2-1">
+<ul class="org-ul">
+<li>R. Dalal, <i>The Puffin History of India.</i> Penguin UK, 2014.</li>
+
+<li>N. Arora, <i>Indians: A Brief History of A Civilization.</i> Penguin Random House India Private Limited, 2021.
+<ul class="org-ul">
+<li>N. A. अरोरा A. Yadav (Translator), Indians. Penguin Swadesh, 2023.</li>
+<li>“Indians - A New History Web Series on The Wire - YouTube.” Accessed: Jan. 27, 2024. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLzia1qLN9v2CAIa-G3gDAnARb27x6xvpw">https://www.youtube.com/playlist?list=PLzia1qLN9v2CAIa-G3gDAnARb27x6xvpw</a></li>
+</ul></li>
+
+<li>J. Nehru, <b>Discovery of India.</b> Penguin UK, 2008.
+<ul class="org-ul">
+<li>Indians who read first half of this book cannot not feel proud to be Indians.</li>
+<li>Prasar Bharati Archives, Bharat Ek Khoj | Episode-1 | Bharat Mata Ki Jai, (May 19, 2020). Accessed: Oct. 04, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ymoKnBGSFGM">https://www.youtube.com/watch?v=ymoKnBGSFGM</a></li>
+</ul></li>
+<li>G. N. Devy, T. J. R. Korisettar, <b>The Indians: Histories Of A Civilization, First Edition.</b> New Delhi: Rupa Publications India Pvt Ltd., 2023.
+<ul class="org-ul">
+<li>“The Uneven Journey of a Civilisation,” The India Forum. Accessed: Feb. 06, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/uneven-journey-civilisation">https://www.theindiaforum.in/book-reviews/uneven-journey-civilisation</a></li>
+</ul></li>
+<li>S. A. Wolpert and S. Wolpert, <b>A New History of India.</b> Oxford University Press, 2009.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. Joseph, <b>Early Indians: The Story of Our Ancestors and where We Came from.</b> Juggernaut, 2018.
+<ul class="org-ul">
+<li>T. Joseph, Aarambhik Bharitya: Hamare Purvaj Kaun they? Unka Aagman Kahan se Hua Tha? Manjul Publishing House, 2020.</li>
+</ul></li>
+<li>R. Thapar, <b>Which of Us are Aryans?: Rethinking the Concept of Our Origins.</b> Aleph, 2019.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Chandra, M. Mukherjee, A. Mukherjee, K. N. Panikkar, and S. Mahajan, <i>India’s Struggle for Independence.</i> Penguin UK, 2016.</li>
+<li>R. Guha, <b>India After Gandhi: The History of the World's Largest Democracy.</b> Macmillan, 2007.</li>
+<li>S. Tharoor, <i>India: From Midnight to the Millennium.</i> Penguin Books India, 2000.</li>
+<li>A. Ghosh, <b>Smoke and Ashes: A Writer’s Journey through Opium’s Hidden Histories.</b> Gurugram: Fourth Estate India, 2023.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Chandavarkar, <i>History, Culture and the Indian City.</i> Cambridge University Press, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd9f1004"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org1b9e51a"></a>Misc<br />
+<div class="outline-text-7" id="text-org1b9e51a">
+<ul class="org-ul">
+<li>BY, “D. D. Kosambi Paved the Way for India’s Marxist Historians.” Accessed: Jul. 24, 2025. [Online]. Available: <a href="https://jacobin.com/2025/07/kosambi-india-marxism-historians-colonialism">https://jacobin.com/2025/07/kosambi-india-marxism-historians-colonialism</a></li>
+
+<li>R. Krishnamurthy, “New study uncovers likely ancestral origins of Indians, suggests links to Iranian, Central Asian cultures,” Down To Earth. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/science-technology/new-study-uncovers-likely-ancestral-origins-of-indians-suggests-links-to-iranian-central-asian-cultures">https://www.downtoearth.org.in/science-technology/new-study-uncovers-likely-ancestral-origins-of-indians-suggests-links-to-iranian-central-asian-cultures</a></li>
+
+<li>E. Kerdoncuff et al., “50,000 years of evolutionary history of India: Impact on health and disease variation,” Cell, vol. 188, no. 13, pp. 3389-3404.e6, Jun. 2025, doi: 10.1016/j.cell.2025.04.027.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. A. M. &amp; C. P. Rajendran, “Tamil Nadu CM’s $1 Million Prize: Deciphering the Indus Script to Unravel Harappan Mysteries,” Frontline. Accessed: Mar. 06, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/heritage/indus-valley-civilisation-script-decipher-harappan/article69285589.ece">https://frontline.thehindu.com/arts-and-culture/heritage/indus-valley-civilisation-script-decipher-harappan/article69285589.ece</a></li>
+
+<li>S. Amrith, Unruly Waters: How Mountain Rivers and Monsoons Have Shaped South Asia’s History. Penguin, 2018.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org462aa20"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org5af8d57"></a>Space and Time<br /></li>
+<li><a id="org62f01de"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="orgac11785"></a>Religions, Spirituality, Misc<br />
+<ul class="org-ul">
+<li><a id="org9c89508"></a>Islam<br />
+<div class="outline-text-8" id="text-org9c89508">
+<ul class="org-ul">
+<li>R. Aquil, <i>Sufism, Culture, and Politics: Afghans and Islam in Medieval North India.</i> Oxford University Press, 2007.</li>
+
+<li>M. A. Asif, <b>The Loss of Hindustan: The Invention of India.</b> Harvard University Press, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgff7fdfb"></a>Humanities, Misc<br />
+<ul class="org-ul">
+<li><a id="orga13415b"></a>People<br />
+<ul class="org-ul">
+<li><a id="org9b31290"></a>Historians<br />
+<ul class="org-ul">
+<li><a id="orge020e11"></a>Ramachandra Guha<br />
+<ul class="org-ul">
+<li><a id="org62a876c"></a>General<br />
+<div class="outline-text-11" id="text-org62a876c">
+<ul class="org-ul">
+<li>“Ramachandra Guha,” Wikipedia. May 02, 2025. Accessed: Jun. 08, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramachandra_Guha&amp;oldid=1288413084">https://en.wikipedia.org/w/index.php?title=Ramachandra_Guha&amp;oldid=1288413084</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org68e4c39"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgf7dedc5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org3644126"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org4b3ef96"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge23afc0"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org897acb6"></a>Works<br />
+<ul class="org-ul">
+<li><a id="org48b68e7"></a>Education<br />
+<div class="outline-text-13" id="text-org48b68e7">
+<ul class="org-ul">
+<li>R. Guha, Pluralism in the Indian University: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Rise and Fall of the Bilingual Intellectual: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org611439a"></a>Economics<br />
+<ul class="org-ul">
+<li><a id="org7d9d94d"></a>Sections, Misc<br />
+<div class="outline-text-14" id="text-org7d9d94d">
+<ul class="org-ul">
+<li>S. Villamayor-Tomas and R. Muradian, Eds., The Barcelona School of Ecological Economics and Political Ecology: A Companion in Honour of Joan Martinez-Alier. Springer, 2023.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd120d97"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br />
+<ul class="org-ul">
+<li><a id="org9e099ed"></a>Environment, Ecology<br />
+<div class="outline-text-14" id="text-org9e099ed">
+<ul class="org-ul">
+<li>M. Gadgil and R. Guha, Ecology and Equity: The Use and Abuse of Nature in Contemporary India, 1st edition. London ; New York: Routledge, 1995.</li>
+<li>M. Gadgil and R. Guha, This Fissured Land, 2nd Edition. New Delhi, India: Oxford University Press, 2012.</li>
+
+<li>G. Ramachandra, Ed., Social Ecology. Delhi: Oxford University Press, 1998.</li>
+<li>R. Guha, Unquiet Woods, The. Orient Blackswan Private Limited - New Delhi, 2013.</li>
+<li>R. Guha, Environmentalism (PB): A Global History. Penguin Random House India, 2016.</li>
+<li>R. Guha, Speaking with Nature: The Origins of Indian Environmentalism. Fourth Estate India, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga0eb431"></a>Lifestyle, Misc<br />
+<div class="outline-text-14" id="text-orga0eb431">
+<ul class="org-ul">
+<li>R. Guha, How Much Should A Person Consume [Paperback] Ramachandra Guha [Paperback] Ramachandra Guha [Paperback] Guha, Ramachandra. Hachette India Local, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="org8256114"></a>Sports<br />
+<div class="outline-text-14" id="text-org8256114">
+<ul class="org-ul">
+<li>M. Rodrigues and R. Guha, Batting For The Empire. New Delhi: Penguin Books India, 2003.</li>
+<li>R. Guha, Commonwealth Of Cricket. Fourth Estate India, 2022.</li>
+<li>R. Guha, Corner of a Foreign Field, A (PB): The Indian History of a British Sport. Penguin Random House India, 2016.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org2f62a1e"></a>Religions, Spirituality, Misc<br /></li>
+<li><a id="org04ee4db"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org3f0da4c"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="orgee7bf50"></a>Indigenous People<br />
+<div class="outline-text-15" id="text-orgee7bf50">
+<ul class="org-ul">
+<li>R. Guha, Savaging the Civilized (PB): Verrier Elwin, His Tribals and India. Penguin Random House India, 2016.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org68ce34a"></a>Politics<br />
+<ul class="org-ul">
+<li><a id="org6dfd461"></a>GandhiJi<br />
+<div class="outline-text-15" id="text-org6dfd461">
+<ul class="org-ul">
+<li>R. Guha, Gandhi. India Penguin, 2020.</li>
+<li>R. Guha, Gandhi’s Faith and Ours: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, Gandhi Before India [Paperback] Ramachandra Guha, Latest edition. PENGUIN INDIA, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfa7b5c6"></a>India After Gandhi<br />
+<div class="outline-text-15" id="text-orgfa7b5c6">
+<ul class="org-ul">
+<li>R. Guha, India After Gandhi: A History. New Delhi: Picador India, 2023.</li>
+</ul>
+</div>
+</li>
+<li><a id="org7fec35f"></a>Western Fighters For India's Freedom<br />
+<div class="outline-text-15" id="text-org7fec35f">
+<ul class="org-ul">
+<li>R. Guha, Rebels against the Raj. Penguin, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb3b6672"></a>Nehru<br />
+<div class="outline-text-15" id="text-orgb3b6672">
+<ul class="org-ul">
+<li>R. Guha, Verdicts on Nehru: The Rise and Fall of a Reputation (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd26eaaa"></a>Politics: Left<br />
+<div class="outline-text-15" id="text-orgd26eaaa">
+<ul class="org-ul">
+<li>R. Guha, The Past and Future of the Indian Left: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf8a8392"></a>Congress<br />
+<div class="outline-text-15" id="text-orgf8a8392">
+<ul class="org-ul">
+<li>R. Guha, A Short History of Congress Chamchagiri: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3f937a2"></a>Politics: Right<br />
+<div class="outline-text-15" id="text-org3f937a2">
+<ul class="org-ul">
+<li>R. Guha, Hindutva Hate Mail: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org852ab0d"></a>Sino-Indian Conflict<br />
+<div class="outline-text-14" id="text-org852ab0d">
+<ul class="org-ul">
+<li>R. Guha, An Asian Clash of Civilizations?: The Sino-Indian Conflict Revisited (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5adf750"></a>Modernity Makers<br />
+<div class="outline-text-14" id="text-org5adf750">
+<ul class="org-ul">
+<li>R. Guha, J. Taylor, R. Mitter, O. A. Westad, and S. Raghavan, Makers of Modern Asia, Reprint edition. Harvard University Press, 2017.</li>
+<li>R. Guha, Makers of Modern India, Latest edition. Penguin India, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4eed586"></a>Misc<br />
+<div class="outline-text-14" id="text-org4eed586">
+<ul class="org-ul">
+<li>G. Ramachandra, Ed., Social Ecology. Delhi: Oxford University Press, 1998.</li>
+<li>R. Guha, Patriots and Partisans, Latest Edition. Penguin India, 2013.</li>
+<li>R. Guha, An Anthropologist among the Marxists and other Essays. Permanent Black, 2018.</li>
+<li>R. Guha, Last Liberal And Other Essays, 1st Edition. Ranikhet: Orient Blackswan Private Limited - New Delhi, 2007.</li>
+<li>R. Guha, Democrats and Dissenters. Penguin Random House India, 2017.</li>
+<li>R. Guha, The Professor and the Protester: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Gentle Colossus: Krishna Raj and the EPW (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, Redeeming the Republic: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org0e84fd4"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgd07279f"></a>Literature<br />
+<div class="outline-text-14" id="text-orgd07279f">
+<ul class="org-ul">
+<li>R. Guha, The Cooking of Books : A Literary Memoir [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha [Hardcover] Ramachandra Guha. New Delhi: Juggernaut, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb50c5d0"></a>Misc<br />
+<div class="outline-text-13" id="text-orgb50c5d0">
+<ul class="org-ul">
+<li>R. Guha, Turning Crimson At Premier’s: (Penguin Petit). Penguin UK, 2013.</li>
+<li>R. Guha, The Beauty of Compromise: (Penguin Petit). Penguin UK, 2013.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgcd40a48"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgef0d751"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org1bc20e1"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgd79bd8d"></a>Hindi<br />
+<ul class="org-ul">
+<li><a id="org80ed4e4"></a>General<br /></li>
+<li><a id="org2e9ed7c"></a>Environment<br />
+<div class="outline-text-13" id="text-org2e9ed7c">
+<ul class="org-ul">
+<li>R. Guha, Upbhog Ki Laxman Rekha, Latest Edition. Penguin India, 2013.</li>
+
+<li>M. Gadgil and R. Guha, Yeh Darakti Zameen: Bharat Ka Paristhitik Itihas. Oxford University Press India, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="org583db48"></a>LifeStyle<br />
+<div class="outline-text-13" id="text-org583db48">
+<ul class="org-ul">
+<li>R. Guha, Upbhog Ki Laxman Rekha, Latest Edition. Penguin India, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgedc1edd"></a>Misc<br />
+<div class="outline-text-13" id="text-orgedc1edd">
+<ul class="org-ul">
+<li>R. रामचंद्र Guha, Gandhi/गांधी: Dakshin Africa Se Bharat Aagman Aur Golmez Sammelan Tak 1914-31, Khand-1/दक्षिण अफ्रीक़ा से भारत आगमन और गोलमेज़ सम्मेलन तक 1914-31 खंड-1. Penguin, 2021.</li>
+<li>R. Guha, Bharat Gandhi Ke Baad, New edition. Penguin India, 2012.</li>
+
+<li>गुहा R. G., Shatabdi Ke Jharokhe Se/शताब्दी के झरोखे से. Penguin Swadesh, 2025.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgb72aca5"></a>Misc<br />
+<div class="outline-text-11" id="text-orgb72aca5">
+<ul class="org-ul">
+<li>R. Guha, “From Asia Publishing to Permanent Black: Ramachandra Guha pays a tribute to editors and publishers,” Scroll.in. Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://scroll.in/article/959293/from-asia-publishing-to-permanent-black-ramachandra-guha-pays-a-tribute-to-editors-and-publishers">https://scroll.in/article/959293/from-asia-publishing-to-permanent-black-ramachandra-guha-pays-a-tribute-to-editors-and-publishers</a></li>
+
+<li>“How Ramachandra Guha Became an Essayist,” The Wire. Accessed: Feb. 26, 2025. [Online]. Available: <a href="https://thewire.in/books/how-ramachandra-guha-became-an-essayist">https://thewire.in/books/how-ramachandra-guha-became-an-essayist</a></li>
+
+<li>N. Sundar and S. Raghavan, Eds., A Functioning Anarchy?: Essays for Ramachandra Guha. Allen Lane, 2021.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org450bb85"></a>Historians: 'Right Wing'ish<br />
+<ul class="org-ul">
+<li><a id="org44bd622"></a>S. Sanyal<br />
+<div class="outline-text-11" id="text-org44bd622">
+<ul class="org-ul">
+<li>S. Sanyal, <i>Land of seven rivers: History of India’s Geography.</i> Penguin UK, 2012.</li>
+
+<li>S. Sanyal, <i>Indian Rennaissance: India’s Rise After a Thousand Years of Decline.</i> Penguin Books India Pvt, Limited, 2015.</li>
+
+<li>S. Sanyal, <i>The Ocean of Churn: How the Indian Ocean Shaped Human History.</i> Penguin UK, 2016.</li>
+
+<li>M. Visvanathan, <i>“Sanjeev Sanyal’s attempts to rewrite India’s past,”</i> The Caravan. <a href="https://caravanmagazine.in/books/history-sanjeev-sanyal-attempts-rewrite-india-past">https://caravanmagazine.in/books/history-sanjeev-sanyal-attempts-rewrite-india-past</a> (accessed Nov. 03, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org96e7902"></a>Vikram Sampath<br />
+<div class="outline-text-11" id="text-org96e7902">
+<ul class="org-ul">
+<li>“‘Vikram Sampath Is Claiming My Ideas, Words as His Own’: Historian Janaki Bakhle on Savarkar Author,” The Wire. <a href="https://thewire.in/books/vikram-sampath-is-claiming-my-ideas-words-as-his-own-historian-janaki-bakhle-on-savarkar-author">https://thewire.in/books/vikram-sampath-is-claiming-my-ideas-words-as-his-own-historian-janaki-bakhle-on-savarkar-author</a> (accessed Mar. 04, 2022).</li>
+
+<li>V. Chaturvedi, “Would VD Savarkar have condoned plagiarism?,” Scroll.in. <a href="https://scroll.in/article/1018067/would-vd-savarkar-have-condoned-plagiarism">https://scroll.in/article/1018067/would-vd-savarkar-have-condoned-plagiarism</a> (accessed Mar. 04, 2022).</li>
+
+<li>Z. U. Salam, “Vikram Sampath in plagiarism row,” Frontline. <a href="https://frontline.thehindu.com/books/vikram-sampath-in-plagiarism-row/article38454940.ece">https://frontline.thehindu.com/books/vikram-sampath-in-plagiarism-row/article38454940.ece</a> (accessed Mar. 22, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org66d1c73"></a>Critical Studies<br />
+<div class="outline-text-11" id="text-org66d1c73">
+<ul class="org-ul">
+<li>M. Nanda <b>“Big Lies and Deep Lies in Post-Truth India,”</b> The Wire. <a href="https://thewire.in/history/india-post-truth-big-lies-deep-lies-meera-nanda">https://thewire.in/history/india-post-truth-big-lies-deep-lies-meera-nanda</a> (accessed Mar. 13, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org36b9e4b"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org4e3218b"></a>W. Dalrymple<br />
+<div class="outline-text-10" id="text-org4e3218b">
+<ul class="org-ul">
+<li>W. Dalrymple, The Golden Road: How Ancient India Transformed the World. Bloomsbury Publishing, 2024.</li>
+
+<li>W. Dalrymple and A. Anand, Koh-i-Noor: The History of the World’s Most Infamous Diamond. Bloomsbury Publishing, 2017.</li>
+
+<li>W. Dalrymple, White Mughals: Love and Betrayal in Eighteenth-Century India. Penguin, 2004.</li>
+
+<li>W. Dalrymple, The Age of Kali: Indian Travels and Encounters. Penguin Books India, 2004.</li>
+
+<li>W. Dalrymple, The Company Quartet: The Anarchy, White Mughals, Return of a King and The Last Mughal. Bloomsbury Publishing, 2021.</li>
+
+<li>W. Dalrymple, City of Djinns. HarperCollins UK, 2011.</li>
+
+<li>W. Dalrymple, Nine Lives: In Search of the Sacred in Modern India. A&amp;C Black, 2010.</li>
+
+<li>W. Dalrymple, The Anarchy. Bloomsbury Publishing, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgaa3bb8c"></a>Priya Satia<br />
+<div class="outline-text-10" id="text-orgaa3bb8c">
+<ul class="org-ul">
+<li>“Priya Satia,” Wikipedia. Mar. 12, 2023. Accessed: Apr. 15, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Priya_Satia&amp;oldid=1144170281">https://en.wikipedia.org/w/index.php?title=Priya_Satia&amp;oldid=1144170281</a></li>
+
+<li>© Stanford University, Stanford, and California 94305, “Priya Satia.” <a href="http://tec.fsi.stanford.edu/people/priya_satia">http://tec.fsi.stanford.edu/people/priya_satia</a> (accessed Apr. 15, 2023).</li>
+
+<li>“Priya Satia | Department of History.” <a href="https://history.stanford.edu/people/priya-satia">https://history.stanford.edu/people/priya-satia</a> (accessed Apr. 15, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org22ad931"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org66a0413"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org59ad8e9"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="org154466b"></a>Caste<br />
+<div class="outline-text-9" id="text-org154466b">
+<ul class="org-ul">
+<li>A. Thaker, “In California, a Debate Over History Curricula Has Brought To Fore Denials of Caste in the Indian American Community,” The Caravan. <a href="https://caravanmagazine.in/vantage/california-history-denial-caste-indian-american-community">https://caravanmagazine.in/vantage/california-history-denial-caste-indian-american-community</a> (accessed Jan. 22, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcab51ba"></a>Women<br /></li>
+<li><a id="org910cb15"></a>Aryans<br />
+<ul class="org-ul">
+<li><a id="orgb447f04"></a>General<br /></li>
+<li><a id="orgdc64af7"></a>STEMM<br />
+<div class="outline-text-10" id="text-orgdc64af7">
+<ul class="org-ul">
+<li>D. Reich, <b>Who We Are And How We Got Here: Ancient DNA And The New Science Of The Human Past.</b> Oxford University Press, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="org69cf6ca"></a>Pop<br />
+<div class="outline-text-10" id="text-org69cf6ca">
+<ul class="org-ul">
+<li>T. Joseph, <i>Early Indians: The Story of Our Ancestors and where We Came from.</i> Juggernaut, 2018.
+<ul class="org-ul">
+<li>T. Joseph, Aarambhik Bharitya: Hamare Purvaj Kaun they? Unka Aagman Kahan se Hua Tha? Manjul Publishing House, 2020.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orge4714ee"></a>Religion<br />
+<div class="outline-text-10" id="text-orge4714ee">
+<ul class="org-ul">
+<li>D. M. Figueira, Aryans, Jews, Brahmins : Theorizing Authority through Myths of Identity. Navayana, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf178ebc"></a>Misc<br />
+<div class="outline-text-10" id="text-orgf178ebc">
+<ul class="org-ul">
+<li>M. V. Devadevan, “Who really were the Aryans?,” Frontline. Accessed: May 17, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/books/review-of-charles-allens-aryans-the-search-for-a-people-a-place-and-a-myth/article68128256.ece">https://frontline.thehindu.com/books/review-of-charles-allens-aryans-the-search-for-a-people-a-place-and-a-myth/article68128256.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Thapar, <b>Which of Us are Aryans?: Rethinking the Concept of Our Origins.</b> Aleph, 2019.</li>
+
+<li>“Indian government proposal to study ‘racial purity’ draws widespread attack from scientists,” World Socialist Web Site. <a href="https://www.wsws.org/en/articles/2022/07/04/kdgh-j04.html">https://www.wsws.org/en/articles/2022/07/04/kdgh-j04.html</a> (accessed Jul. 04, 2022).</li>
+
+<li>“Questions about the Aryan identity,” Frontline. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/other/article30255559.ece">https://frontline.thehindu.com/other/article30255559.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org3411320"></a>Business Studies, Misc<br /></li>
+<li><a id="orgae484f4"></a>Security Studies, Misc<br /></li>
+<li><a id="org27ace7d"></a>Communication, Misc<br />
+<ul class="org-ul">
+<li><a id="org4cd7a5e"></a>Current Affairs<br />
+<ul class="org-ul">
+<li><a id="orgaebe325"></a>IITK Calendar Controversy<br />
+<div class="outline-text-9" id="text-orgaebe325">
+<ul class="org-ul">
+<li>R. Kochhar, “Why an IIT Kharagpur calendar aiming to highlight traditional Indian knowledge has irked experts,” Scroll.in. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://scroll.in/article/985539/why-an-iit-kharagpur-calendar-aiming-to-highlight-traditional-indian-knowledge-has-irked-experts">https://scroll.in/article/985539/why-an-iit-kharagpur-calendar-aiming-to-highlight-traditional-indian-knowledge-has-irked-experts</a></li>
+
+<li>M. Nanda “Big Lies and Deep Lies in Post-Truth India,” The Wire. <a href="https://thewire.in/history/india-post-truth-big-lies-deep-lies-meera-nanda">https://thewire.in/history/india-post-truth-big-lies-deep-lies-meera-nanda</a> (accessed Mar. 13, 2022).</li>
+
+<li>M. N and a, “The Age of the Unicorn, Brought to You by IIT Kharagpur,” The Wire Science, Jan. 03, 2022. <a href="https://science.thewire.in/the-sciences/iit-kharagpur-vedic-culture-calendar-hindutva-aryan-invasion-symbols-claims/">https://science.thewire.in/the-sciences/iit-kharagpur-vedic-culture-calendar-hindutva-aryan-invasion-symbols-claims/</a> (accessed Jan. 03, 2022).</li>
+
+<li>“The IIT Kharagpur Calendar Is the Right’s Attempt To Appropriate the Indus Valley Civilisation,” The Wire. <a href="https://thewire.in/education/iit-kharagpur-vedic-calender-appropriate-indus-valley-civilisation">https://thewire.in/education/iit-kharagpur-vedic-calender-appropriate-indus-valley-civilisation</a> (accessed Dec. 30, 2021).</li>
+
+<li>S. Kumar, “IIT Kharagpur 2022 calendar on ancient India is an exercise in propaganda – not rigorous research,” Scroll.in. <a href="https://scroll.in/article/1013976/iit-kharagpur-2022-calendar-on-ancient-india-is-an-exercise-in-propaganda-not-knowledge-production">https://scroll.in/article/1013976/iit-kharagpur-2022-calendar-on-ancient-india-is-an-exercise-in-propaganda-not-knowledge-production</a> (accessed Dec. 31, 2021).</li>
+
+<li>T. Joseph, “IIT’s ‘Aryan Invasion’ Calendar: Right-Wing’s Beliefs Are Far From Science,” TheQuint, Dec. 30, 2021. <a href="https://www.thequint.com/voices/opinion/iits-aryan-invasion-calendar-hindu-right-wings-beliefs-are-far-from-science">https://www.thequint.com/voices/opinion/iits-aryan-invasion-calendar-hindu-right-wings-beliefs-are-far-from-science</a> (accessed Jan. 01, 2022).</li>
+
+<li>C. P. Rajendran, “Distorting history through a calendar,” The Hindu, Jan. 26, 2022. Accessed: Jan. 26, 2022. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/distorting-history-through-a-calendar/article38325449.ece">https://www.thehindu.com/opinion/op-ed/distorting-history-through-a-calendar/article38325449.ece</a></li>
+
+<li>“With IIT Kharagpur Calendar, the Hindutva Right Takes Another Step Away From Science,” The Wire. <a href="https://thewire.in/education/with-iit-kharagpur-calendar-the-hindutva-right-takes-another-step-away-from-science">https://thewire.in/education/with-iit-kharagpur-calendar-the-hindutva-right-takes-another-step-away-from-science</a> (accessed Feb. 14, 2022).</li>
+
+<li>“Meaningless Expressions and Illogical Commentary,” The India Forum, Feb. 03, 2022. <a href="https://www.theindiaforum.in/letters/meaningless-expressions-and-illogical-commentary">https://www.theindiaforum.in/letters/meaningless-expressions-and-illogical-commentary</a> (accessed Feb. 14, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb64c051"></a>Textbook Changes<br />
+<div class="outline-text-9" id="text-orgb64c051">
+<ul class="org-ul">
+<li>S. Guichard, The Construction of History and Nationalism in India: Textbooks, Controversies and Politics. Routledge, 2010.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org83be9c9"></a>Languages<br />
+<div class="outline-text-8" id="text-org83be9c9">
+<ul class="org-ul">
+<li>P. Mohan, Wanderers, Kings, Merchants: The Story of India through Its Languages. Penguin Random House India Private Limited, 2021.</li>
+
+<li>G. N. Devy, T. J. R. Korisettar, The Indians: Histories Of A Civilization, First Edition. New Delhi: Rupa Publications India Pvt Ltd., 2023.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9e8fa18"></a>Hindi<br />
+<div class="outline-text-8" id="text-org9e8fa18">
+<ul class="org-ul">
+<li>M. Gadgil and R. Guha, <b>Yeh Darakti Zameen: Bharat Ka Paristhitik Itihas.</b> Oxford University Press India, 2018.</li>
+
+<li>T. Joseph, Aarambhik Bharitya: Hamare Purvaj Kaun They? Unka Aagman Kahan Se Hua Tha? Manjul Publishing House, 2020.</li>
+
+<li>N. A. अरोरा A. Yadav (Translator), Indians. Penguin Swadesh, 2023.</li>
+
+<li>R. Guha, Bharat Gandhi Ke Baad, New Edition. Penguin India, 2012.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Thapar and T. A. Kumar, Asahmati Ki Aawazein. Rajkamal Prakashan Pvt. Ltd, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org99012f9"></a>Misc<br />
+<div class="outline-text-7" id="text-org99012f9">
+<ul class="org-ul">
+<li>“Nonviolence and Tolerance in Early India,” The Wire. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://thewire.in/history/nonviolence-and-tolerance-in-early-india">https://thewire.in/history/nonviolence-and-tolerance-in-early-india</a></li>
+
+<li>T. Joseph and D. Cariapa, Ancient Indians: The Amazing Story of Our Early, Earlier, Earliest Ancestors; The Kids Edition of the Mega Hit Early Indians. Juggernaut, 2025.</li>
+
+<li>“How not to write a history book, the Audrey Truschke way,” Countercurrents. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/09/how-not-to-write-a-history-book-the-audrey-truschke-way/">https://countercurrents.org/2025/09/how-not-to-write-a-history-book-the-audrey-truschke-way/</a></li>
+
+<li>S. S. &amp; C. P. Rajendran, “The ASI is facing a credibility crisis,” The Hindu, Aug. 24, 2025. Accessed: Aug. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/the-asi-is-facing-a-credibility-crisis/article69971421.ece">https://www.thehindu.com/opinion/op-ed/the-asi-is-facing-a-credibility-crisis/article69971421.ece</a></li>
+
+<li>“NCERT Modules on Partition: Distortions Galore,” NewsClick. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://www.newsclick.in/ncert-modules-partition-distortions-galore">https://www.newsclick.in/ncert-modules-partition-distortions-galore</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Unanswered queries.” Accessed: Aug. 04, 2025. [Online]. Available: <a href="https://www.telegraphindia.com/opinion/unanswered-queries-the-fuzzy-line-separating-past-and-present-prnt/cid/2112307">https://www.telegraphindia.com/opinion/unanswered-queries-the-fuzzy-line-separating-past-and-present-prnt/cid/2112307</a></li>
+
+<li>“NCERT: History as Tool for Promoting Divisive Hate,” NewsClick. Accessed: Jul. 23, 2025. [Online]. Available: <a href="https://www.newsclick.in/ncert-history-tool-promoting-divisive-hate">https://www.newsclick.in/ncert-history-tool-promoting-divisive-hate</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd2737f2"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org1912cee"></a>Periods<br />
+<ul class="org-ul">
+<li><a id="orgd66bf30"></a>Ancient India<br />
+<div class="outline-text-8" id="text-orgd66bf30">
+<ul class="org-ul">
+<li>A. Parpola, “On Ancient Indian history: What do we know and how? By Rajesh Kochhar,” J Biosci, vol. 44, no. 3, p. 61, Jul. 2019, doi: 10.1007/s12038-019-9882-6.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>U. Chakravarti, Everyday Lives, Everyday Histories: Beyond the Kings and Brahmanas of “Ancient” India. Columbia University Press, 2012.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Lahiri, Time Pieces: A Whistle-stop Tour of Ancient India. Hachette UK, 2018.
+<ul class="org-ul">
+<li>N. Lahiri, “In ‘Time Pieces,’ Nayanjot Lahiri’s jaunt through love in ancient India,” The Caravan. <a href="https://caravanmagazine.in/history/nayanjot-lahiri-time-pieces-a-whistle-stop-tour-of-ancient-india">https://caravanmagazine.in/history/nayanjot-lahiri-time-pieces-a-whistle-stop-tour-of-ancient-india</a> (accessed Jan. 27, 2022).</li>
+</ul></li>
+
+<li>U. Singh and N. Lahiri, <i>Ancient India: New Research.</i> Oxford University Press, 2010.</li>
+
+<li>U. Singh, <i>A History of Ancient and Early Medieval India: From the Stone Age to the 12th Century.</i> Pearson Education India, 2008.</li>
+
+<li>U. Singh, <i>Ancient Delhi.</i> OUP India, 2006.</li>
+
+<li>U. Singh, <i>Political Violence in Ancient India.</i> Harvard University Press, 2017.</li>
+
+<li>N. S. Gundur, <i>“‘Ancient India: Culture of Contradictions’ review: Complexities of a culture,”</i> The Hindu, Jan. 01, 2022. Accessed: Jan. 02, 2022. [Online]. Available: <a href="https://www.thehindu.com/books/books-reviews/ancient-india-culture-of-contradictions-review-complexities-of-a-culture/article38077442.ece">https://www.thehindu.com/books/books-reviews/ancient-india-culture-of-contradictions-review-complexities-of-a-culture/article38077442.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. N. Jha, Ancient India in Historical Outline, 4th Revised Edition. Manohar Publishers &amp; Distributors, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org69b50e4"></a>Medieval India<br />
+<div class="outline-text-8" id="text-org69b50e4">
+<ul class="org-ul">
+<li>A. M. U. C. of A. S. in History, Medieval India I: Essays in the History of India, 1200-1750. Oxford University Press, 1999.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge8bacdf"></a>Mughal Emprire<br />
+<div class="outline-text-8" id="text-orge8bacdf">
+<ul class="org-ul">
+<li>F. Books, “The Mughal Empire,” Five Books. <a href="https://fivebooks.com/best-books/the-mughal-empire-richard-m-eaton/">https://fivebooks.com/best-books/the-mughal-empire-richard-m-eaton/</a> (accessed Mar. 19, 2022).</li>
+
+<li>S. Gandhi, The Emperor Who Never Was: Dara Shukoh in Mughal India. Harvard University Press, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc2d3b87"></a>South India<br />
+<div class="outline-text-8" id="text-orgc2d3b87">
+<ul class="org-ul">
+<li>Anirudh Kanisetti, Lords of the Deccan : Southern India from the Chalukyas to the Cholas.</li>
+
+<li>N. Karashima, A Concise History of South India: Issues and Interpretations. Oxford University Press, 2014.</li>
+
+<li>K. A. N. S. (the late) and P. M. R. Gurukkal, The Illustrated History of South India: From Prehistoric Times to the Fall of Vijayanagar. Oxford University Press, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9a729b8"></a>Colonial Era<br />
+<div class="outline-text-8" id="text-org9a729b8">
+<ul class="org-ul">
+<li><b>“How British colonizers caused the Bengal famine,”</b> New Internationalist, Jan. 21, 2022. <a href="https://newint.org/features/2021/12/07/feature-how-british-colonizers-caused-bengal-famine">https://newint.org/features/2021/12/07/feature-how-british-colonizers-caused-bengal-famine</a> (accessed Jan. 27, 2022).</li>
+
+<li>R. Guha, <i>Rebels Against the Raj: Western Fighters for India’s Freedom.</i> HarperCollins UK, 2022.
+<ul class="org-ul">
+<li>R. Guha, “Still speaking to Indians today,” The Hindu, Jan. 18, 2022. Accessed: Jan. 18, 2022. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/still-speaking-to-indians-today/article38284049.ece">https://www.thehindu.com/opinion/op-ed/still-speaking-to-indians-today/article38284049.ece</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4f9da09"></a>Regions<br />
+<ul class="org-ul">
+<li><a id="orgaefc77a"></a>Indian Ocean<br />
+<div class="outline-text-8" id="text-orgaefc77a">
+<ul class="org-ul">
+<li>“Book Excerpt: India ignored its aqua ‘geography of histories’, favouring the terra.” Accessed: Feb. 05, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/reviews/book-excerpt-india-ignored-its-aqua-geography-of-histories-favouring-the-terra-94250">https://www.downtoearth.org.in/reviews/book-excerpt-india-ignored-its-aqua-geography-of-histories-favouring-the-terra-94250</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgfc65091"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgee44e8a"></a>Misc<br />
+<div class="outline-text-7" id="text-orgee44e8a">
+<ul class="org-ul">
+<li>“Ancient India at the British Museum,” The India Forum. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/tiffin/ancient-india-british-museum">https://www.theindiaforum.in/tiffin/ancient-india-british-museum</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgfb940f2"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org59178b0"></a>Oral History<br />
+<div class="outline-text-7" id="text-org59178b0">
+<ul class="org-ul">
+<li>“Oral History Association of India – Oral History Association of India.” <a href="https://ohai.info/">https://ohai.info/</a> (accessed Nov. 19, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org57c722a"></a>Miscellaneous<br />
+<ul class="org-ul">
+<li><a id="org4ffc5dd"></a>Misc<br />
+<div class="outline-text-7" id="text-org4ffc5dd">
+<ul class="org-ul">
+<li>“‘I Must Acknowledge the Role of the Present Regime and its Foot Soldiers&#x2026;’: Umar Khalid.” Accessed: Jun. 27, 2026. [Online]. Available: <a href="https://thewire.in/books/acknowledgements">https://thewire.in/books/acknowledgements</a></li>
+
+<li>G. Arunima, “K.N. Panikkar (1936–2026): The Marxist Historian Who Defined Indian Secularism and Peasant Resistance,” Frontline. Accessed: Mar. 16, 2026. [Online]. Available: <a href="https://frontline.thehindu.com/other/obituary/kn-panikkar-marxist-historian-secularism-obituary/article70743284.ece">https://frontline.thehindu.com/other/obituary/kn-panikkar-marxist-historian-secularism-obituary/article70743284.ece</a></li>
+
+<li>“Evaluating Indian Kings: Tipu Sultan,” NewsClick. Accessed: Feb. 19, 2026. [Online]. Available: <a href="https://www.newsclick.in/evaluating-indian-kings-tipu-sultan">https://www.newsclick.in/evaluating-indian-kings-tipu-sultan</a></li>
+
+<li>B. T. Varadarajan, “‘India’ and ‘Let My Country Awake’ Review: History at an Audacious Scale,” Wall Street Journal, Dec. 05, 2025. Accessed: Dec. 08, 2025. [Online]. Available: <a href="https://www.wsj.com/arts-culture/books/india-and-let-my-country-awake-review-history-at-an-audacious-scale-6c682639">https://www.wsj.com/arts-culture/books/india-and-let-my-country-awake-review-history-at-an-audacious-scale-6c682639</a></li>
+
+<li>W. Dalrymple, The Golden Road : How Ancient India Transformed the World. London Dublin: Bloomsbury Publishing, 2024.</li>
+
+<li>“‘Bande Mataram’ Fits the BJP’s Agenda, But its History is Complicated,” The Wire. Accessed: Nov. 11, 2025. [Online]. Available: <a href="https://thewire.in/history/bande-mataram-fits-the-bjps-agenda-but-its-history-is-complicated">https://thewire.in/history/bande-mataram-fits-the-bjps-agenda-but-its-history-is-complicated</a></li>
+
+<li>M. White, “Discovering Mughal life through miniatures and music,” The Hindu, Sep. 30, 2025. Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/art/ashok-kumar-das-heritage-lecture-presented-the-nuances-of-miniature-mughal-paintings/article70111668.ece">https://www.thehindu.com/entertainment/art/ashok-kumar-das-heritage-lecture-presented-the-nuances-of-miniature-mughal-paintings/article70111668.ece</a></li>
+
+<li>“Audrey Truschke on ‘India: 5,000 Years of History’ and Threats to Historical Narratives,” Deccan Herald. Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://www.deccanherald.com/features/books/history-is-under-threat-in-india-author-audrey-truschke-3743895">https://www.deccanherald.com/features/books/history-is-under-threat-in-india-author-audrey-truschke-3743895</a></li>
+
+<li>“Audrey Truschke Pens Sweeping History of Indian Subcontinent,” Rutgers SAS-Newark. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://sasn.rutgers.edu/news/audrey-truschke-pens-sweeping-history-indian-subcontinent">https://sasn.rutgers.edu/news/audrey-truschke-pens-sweeping-history-indian-subcontinent</a></li>
+
+<li>“India made sense of.” Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://www.telegraphindia.com/books/india-made-sense-of-audrey-truschkes-book-is-yet-another-addition-to-the-growing-corpus-of-textbooks-on-the-subcontinents-history-prnt/cid/2121350">https://www.telegraphindia.com/books/india-made-sense-of-audrey-truschkes-book-is-yet-another-addition-to-the-growing-corpus-of-textbooks-on-the-subcontinents-history-prnt/cid/2121350</a></li>
+
+<li>“Transcript | ‘Absolutely Wrong to See Mughals as a Foreign Empire’: Historian Richard Eaton,” The Wire. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://thewire.in/history/richard-eaton-absolutely-wrong-mughals-foreign-empire">https://thewire.in/history/richard-eaton-absolutely-wrong-mughals-foreign-empire</a></li>
+
+<li>M. Chongtham, “Prabhavati Devi Gupta: Female Sovereignty In Indian History | #IndianWomenInHistory,” Feminism in India. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/19/prabhavati-devi-gupta-female-sovereignty-in-indian-history-indianwomeninhistory/">https://feminisminindia.com/2025/08/19/prabhavati-devi-gupta-female-sovereignty-in-indian-history-indianwomeninhistory/</a></li>
+
+<li>“Transcript | ‘Absolutely Wrong to See Mughals as a Foreign Empire’: Historian Richard Eaton,” The Wire. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://thewire.in/history/richard-eaton-absolutely-wrong-mughals-foreign-empire">https://thewire.in/history/richard-eaton-absolutely-wrong-mughals-foreign-empire</a></li>
+
+<li>Scroll.in, Aurangzeb was viewed positively in his own era : Historian, Audrey Truschke | Scroll Adda, (Aug. 15, 2025). Accessed: Aug. 16, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=4Qe5LgXf5ZE">https://www.youtube.com/watch?v=4Qe5LgXf5ZE</a></li>
+<li>“Podcast with Audrey Truschke, author of ‘India, 5000 Years of History on the Subcontinent.’” Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://asianreviewofbooks.com/podcast-with-audrey-truschke-author-of-india-5000-years-of-history-on-the-subcontinent/">https://asianreviewofbooks.com/podcast-with-audrey-truschke-author-of-india-5000-years-of-history-on-the-subcontinent/</a></li>
+
+<li>“New perspectives on Aurangzeb,” Frontline. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/new-perspectives-on-aurangzeb/article9563468.ece">https://frontline.thehindu.com/the-nation/new-perspectives-on-aurangzeb/article9563468.ece</a></li>
+<li>“New facets of the Mughals,” Frontline. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/new-facets-of-the-mughals/article8580159.ece">https://frontline.thehindu.com/books/new-facets-of-the-mughals/article8580159.ece</a></li>
+<li>“‘They want to treat Aurangzeb as a political football,’” Frontline. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/they-want-to-treat-aurangzeb-as-a-political-football/article9563471.ece">https://frontline.thehindu.com/the-nation/they-want-to-treat-aurangzeb-as-a-political-football/article9563471.ece</a></li>
+<li>S. Ghosh, “‘India: 5,000 Years of History on the Subcontinent’ Challenges Colonial and Nationalist Myths,” Frontline. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/audrey-truschke-india-5000-years-history-review-migration-marginalised-voices/article69919494.ece">https://frontline.thehindu.com/books/audrey-truschke-india-5000-years-history-review-migration-marginalised-voices/article69919494.ece</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>M. D. Yadav, “‘History Demands that We Acknowledge Its Incoherence,’” The New Indian Express. Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/lifestyle/books/2025/Aug/10/history-demands-that-we-acknowledge-its-incoherence">https://www.newindianexpress.com/lifestyle/books/2025/Aug/10/history-demands-that-we-acknowledge-its-incoherence</a></li>
+
+<li>R. M. Eaton, “Richard Eaton: India’s self-destructive war on the deep roots of the Mughal Empire,” Scroll.in. Accessed: Aug. 10, 2025. [Online]. Available: <a href="https://scroll.in/article/1085273/richard-eaton-indias-self-destructive-war-on-the-deep-roots-of-the-mughal-empire">https://scroll.in/article/1085273/richard-eaton-indias-self-destructive-war-on-the-deep-roots-of-the-mughal-empire</a></li>
+
+<li>“Access Asia - Historian retraces 5,000 years of Indian history,” France 24. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.france24.com/en/tv-shows/access-asia/20250711-historian-retraces-5-000-years-of-indian-history">https://www.france24.com/en/tv-shows/access-asia/20250711-historian-retraces-5-000-years-of-indian-history</a></li>
+
+<li>“Shattered Lands: How Doha and Dubai could have joined India or Pakistan in 1947,” Middle East Eye. Accessed: Jun. 23, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/discover/shattered-lands-how-doha-and-dubai-nearly-joined-india-or-pakistan-1947">https://www.middleeasteye.net/discover/shattered-lands-how-doha-and-dubai-nearly-joined-india-or-pakistan-1947</a></li>
+
+<li>“‘Earliest Indians were migrants…India has been connected to the world from the very beginning,’ says historian Audrey Truschke,” The Indian Express. Accessed: Jun. 22, 2025. [Online]. Available: <a href="https://indianexpress.com/article/research/earliest-indians-were-migrantsindia-has-been-connected-to-the-world-from-the-very-beginning-says-historian-audrey-truschke-10075872/">https://indianexpress.com/article/research/earliest-indians-were-migrantsindia-has-been-connected-to-the-world-from-the-very-beginning-says-historian-audrey-truschke-10075872/</a></li>
+
+<li>P. Team, “William Dalrymple: How Victorian Britain undermined Indian culture.” Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://www.prospectmagazine.co.uk/views/brief-encounter/70133/william-dalrymple-how-victorian-britain-undermined-indian-culture">https://www.prospectmagazine.co.uk/views/brief-encounter/70133/william-dalrymple-how-victorian-britain-undermined-indian-culture</a></li>
+
+<li>“Audrey Truschke on India: 5,000 Years of History on the Subcontinent | Princeton University Press.” Accessed: Jun. 05, 2025. [Online]. Available: <a href="https://press.princeton.edu/ideas/audrey-truschke-on-india-5000-years-of-history-on-the-subcontinent">https://press.princeton.edu/ideas/audrey-truschke-on-india-5000-years-of-history-on-the-subcontinent</a></li>
+
+<li>A. Tiwari, “Why RSS outfit members are at centre of a Rs 14-crore scam at ICHR,” Scroll.in. Accessed: Jun. 02, 2025. [Online]. Available: <a href="https://scroll.in/article/1082801/why-rss-outfit-members-are-at-centre-of-a-rs-14-crore-scam-at-ichr">https://scroll.in/article/1082801/why-rss-outfit-members-are-at-centre-of-a-rs-14-crore-scam-at-ichr</a></li>
+
+<li>“Insiders to Premodern South Asian History - শুদ্ধস্বর.” Accessed: May 20, 2025. [Online]. Available: <a href="https://shuddhashar.com/insiders-to-premodern-south-asian-history/">https://shuddhashar.com/insiders-to-premodern-south-asian-history/</a></li>
+
+<li>“Nehru and Liaquat urge India-Pakistan cooperation in newly revealed 1947 files,” Middle East Eye. Accessed: May 04, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/news/revealed-nehru-and-liaquat-urge-india-pakistan-cooperation-newly-declassified-1947-files">https://www.middleeasteye.net/news/revealed-nehru-and-liaquat-urge-india-pakistan-cooperation-newly-declassified-1947-files</a></li>
+
+<li>“Learning From History or Taking Revenge of Past?,” NewsClick. Accessed: Mar. 27, 2025. [Online]. Available: <a href="https://www.newsclick.in/learning-history-or-taking-revenge-past">https://www.newsclick.in/learning-history-or-taking-revenge-past</a></li>
+
+<li>“First History Lessons: Sports and Games - RLS Southasia.” Accessed: Feb. 09, 2025. [Online]. Available: <a href="https://www.rosalux.in/details-resources/1208.html">https://www.rosalux.in/details-resources/1208.html</a></li>
+<li>“First History Lessons: Clothes and Attire - RLS Southasia.” Accessed: Feb. 09, 2025. [Online]. Available: <a href="https://www.rosalux.in/details-resources/1209.html">https://www.rosalux.in/details-resources/1209.html</a></li>
+<li>“First History Lessons: Food and Eating - RLS Southasia.” Accessed: Feb. 09, 2025. [Online]. Available: <a href="https://www.rosalux.in/details-resources/1210.html">https://www.rosalux.in/details-resources/1210.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>P. A. Truschke, India: 5,000 Years of History on the Subcontinent. Princeton: Princeton University Press, 2025.</li>
+
+<li>“How the Archaeological Survey of India fortifies Hindutva History.” Accessed: Jan. 03, 2025. [Online]. Available: <a href="https://caravanmagazine.in/history/asi-archaeological-survey-india-hindutva-history">https://caravanmagazine.in/history/asi-archaeological-survey-india-hindutva-history</a></li>
+
+<li>Apoorvanand, “Historian Aparna Vaidik Faces Social Media Backlash Over Bhagat Singh Discussion at Kanpur Literature Festival,” Frontline. Accessed: Jan. 03, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/historian-aparna-vaidik-bhagat-singh-kanpur-litfest-controversy/article69053144.ece">https://frontline.thehindu.com/society/historian-aparna-vaidik-bhagat-singh-kanpur-litfest-controversy/article69053144.ece</a></li>
+
+<li>O. Staff, “Who are Naga Sadhus, the brave warriors who helped Maharana Pratap defeat Mughal army,” OpIndia. Accessed: Dec. 27, 2024. [Online]. Available: <a href="https://www.opindia.com/2024/12/who-are-naga-sadhus-brave-warriors-maharana-pratap-defeat-mughal-army/">https://www.opindia.com/2024/12/who-are-naga-sadhus-brave-warriors-maharana-pratap-defeat-mughal-army/</a></li>
+
+<li>P. R. C. and M. P. Kumar, “Dalrymple’s The Golden Road Is Old Wine With A New Label, Perpetuates Colonial Stereotypes Of Indian History,” Swarajya by Kovai Media Private Limited. Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://swarajyamag.com/books/dalrymples-the-golden-road-is-old-wine-with-a-new-label-perpetuates-colonial-stereotypes-of-indian-history">https://swarajyamag.com/books/dalrymples-the-golden-road-is-old-wine-with-a-new-label-perpetuates-colonial-stereotypes-of-indian-history</a></li>
+<li>N. Barooah, “Tracing The Footsteps Of A Forgotten King With Sanjeev Sanyal,” Swarajya by Kovai Media Private Limited. Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://swarajyamag.com/culture/tracing-the-footsteps-of-a-forgotten-king-with-sanjeev-sanyal">https://swarajyamag.com/culture/tracing-the-footsteps-of-a-forgotten-king-with-sanjeev-sanyal</a></li>
+
+<li>P. Mondal, “Raja Bikramjit Ghosh: The Sadgop ruler who resisted the Delhi Sultanate,” Organiser. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/20/270117/bharat/raja-bikramjit-ghosh-the-sadgop-ruler-who-resisted-the-delhi-sultanate/">https://organiser.org/2024/12/20/270117/bharat/raja-bikramjit-ghosh-the-sadgop-ruler-who-resisted-the-delhi-sultanate/</a></li>
+
+<li>W. DESK, “Uncovering The Past: ASI begins historic excavation of Mauryan empire’s ‘assembly hall’ in Patna,” Organiser. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/04/267840/bharat/uncovering-the-past-asi-begins-historic-excavation-of-mauryan-empires-assembly-hall-in-patna/">https://organiser.org/2024/12/04/267840/bharat/uncovering-the-past-asi-begins-historic-excavation-of-mauryan-empires-assembly-hall-in-patna/</a></li>
+
+<li>M. Raghuvanshi, “Exposing the leftist historians: Debunking the falsehood,” Organiser. Accessed: Dec. 02, 2024. [Online]. Available: <a href="https://organiser.org/2024/11/27/267045/bharat/exposing-the-leftist-historians-debunking-the-falsehood/">https://organiser.org/2024/11/27/267045/bharat/exposing-the-leftist-historians-debunking-the-falsehood/</a></li>
+
+<li>R. Lal, “Why the imagined opposition between academic and public historians needs to be questioned,” Scroll.in. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://scroll.in/article/1076012/why-the-imagined-opposition-between-academic-and-public-historians-needs-to-be-questioned">https://scroll.in/article/1076012/why-the-imagined-opposition-between-academic-and-public-historians-needs-to-be-questioned</a></li>
+
+<li>I. R. &amp; M. A. Parey, “Dalrymple Is Right: India’s Academic Retreat Has Given Birth to WhatsApp History,” Frontline. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/society/dalrymple-academic-historians-whatsapp-history-india-public-engagement-fake-news-right-wing/article68897134.ece">https://frontline.thehindu.com/society/dalrymple-academic-historians-whatsapp-history-india-public-engagement-fake-news-right-wing/article68897134.ece</a></li>
+
+<li>“Taking History to Masses: Films, Digital Media Are The Answer,” NewsClick. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.newsclick.in/taking-history-masses-films-digital-media-are-answer">https://www.newsclick.in/taking-history-masses-films-digital-media-are-answer</a></li>
+
+<li>“The Indocentric Road Taken,” The India Forum. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/indocentric-road-taken">https://www.theindiaforum.in/book-reviews/indocentric-road-taken</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‘India never had a golden age,’” Frontline. Accessed: Sep. 07, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/literature/india-never-had-a-golden-age/article23968771.ece">https://frontline.thehindu.com/arts-and-culture/literature/india-never-had-a-golden-age/article23968771.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>रज़ा G. R. / गौहर, Mythakon Se Vigyan Tak/मिथकों से विज्ञान तक. Penguin Swadesh, 2024.</li>
+
+<li>“Revealed: Why there is an abandoned Ottoman tomb in remote India,” Middle East Eye. Accessed: Aug. 18, 2024. [Online]. Available: <a href="https://www.middleeasteye.net/big-story/ottoman-india-last-caliph-abdulmecid-tomb-will">https://www.middleeasteye.net/big-story/ottoman-india-last-caliph-abdulmecid-tomb-will</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>I. Mukhoty, “Book Excerpt: How Shuja ud Daula completely altered Faizabad’s topography and culture,” Down To Earth. Accessed: Aug. 18, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/urbanisation/book-excerpt-how-shuja-ud-daula-completely-altered-faizabads-topography-and-culture">https://www.downtoearth.org.in/urbanisation/book-excerpt-how-shuja-ud-daula-completely-altered-faizabads-topography-and-culture</a></li>
+
+<li>A. Machado, Discovering India Anew: Out of Africa to Its Early History, First Edition. Orient BlackSwan Pvt. Ltd., 2024.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>A. Mukherjee, “Paperclip: Website Run by Seven Friends is Making Waves by Sharing Intriguing Stories from India’s Past to Counter Misinformation,” Frontline. Accessed: Jul. 24, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/paperclip-digital-storytelling-platform-india-culture-history-anecdotes-fake-news/article68392010.ece">https://frontline.thehindu.com/arts-and-culture/paperclip-digital-storytelling-platform-india-culture-history-anecdotes-fake-news/article68392010.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. M. Eaton, The Lotus &amp; The Lion: Essays On India’s Sanskritic And Persianate Worlds. Delhi: Primus Books, 2022.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Romila Thapar Is One of India’s Bravest Public Intellectuals.” Accessed: Jul. 03, 2024. [Online]. Available: <a href="https://jacobin.com/2024/07/romila-thapar-india-historian-religion">https://jacobin.com/2024/07/romila-thapar-india-historian-religion</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Bengal famine: Susannah’s grandad ran Bengal as famine killed millions.” Accessed: Jun. 17, 2024. [Online]. Available: <a href="https://www.bbc.com/news/articles/c1vv9r4012xo">https://www.bbc.com/news/articles/c1vv9r4012xo</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Narendra Modi’s Government Is Falsifying Indian History.” Accessed: Apr. 30, 2024. [Online]. Available: <a href="https://jacobin.com/2024/04/narendra-modi-falsify-history-authoritarianism/">https://jacobin.com/2024/04/narendra-modi-falsify-history-authoritarianism/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Kesavan, “4 Books to Understand Modern India,” Foreign Policy. Accessed: Apr. 09, 2024. [Online]. Available: <a href="https://foreignpolicy.com/2024/04/08/modern-india-books-list-mukul-kesavan/">https://foreignpolicy.com/2024/04/08/modern-india-books-list-mukul-kesavan/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Porecha, “Text book revision: NCERT drops some references to Babri demolition, Gujarat riots, Manipur,” The Hindu, Apr. 05, 2024. Accessed: Apr. 05, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/text-book-revision-ncert-drops-some-references-to-babri-demolition-gujarat-riots-manipur/article68031445.ece">https://www.thehindu.com/news/national/text-book-revision-ncert-drops-some-references-to-babri-demolition-gujarat-riots-manipur/article68031445.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Bhattacharya, “Gender And Gandhi’s Political Philosophy: Where Are Our Founding Mothers?,” Feminism in India. Accessed: Apr. 03, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/04/01/gender-and-gandhis-political-philosophy-where-are-our-founding-mothers/">https://feminisminindia.com/2024/04/01/gender-and-gandhis-political-philosophy-where-are-our-founding-mothers/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>F. Books, “Modern Indian History,” Five Books. Accessed: Mar. 31, 2024. [Online]. Available: <a href="https://fivebooks.com/best-books/modern-indian-history-dinyar-patel/">https://fivebooks.com/best-books/modern-indian-history-dinyar-patel/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Decolonising Indian History | Jaipur Literature Festival 2021, (Mar. 08, 2021). Accessed: Apr. 15, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ksli39rbw8Q">https://www.youtube.com/watch?v=ksli39rbw8Q</a></li>
+
+<li>D. N. Jha, Against the Grain: Notes on Identity, Intolerance and History. Manohar, 2019.</li>
+
+<li>V. Dehejia, India: A Story Through 100 Objects. Lustre Press/Roli books, 2021.</li>
+
+<li>“A New Civilisational Discourse for India,” The India Forum, Feb. 08, 2022. <a href="https://www.theindiaforum.in/article/new-civilisational-discourse-india">https://www.theindiaforum.in/article/new-civilisational-discourse-india</a> (accessed Feb. 14, 2022).</li>
+
+<li>R. Thapar, R. Jahanbegloo, and N. Bhattacharya, <b>Talking History: Romila Thapar in conversation with Ramin Jahanbegloo, with the participation of Neeladri Bhattacharya.</b> Oxford University Press, 2017.</li>
+
+<li>“R. Champakalakshmi’s Abiding Legacy,” The Wire. Accessed: Feb. 03, 2024. [Online]. Available: <a href="https://thewire.in/history/r-champakalakshmis-abiding-legacy">https://thewire.in/history/r-champakalakshmis-abiding-legacy</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1877231"></a>Politics: Right<br />
+<div class="outline-text-7" id="text-org1877231">
+<ul class="org-ul">
+<li>A. Neelakandan, A Dharmic Social History of India. Noida, Uttar Pradesh: BluOne Ink, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgd3c618c"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgd9cc16c" class="outline-4">
+<h4 id="orgd9cc16c"><span class="section-number-4">4.2.3.</span> USA</h4>
+<div class="outline-text-4" id="text-4-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org976cbf5"></a>Misc<br />
+<div class="outline-text-5" id="text-4-2-3-1">
+<ul class="org-ul">
+<li>K. Message, “Trump isn’t the first US politician to pick a fight with the Smithsonian. But this time could be different,” The Conversation. Accessed: Aug. 29, 2025. [Online]. Available: <a href="http://theconversation.com/trump-isnt-the-first-us-politician-to-pick-a-fight-with-the-smithsonian-but-this-time-could-be-different-264022">http://theconversation.com/trump-isnt-the-first-us-politician-to-pick-a-fight-with-the-smithsonian-but-this-time-could-be-different-264022</a></li>
+<li>L. Beers, “The Orwellian echoes in Trump’s push for ‘Americanism’ at the Smithsonian,” The Conversation. Accessed: Aug. 21, 2025. [Online]. Available: <a href="http://theconversation.com/the-orwellian-echoes-in-trumps-push-for-americanism-at-the-smithsonian-263304">http://theconversation.com/the-orwellian-echoes-in-trumps-push-for-americanism-at-the-smithsonian-263304</a></li>
+<li>“Harvard Historian Slams Trump’s ‘Whitewashing of History’ at Smithsonian &amp; Beyond,” Democracy Now! Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/8/18/smithsonian_american_history">https://www.democracynow.org/2025/8/18/smithsonian_american_history</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org73f3af6"></a>Texts<br />
+<ol class="org-ol">
+<li><a id="org721c6a2"></a>Indigenous People<br />
+<div class="outline-text-6" id="text-4-2-3-2-1">
+<ul class="org-ul">
+<li>R. Dunbar-Ortiz, An Indigenous Peoples’ History of the United States. Beacon Press, 2014.
+<ul class="org-ul">
+<li>R. Dunbar-Ortiz, J. Mendoza, and D. Reese, An Indigenous Peoples’ History of the Un. Boston: Beacon Press, 2019.</li>
+<li>R. Dunbar-Ortiz, An Indigenous Peoples’ History of the Un, Reprint edition. Boston, Mass: Beacon Press, 2015.</li>
+</ul></li>
+<li>P. Peart-smith, Roxanne Dunbar Ortiz’s Indigenous Peoples’ History of the United States: A Graphic Interpretation. Beacon Pr, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb27b8dc"></a>HZ<br />
+<div class="outline-text-6" id="text-4-2-3-2-2">
+<ul class="org-ul">
+<li>H. Zinn, <b>A People’s History of the United States.</b> HarperCollins, 2005.</li>
+<li>H. Zinn and A. Arnove, <b>Voices of a People’s History of the United States.</b> Seven Stories Press, 2011.</li>
+<li>H. Zinn, <b>A Young People’s History of the United States: Columbus to the War on Terror.</b> Seven Stories Press, 2011.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org489bdf1"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org239312a"></a>Santa Fe Institute<br />
+<div class="outline-text-6" id="text-4-2-3-3-1">
+<ul class="org-ul">
+<li>“Events: Collaborative Visions of Power in Mesoamerica: Teotihuacan and the Lowland Maya | Santa Fe Institute.” Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://www.santafe.edu/events/collaborative-visions-of-power-in-mesoamerica-teotihuacan-and-the-lowland-maya">https://www.santafe.edu/events/collaborative-visions-of-power-in-mesoamerica-teotihuacan-and-the-lowland-maya</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc98cc94"></a>YouTube Videos<br />
+<div class="outline-text-6" id="text-4-2-3-3-2">
+<ul class="org-ul">
+<li>A People’s History of American Empire | Howard Zinn | Talks at Google, (Dec. 06, 2008). Accessed: Apr. 09, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=lHthW6kh-N8">https://www.youtube.com/watch?v=lHthW6kh-N8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org318513c"></a>Labor Day<br />
+<div class="outline-text-6" id="text-4-2-3-3-3">
+<ul class="org-ul">
+<li>“Labor Day Special Featuring Howard Zinn &amp; Voices of a People’s History of the United States,” Democracy Now! Accessed: Sep. 03, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/9/2/howard_zinn_mother_jones_labor_day">https://www.democracynow.org/2024/9/2/howard_zinn_mother_jones_labor_day</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga33b83a" class="outline-4">
+<h4 id="orga33b83a"><span class="section-number-4">4.2.4.</span> UK</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<ul class="org-ul">
+<li>A. Roberts, Buried: An Alternative History of the First Millennium in Britain. Londo New York Sydney Toronto New Delhi: Simon &amp; Schuster Ltd, 2025.</li>
+
+<li>A. Roberts, Ancestors: A prehistory of Britain in seven burials. Simon and Schuster, 2021.</li>
+
+<li>T. Harding, <i>White Debt: The Demerara Uprising and Britain’s Legacy of Slavery.</i> Hachette UK, 2022.
+<ul class="org-ul">
+<li>N. Malik, <i>“White Debt by Thomas Harding review – the history they didn’t want you to know,”</i> The Guardian, Jan. 07, 2022. Accessed: Jan. 07, 2022. [Online]. Available: <a href="https://www.theguardian.com/books/2022/jan/07/white-debt-by-thomas-harding-review-the-history-they-didnt-want-you-to-know">https://www.theguardian.com/books/2022/jan/07/white-debt-by-thomas-harding-review-the-history-they-didnt-want-you-to-know</a></li>
+</ul></li>
+
+<li>P. Satia, Empire of Guns: The Violent Making of the Industrial Revolution. Prelude Books, 2018.</li>
+<li>P. Satia, Time’s Monster: History, Conscience and Britain’s Empire. Penguin UK, 2020.</li>
+<li>R. Venkataramakrishnan, “Interview: Priya Satia on the ‘earnestly deliberate hypocrisy’ of the British Empire,” Scroll.in. <a href="https://scroll.in/article/1022390/interview-priya-satia-on-the-earnestly-deliberate-hypocrisy-of-the-british-empire">https://scroll.in/article/1022390/interview-priya-satia-on-the-earnestly-deliberate-hypocrisy-of-the-british-empire</a> (accessed Apr. 24, 2022).</li>
+
+<li>C. Elkins, Legacy of Violence: A History of the British Empire. Penguin Random House, 2022.
+<ul class="org-ul">
+<li>T. Adams, “Legacy of Violence: A History of the British Empire by Caroline Elkins review – the brutal truth about Britain’s past,” The Guardian, Mar. 13, 2022. Accessed: Mar. 19, 2022. [Online]. Available: <a href="https://www.theguardian.com/books/2022/mar/13/legacy-of-violence-a-history-of-the-british-empire-by-caroline-elkins-review-the-brutal-truth-about-britains-past">https://www.theguardian.com/books/2022/mar/13/legacy-of-violence-a-history-of-the-british-empire-by-caroline-elkins-review-the-brutal-truth-about-britains-past</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org70e2224" class="outline-4">
+<h4 id="org70e2224"><span class="section-number-4">4.2.5.</span> Europe</h4>
+<div class="outline-text-4" id="text-4-2-5">
+<ul class="org-ul">
+<li>M. Gabriele and D. M. Perry, <i>The Bright Ages: A New History of Medieval Europe.</i> HarperCollins, 2021.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2d1f442" class="outline-4">
+<h4 id="org2d1f442"><span class="section-number-4">4.2.6.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdf87a30" class="outline-2">
+<h2 id="orgdf87a30"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgef951f1" class="outline-3">
+<h3 id="orgef951f1"><span class="section-number-3">5.1.</span> Classics</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>N. Rashevsky, <i>Looking at History Through Mathematics.</i> M.I.T. Press, 1968.</li>
+<li>I. Khaldûn, <i>The Muqaddimah: An Introduction to History - Abridged Edition.</i> Princeton University Press, 2015.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org055e0ed" class="outline-3">
+<h3 id="org055e0ed"><span class="section-number-3">5.2.</span> Oral History</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org7729fe7" class="outline-4">
+<h4 id="org7729fe7"><span class="section-number-4">5.2.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>“Oral history,” Wikipedia. Nov. 09, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Oral_history&amp;oldid=1120980520">https://en.wikipedia.org/w/index.php?title=Oral_history&amp;oldid=1120980520</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcca5164" class="outline-4">
+<h4 id="orgcca5164"><span class="section-number-4">5.2.2.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orge4a99dc" class="outline-2">
+<h2 id="orge4a99dc"><span class="section-number-2">6.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“Nicola Di Cosmo Awarded Onon Prize for Scholarship on the Mongolian and Inner Asian Region | IAS News | Institute for Advanced Study.” Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://www.ias.edu/news/nicola-di-cosmo-awarded-onon-prize-scholarship-mongolian-and-inner-asian-region">https://www.ias.edu/news/nicola-di-cosmo-awarded-onon-prize-scholarship-mongolian-and-inner-asian-region</a></li>
+
+<li>M. Centeno, P. Callahan, P. Larcey, and T. Patterson, How Worlds Collapse: What History, Systems, and Complexity Can Teach Us About Our Modern World and Fragile Future. Taylor &amp; Francis, 2023.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>W. Dalrymple, The Golden Road: How Ancient India Transformed the World. Bloomsbury USA, 2025.</li>
+<li>W. Dalrymple, “‘In Britain, we are still astonishingly ignorant’: the hidden story of how ancient India shaped the west,” The Observer, Sep. 01, 2024. Accessed: Sep. 04, 2024. [Online]. Available: <a href="https://www.theguardian.com/world/article/2024/sep/01/hidden-story-ancient-india-west-maths-astronomy-historians">https://www.theguardian.com/world/article/2024/sep/01/hidden-story-ancient-india-west-maths-astronomy-historians</a></li>
+
+<li>B. Teng, “Histories of Native American Treaties and Anti-Chinese Violence Win Bancroft Prize | In the Media | Institute for Advanced Study.” Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://www.ias.edu/news/histories-native-american-treaties-and-anti-chinese-violence-win-bancroft-prize">https://www.ias.edu/news/histories-native-american-treaties-and-anti-chinese-violence-win-bancroft-prize</a></li>
+</ul>
+
+
+
+
+
+
+
+<ul class="org-ul">
+<li>BY, “What Was History’s Deadliest Era?” Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://jacobin.com/2026/01/book-review-crais-modernity-violence">https://jacobin.com/2026/01/book-review-crais-modernity-violence</a></li>
+
+<li>S. Ivry, “In Pursuit of Peace, Ancient Athens Created a Goddess,” JSTOR Daily. Accessed: Jan. 15, 2026. [Online]. Available: <a href="https://daily.jstor.org/in-pursuit-of-peace-ancient-athens-created-a-goddess/">https://daily.jstor.org/in-pursuit-of-peace-ancient-athens-created-a-goddess/</a></li>
+
+<li>“The Ezekiel Papyrus: Fortune and Misfortune of an Exceptional Manuscript - Ideas | Institute for Advanced Study.” Accessed: Nov. 25, 2025. [Online]. Available: <a href="https://www.ias.edu/ideas/ezekiel-papyrus-fortune-and-misfortune-exceptional-manuscript">https://www.ias.edu/ideas/ezekiel-papyrus-fortune-and-misfortune-exceptional-manuscript</a></li>
+
+<li>L. Kemp, Goliath’s Curse. 2025. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://www.penguin.co.uk/books/321192/goliaths-curse-by-kemp-luke/9780241741238">https://www.penguin.co.uk/books/321192/goliaths-curse-by-kemp-luke/9780241741238</a></li>
+
+<li>“How did the Roman Empire view nature and its seasons? | Aeon Essays,” Aeon. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://aeon.co/essays/how-did-the-roman-empire-view-nature-and-its-seasons">https://aeon.co/essays/how-did-the-roman-empire-view-nature-and-its-seasons</a></li>
+
+<li>“Marco Fantuzzi Granted Humboldt Research Award - IAS News | Institute for Advanced Study.” Accessed: Oct. 24, 2025. [Online]. Available: <a href="https://www.ias.edu/news/marco-fantuzzi-granted-humboldt-research-award">https://www.ias.edu/news/marco-fantuzzi-granted-humboldt-research-award</a></li>
+
+<li>T. Editors, “Papering Over History,” JSTOR Daily. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://daily.jstor.org/papering-over-history/">https://daily.jstor.org/papering-over-history/</a></li>
+
+<li>BY, “Perry Anderson Writes Marxist History on the Grandest Scale.” Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://jacobin.com/2025/09/perry-anderson-state-capitalism-history">https://jacobin.com/2025/09/perry-anderson-state-capitalism-history</a></li>
+
+<li>“Pourquoi les révolutionnaires ne paient jamais les dettes,” Le Point. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://www.lepoint.fr/postillon/pourquoi-les-revolutionnaires-ne-paient-jamais-les-dettes-14-07-2025-2594309_3961.php">https://www.lepoint.fr/postillon/pourquoi-les-revolutionnaires-ne-paient-jamais-les-dettes-14-07-2025-2594309_3961.php</a></li>
+<li>“« La paix n’est pas pour demain » : pourquoi Peter Turchin prédit encore des décennies de conflits,” Le Point. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://www.lepoint.fr/postillon/la-paix-n-est-pas-pour-demain-pourquoi-peter-turchin-predit-encore-des-decennies-de-conflits-18-08-2025-2596572_3961.php">https://www.lepoint.fr/postillon/la-paix-n-est-pas-pour-demain-pourquoi-peter-turchin-predit-encore-des-decennies-de-conflits-18-08-2025-2596572_3961.php</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Institute for Advanced Study, Happy Hour Historiography | Institute Instances – Gilles Bransbourg, (Aug. 08, 2025). Accessed: Aug. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XOs9ZZy2RjI">https://www.youtube.com/watch?v=XOs9ZZy2RjI</a></li>
+
+<li>J. Hankins and A. C. Guelzo, The Golden Thread: The Ancient World and Christendom. Encounter Books, 2024.</li>
+<li>A. C. Guelzo and J. Hankins, The Golden Thread: The Modern and Contemporary West. Encounter Books, 2024.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. M. P. Reader, “The Objects That Hold Our Histories,” The MIT Press Reader. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-objects-that-hold-our-histories/">https://thereader.mitpress.mit.edu/the-objects-that-hold-our-histories/</a></li>
+
+<li>L. Spinney, Proto. William Collins, 2025.</li>
+
+<li>“Francesca Trivellato Elected to the American Academy of Arts &amp; Sciences - IAS News | Institute for Advanced Study.” Accessed: Apr. 25, 2025. [Online]. Available: <a href="https://www.ias.edu/news/francesca-trivellato-elected-american-academy-arts-sciences">https://www.ias.edu/news/francesca-trivellato-elected-american-academy-arts-sciences</a></li>
+
+<li>“For the wanderers who became the Aztecs history was a chorus of voices | Aeon Essays,” Aeon. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://aeon.co/essays/for-the-wanderers-who-became-the-aztecs-history-was-a-chorus-of-voices">https://aeon.co/essays/for-the-wanderers-who-became-the-aztecs-history-was-a-chorus-of-voices</a></li>
+
+<li>“G. E. M. de Ste Croix’s Marxist History of Greece and Rome.” Accessed: Jan. 09, 2025. [Online]. Available: <a href="https://jacobin.com/2025/01/ste-croix-marxism-ancient-history">https://jacobin.com/2025/01/ste-croix-marxism-ancient-history</a></li>
+
+<li>“An archeological revolution transforms our image of human freedoms | Aeon Essays,” Aeon. Accessed: Dec. 31, 2024. [Online]. Available: <a href="https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms">https://aeon.co/essays/an-archeological-revolution-transforms-our-image-of-human-freedoms</a></li>
+
+<li>“Renowned Papyrologist Sofía Torallas Tovar Appointed to the School of Historical Studies - Press Release | Institute for Advanced Study.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://www.ias.edu/news/renowned-papyrologist-sofia-torallas-tovar-appointed-school-historical-studies">https://www.ias.edu/news/renowned-papyrologist-sofia-torallas-tovar-appointed-school-historical-studies</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Oster and Phys.org, “Archaeologists suggest Neolithic Scandinavians may have used skin boats to hunt, travel and trade.” Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://phys.org/news/2024-09-archaeologists-neolithic-scandinavians-skin-boats.html">https://phys.org/news/2024-09-archaeologists-neolithic-scandinavians-skin-boats.html</a></li>
+
+<li>“Journal Celebrates Caroline Walker Bynum Across the Disciplines - IAS News | Institute for Advanced Study.” Accessed: Jul. 27, 2024. [Online]. Available: <a href="https://www.ias.edu/news/journal-celebrates-caroline-walker-bynum-across-disciplines-0">https://www.ias.edu/news/journal-celebrates-caroline-walker-bynum-across-disciplines-0</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>P. Satia, “Priya Satia: How modern empire broke the empire mould,” Scroll.in. Accessed: Dec. 03, 2023. [Online]. Available: <a href="https://scroll.in/article/1059658/gaza-and-the-future-how-the-entrenched-legacy-of-the-modern-empire-continues-to-shape-the-world">https://scroll.in/article/1059658/gaza-and-the-future-how-the-entrenched-legacy-of-the-modern-empire-continues-to-shape-the-world</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Baker, “History repeats itself. That’s bad news for the 2020s,” The Conversation. <a href="http://theconversation.com/history-repeats-itself-thats-bad-news-for-the-2020s-127116">http://theconversation.com/history-repeats-itself-thats-bad-news-for-the-2020s-127116</a> (accessed Jul. 23, 2022).</li>
+
+<li>P. Linebaugh and M. Rediker, The Many-Headed Hydra: Sailors, Slaves, Commoners, and the Hidden History of the Revolutionary Atlantic. Beacon Press, 2013.</li>
+
+<li>“The Future is Vast: Longtermism’s perspective on humanity’s past, present, and future,” Our World in Data. <a href="https://ourworldindata.org/longtermism">https://ourworldindata.org/longtermism</a> (accessed Mar. 16, 2022).</li>
+
+<li>D. Graeber and D. Wengrow, <b>The Dawn of Everything: A New History of Humanity.</b> Farrar, Straus and Giroux, 2021.
+<ul class="org-ul">
+<li>D. Wengrow, “David Wengrow: A new understanding of human history and the roots of inequality | TED Talk.” <a href="https://www.ted.com/talks/david_wengrow_a_new_understanding_of_human_history_and_the_roots_of_inequality">https://www.ted.com/talks/david_wengrow_a_new_understanding_of_human_history_and_the_roots_of_inequality</a> (accessed Jul. 24, 2022).</li>
+<li>G. Sampath, <i>“‘The Dawn of Everything: A New History of Humanity’ review: Exploding myths of prehistory,”</i> The Hindu, Dec. 18, 2021. Accessed: Dec. 23, 2021. [Online]. Available: <a href="https://www.thehindu.com/books/books-reviews/the-dawn-of-everything-a-new-history-of-humanity-review-exploding-myths-of-prehistory/article37975211.ece">https://www.thehindu.com/books/books-reviews/the-dawn-of-everything-a-new-history-of-humanity-review-exploding-myths-of-prehistory/article37975211.ece</a></li>
+<li>D. Chattaraj, “Reading ‘The Dawn of Everything’ from India: What if the past was a more enlightened place?,” Scroll.in. <a href="https://scroll.in/article/1017047/reading-the-dawn-of-everything-from-india-what-if-the-past-was-a-more-enlightened-place">https://scroll.in/article/1017047/reading-the-dawn-of-everything-from-india-what-if-the-past-was-a-more-enlightened-place</a> (accessed Feb. 13, 2022).</li>
+</ul></li>
+
+<li>J. Diamond, <i>Guns, Germs and Steel: A short history of everybody for the last 13,000 years.</i> Random House, 2013.</li>
+
+<li>W. H. McNeill, <b>The Pursuit of Power: Technology, Armed Force, and Society since A.D. 1000.</b> University of Chicago Press, 2013.</li>
+
+<li>Y. N. Harari
+<ul class="org-ul">
+<li>Y. N. Harari, <i>Sapiens A Graphic History, Volume 2: The Pillars of Civilization.</i> Random House, 2021.</li>
+<li>Y. N. Harari, <i>Sapiens: a Graphic History, Volume 1: The Birth of Humankind.</i> McClelland &amp; Stewart, 2020.</li>
+<li>Y. N. Harari, <i>21 Lessons for the 21st Century.</i> Random House, 2018.</li>
+<li>Y. N. Harari, <i>Homo Deus: A Brief History of Tomorrow.</i> Random House, 2016.</li>
+<li>Y. N. Harari, <i>Sapiens: A Brief History of Humankind.</i> Random House, 2014.</li>
+</ul></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Asian history,” World Socialist Web Site. Accessed: Feb. 15, 2024. [Online]. Available: <a href="https://www.wsws.org/en/topics/historySubCategory/h-asia">https://www.wsws.org/en/topics/historySubCategory/h-asia</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 15:50</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

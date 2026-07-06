@@ -1,0 +1,2636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 15:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Caste</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Caste</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org08c74ad">1. General</a></li>
+<li><a href="#org24dcf89">2. STEMM</a>
+<ul>
+<li><a href="#org0eeb721">2.1. Complexity Science</a>
+<ul>
+<li><a href="#org68d3456">2.1.1. New England Complex Systems Institute</a></li>
+<li><a href="#org99921a9">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3610b62">2.2. Biology</a></li>
+<li><a href="#org19a45f4">2.3. CSE</a>
+<ul>
+<li><a href="#orge6a3a74">2.3.1. Systems Sciences</a></li>
+<li><a href="#org873510b">2.3.2. Data Science</a></li>
+<li><a href="#orga9fcac7">2.3.3. Artificial Intelligence</a></li>
+<li><a href="#orgba6aabb">2.3.4. Special Topics</a></li>
+<li><a href="#org07c195d">2.3.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org230ca05">2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbb19947">3. Worldly Matters</a>
+<ul>
+<li><a href="#org9672261">3.1. Space and Time</a></li>
+<li><a href="#orga9e4583">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org1402279">3.3. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#orgfd16ba9">3.3.1. Castes in Hinduism</a></li>
+<li><a href="#org900c716">3.3.2. Buddhism</a></li>
+<li><a href="#org5ce2820">3.3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3ffd043">3.4. Humanities, Misc</a>
+<ul>
+<li><a href="#orgd9acb4c">3.4.1. People</a></li>
+</ul>
+</li>
+<li><a href="#org147644f">3.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orga055504">3.5.1. Orgs</a></li>
+<li><a href="#org842ced3">3.5.2. Special Groups</a></li>
+<li><a href="#org3b9dfae">3.5.3. Casteism</a></li>
+<li><a href="#orgcc2e12b">3.5.4. Law</a></li>
+<li><a href="#org8e71afd">3.5.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7c8762e">3.6. Business Studies, Misc</a>
+<ul>
+<li><a href="#org48423fe">3.6.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga36d759">3.7. Security Studies, Misc</a></li>
+<li><a href="#org41b9f70">3.8. Communication, Misc</a>
+<ul>
+<li><a href="#org54a988c">3.8.1. Hindi</a></li>
+</ul>
+</li>
+<li><a href="#org7b45f2c">3.9. Special Topics</a>
+<ul>
+<li><a href="#org3751d92">3.9.1. Economics</a></li>
+</ul>
+</li>
+<li><a href="#org2324a5f">3.10. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgeedd48f">4. Core</a>
+<ul>
+<li><a href="#orgc3b86da">4.1. Education</a>
+<ul>
+<li><a href="#orgcf93adb">4.1.1. Publishers</a></li>
+</ul>
+</li>
+<li><a href="#orga0fb3bd">4.2. Handbooks, Companions, Readers</a></li>
+</ul>
+</li>
+<li><a href="#org1a16a1d">5. Arts</a>
+<ul>
+<li><a href="#orgf8e07ef">5.1. Music</a></li>
+<li><a href="#orgdadea8f">5.2. Films</a></li>
+<li><a href="#org83f919e">5.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org44e4d49">6. Special Topics</a>
+<ul>
+<li><a href="#org731538e">6.1. B. R. Ambedkar</a></li>
+<li><a href="#orga131f26">6.2. Teltumbde</a></li>
+<li><a href="#org4ac5acb">6.3. Kancha Ilaiah Shepherd</a></li>
+<li><a href="#orgaa6bec6">6.4. S. S. Jodhka</a></li>
+<li><a href="#orgce61c65">6.5. D. Gupta</a></li>
+<li><a href="#orgb796a5d">6.6. G n S</a></li>
+<li><a href="#org7e53a15">6.7. D. Dwivedi</a></li>
+</ul>
+</li>
+<li><a href="#org97e7b3c">7. Miscellaneous</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org08c74ad" class="outline-2">
+<h2 id="org08c74ad"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Caste,” Wikipedia. Apr. 19, 2024. Accessed: Apr. 21, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Caste&amp;oldid=1219795249">https://en.wikipedia.org/w/index.php?title=Caste&amp;oldid=1219795249</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org24dcf89" class="outline-2">
+<h2 id="org24dcf89"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0eeb721" class="outline-3">
+<h3 id="org0eeb721"><span class="section-number-3">2.1.</span> Complexity Science</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org68d3456" class="outline-4">
+<h4 id="org68d3456"><span class="section-number-4">2.1.1.</span> New England Complex Systems Institute</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li><b>“Social Complexity,”</b> New England Complex Systems Institute. <a href="https://necsi.edu/social-complexity">https://necsi.edu/social-complexity</a> (accessed Jun. 15, 2023).
+<ul class="org-ul">
+<li>"Hierarchal social systems continue to fail in the face of
+ever-increasing complexity. As NECSI research demonstrates,
+distributed organizational structures are needed."</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org99921a9" class="outline-4">
+<h4 id="org99921a9"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>S. E. Page, <b>The Diversity Bonus: How Great Teams Pay Off in the Knowledge Economy.</b> Princeton University Press, 2017.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>F. Baumann, A. Czaplicka, and I. Rahwan, “Network structure shapes the impact of diversity in collective learning,” Sci Rep, vol. 14, no. 1, Art. no. 1, Jan. 2024, doi: 10.1038/s41598-024-52837-3.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3610b62" class="outline-3">
+<h3 id="org3610b62"><span class="section-number-3">2.2.</span> Biology</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>D. S. Wilson, Atlas Hugged: The Autobiography of John Galt III. Redwood Publishing, LLC, 2020.</li>
+
+<li>D. Reich, <b>Who We Are And How We Got Here: Ancient DNA And The New Science Of The Human Past.</b> Oxford University Press, 2018.
+<ul class="org-ul">
+<li>D. Reich, “What genetics reveals about Indian origins, and caste,” The Caravan. <a href="https://caravanmagazine.in/science-technology/what-genetics-reveals-about-indian-origins">https://caravanmagazine.in/science-technology/what-genetics-reveals-about-indian-origins</a> (accessed Jan. 21, 2022).</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19a45f4" class="outline-3">
+<h3 id="org19a45f4"><span class="section-number-3">2.3.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orge6a3a74" class="outline-4">
+<h4 id="orge6a3a74"><span class="section-number-4">2.3.1.</span> Systems Sciences</h4>
+<div class="outline-text-4" id="text-2-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgc4c32a4"></a>Network Science<br />
+<div class="outline-text-5" id="text-2-3-1-1">
+<ul class="org-ul">
+<li>S. J. Jackson, M. Bailey, and B. F. Welles, <b>#HashtagActivism: Networks of Race and Gender Justice.</b> MIT Press, 2020.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org873510b" class="outline-4">
+<h4 id="org873510b"><span class="section-number-4">2.3.2.</span> Data Science</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li>“A Complete List of Indian Last Names + Meanings - FamilyEducation.” <a href="https://www.familyeducation.com/baby-names/browse-origin/surname/indian">https://www.familyeducation.com/baby-names/browse-origin/surname/indian</a> (accessed Jan. 12, 2022).</li>
+
+<li>“Christophe Jaffrelot and Gilles Verniers Write: BJP and Caste is Like Old Wine in New Bottle,” News18, Jan. 21, 2022. <a href="https://www.news18.com/news/opinion/christophe-jaffrelot-gilles-verniers-write-bjp-and-caste-is-like-old-wine-in-new-bottle-4677629.html">https://www.news18.com/news/opinion/christophe-jaffrelot-gilles-verniers-write-bjp-and-caste-is-like-old-wine-in-new-bottle-4677629.html</a> (accessed Jan. 22, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9fcac7" class="outline-4">
+<h4 id="orga9fcac7"><span class="section-number-4">2.3.3.</span> Artificial Intelligence</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<ul class="org-ul">
+<li>S. Parasnis, “Why Don’t AI Models Understand The Concept Of Caste In India?,” MEDIANAMA. Accessed: Oct. 05, 2025. [Online]. Available: <a href="https://www.medianama.com/2025/10/223-ai-models-caste-india/">https://www.medianama.com/2025/10/223-ai-models-caste-india/</a></li>
+<li>N. C. page, “OpenAI is huge in India. Its models are steeped in caste bias.,” MIT Technology Review. Accessed: Oct. 02, 2025. [Online]. Available: <a href="https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/">https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba6aabb" class="outline-4">
+<h4 id="orgba6aabb"><span class="section-number-4">2.3.4.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-2-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="org4d205b1"></a>Transnational Institute<br />
+<div class="outline-text-5" id="text-2-3-4-1">
+<ul class="org-ul">
+<li>“Settled Habits, New Tricks: Casteist Policing Meets Big Tech in India,” Longreads. Accessed: Sep. 28, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/viejos-habitos-nuevos-trucos-la-politica-de-castas-se-une-a-las-grandes-tecnologias-en-la-india/">https://longreads.tni.org/stateofpower/viejos-habitos-nuevos-trucos-la-politica-de-castas-se-une-a-las-grandes-tecnologias-en-la-india/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc00a977"></a>Internet Resources<br />
+<div class="outline-text-5" id="text-2-3-4-2">
+<ul class="org-ul">
+<li>“Bahujan Digital Publishing Infrastructures — The Centre for Internet and Society.” Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://cis-india.org/raw/bahujan-digital-publishing-infrastructures">https://cis-india.org/raw/bahujan-digital-publishing-infrastructures</a></li>
+<li>“Initiative on Combatting Systemic Racism,” IDSS. <a href="https://idss.mit.edu/research/collaborations/icsr/">https://idss.mit.edu/research/collaborations/icsr/</a> (accessed Mar. 04, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org07c195d" class="outline-4">
+<h4 id="org07c195d"><span class="section-number-4">2.3.5.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org230ca05" class="outline-3">
+<h3 id="org230ca05"><span class="section-number-3">2.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>P. Zalloua and N. N. Taleb, Ancestors: Identity and DNA in the Levant. New York, NY: Random House, 2025.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbb19947" class="outline-2">
+<h2 id="orgbb19947"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9672261" class="outline-3">
+<h3 id="org9672261"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orga9e4583" class="outline-3">
+<h3 id="orga9e4583"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org1402279" class="outline-3">
+<h3 id="org1402279"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgfd16ba9" class="outline-4">
+<h4 id="orgfd16ba9"><span class="section-number-4">3.3.1.</span> Castes in Hinduism</h4>
+<div class="outline-text-4" id="text-3-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9480fb9"></a>Twice Born<br />
+<ol class="org-ol">
+<li><a id="org89bbfbf"></a>Brahmins<br />
+<ul class="org-ul">
+<li><a id="orgfdcc962"></a>General<br /></li>
+<li><a id="org0be10c6"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org94c8647"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org498b614"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org1f3541b"></a>Politics: Right<br />
+<div class="outline-text-8" id="text-org1f3541b">
+<ul class="org-ul">
+<li>Asi, Brahmin Genocide – The Precursor To Hindu Extinction, First Edition. Rare Publications, 2023.</li>
+<li>S. Pandey, “Same hate that Nazis had for jews, being normalised against Brahmins by DEI programs, shows a research,” OpIndia. Accessed: Dec. 26, 2024. [Online]. Available: <a href="https://www.opindia.com/2024/12/same-hate-that-nazis-had-for-jews-being-normalised-against-brahmins-by-dei-programs-shows-a-research/">https://www.opindia.com/2024/12/same-hate-that-nazis-had-for-jews-being-normalised-against-brahmins-by-dei-programs-shows-a-research/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgebcf6a6"></a>Misc<br />
+<ul class="org-ul">
+<li><a id="orgf7f26e7"></a>Misc<br /></li>
+<li><a id="org8bcbf19"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-org8bcbf19">
+<ul class="org-ul">
+<li><i>“The little farce of Brahmin welfare schemes is a sign of India’s great tragedy,”</i> The Indian Express, Sep. 09, 2021. <a href="https://indianexpress.com/article/opinion/columns/brahmin-welfare-schemes-social-justice-7495186/">https://indianexpress.com/article/opinion/columns/brahmin-welfare-schemes-social-justice-7495186/</a> (accessed Dec. 23, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org628dbbe"></a>Texts<br />
+<div class="outline-text-9" id="text-org628dbbe">
+<ul class="org-ul">
+<li>“Lineages Of Brahman Power,” Permanent Black. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://www.permanentblack.com/product-page/lineages-of-brahman-power">https://www.permanentblack.com/product-page/lineages-of-brahman-power</a></li>
+<li>G. Chuyen, Who is a Brahmin?: The Politics of Identity in India. New Delhi: Manohar Publishers and Distributors, 2004.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org5ae9a47"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org342363a"></a>Types<br />
+<ul class="org-ul">
+<li><a id="orgd37dd6b"></a>GSB<br />
+<div class="outline-text-9" id="text-orgd37dd6b">
+<ul class="org-ul">
+<li>“Saraswat cuisine,” Wikipedia. Dec. 06, 2024. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Saraswat_cuisine&amp;oldid=1261466076">https://en.wikipedia.org/w/index.php?title=Saraswat_cuisine&amp;oldid=1261466076</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. Tambs-Lyche, Business Brahmins: The Gauda Saraswat Brahmins of South Kanara. New Delhi: MANOHAR PUBLISHERS, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9984e51"></a>Kashmiri Pandits<br />
+<div class="outline-text-9" id="text-org9984e51">
+<ul class="org-ul">
+<li>Kashmiri Pandits: <a href="https://tinyurl.com/2je4huvp">https://tinyurl.com/2je4huvp</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org090d082"></a>Misc<br />
+<div class="outline-text-9" id="text-org090d082">
+<ul class="org-ul">
+<li>“Hussaini Brahmin,” Wikipedia. Nov. 24, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Hussaini_Brahmin&amp;oldid=1123648887">https://en.wikipedia.org/w/index.php?title=Hussaini_Brahmin&amp;oldid=1123648887</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org98d53f2"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org6ab1a47"></a>Misc<br />
+<div class="outline-text-8" id="text-org6ab1a47">
+<ul class="org-ul">
+<li>“Scenes from the modern literature of Brahminism.” Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://caravanmagazine.in/books/scenes-modern-literature-brahminism">https://caravanmagazine.in/books/scenes-modern-literature-brahminism</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org28ebe83"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgb4fa05b"></a>Critical Studies<br />
+<ul class="org-ul">
+<li><a id="org07ca6a0"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcf03b76"></a>Texts<br />
+<div class="outline-text-8" id="text-orgcf03b76">
+<ul class="org-ul">
+<li>R. Bairy, Being Brahmin, Being Modern: Exploring the Lives of Caste Today, 1st edition. New Delhi: Routledge India, 2010.</li>
+<li>S. Jaiswal, The Making of Brahmanic Hegemony: Studies in Caste, Gender and Vaisnava Theology. Tulika Books, 2018.</li>
+<li>R. S. S. Sarma, Last Brahmin, The. Orient Blackswan Private Limited - New Delhi, 2012.</li>
+<li>S. C. Belnos, Sundhya: The Daily Prayers Of The Brahmins. New Delhi: Rupa, 2002.</li>
+
+<li>K. Yildirim, Brahmin Hegemony in India versus the Non Brahmin. LAP Lambert Academic Publishing, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6f2591f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org4e74501"></a>Kshatriyas<br />
+<div class="outline-text-6" id="text-3-3-1-1-2">
+<ul class="org-ul">
+<li>S. Dasgupta, <i>“The casteist and racist origins of the Indian Army’s recruitment policies,”</i> The Caravan. <a href="https://caravanmagazine.in/reportage/casteist-racist-origin-indian-army-recruitment-policies">https://caravanmagazine.in/reportage/casteist-racist-origin-indian-army-recruitment-policies</a> (accessed Dec. 23, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfb0bcbb"></a>Vaishyas<br />
+<ul class="org-ul">
+<li><a id="orgdcc275b"></a>General<br /></li>
+<li><a id="org5e6f0cf"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org05694ad"></a>Baniyas<br />
+<ul class="org-ul">
+<li><a id="org46e6655"></a>General<br /></li>
+<li><a id="orga9d085b"></a>Texts<br />
+<ul class="org-ul">
+<li><a id="orgd519e77"></a>Misc<br />
+<div class="outline-text-10" id="text-orgd519e77">
+<ul class="org-ul">
+<li>D. Hardiman and P. of H. D. Hardiman, <i>Feeding the Baniya: Peasants and Usurers in Western India.</i> Oxford University Press, 1996.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge9cdd7d"></a>Food, Misc<br />
+<div class="outline-text-10" id="text-orge9cdd7d">
+<ul class="org-ul">
+<li>G. Goela, Baniya Legacy Of Old Delhi. Gunjan Goela, 2022.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgbb3af69"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org2dd29b1"></a>Critical Studies<br /></li>
+</ul>
+</li>
+<li><a id="orgb58b357"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgabd003e"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org9a97dce"></a>Critical Studies<br /></li>
+</ul>
+</li>
+<li><a id="org6628c36"></a>Misc<br />
+<div class="outline-text-7" id="text-org6628c36">
+<ul class="org-ul">
+<li>L. A. Babb, Alchemies of Violence: Myths of Identity and the Life of Trade in Western India. SAGE Publications, 2004.</li>
+
+<li>“Agrasen,” Wikipedia. Oct. 16, 2023. Accessed: Nov. 23, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Agrasen&amp;oldid=1180416099">https://en.wikipedia.org/w/index.php?title=Agrasen&amp;oldid=1180416099</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org4b14cc8"></a>Once Born<br />
+<ol class="org-ol">
+<li><a id="org2d8cc81"></a>Shudras<br />
+<ul class="org-ul">
+<li><a id="orgcfd55ed"></a>General<br /></li>
+<li><a id="org62fcc0b"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org11ef8d2"></a>Environment<br /></li>
+<li><a id="org9873c59"></a>Computer Science and Engineering<br /></li>
+<li><a id="org7f3c93b"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd5e8169"></a>World<br />
+<ul class="org-ul">
+<li><a id="org34ab0a7"></a>Feminism<br /></li>
+<li><a id="orgce4b532"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf32d770"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org876142f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf96e908"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org13c581b"></a>Texts<br />
+<div class="outline-text-8" id="text-org13c581b">
+<ul class="org-ul">
+<li>J. Haq, The Shudra:: A Philosophical Narrative of Indian Superhumanism. HarperCollins India, 2022.</li>
+<li>K. I. Shepherd and K. R. Karuppusamy, The Shudra: Vision for a New Path. Penguin Random House India Private Limited, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge1d6006"></a>Articles, Essays<br />
+<div class="outline-text-8" id="text-orge1d6006">
+<ul class="org-ul">
+<li>K. I. Shepherd, “The farm laws are an assault on Shudra power,” The Caravan. <a href="https://caravanmagazine.in/politics/farmer-protests-caste-modi-shudra-obc">https://caravanmagazine.in/politics/farmer-protests-caste-modi-shudra-obc</a> (accessed Dec. 30, 2021).</li>
+<li>N. S.-R. Adsule, “‘The Shudra Rebellion’: Kancha Ilaiah Shepherd studies the vital role of oppressed castes in India,” Scroll.in. Accessed: Nov. 24, 2024. [Online]. Available: <a href="https://scroll.in/article/1075898/the-shudra-rebellion-kancha-ilaiah-shepherd-studies-the-vital-role-of-oppressed-castes-in-india">https://scroll.in/article/1075898/the-shudra-rebellion-kancha-ilaiah-shepherd-studies-the-vital-role-of-oppressed-castes-in-india</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org78c3345"></a>Misc<br />
+<div class="outline-text-7" id="text-org78c3345">
+<ul class="org-ul">
+<li>“Rethinking India in a Post-Mandal Situation,” NewsClick. Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://www.newsclick.in/rethinking-india-post-mandal-situation">https://www.newsclick.in/rethinking-india-post-mandal-situation</a></li>
+<li>C. Gupta, “Who was Santram, the forgotten Shudra radical who critiqued caste and advocated reform?,” Scroll.in. Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://scroll.in/article/1077118/who-was-santram-the-forgotten-shudra-radical-who-critiqued-caste-and-advocated-reform">https://scroll.in/article/1077118/who-was-santram-the-forgotten-shudra-radical-who-critiqued-caste-and-advocated-reform</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgfe8eb8e"></a>Outcastes<br />
+<ol class="org-ol">
+<li><a id="org86f9ae2"></a>Dalits<br />
+<ul class="org-ul">
+<li><a id="orgb38f0d6"></a>General<br /></li>
+<li><a id="orgb98ee7a"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgc4dc862"></a>Environment<br />
+<div class="outline-text-8" id="text-orgc4dc862">
+<ul class="org-ul">
+<li>M. Sharma, Caste and Nature: Dalits and Indian Environmental Politics. Oxford University Press, 2017.</li>
+<li>M. Sharma, Dalit Ecologies: Caste and Environment Justice. Cambridge, United Kingdom ; New York, NY: Cambridge University Press, 2025.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3ea8cf6"></a>Computer Science and Engineering<br /></li>
+<li><a id="org0759ed0"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgef282b0"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org4bfaff7"></a>Space and Time<br />
+<ul class="org-ul">
+<li><a id="org8d21c11"></a>History<br />
+<div class="outline-text-9" id="text-org8d21c11">
+<ul class="org-ul">
+<li>V. Prashad, <i>Untouchable Freedom: A Social History of Dalit Community.</i> Oxford University Press, 2000.</li>
+<li>A. Teltumbde, <i>Dalits: Past, Present and Future.</i> Taylor &amp; Francis, 2020.</li>
+
+<li>“Subcategorising Dalits would undo their historical identity.” Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://caravanmagazine.in/caste/subcategorising-dalits-undo-historical-identity">https://caravanmagazine.in/caste/subcategorising-dalits-undo-historical-identity</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd08d90c"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="orgfb576d7"></a>Religions, Spirituality, Misc<br />
+<ul class="org-ul">
+<li><a id="org727f11c"></a>Misc<br />
+<div class="outline-text-9" id="text-org727f11c">
+<ul class="org-ul">
+<li>“Why Dalits must abandon the Kanwar Yatra.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://caravanmagazine.in/caste/kanwar-yatra-dalit-obc">https://caravanmagazine.in/caste/kanwar-yatra-dalit-obc</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga63032b"></a>Humanities, Misc<br />
+<ul class="org-ul">
+<li><a id="org1ffa73f"></a>People<br />
+<div class="outline-text-9" id="text-org1ffa73f">
+<ul class="org-ul">
+<li><b>“Ruth Manorama,”</b> Right Livelihood. <a href="https://rightlivelihood.org/the-change-makers/find-a-laureate/ruth-manorama/">https://rightlivelihood.org/the-change-makers/find-a-laureate/ruth-manorama/</a> (accessed Sep. 18, 2021).</li>
+
+<li>“Remembering Swami Achutanand: The Pioneer of Dalit Identity and Consciousness in North India,” The Wire. <a href="https://thewire.in/caste/remembering-swami-achutanand-the-pioneer-of-dalit-identity-and-consciousness-in-north-india">https://thewire.in/caste/remembering-swami-achutanand-the-pioneer-of-dalit-identity-and-consciousness-in-north-india</a> (accessed Jul. 17, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org44e5ff8"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org033e2c9"></a>Orgs<br />
+<ul class="org-ul">
+<li><a id="org8db3f59"></a>Dalit Panthers<br />
+<div class="outline-text-10" id="text-org8db3f59">
+<ul class="org-ul">
+<li><i>“Dalit Panthers,”</i> Wikipedia. Jul. 13, 2021. Accessed: Sep. 16, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dalit_Panthers&amp;oldid=1033438252">https://en.wikipedia.org/w/index.php?title=Dalit_Panthers&amp;oldid=1033438252</a></li>
+
+<li>N. Slate, <i>“The Dalit Panthers: Race, Caste, and Black Power in India,”</i> in Black Power beyond Borders: The Global Dimensions of the Black Power Movement, N. Slate, Ed. New York: Palgrave Macmillan US, 2012, pp. 127–143. doi: 10.1057/9781137295064<sub>7</sub>.</li>
+<li>H. Gorringe, <i>Panthers in Parliament: Dalits, Caste, and Political Power in South India.</i> Oxford University Press, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9ff2193"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org50903c6"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="org083bc24"></a>Feminism<br />
+<ul class="org-ul">
+<li><a id="orgba9bb11"></a>Misc<br /></li>
+<li><a id="org17ed77c"></a>Articles, Essays<br />
+<div class="outline-text-11" id="text-org17ed77c">
+<ul class="org-ul">
+<li>M. Nabi, “Behind Gender Balance In Karnataka’s Dalit Communities Lies A Story Of Exclusion,” Feminism in India. Accessed: Aug. 22, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/22/behind-gender-balance-in-karnatakas-dalit-communities-lies-a-story-of-exclusion/">https://feminisminindia.com/2025/08/22/behind-gender-balance-in-karnatakas-dalit-communities-lies-a-story-of-exclusion/</a></li>
+
+<li>“Interview | ‘I Have Worked My Way Up’: Shailaja Paik on Dalit Women’s Ideas, Elite Pretensions and Embracing the ‘Genius,’” The Wire. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://thewire.in/world/shailaja-paik-macarthur-foundation-genius-grant-caste-explorations">https://thewire.in/world/shailaja-paik-macarthur-foundation-genius-grant-caste-explorations</a></li>
+<li>S. Anand, “‘A celebration of Dalit women’s ideas’: Shailaja Paik, first Dalit winner of a MacArthur Fellowship,” Scroll.in. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://scroll.in/article/1074191/a-celebration-of-dalit-womens-ideas-shailaja-paik-first-dalit-winner-of-a-macarthur-fellowship">https://scroll.in/article/1074191/a-celebration-of-dalit-womens-ideas-shailaja-paik-first-dalit-winner-of-a-macarthur-fellowship</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org12d9a84"></a>Texts<br /></li>
+<li><a id="org83121e9"></a>General<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org21e3aa6"></a>Politics<br />
+<div class="outline-text-9" id="text-org21e3aa6">
+<ul class="org-ul">
+<li>“Review: The Ever-Evolving Political Aspirations of Dalits in India,” The Wire. <a href="https://thewire.in/books/review-the-evolving-political-aspirations-of-dalits-in-india">https://thewire.in/books/review-the-evolving-political-aspirations-of-dalits-in-india</a> (accessed Apr. 11, 2022).</li>
+
+<li>A. Rao, The Caste Question: Dalits and the Politics of Modern India. University of California Press, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd7c0fb6"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org4d89bac"></a>Business Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="orgdc53149"></a>Business<br />
+<div class="outline-text-9" id="text-orgdc53149">
+<ul class="org-ul">
+<li>M. Khāṇḍekara, <i>Dalit Millionaires: 15 Inspiring Stories.</i> Portfolio, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga2d6f6e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9b28dac"></a>Security Studies, Misc<br /></li>
+<li><a id="org4dbabcd"></a>Communication, Misc<br /></li>
+<li><a id="orgfb627d9"></a>Misc<br />
+<div class="outline-text-8" id="text-orgfb627d9">
+<ul class="org-ul">
+<li>“Dalit Panthers: Beyond the Battle of the Founders,” The India Forum. Accessed: Jul. 06, 2026. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/dalit-panthers-beyond-battle-founders">https://www.theindiaforum.in/book-reviews/dalit-panthers-beyond-battle-founders</a></li>
+
+<li>B. P. &amp; P. P. NCDHR, “The Social Layers of Wealth Inequality Among Dalits and Adivasis in India,” Centre for Financial Accountability. Accessed: Jul. 01, 2026. [Online]. Available: <a href="https://www.cenfa.org/the-social-layers-of-wealth-inequality-among-dalits-and-adivasis-in-india/">https://www.cenfa.org/the-social-layers-of-wealth-inequality-among-dalits-and-adivasis-in-india/</a></li>
+
+<li>“How a 70-yr-Old Presidential Order Still Shapes Dalit Life After Conversion,” NewsClick. Accessed: Dec. 09, 2025. [Online]. Available: <a href="https://www.newsclick.in/how-70-yr-old-presidential-order-still-shapes-dalit-life-after-conversion">https://www.newsclick.in/how-70-yr-old-presidential-order-still-shapes-dalit-life-after-conversion</a></li>
+
+<li>“The RSS Was Also a Reaction to Early Dalit Mobilisation,” The Wire. Accessed: Oct. 27, 2025. [Online]. Available: <a href="https://thewire.in/caste/the-rss-was-also-a-reaction-to-early-dalit-mobilisation">https://thewire.in/caste/the-rss-was-also-a-reaction-to-early-dalit-mobilisation</a></li>
+
+<li>“Ritual inclusion at the Kumbh does not wash away Modi’s contempt for Dalit rights.” Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/caste/ritual-inclusion-kumbh-modi-contempt-dalit-rights">https://caravanmagazine.in/caste/ritual-inclusion-kumbh-modi-contempt-dalit-rights</a></li>
+
+<li>“Why Dalits fell out with the Aam Aadmi Party in the Delhi election.” Accessed: Mar. 03, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/aap-delhi-election-loss-dalit-support-rajendra-pal-gautam">https://caravanmagazine.in/politics/aap-delhi-election-loss-dalit-support-rajendra-pal-gautam</a></li>
+
+<li>N. Anushree, “BJP May Select Dalit, Younger Leader As Party President To Counter Opposition; Modi, Shah And RSS Backing Important: Report,” Swarajya by Kovai Media Private Limited. Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://swarajyamag.com/news-brief/bjp-may-select-dalit-younger-leader-as-party-president-to-counter-opposition-modi-shah-and-rss-backing-important-report">https://swarajyamag.com/news-brief/bjp-may-select-dalit-younger-leader-as-party-president-to-counter-opposition-modi-shah-and-rss-backing-important-report</a></li>
+
+<li>R. Mishra, “Bangladesh: Orchestrated pogrom against Dalit Hindus,” Organiser. Accessed: Dec. 10, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/09/268586/bharat/bangladesh-orchestrated-pogrom-against-dalit-hindus/">https://organiser.org/2024/12/09/268586/bharat/bangladesh-orchestrated-pogrom-against-dalit-hindus/</a></li>
+
+<li>E. Crewe, “Dalits in parliamentary politics: caste violence and local democracy in India,” GRNPP. Accessed: Mar. 29, 2024. [Online]. Available: <a href="https://grnpp.org/dalits-in-parliamentary-politics-caste-violence-and-local-democracy-in-india/">https://grnpp.org/dalits-in-parliamentary-politics-caste-violence-and-local-democracy-in-india/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org54a0137"></a>Core<br />
+<ul class="org-ul">
+<li><a id="orgbac6d1e"></a>Classes<br />
+<div class="outline-text-8" id="text-orgbac6d1e">
+<ul class="org-ul">
+<li>“Chamar,” Wikipedia. Jul. 09, 2022. Accessed: Jul. 17, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Chamar&amp;oldid=1097286613">https://en.wikipedia.org/w/index.php?title=Chamar&amp;oldid=1097286613</a></li>
+
+<li>“Chuhra,” Wikipedia. Jun. 13, 2022. Accessed: Jul. 17, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Chuhra&amp;oldid=1092938380">https://en.wikipedia.org/w/index.php?title=Chuhra&amp;oldid=1092938380</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org79d37f5"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orgf93b4bf"></a>Films<br />
+<div class="outline-text-8" id="text-orgf93b4bf">
+<ul class="org-ul">
+<li>G. Devi, “Adoor Gopalakrishnan’s Casteist Speech At Kerala Film Policy Conclave Interrupted; Faces Backlash From Dalit Filmmakers,” Feminism in India. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/14/adoor-gopalakrishnans-casteist-speech-at-kerala-film-policy-conclave-interrupted-faces-backlash-from-dalit-filmmakers/">https://feminisminindia.com/2025/08/14/adoor-gopalakrishnans-casteist-speech-at-kerala-film-policy-conclave-interrupted-faces-backlash-from-dalit-filmmakers/</a></li>
+
+<li>Handover | Hindi Full Movie | Vikas Kumar, Nutan Sinha, (Jun. 07, 2023). Accessed: Mar. 14, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uVSdXTGvouo">https://www.youtube.com/watch?v=uVSdXTGvouo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org667e557"></a>Literature<br />
+<ul class="org-ul">
+<li><a id="orge36fba9"></a>General<br />
+<div class="outline-text-9" id="text-orge36fba9">
+<ul class="org-ul">
+<li>K. Satyanarayana and S. J. Tharu, <i>The Exercise of Freedom: An Introduction to Dalit Writing.</i> Navayana Pub., 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org32081a5"></a>World<br />
+<ul class="org-ul">
+<li><a id="org4472157"></a>Misc<br />
+<div class="outline-text-10" id="text-org4472157">
+<ul class="org-ul">
+<li>S. B. Hunt, Hindi Dalit Literature and the Politics of Representation. Routledge, 2014.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgaedbc5c"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org598aa73"></a>Texts<br />
+<div class="outline-text-10" id="text-org598aa73">
+<ul class="org-ul">
+<li>L. Holmström and Bama, <i>Karukku.</i> OUP India, 2012.</li>
+
+<li>A. Dangle, <i>Poisoned Bread: Translations from Modern Marathi Dalit Literature.</i> Orient Blackswan, 2009.</li>
+
+<li>K. Satyanarayana, Steel Nibs Are Sprouting. Harper Collins, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5386d89"></a>Articles, Essays<br />
+<div class="outline-text-10" id="text-org5386d89">
+<ul class="org-ul">
+<li>S. Yengde, “Twelve books that form part of the arsenal of Dalit writing,” The Caravan. <a href="https://caravanmagazine.in/books/twelve-books-dalit-writing">https://caravanmagazine.in/books/twelve-books-dalit-writing</a> (accessed Mar. 07, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfd93ad5"></a>M. Kandasamy<br />
+<div class="outline-text-10" id="text-orgfd93ad5">
+<ul class="org-ul">
+<li>“Ms Militancy,” Navayana Publishing. <a href="https://navayana.org/products/ms-militancy/">https://navayana.org/products/ms-militancy/</a> (accessed May 09, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Kandasamy, <i>The Gypsy Goddess.</i> HarperCollins Publishers India, 2014.</li>
+<li>M. Kandasamy, The Orders Were to Rape You: Tigresses in the Tamil Eelam Struggle. Navayana Publishing Pvt. Limited, 2020.</li>
+<li>M. Kandasamy, Touch. Peacock Books, 2006.</li>
+<li>M. Kandasamy, When I Hit You: Or, A Portrait of the Writer as a Young Wife. Europa Editions, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. Kandasamy, “‘Nobody’s citizens and nobody’s slaves’: Meena Kandasamy’s poetry of resistance and solidarity,” Scroll.in. Accessed: Mar. 09, 2024. [Online]. Available: <a href="https://scroll.in/article/1064296/nobodys-citizens-and-nobodys-slaves-meena-kandasamys-poetry-of-resistance-and-solidarity">https://scroll.in/article/1064296/nobodys-citizens-and-nobodys-slaves-meena-kandasamys-poetry-of-resistance-and-solidarity</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org588ed55"></a>D. Mahadeva<br />
+<div class="outline-text-10" id="text-org588ed55">
+<ul class="org-ul">
+<li>“Devanur Mahadeva,” Wikipedia. Aug. 20, 2022. Accessed: Nov. 21, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Devanur_Mahadeva&amp;oldid=1105498841">https://en.wikipedia.org/w/index.php?title=Devanur_Mahadeva&amp;oldid=1105498841</a></li>
+
+<li>D. Mahādēva, Kusumabale. Oxford University Press, 2015.</li>
+
+<li>V. N. Karunakaran Binu, “Vaikom Award to Kannada writer and activist Devanoor Mahadeva is historic,” The News Minute. Accessed: Dec. 25, 2024. [Online]. Available: <a href="https://www.thenewsminute.com/karnataka/vaikom-award-to-kannada-writer-and-activist-devanoor-mahadeva-is-historic">https://www.thenewsminute.com/karnataka/vaikom-award-to-kannada-writer-and-activist-devanoor-mahadeva-is-historic</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4c7781e"></a>Misc<br />
+<div class="outline-text-9" id="text-org4c7781e">
+<ul class="org-ul">
+<li>A. Sathyan, “Not A Poetic Figment: Dalit Womanhood And Defiance In The Poetry Of Vijila Chirappad,” Feminism in India. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/31/not-a-poetic-figment-dalit-womanhood-and-defiance-in-the-poetry-of-vijila-chirappad/">https://feminisminindia.com/2025/07/31/not-a-poetic-figment-dalit-womanhood-and-defiance-in-the-poetry-of-vijila-chirappad/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org53d57bc"></a>Music<br />
+<ul class="org-ul">
+<li><a id="org757a90e"></a>General<br /></li>
+<li><a id="org68bb8ed"></a>Misc<br />
+<div class="outline-text-9" id="text-org68bb8ed">
+<ul class="org-ul">
+<li>R. Chakrapani, “Ilaiyaraaja’s Triumphant Return: Legendary Tamil Composer Dazzles London with ‘Valiant’ Symphony,” Frontline. Accessed: Mar. 15, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/ilaiyaraaja-return-valiant-symphony-london-triumph-after-controversy/article69320033.ece">https://frontline.thehindu.com/arts-and-culture/ilaiyaraaja-return-valiant-symphony-london-triumph-after-controversy/article69320033.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org39c4953"></a>Misc<br />
+<div class="outline-text-8" id="text-org39c4953">
+<ul class="org-ul">
+<li>A. Tirodkar, “Somnath Waghmare on Chaityabhumi, Dalit Representation in Cinema, and Cultural Assertion,” Frontline. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/cinema/somnath-waghmare-chaityabhumi-dalit-representation-cinema/article69500384.ece">https://frontline.thehindu.com/arts-and-culture/cinema/somnath-waghmare-chaityabhumi-dalit-representation-cinema/article69500384.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org290d762"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgdfa133e"></a>Documentaries<br />
+<div class="outline-text-8" id="text-orgdfa133e">
+<ul class="org-ul">
+<li>S. Waghmare, “Unearthed: The documentary on the Dalit movement made by a French filmmaker in 1985,” Scroll.in. Accessed: Jul. 11, 2024. [Online]. Available: <a href="https://scroll.in/reel/1070481/unearthed-the-documentary-on-the-dalit-movement-made-by-a-french-filmmaker-in-1985">https://scroll.in/reel/1070481/unearthed-the-documentary-on-the-dalit-movement-made-by-a-french-filmmaker-in-1985</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org027dcfe"></a>Texts<br />
+<div class="outline-text-8" id="text-org027dcfe">
+<ul class="org-ul">
+<li>K. Raju, The Dalit Truth (Rethinking India series): The Battles for Realizing Ambedkar’s Vision. Gurugram, Haryana, India: Vintage, 2022.</li>
+<li>S. Thorat, <i>Dalits in India: Search for a Common Destiny.</i> SAGE Publications India, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc7e40ae"></a>Articles, Essays<br />
+<div class="outline-text-8" id="text-orgc7e40ae">
+<ul class="org-ul">
+<li>K. Kapila, “The Dalits of India are finding new ways to fight the caste system,” The Conversation. Accessed: Feb. 17, 2024. [Online]. Available: <a href="http://theconversation.com/the-dalits-of-india-are-finding-new-ways-to-fight-the-caste-system-63894">http://theconversation.com/the-dalits-of-india-are-finding-new-ways-to-fight-the-caste-system-63894</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge0a6b39"></a>Food<br />
+<div class="outline-text-8" id="text-orge0a6b39">
+<ul class="org-ul">
+<li>Dalit - Food: <a href="https://tinyurl.com/bdfaefhn">https://tinyurl.com/bdfaefhn</a></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org5f773c2"></a>General<br /></li>
+<li><a id="org9f7d9c1"></a>Texts<br />
+<div class="outline-text-9" id="text-org9f7d9c1">
+<ul class="org-ul">
+<li>S. Patole, Dalit Kitchens of Marathwada. HarperCollins India, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5752163"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-org5752163">
+<ul class="org-ul">
+<li>“Food and Identity,” The India Forum. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/food-and-identity">https://www.theindiaforum.in/book-reviews/food-and-identity</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org44749d2"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org004eac0"></a>Sex<br />
+<div class="outline-text-8" id="text-org004eac0">
+<ul class="org-ul">
+<li>Dalit - Sex: <a href="https://tinyurl.com/2cr238vn">https://tinyurl.com/2cr238vn</a></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org59cd391"></a>General<br /></li>
+<li><a id="org0836ca2"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org912b1fc"></a>Space and Time<br /></li>
+<li><a id="org91d1756"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="org74ce52a"></a>Religions, Spirituality, Misc<br /></li>
+<li><a id="orgf72d612"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org83dab3d"></a>Sexual Violence<br />
+<ul class="org-ul">
+<li><a id="org0e763c8"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="org7a2c4ff"></a>Journals<br />
+<div class="outline-text-13" id="text-org7a2c4ff">
+<ul class="org-ul">
+<li>A. K. Pandey and V. N. Mishra, “Dalit Women’s Narratives on Sexual Violence: Reflections on Indian Society and State,” Social Change, vol. 51, no. 3, pp. 311–326, Sep. 2021, doi: 10.1177/00490857211032727.</li>
+</ul>
+</div>
+</li>
+<li><a id="org628916f"></a>Misc<br />
+<div class="outline-text-13" id="text-org628916f">
+<ul class="org-ul">
+<li>Indian Dalit women, girls targeted by upper-caste rapists – DW – 01/02/2025. Accessed: Jul. 12, 2025. [Online Video]. Available: <a href="https://www.dw.com/en/indian-dalit-women-girls-targeted-by-upper-caste-rapists/video-71201642">https://www.dw.com/en/indian-dalit-women-girls-targeted-by-upper-caste-rapists/video-71201642</a></li>
+<li>S. Shirke, “Dalit Women, Sexual Violence And The Role Of Media,” Feminism in India. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://feminisminindia.com/2021/03/01/dalit-women-sexual-violence-and-role-media/">https://feminisminindia.com/2021/03/01/dalit-women-sexual-violence-and-role-media/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org4daced2"></a>Business Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="org3874f4a"></a>Sex Work<br />
+<div class="outline-text-11" id="text-org3874f4a">
+<ul class="org-ul">
+<li>E. R. Parker, “Theologising with the Sacred ‘Prostitutes’ of South India: Towards an Indecent Dalit Theology,” in Theologising with the Sacred ‘Prostitutes’ of South India, Brill, 2021. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://brill.com/display/title/59742">https://brill.com/display/title/59742</a></li>
+<li>“A Dalit community struggles to break away from sex work.” Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://caravanmagazine.in/communities/dalit-community-struggles-break-away-sex-work">https://caravanmagazine.in/communities/dalit-community-struggles-break-away-sex-work</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org08540e9"></a>Humanities, Misc<br /></li>
+<li><a id="org75f918d"></a>Security Studies, Misc<br /></li>
+<li><a id="orga1d91e7"></a>Communication, Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgb6e9029"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org505ac07"></a>Texts<br />
+<div class="outline-text-10" id="text-org505ac07">
+<ul class="org-ul">
+<li>A. Ahsan, “The Vulgarity of Caste: Dalits, Sexuality and Humanity in Modern India: by Shailaja Paik. Stanford, Stanford University Press, 2022, Pp. 400, $95 (hardcover), ISBN 9781503632387, $32 (paperback), ISBN 9781503634084, $32 (eBook), ISBN 9781503634091,” Cultural Studies, vol. 38, no. 6, pp. 951–955, Nov. 2024, doi: 10.1080/09502386.2024.2345103.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5e7fd12"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="org8f42713"></a>Journals<br />
+<div class="outline-text-11" id="text-org8f42713">
+<ul class="org-ul">
+<li>A. Bose, “Dalit Textuality and Sexuality: Narrative and Gender in Tamil Women’s Writing,” Journal of Social Inclusion Studies, vol. 9, no. 1, pp. 110–128, Jun. 2023, doi: 10.1177/23944811231175723.</li>
+<li>J. Diwakar, “The Court of Bigotry: Contested Sexuality of Dalit and Non-Dalit Women,” Contemporary Voice of Dalit, vol. 14, no. 2, pp. 199–211, Nov. 2022, doi: 10.1177/2455328X221106537.</li>
+<li>J. Diwakar, “Sex as a Weapon to Settle Scores against Dalits: An Quotidian Phenomenon,” CASTE / A Global Journal on Social Exclusion, vol. 1, no. 2, Art. no. 2, Oct. 2020, doi: 10.26812/caste.v1i2.206.</li>
+</ul>
+</div>
+</li>
+<li><a id="org625e285"></a>Misc<br />
+<div class="outline-text-11" id="text-org625e285">
+<ul class="org-ul">
+<li>L. Harding, “Sex hell of Dalit women exposed,” The Guardian, May 09, 2001. Accessed: Jul. 12, 2025. [Online]. Available: <a href="https://www.theguardian.com/world/2001/may/09/lukeharding">https://www.theguardian.com/world/2001/may/09/lukeharding</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgb083280"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org2c6af44"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org52a20a2"></a>Gita<br />
+<div class="outline-text-5" id="text-3-3-1-4">
+<ul class="org-ul">
+<li>Gita:9.32, “श्रीमद् भगवद्गीता | Gita Supersite.” <a href="https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1">https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1</a> (accessed May 29, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orge767dd8"></a>Misc<br />
+<div class="outline-text-5" id="text-3-3-1-5">
+<ul class="org-ul">
+<li>C. Jaffrelot, India’s Silent Revolution: The Rise of the Lower Castes in North India. C. Hurst &amp; Co. Publishers, 2003.</li>
+
+<li>K. I. Shepherd, Buffalo Nationalism: A Critique of Spiritual Fascism. SAGE Publications, 2019.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org900c716" class="outline-4">
+<h4 id="org900c716"><span class="section-number-4">3.3.2.</span> Buddhism</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>P. Gokhale, Ed., Classical Buddhism, Neo-Buddhism and the Question of Caste, 1st edition. London New York (N.Y.): Routledge India, 2020.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5ce2820" class="outline-4">
+<h4 id="org5ce2820"><span class="section-number-4">3.3.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3ffd043" class="outline-3">
+<h3 id="org3ffd043"><span class="section-number-3">3.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orgd9acb4c" class="outline-4">
+<h4 id="orgd9acb4c"><span class="section-number-4">3.4.1.</span> People</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>“Periyar,” Wikipedia. Feb. 16, 2022. Accessed: Feb. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Periyar&amp;oldid=1072250761">https://en.wikipedia.org/w/index.php?title=Periyar&amp;oldid=1072250761</a></li>
+
+<li>“B. R. Ambedkar,” Wikipedia. Jul. 20, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=B._R._Ambedkar&amp;oldid=1099286167">https://en.wikipedia.org/w/index.php?title=B._R._Ambedkar&amp;oldid=1099286167</a></li>
+
+<li>“Savitribai Phule,” Wikipedia. Jul. 22, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Savitribai_Phule&amp;oldid=1099687132">https://en.wikipedia.org/w/index.php?title=Savitribai_Phule&amp;oldid=1099687132</a></li>
+<li>“Jyotirao Phule,” Wikipedia. Jul. 22, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jyotirao_Phule&amp;oldid=1099687618">https://en.wikipedia.org/w/index.php?title=Jyotirao_Phule&amp;oldid=1099687618</a>
+<ul class="org-ul">
+<li>“It is Time to Rediscover Mahatma Phule,” The Wire. Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://thewire.in/caste/it-is-time-to-rediscover-mahatma-phule">https://thewire.in/caste/it-is-time-to-rediscover-mahatma-phule</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Tarabai Shinde,” Wikipedia. Feb. 25, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tarabai_Shinde&amp;oldid=1073992752">https://en.wikipedia.org/w/index.php?title=Tarabai_Shinde&amp;oldid=1073992752</a></li>
+<li>“Pandita Ramabai,” Wikipedia. Jul. 22, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Pandita_Ramabai&amp;oldid=1099847806">https://en.wikipedia.org/w/index.php?title=Pandita_Ramabai&amp;oldid=1099847806</a></li>
+
+<li>“Ravidas,” Wikipedia. May 26, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ravidas&amp;oldid=1089854186">https://en.wikipedia.org/w/index.php?title=Ravidas&amp;oldid=1089854186</a></li>
+
+<li>“Kabir,” Wikipedia. Jun. 17, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Kabir&amp;oldid=1093579112">https://en.wikipedia.org/w/index.php?title=Kabir&amp;oldid=1093579112</a></li>
+
+<li>“Guru Nanak,” Wikipedia. Jul. 27, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Guru_Nanak&amp;oldid=1100811711">https://en.wikipedia.org/w/index.php?title=Guru_Nanak&amp;oldid=1100811711</a></li>
+
+<li>“Namdev,” Wikipedia. Jul. 07, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Namdev&amp;oldid=1096902401">https://en.wikipedia.org/w/index.php?title=Namdev&amp;oldid=1096902401</a></li>
+
+<li>“Tukaram,” Wikipedia. Jul. 17, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tukaram&amp;oldid=1098741888">https://en.wikipedia.org/w/index.php?title=Tukaram&amp;oldid=1098741888</a></li>
+
+<li>“Basava,” Wikipedia. Jul. 20, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Basava&amp;oldid=1099307516">https://en.wikipedia.org/w/index.php?title=Basava&amp;oldid=1099307516</a></li>
+
+<li>“Gautama Buddha,” Wikipedia. Jul. 12, 2022. Accessed: Jul. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gautama_Buddha&amp;oldid=1097758585">https://en.wikipedia.org/w/index.php?title=Gautama_Buddha&amp;oldid=1097758585</a></li>
+
+<li>“Shahu of Kolhapur,” Wikipedia. Jul. 25, 2022. Accessed: Aug. 01, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Shahu_of_Kolhapur&amp;oldid=1100377703">https://en.wikipedia.org/w/index.php?title=Shahu_of_Kolhapur&amp;oldid=1100377703</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org147644f" class="outline-3">
+<h3 id="org147644f"><span class="section-number-3">3.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-orga055504" class="outline-4">
+<h4 id="orga055504"><span class="section-number-4">3.5.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“Equality Labs,” Equality Labs. <a href="https://www.equalitylabs.org">https://www.equalitylabs.org</a> (accessed Jan. 26, 2022).</li>
+
+<li><i>“Jai Bhim Comrade,”</i> Wikipedia. Aug. 24, 2021. Accessed: Oct. 24, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jai_Bhim_Comrade&amp;oldid=1040403981">https://en.wikipedia.org/w/index.php?title=Jai_Bhim_Comrade&amp;oldid=1040403981</a></li>
+
+<li>H. Mander, “Anand: Navayana is a necessary mistake,” The Hindu, Nov. 29, 2024. Accessed: Nov. 30, 2024. [Online]. Available: <a href="https://www.thehindu.com/books/caste-hindu-dalit-untouchability-ambedkar-india/article68909271.ece">https://www.thehindu.com/books/caste-hindu-dalit-untouchability-ambedkar-india/article68909271.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org842ced3" class="outline-4">
+<h4 id="org842ced3"><span class="section-number-4">3.5.2.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-3-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org36c02a1"></a>Women<br />
+<ol class="org-ol">
+<li><a id="org37c23ba"></a>General<br /></li>
+<li><a id="orgfb8fa11"></a>Texts<br />
+<div class="outline-text-6" id="text-3-5-2-1-2">
+<ul class="org-ul">
+<li>U. Chakravarti, Gendering Caste: Through a Feminist Lens. SAGE Publishing India, 2018.</li>
+<li>S. Jaiswal, The Making of Brahmanic Hegemony: Studies in Caste, Gender, and Vaiṣṇava Theology. Tulika Books, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9a4fc88"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org3eb9c12"></a>Breast Tax<br />
+<div class="outline-text-7" id="text-org3eb9c12">
+<ul class="org-ul">
+<li>“Breast tax,” Wikipedia. Mar. 28, 2025. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Breast_tax&amp;oldid=1282774898">https://en.wikipedia.org/w/index.php?title=Breast_tax&amp;oldid=1282774898</a></li>
+<li>S. Sebastian, “Kerala’s Casteist Breast Tax And The Story Of Nangeli,” Feminism in India. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://feminisminindia.com/2016/09/12/kerala-breast-tax-nangeli/">https://feminisminindia.com/2016/09/12/kerala-breast-tax-nangeli/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3f3fce7"></a>Politics: Right<br />
+<div class="outline-text-7" id="text-org3f3fce7">
+<ul class="org-ul">
+<li>W. DESK, “Savitribai Phule Birth Anniversary: A visionary pioneer of women’s education and social reform in 19th century Bharat,” Organiser. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://organiser.org/2025/01/03/271949/bharat/savitribai-phule-birth-anniversary-a-visionary-pioneer-of-womens-education-and-social-reform-in-19th-century-bharat/">https://organiser.org/2025/01/03/271949/bharat/savitribai-phule-birth-anniversary-a-visionary-pioneer-of-womens-education-and-social-reform-in-19th-century-bharat/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org5891cbd"></a>Misc<br />
+<div class="outline-text-6" id="text-3-5-2-1-4">
+<ul class="org-ul">
+<li>S. Syed, “Caste Conflict As A Source Of Gendered Violence In India,” Feminism in India. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://feminisminindia.com/?p=184784">https://feminisminindia.com/?p=184784</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“How Mallah Women Fought Caste Hierarchy and Sex Slavery,” The Wire. Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://thewire.in/special/how-mallah-women-fought-caste-hierarchy-and-sex-slavery-in-bihar">https://thewire.in/special/how-mallah-women-fought-caste-hierarchy-and-sex-slavery-in-bihar</a></li>
+
+<li>“फातिमा शेख नावाच्या सहशिक्षिका सावित्रीबाई फुले यांच्यासोबत होत्या का? पुरावे काय सांगतात?,” BBC News मराठी. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://www.bbc.com/marathi/articles/cvge510ez6ko">https://www.bbc.com/marathi/articles/cvge510ez6ko</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org9b11dbb"></a>Tribals<br />
+<ol class="org-ol">
+<li><a id="org7b7ebe2"></a>Adivasis<br />
+<ul class="org-ul">
+<li><a id="org557c83c"></a>General<br /></li>
+<li><a id="orgaf88a63"></a>Philosophy<br />
+<div class="outline-text-7" id="text-orgaf88a63">
+<ul class="org-ul">
+<li>D. G. Stewart, Maori Philosophy: Indigenous Thinking from Aotearoa. London New York Oxford New Delphi Sydney: Bloomsbury Academic, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org60f28ec"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org849ecaa"></a>Systems Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org0310eab"></a>Complexity Science<br /></li>
+<li><a id="org056a6d5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orga27c30c"></a>Biological Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="orgbee9a24"></a>Environment<br />
+<div class="outline-text-9" id="text-orgbee9a24">
+<ul class="org-ul">
+<li>“Rights for Indigenous Peoples and biodiversity.” Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/">https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Great Expectations: What will tribal India’s ask be from President Droupadi Murmu.” <a href="https://www.downtoearth.org.in/blog/governance/great-expectations-what-will-tribal-india-s-ask-be-from-president-droupadi-murmu-83805">https://www.downtoearth.org.in/blog/governance/great-expectations-what-will-tribal-india-s-ask-be-from-president-droupadi-murmu-83805</a> (accessed Jul. 22, 2022).</li>
+<li>“Native problems.” <a href="https://www.downtoearth.org.in/factsheet/native-problems-55544">https://www.downtoearth.org.in/factsheet/native-problems-55544</a> (accessed Jul. 22, 2022).</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“The Serviceberry: An Economy of Abundance – Robin Wall Kimmerer,” Emergence Magazine. Accessed: Jun. 05, 2024. [Online]. Available: <a href="https://emergencemagazine.org/essay/the-serviceberry/">https://emergencemagazine.org/essay/the-serviceberry/</a></li>
+<li>M. Finlay, J. Cox, and E. Bury, “Botanist Robin Wall Kimmerer: ‘The clock is ticking but the world will teach us what we need to do’ – podcast,” the Guardian, Jun. 04, 2024. Accessed: Jun. 05, 2024. [Online]. Available: <a href="https://www.theguardian.com/science/audio/2024/jun/04/botanist-robin-wall-kimmerer-the-clock-is-ticking-but-the-world-will-teach-us-what-we-need-to-do-podcast">https://www.theguardian.com/science/audio/2024/jun/04/botanist-robin-wall-kimmerer-the-clock-is-ticking-but-the-world-will-teach-us-what-we-need-to-do-podcast</a></li>
+<li>“How Indigenous Peoples are safeguarding Earth‘s biodiversity,” Greenpeace International. Accessed: Aug. 09, 2024. [Online]. Available: <a href="https://www.greenpeace.org/international/story/69219/indigenous-peoples-safeguarding-earth-biodiversity-climate-justice-movement/">https://www.greenpeace.org/international/story/69219/indigenous-peoples-safeguarding-earth-biodiversity-climate-justice-movement/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org345cef6"></a>Basic Sciences, Misc<br /></li>
+<li><a id="org7ce292c"></a>Mathematical, Computational Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org1f74498"></a>Computer Science and Engineering<br /></li>
+</ul>
+</li>
+<li><a id="orge15d3fb"></a>Advanced Sciences, Misc<br /></li>
+<li><a id="org66fe958"></a>Technology, Misc<br /></li>
+<li><a id="org2d08c0d"></a>Special Topics<br /></li>
+<li><a id="orgb6e80d6"></a>Misc<br />
+<div class="outline-text-8" id="text-orgb6e80d6">
+<ul class="org-ul">
+<li>“Ministry of Tribal Affairs launches Beta Version of Adi Vaani – India’s 1st AI-Powered Translator for Tribal Languages Leading to Large Language Model.” Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://www.pib.gov.in/www.pib.gov.in/Pressreleaseshare.aspx?PRID=2162846">https://www.pib.gov.in/www.pib.gov.in/Pressreleaseshare.aspx?PRID=2162846</a></li>
+
+<li>A. Tandon, “Despite dams and water schemes, tribal villages live with drought,” Mongabay-India. Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/08/despite-dams-and-water-schemes-tribal-villages-live-with-drought/">https://india.mongabay.com/2025/08/despite-dams-and-water-schemes-tribal-villages-live-with-drought/</a></li>
+
+<li>“Indigenous Peoples Month: A time to recognise &amp;amp; align with the true stewards of the environment,” Greenpeace International. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/78127/indigenous-peoples-month-time-recognise-align-true-stewards-environment/">https://www.greenpeace.org/international/story/78127/indigenous-peoples-month-time-recognise-align-true-stewards-environment/</a></li>
+
+<li>V. Damodaran, “Adivasis of eastern India and the global planetary health crisis,” The Lancet, vol. 405, no. 10485, pp. 1136–1137, Apr. 2025, doi: 10.1016/S0140-6736(25)00570-7.</li>
+
+<li>J. Sordi, “It’s not the end, we have several possible futures: Interview with indigenous author Ailton Krenak,” Local Futures. Accessed: Oct. 05, 2024. [Online]. Available: <a href="https://www.localfutures.org/its-not-the-end-we-have-several-possible-futures-interview-with-indigenous-author-ailton-krenak/">https://www.localfutures.org/its-not-the-end-we-have-several-possible-futures-interview-with-indigenous-author-ailton-krenak/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Indigenous faith that reveres its own alphabet as sacred | Aeon Essays,” Aeon. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://aeon.co/essays/the-indigenous-faith-that-reveres-its-own-alphabet-as-sacred">https://aeon.co/essays/the-indigenous-faith-that-reveres-its-own-alphabet-as-sacred</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd782d7d"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org8e8ab71"></a>Space and Time<br /></li>
+<li><a id="orga28f0ab"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="orgcc25247"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-8" id="text-orgcc25247">
+<ul class="org-ul">
+<li>K. N. Choubey, “A new book studies the ideologies and functioning of the RSS’s tribal wing, Vanvasi Kalyan Ashram,” Scroll.in. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://scroll.in/article/1083917/a-new-book-studies-the-ideologies-and-functioning-of-the-rsss-tribal-wing-vanvasi-kalyan-ashram">https://scroll.in/article/1083917/a-new-book-studies-the-ideologies-and-functioning-of-the-rsss-tribal-wing-vanvasi-kalyan-ashram</a></li>
+
+<li>“Faith In The Forests: In Jharkhand, A Challenge To Hindutva From Adivasis Following The Ancient Sarna Faith.” Accessed: Apr. 14, 2025. [Online]. Available: <a href="https://www.article-14.com/post/faith-in-the-forests-in-jharkhand-a-challenge-to-hindutva-from-adivasis-following-the-ancient-sarna-faith-67fc7f5201c54">https://www.article-14.com/post/faith-in-the-forests-in-jharkhand-a-challenge-to-hindutva-from-adivasis-following-the-ancient-sarna-faith-67fc7f5201c54</a></li>
+
+<li>“Handbook of Indigenous Religions : Johnson, Greg, Kraft, Siv Ellen: Amazon.in: Books.” Accessed: Feb. 15, 2025. [Online]. Available: <a href="https://www.amazon.in/Handbook-of-Indigenous-Religion-s/dp/9004346694">https://www.amazon.in/Handbook-of-Indigenous-Religion-s/dp/9004346694</a></li>
+
+<li>“Lessons from the Milpa: Exploring Indigenous Contemplative Practices for a More Sustainable and Connected Future,” Mind &amp; Life Institute. Accessed: Mar. 28, 2024. [Online]. Available: <a href="https://www.mindandlife.org/media/lessons-from-the-milpa/">https://www.mindandlife.org/media/lessons-from-the-milpa/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Tribal People Aren’t Part of Hinduism, Any Other Religion: Rajkumar Roat | NewsClick, (Jul. 12, 2024). Accessed: Jul. 13, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=q3gqGHA9VYI">https://www.youtube.com/watch?v=q3gqGHA9VYI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4cace7f"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="orgee5f0df"></a>Orgs<br />
+<ul class="org-ul">
+<li><a id="orgec8d265"></a>International<br />
+<div class="outline-text-10" id="text-orgec8d265">
+<ul class="org-ul">
+<li>S. International, “Home - Survival International.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/">https://www.survivalinternational.org/</a>
+<ul class="org-ul">
+<li>उत्तरजीविताअंतरराष्ट्रीय, “मुखपृष्ठ - अंतरराष्ट्रीय उत्तरजीविता.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.in/hi">https://www.survivalinternational.in/hi</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org38c544b"></a>Misc<br />
+<div class="outline-text-10" id="text-org38c544b">
+<ul class="org-ul">
+<li>“adivasi Tribal Army schedule tribes India.” Accessed: Feb. 18, 2024. [Online]. Available: <a href="https://tribalarmy.org">https://tribalarmy.org</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“ICCA Consortium,” ICCA Consortium. Accessed: Nov. 19, 2025. [Online]. Available: <a href="https://www.iccaconsortium.org/">https://www.iccaconsortium.org/</a></li>
+<li>“Territories of life.” Accessed: Nov. 19, 2025. [Online]. Available: <a href="https://volume.territoriesoflife.org/">https://volume.territoriesoflife.org/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org971c43f"></a>Events<br />
+<div class="outline-text-9" id="text-org971c43f">
+<ul class="org-ul">
+<li>“International Day of the World’s Indigenous Peoples,” Wikipedia. Aug. 08, 2024. Accessed: Aug. 09, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Day_of_the_World%27s_Indigenous_Peoples&amp;oldid=1239236884">https://en.wikipedia.org/w/index.php?title=International_Day_of_the_World%27s_Indigenous_Peoples&amp;oldid=1239236884</a>
+<ul class="org-ul">
+<li>R. Ghai, “International Day of the World’s Indigenous Peoples 2024: First Nations’ knowledge universal; it is more important for non-indigenous people to learn, adopt &amp; absorb it, says C R Bijoy,” Down To Earth. Accessed: Aug. 09, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/indigenous-peoples-day-2024-first-nations-knowledge-universal-it-is-more-important-for-non-indigenous-people-to-learn-adopt-absorb-it-says-c-r-bijoy">https://www.downtoearth.org.in/governance/indigenous-peoples-day-2024-first-nations-knowledge-universal-it-is-more-important-for-non-indigenous-people-to-learn-adopt-absorb-it-says-c-r-bijoy</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org3fc4e60"></a>Feminism<br />
+<ul class="org-ul">
+<li><a id="orgf0f9955"></a>Misc<br /></li>
+<li><a id="org3d44727"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="org7e3b8ed"></a>Vikalp Sangam<br />
+<div class="outline-text-11" id="text-org7e3b8ed">
+<ul class="org-ul">
+<li>“Gardens of Resilience: How Gond Adivasi Women Are Cultivating Change Amid Crisis,” Vikalp Sangam. Accessed: Mar. 19, 2024. [Online]. Available: <a href="https://www.dhaatri.org/post/video-gardens-of-resilience-how-gond-adivasi-women-are-cultivating-change-amid-crisis">https://www.dhaatri.org/post/video-gardens-of-resilience-how-gond-adivasi-women-are-cultivating-change-amid-crisis</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6326e66"></a>Centre for Financial Accountability<br />
+<div class="outline-text-11" id="text-org6326e66">
+<ul class="org-ul">
+<li>R. K. Sinha, “आदिवासी महिलाओं को संपत्ति पर अधिकार का ऐतिहासिक फैसला,” Centre for Financial Accountability. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://www.cenfa.org/historic-verdict-on-property-rights-of-tribal-women/">https://www.cenfa.org/historic-verdict-on-property-rights-of-tribal-women/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org35a2e35"></a>Misc<br />
+<div class="outline-text-11" id="text-org35a2e35">
+<ul class="org-ul">
+<li>N. Rehman, “Tribal Women And Their Creation Of ‘Dream Maps’: Claiming Land Rights Against Environmental Degradation,” Feminism in India. Accessed: Jul. 11, 2025. [Online]. Available: <a href="https://feminisminindia.com/?p=187959">https://feminisminindia.com/?p=187959</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcdcda76"></a>Texts<br /></li>
+<li><a id="orgd2b1d6f"></a>General<br /></li>
+</ul>
+</li>
+<li><a id="org09f0388"></a>Politics<br />
+<ul class="org-ul">
+<li><a id="orgc4be972"></a>Misc<br /></li>
+<li><a id="orgca00607"></a>Texts<br />
+<div class="outline-text-10" id="text-orgca00607">
+<ul class="org-ul">
+<li>J. Ambagudia And V. Xaxa, Eds., Handbook Of Tribal Politics In India, 1st Edition. New Delhi, India ; Thousand Oaks, California: Sage Publications Pvt. Ltd, 2021.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Xaxa and G. N. Devy, Being Adivasi: Existence, Entitlements, Exclusion. Penguin Random House India Private Limited, 2021.
+<ul class="org-ul">
+<li>A. Dongare, “‘Being Adivasi’: Questions about Adivasi life are answered in this book, but not always convincingly,” Scroll.in. Accessed: Dec. 04, 2023. [Online]. Available: <a href="https://scroll.in/article/1059915/being-adivasi-questions-about-adivasi-life-are-answered-in-this-book-but-not-always-convincingly">https://scroll.in/article/1059915/being-adivasi-questions-about-adivasi-life-are-answered-in-this-book-but-not-always-convincingly</a></li>
+</ul></li>
+
+<li>N. Jones, Self-Determination as Voice: The Participation of Indigenous Peoples in International Governance. Cambridge: Cambridge University Press, 2024. doi: 10.1017/9781009406321.</li>
+</ul>
+</div>
+</li>
+<li><a id="org48c12e1"></a>Vikalp Sangam<br />
+<div class="outline-text-10" id="text-org48c12e1">
+<ul class="org-ul">
+<li>“Declaration on Traditional Governance Systems of India (In English and Hindi),” Vikalp Sangam. Accessed: Jan. 31, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/declaration-on-traditional-governance-systems-of-india-in-english-and-hindi/">https://vikalpsangam.org/article/declaration-on-traditional-governance-systems-of-india-in-english-and-hindi/</a></li>
+<li>“Korchi: Towards Adivasi Self-Governance,” Vikalp Sangam. Accessed: Apr. 17, 2024. [Online]. Available: <a href="https://vikalpsangam.org/article/korchi-towards-adivasi-self-governance/">https://vikalpsangam.org/article/korchi-towards-adivasi-self-governance/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd523756"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="orga54e63a"></a>India<br />
+<ul class="org-ul">
+<li><a id="org47344eb"></a>Some Indian Tribes<br />
+<div class="outline-text-11" id="text-org47344eb">
+<ul class="org-ul">
+<li>S. International, “Tiger Reserve tribes.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/tigerreservetribes">https://www.survivalinternational.org/tribes/tigerreservetribes</a></li>
+<li>S. International, “Dongria Kondh.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/dongria">https://www.survivalinternational.org/tribes/dongria</a></li>
+<li>S. International, “Jarawa.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/jarawa">https://www.survivalinternational.org/tribes/jarawa</a></li>
+<li>S. International, “Jenu Kuruba.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/jenu-kuruba">https://www.survivalinternational.org/tribes/jenu-kuruba</a></li>
+<li>S. International, “Sentinelese.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/sentinelese">https://www.survivalinternational.org/tribes/sentinelese</a></li>
+<li>S. International, “Shompen.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/tribes/shompen">https://www.survivalinternational.org/tribes/shompen</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org69fa578"></a>Law<br />
+<ul class="org-ul">
+<li><a id="org33ee995"></a>Friends of the Earth International<br />
+<div class="outline-text-10" id="text-org33ee995">
+<ul class="org-ul">
+<li>“Rights for Indigenous Peoples and biodiversity.” Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/">https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>, Adivasi Rights and Exclusion in India, First Edition. Taylor&amp;Francis, 2018.</li>
+<li>“Rights for Indigenous Peoples and biodiversity.” Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/">https://www.foei.org/publication/rights-for-indigenous-peoples-and-biodiversity/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbf07bbd"></a>Vikalp Sangam<br />
+<div class="outline-text-10" id="text-orgbf07bbd">
+<ul class="org-ul">
+<li>“Course helps Gadchiroli tribals know their forest rights — and win a diploma,” Vikalp Sangam. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://vikalpsangam.org/article/course-helps-gadchiroli-tribals-know-their-forest-rights-and-win-a-diploma/">https://vikalpsangam.org/article/course-helps-gadchiroli-tribals-know-their-forest-rights-and-win-a-diploma/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbf622ab"></a>Down To Earth<br />
+<div class="outline-text-10" id="text-orgbf622ab">
+<ul class="org-ul">
+<li>“Tribal rights in India are a grey picture: experts.” <a href="https://www.downtoearth.org.in/news/environment/tribal-rights-in-india-are-a-grey-picture-experts-62230">https://www.downtoearth.org.in/news/environment/tribal-rights-in-india-are-a-grey-picture-experts-62230</a> (accessed Jul. 22, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc0a3176"></a>S. Lele<br />
+<div class="outline-text-10" id="text-orgc0a3176">
+<ul class="org-ul">
+<li>G. A. &amp; S. Lele, “The legal hoodwinking of Adivasis,” The Hindu, Nov. 16, 2025. Accessed: Nov. 17, 2025. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/the-legal-hoodwinking-of-adivasis/article70286905.ece">https://www.thehindu.com/opinion/op-ed/the-legal-hoodwinking-of-adivasis/article70286905.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org31e3733"></a>Misc<br />
+<div class="outline-text-10" id="text-org31e3733">
+<ul class="org-ul">
+<li>A. Sharma, “‘Thousands of Adivasis Are Jailed Under False Charges’: Bela Bhatia on Bastar’s Militarisation and Mining Crisis,” Frontline. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/adivasi-rights-bastar-militarisation-bela-bhatia/article69399495.ece">https://frontline.thehindu.com/the-nation/adivasi-rights-bastar-militarisation-bela-bhatia/article69399495.ece</a></li>
+<li>Sushmita, “The Hidden Cost of India’s Tiger Reserves: Loss of Tribal Rights.” Accessed: May 13, 2024. [Online]. Available: <a href="https://www.indiaspend.com/forest-rights/the-hidden-cost-of-indias-tiger-reserves-loss-of-tribal-rights-907471">https://www.indiaspend.com/forest-rights/the-hidden-cost-of-indias-tiger-reserves-loss-of-tribal-rights-907471</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7223362"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org325c13b"></a>Business Studies, Misc<br />
+<ul class="org-ul">
+<li><a id="org6578149"></a>Business<br />
+<div class="outline-text-9" id="text-org6578149">
+<ul class="org-ul">
+<li>N. Minj, “How Adivasis in Jharkhand are taking the leap into entrepreneurship,” Scroll.in. Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://scroll.in/article/1066925/how-adivasis-in-jharkhand-are-taking-the-leap-into-entrepreneurship">https://scroll.in/article/1066925/how-adivasis-in-jharkhand-are-taking-the-leap-into-entrepreneurship</a></li>
+
+<li>F. Padel and S. Das, Out of this Earth: East India Adivasis and the Aluminium Cartel. Orient BlackSwan, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc323e11"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org7d0db10"></a>Humanities, Misc<br /></li>
+<li><a id="org8826cb1"></a>Security Studies, Misc<br /></li>
+<li><a id="orgab1b185"></a>Communication, Misc<br /></li>
+<li><a id="orga502dcc"></a>Misc<br />
+<ul class="org-ul">
+<li><a id="org9d01139"></a>Misc<br />
+<div class="outline-text-9" id="text-org9d01139">
+<ul class="org-ul">
+<li>B. P. &amp; P. P. NCDHR, “The Social Layers of Wealth Inequality Among Dalits and Adivasis in India,” Centre for Financial Accountability. Accessed: Jul. 01, 2026. [Online]. Available: <a href="https://www.cenfa.org/the-social-layers-of-wealth-inequality-among-dalits-and-adivasis-in-india/">https://www.cenfa.org/the-social-layers-of-wealth-inequality-among-dalits-and-adivasis-in-india/</a></li>
+
+<li>R. K. Sinha, “समृद्ध जल संसाधनों के बीच प्यासा आदिवासी समाज,” Centre for Financial Accountability. Accessed: Feb. 17, 2026. [Online]. Available: <a href="https://www.cenfa.org/thirsty_tribal_society/">https://www.cenfa.org/thirsty_tribal_society/</a></li>
+
+<li>“Maharashtra Adivasi farmers march home with hope,” PARI - People’s Archive of Rural India. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/maharashtra-adivasi-farmers-march-home-with-hope">https://ruralindiaonline.org/article/maharashtra-adivasi-farmers-march-home-with-hope</a></li>
+
+<li>“CSM,” CSIPM. Accessed: Nov. 11, 2025. [Online]. Available: <a href="https://www.csm4cfs.org/">https://www.csm4cfs.org/</a></li>
+
+<li>“Public Law and Social Exclusion of Indigenous People in the Fifth Schedule Areas of India | Economic and Political Weekly.” Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/39/special-articles/public-law-and-social-exclusion-indigenous-people.html">https://www.epw.in/journal/2025/39/special-articles/public-law-and-social-exclusion-indigenous-people.html</a></li>
+
+<li>K. N. Choubey, Adivasi or Vanvasi: Tribal India and the Politics of Hindutva. S.l.: Vintage Books, 2025.</li>
+
+<li>“International Day of the World’s Indigenous Peoples,” Wikipedia. Aug. 09, 2025. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=International_Day_of_the_World%27s_Indigenous_Peoples&amp;oldid=1304949283">https://en.wikipedia.org/w/index.php?title=International_Day_of_the_World%27s_Indigenous_Peoples&amp;oldid=1304949283</a></li>
+
+<li>Apoorvanand, “BJP’s Christian Optics in Kerala vs Adivasi Truth in Chhattisgarh,” Frontline. Accessed: Aug. 05, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/society/kerala-bjp-malayali-nuns-adivasi-christian-sukman-mandavi-bail/article69893194.ece">https://frontline.thehindu.com/society/kerala-bjp-malayali-nuns-adivasi-christian-sukman-mandavi-bail/article69893194.ece</a></li>
+
+<li>A. Bhelari, “Shibu Soren: From a social reformer to an iconic tribal leader,” The Hindu, Aug. 04, 2025. Accessed: Aug. 05, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/jharkhand/shibu-soren-from-a-social-reformer-to-an-iconic-tribal-leader/article69892637.ece">https://www.thehindu.com/news/national/jharkhand/shibu-soren-from-a-social-reformer-to-an-iconic-tribal-leader/article69892637.ece</a></li>
+
+<li>R. Ghai, “Shibu Soren’s legacy a mixed one; his leadership of Jharkhand Movement ‘unequalled’: Experts,” Down To Earth. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/shibu-sorens-legacy-a-mixed-one-his-leadership-of-jharkhand-movement-unequalled-experts">https://www.downtoearth.org.in/governance/shibu-sorens-legacy-a-mixed-one-his-leadership-of-jharkhand-movement-unequalled-experts</a></li>
+
+<li>“A Young Adivasi Call from inside the Highwalls! Are we not humans? Don’t We Deserve Human Rights?,” Countercurrents. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/07/a-young-adivasi-call-from-inside-the-highwalls-are-we-not-humans-dont-we-deserve-human-rights/">https://countercurrents.org/2025/07/a-young-adivasi-call-from-inside-the-highwalls-are-we-not-humans-dont-we-deserve-human-rights/</a></li>
+
+<li>“The commodification of tribal lives in India.” Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/communities/commodification-tribal-lives">https://caravanmagazine.in/communities/commodification-tribal-lives</a></li>
+
+<li>PTI, “Jharkhand CM, Governor pay tributes to tribal warriors of Santhal rebellion on ‘Hul Diwas,’” The Hindu, Jun. 30, 2025. Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/jharkhand/jharkhand-cm-governor-pay-tributes-to-tribal-warriors-of-santhal-rebellion-on-hul-diwas/article69754352.ece">https://www.thehindu.com/news/national/jharkhand/jharkhand-cm-governor-pay-tributes-to-tribal-warriors-of-santhal-rebellion-on-hul-diwas/article69754352.ece</a></li>
+
+<li>A. Ashokan, “On paper only: How Adivasis of this Kerala hamlet were stripped of their forest rights,” Down To Earth. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/on-paper-only-how-adivasis-of-this-kerala-hamlet-were-stripped-of-their-forest-rights">https://www.downtoearth.org.in/environment/on-paper-only-how-adivasis-of-this-kerala-hamlet-were-stripped-of-their-forest-rights</a></li>
+
+<li>D. B. K. Sullere, “125th Death Anniversary of Bhagwan Birsa Munda,” Organiser. Accessed: Jun. 09, 2025. [Online]. Available: <a href="https://organiser.org/2025/06/09/296074/bharat/125th-death-anniversary-of-bhagwan-birsa-munda-the-earth-father-and-his-enduring-legacy/">https://organiser.org/2025/06/09/296074/bharat/125th-death-anniversary-of-bhagwan-birsa-munda-the-earth-father-and-his-enduring-legacy/</a></li>
+
+<li>“Trump Proposes 90% Cuts to All 37 U.S. Tribal Colleges,” Democracy Now! Accessed: Jun. 06, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/6/5/headlines/trump_proposes_90_cuts_to_all_37_us_tribal_colleges">https://www.democracynow.org/2025/6/5/headlines/trump_proposes_90_cuts_to_all_37_us_tribal_colleges</a></li>
+
+<li>A. Sharma, “‘Thousands of Adivasis Are Jailed Under False Charges’: Bela Bhatia on Bastar’s Militarisation and Mining Crisis,” Frontline. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/adivasi-rights-bastar-militarisation-bela-bhatia/article69399495.ece">https://frontline.thehindu.com/the-nation/adivasi-rights-bastar-militarisation-bela-bhatia/article69399495.ece</a></li>
+
+<li>A. Paul, “YouTuber arrested for approaching uncontacted tribe in India,” Popular Science. Accessed: Apr. 05, 2025. [Online]. Available: <a href="https://www.popsci.com/environment/sentinelese-youtuber-arrest/">https://www.popsci.com/environment/sentinelese-youtuber-arrest/</a></li>
+
+<li>M. Kandasamy, “Interview | ‘Children are Facing Bullets’: Soni Sori Speaks Out About Alleged State Atrocities on Tribal People in Chhattisgarh,” Frontline. Accessed: Mar. 15, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/social-justice/interview-with-tribal-rights-activist-soni-sori-corporate-greed/article69332872.ece">https://frontline.thehindu.com/social-issues/social-justice/interview-with-tribal-rights-activist-soni-sori-corporate-greed/article69332872.ece</a></li>
+
+<li>“‘Had RSS Not Converted Tribal People, They Would Have Become Anti-National’: Mohan Bhagwat Puts Words in Late President’s Mouth,” The Wire. Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://thewire.in/politics/mohan-bhagwat-rss-tribal-conversion-ghar-wapsi-pranab-mukherjee">https://thewire.in/politics/mohan-bhagwat-rss-tribal-conversion-ghar-wapsi-pranab-mukherjee</a></li>
+
+<li>N. for B. Sustainability, “Weaving Indigenous Approaches into Management and Organization,” Medium. Accessed: Jan. 17, 2025. [Online]. Available: <a href="https://bthechange.com/weaving-indigenous-approaches-into-management-and-organization-2581254188e9">https://bthechange.com/weaving-indigenous-approaches-into-management-and-organization-2581254188e9</a></li>
+
+<li>“‘I cannot lead a false life,’” People’s Archive of Rural India. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/i-cannot-lead-a-false-life/">https://ruralindiaonline.org/en/articles/i-cannot-lead-a-false-life/</a></li>
+
+<li>“Adivasis of Jharkhand-landless in their own land,” People’s Archive of Rural India. Accessed: Nov. 19, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/adivasis-of-jharkhand-landless-in-their-own-land/">https://ruralindiaonline.org/en/articles/adivasis-of-jharkhand-landless-in-their-own-land/</a></li>
+<li>Lalsu Soma Nogoti - Mining in Gadchoroli &amp; its Devastation in Adivasis, (Oct. 16, 2018). Accessed: Jul. 03, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=G_uzzjA1kAc">https://www.youtube.com/watch?v=G_uzzjA1kAc</a></li>
+<li>“‘The Cost of Free Land’: Investigating a Personal and National Legacy of Indigenous Land Theft.” Accessed: Jun. 12, 2024. [Online]. Available: <a href="https://gijn.org/stories/cost-free-land-investigating-indigenous-land-theft/">https://gijn.org/stories/cost-free-land-investigating-indigenous-land-theft/</a></li>
+<li>“In Lush, Ancient Chhattisgarh Forest, Thousands Of Trees Cut To Mine Coal For Rajasthan, Threatening Adivasi Homes, Water, Livelihoods.” Accessed: Feb. 19, 2024. [Online]. Available: <a href="https://www.article-14.com/post/in-lush-ancient-chhattisgarh-forest-thousands-of-trees-cut-to-mine-coal-for-rajasthan-threatening-adivasi-homes-water-livelihoods--65d2bdd0e264a">https://www.article-14.com/post/in-lush-ancient-chhattisgarh-forest-thousands-of-trees-cut-to-mine-coal-for-rajasthan-threatening-adivasi-homes-water-livelihoods--65d2bdd0e264a</a></li>
+<li>S. International, “Experts say India risks genocide of uncontacted island tribe with mega-port plan.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://survivalinternational.org/news/13878">https://survivalinternational.org/news/13878</a></li>
+<li>K. Kapila, “Old Differences and New Hierarchies: The Trouble with Tribes in Contemporary India,” in Interrogating India’s Modernity: Democracy, Identity, and Citizenship, S. Jodhka, Ed., Oxford University Press, 2013, p. 0. doi: 10.1093/acprof:oso/9780198092070.003.0005.</li>
+<li>“Lakota Historian Nick Estes on Thanksgiving, Settler Colonialism &amp; Continuing Indigenous Resistance,” Democracy Now! Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/11/28/nick_estes_thanksgiving">https://www.democracynow.org/2024/11/28/nick_estes_thanksgiving</a></li>
+<li>H. Dahiya, “Inside Odisha’s Crackdown on Adivasis: Bauxite Mining, UAPA, and Forest Act,” TheQuint. Accessed: Dec. 07, 2024. [Online]. Available: <a href="https://www.thequint.com/news/india/odisha-crackdown-on-dalit-adivasis-fighting-for-land">https://www.thequint.com/news/india/odisha-crackdown-on-dalit-adivasis-fighting-for-land</a></li>
+<li>N. Minj, “Why Adivasis in Jharkhand are agitating over MS Dhoni’s favourite temple,” Scroll.in. Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://scroll.in/article/1074114/why-adivasis-in-jharkhand-are-agitating-over-ms-dhonis-favourite-temple">https://scroll.in/article/1074114/why-adivasis-in-jharkhand-are-agitating-over-ms-dhonis-favourite-temple</a></li>
+<li>R. Ghai, “Hana-Rawhiti Maipi-Clarke performs the haka: Who are the Maori?,” Down To Earth. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/hana-rawhiti-maipi-clarke-performs-the-haka-who-are-the-maori">https://www.downtoearth.org.in/governance/hana-rawhiti-maipi-clarke-performs-the-haka-who-are-the-maori</a></li>
+<li>E. LaRocque, More Will Sing Their Way to Freedom: Indigenous Resistance and Resurgence, Illustrated edition. Halifax Winnipeg: Fernwood Publishing Co Ltd, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdaba47a"></a>Politics: Right<br />
+<div class="outline-text-9" id="text-orgdaba47a">
+<ul class="org-ul">
+<li>B. B. Behera, “Bhagwan Birsa Munda: True son of Bharat Mata, who fought against oppressors,” Organiser. Accessed: Dec. 09, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/08/268473/bharat/bhagwan-birsa-munda-true-son-of-bharat-mata-who-fought-against-oppressors/">https://organiser.org/2024/12/08/268473/bharat/bhagwan-birsa-munda-true-son-of-bharat-mata-who-fought-against-oppressors/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org1385da9"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org8d93b89"></a>Education<br />
+<div class="outline-text-8" id="text-org8d93b89">
+<ul class="org-ul">
+<li>“Biden Apologizes for Native American Boarding Schools,” Democracy Now! Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/10/28/biden_residential_schools">https://www.democracynow.org/2024/10/28/biden_residential_schools</a></li>
+
+<li>“Why a community-run Gondi-language school in Gadchiroli is a revolutionary step,” Vikalp Sangam. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://vikalpsangam.org/article/why-a-community-run-gondi-language-school-in-gadchiroli-is-a-revolutionary-step/">https://vikalpsangam.org/article/why-a-community-run-gondi-language-school-in-gadchiroli-is-a-revolutionary-step/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga3e92b7"></a>Misc<br />
+<div class="outline-text-8" id="text-orga3e92b7">
+<ul class="org-ul">
+<li>G. N. D. and G. V. Davis, Indigenity and Nation: Key Concepts in Indigenous Studies. Routledge, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgaae7ff0"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="orga39a155"></a>Music<br />
+<div class="outline-text-8" id="text-orga39a155">
+<ul class="org-ul">
+<li>N. Rai, “Meet Mahi G, an Adivasi rapper from Maharashtra, who uses the mic as a weapon to fight social injustice,” The Hindu, Jul. 29, 2025. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/meet-mahi-g-the-tribal-poet-who-uses-rap-to-talk-about-social-and-environmental-issues/article69814214.ece">https://www.thehindu.com/entertainment/meet-mahi-g-the-tribal-poet-who-uses-rap-to-talk-about-social-and-environmental-issues/article69814214.ece</a></li>
+
+<li>“American Indian,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/search?query=American%20Indian&amp;bygenre=True">https://folkways.si.edu/search?query=American%20Indian&amp;bygenre=True</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgaab7040"></a>Literature<br />
+<div class="outline-text-8" id="text-orgaab7040">
+<ul class="org-ul">
+<li>N. D. Kundalia, White as Milk and Rice : Stories of Indi: Stories of India’s isolated tribes. Penguin Ebury Press, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3207539"></a>Films<br /></li>
+<li><a id="orgf43bb20"></a>Misc<br />
+<div class="outline-text-8" id="text-orgf43bb20">
+<ul class="org-ul">
+<li>“HomePage - Tribes India - The Art &amp; Soul of India.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.tribesindia.com/">https://www.tribesindia.com/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org12302fb"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org377e868"></a>Indigenous Peoples<br />
+<ul class="org-ul">
+<li><a id="orgfc0850a"></a>Articles, Essays<br />
+<div class="outline-text-9" id="text-orgfc0850a">
+<ul class="org-ul">
+<li>A. Scheidel et al., “Global impacts of extractive and industrial development projects on Indigenous Peoples’ lifeways, lands, and rights,” Science Advances, Jun. 2023, doi: 10.1126/sciadv.ade9557.</li>
+</ul>
+<p>
+-“Localization: learning from indigenous communities – Thais Mantovani,” Local Futures. Accessed: Mar. 21, 2024. [Online]. Available: <a href="https://www.localfutures.org/programs/global-to-local/local-futures-podcast/localization-learning-from-indigenous-communities-thais-mantovani/">https://www.localfutures.org/programs/global-to-local/local-futures-podcast/localization-learning-from-indigenous-communities-thais-mantovani/</a>
+</p>
+<ul class="org-ul">
+<li>“The hunter-gatherers of the 21st century who live on the move | Aeon Essays,” Aeon. Accessed: Mar. 06, 2024. [Online]. Available: <a href="https://aeon.co/essays/the-hunter-gatherers-of-the-21st-century-who-live-on-the-move">https://aeon.co/essays/the-hunter-gatherers-of-the-21st-century-who-live-on-the-move</a></li>
+<li>“What is ‘Indigenous Knowledge’ And Why Does It Matter? Integrating Ancestral Wisdom and Approaches into Federal Decision-Making | OSTP,” The White House. Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://www.whitehouse.gov/ostp/news-updates/2022/12/02/what-is-indigenous-knowledge-and-why-does-it-matter-integrating-ancestral-wisdom-and-approaches-into-federal-decision-making/">https://www.whitehouse.gov/ostp/news-updates/2022/12/02/what-is-indigenous-knowledge-and-why-does-it-matter-integrating-ancestral-wisdom-and-approaches-into-federal-decision-making/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org90c160b"></a>Internet Resources<br />
+<div class="outline-text-9" id="text-org90c160b">
+<ul class="org-ul">
+<li>S. International, “Home - Survival International.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.survivalinternational.org/">https://www.survivalinternational.org/</a></li>
+<li>“YES! Magazine | Solutions Journalism,” YES! Magazine. Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://www.yesmagazine.org/">https://www.yesmagazine.org/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf7c7df9"></a>Text<br />
+<div class="outline-text-9" id="text-orgf7c7df9">
+<ul class="org-ul">
+<li>E. Villanueva, Decolonizing Wealth, Second Edition: Indigenous Wisdom to Heal Divides and Restore Balance, 2nd edition. Berrett-Koehler Publishers, 2021.
+<ul class="org-ul">
+<li>Extractive and industrial development projects threaten the future of Indigenous Peoples, (Jun. 08, 2023). Accessed: Dec. 13, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DLSDkCTkuhU">https://www.youtube.com/watch?v=DLSDkCTkuhU</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org4b95c92"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgc6aa7bf"></a>Food<br />
+<ul class="org-ul">
+<li><a id="org28b8d4c"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgfe76fd1"></a>Misc<br />
+<div class="outline-text-10" id="text-orgfe76fd1">
+<ul class="org-ul">
+<li>P. A. Baena, A. Brunel, Y. Fernández-de-Larrinoa, T. E. Martinez-Cruz, C. Milbank, and M. Way, “In Brief: The White/Wiphala Paper on Indigenous Peoples’ Food Systems,” in Science and Innovations for Food Systems Transformation, J. von Braun, K. Afsana, L. O. Fresco, and M. H. A. Hassan, Eds., Cham: Springer International Publishing, 2023, pp. 229–259. doi: 10.1007/978-3-031-15703-5<sub>13</sub>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6011e93"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgbcd821b"></a>NewsClick<br />
+<div class="outline-text-10" id="text-orgbcd821b">
+<ul class="org-ul">
+<li>“Researchers Document 500 Edible Bugs Consumed by Indigenous Tribes in Northeast India,” NewsClick. Accessed: Aug. 16, 2024. [Online]. Available: <a href="https://www.newsclick.in/researchers-document-500-edible-bugs-consumed-indigenous-tribes-northeast-india">https://www.newsclick.in/researchers-document-500-edible-bugs-consumed-indigenous-tribes-northeast-india</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org109c40c"></a>Vikalp Sangam<br />
+<div class="outline-text-10" id="text-org109c40c">
+<ul class="org-ul">
+<li>“Munda women are safeguarding indigenous food systems,” Vikalp Sangam. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://www.villagesquare.in/munda-women-are-safeguarding-indigenous-food-systems/">https://www.villagesquare.in/munda-women-are-safeguarding-indigenous-food-systems/</a></li>
+<li>“Food fest to revive tribal cuisine,” Vikalp Sangam. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://punemirror.com/others/food-fest-to-revive-tribal-cuisine/cid5137465.htm">https://punemirror.com/others/food-fest-to-revive-tribal-cuisine/cid5137465.htm</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4ef0274"></a>Misc<br />
+<div class="outline-text-9" id="text-org4ef0274">
+<ul class="org-ul">
+<li>K. Pandey, “Tribal entrepreneurs bring indigenous cuisine to the urban mainstream,” Mongabay-India. Accessed: Mar. 13, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/03/tribal-entrepreneurs-bring-indigenous-cuisine-to-the-urban-mainstream/">https://india.mongabay.com/2025/03/tribal-entrepreneurs-bring-indigenous-cuisine-to-the-urban-mainstream/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6d49fc7"></a>Sex<br /></li>
+<li><a id="org5ce266b"></a>Texts<br />
+<div class="outline-text-8" id="text-org5ce266b">
+<ul class="org-ul">
+<li>J. D. Forbes, Only Approved Indians: Stories: 12. University of Oklahoma Press, 2021.</li>
+<li>J. D. Forbes, Africans and Native Americans: The Language of Race and the Evolution of Red-Black Peoples, 2nd ed. edition. University of Illinois Press, 1993.</li>
+
+<li>S. M. Channa, Anthropological Perspectives On Indian Tribes, First Edition. Hyderabad, Telangana, India: Orient BlackSwan Pvt. Ltd., 2020.</li>
+
+<li>H. S. Shekhar, The Adivasi Will Not Dance, 2011th Edition. Speaking Tiger Publishing Private Limited, 2017.</li>
+
+<li>V. Xaxa, State Society And Tribes, Ist Edition. Pearson Education, 2014.</li>
+<li>D. Nathan And V. Xaxa, Social Exclusion &amp; Adverse Inclusion-Pd: Development And Deprivation Of Adivasis In India, Illustrated Edition. New Delhi, India: Oxford University Press, 2012.</li>
+
+<li>Sen, Indigeneity, Landscape And History: Adivasi Self-Fashioning In India. London New York: Taylor &amp; Francis, 2017.</li>
+
+<li>D. R. T. &amp; D. R. B.- Editors, Contemporary Adivasi Writings In India: Shifting Paradigms, 1st Edition. Chennai: Notion Press, 2018.</li>
+
+<li>A. G. Nilsen, Adivasis and the State: Subalternity and Citizenship in India’s Bhil Heartland: 7, First Edition. Cambridge ; New York, NY: Cambridge University Press, 2019.</li>
+<li>N. Sundar, The Scheduled Tribes And Their India: Politics, Identities, Policies And Work, First Edition. New Delhi, India: Oxford University Press, 2016.</li>
+
+<li>C. Bates and A. Shah, Eds., Savage Attack: Tribal Insurgency in India, 1st edition. Routledge, 2017.</li>
+
+<li>W. Willoya and V. Brown, Warriors Of The Rainbow: Strange And Prophetic Indian Dreams. Normanby Press, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1957466"></a>V. Elwin<br />
+<ul class="org-ul">
+<li><a id="org61b1ead"></a>General<br /></li>
+<li><a id="orgb762e69"></a>Works<br />
+<div class="outline-text-9" id="text-orgb762e69">
+<ul class="org-ul">
+<li>V. Elwin, The Tribal World of Verrier Elwin. Delhi ; New York: Oxford Univ Pr, 1990.</li>
+<li>V. Elwin, Folk Songs of Chhattisgarh. B.R. Rhythms, 2018.</li>
+<li>V. Elwin, Folk paintings of India. Inter-national Cultural Centre, 1967.</li>
+<li>V. Elwin, Truth About India: Can We Get It?, 1st edition. London: Routledge, 2017.</li>
+<li>V. Elwin, The Religion Of An Indian Tribe. Gyan Publishing House, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="org56bb59d"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org2591c96"></a>Articles, Essays<br />
+<div class="outline-text-10" id="text-org2591c96">
+<ul class="org-ul">
+<li>R. Guha, Savaging the Civilized (PB): Verrier Elwin, His Tribals and India. Penguin Random House India, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="org4747bb0"></a>Texts<br />
+<div class="outline-text-10" id="text-org4747bb0">
+<ul class="org-ul">
+<li>NA, The Oxford India Elwin, Edition. New Delhi: Oxford University Press, 2008.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4b3ed6a"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgaeaa914"></a>Misc<br />
+<ul class="org-ul">
+<li><a id="org4aa3f31"></a>Misc<br />
+<div class="outline-text-8" id="text-org4aa3f31">
+<ul class="org-ul">
+<li>S. International, “‘We Are One: a celebration of tribal peoples’ published this autumn.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.survivalinternational.org/news/4981">https://www.survivalinternational.org/news/4981</a></li>
+<li>J. Eede, We Are One: A Celebration of Tribal Peoples. London: Quadrille Publishing Ltd, 2009.</li>
+
+<li>P. Pandya, “The broken-winged bird of BR Hills,” PARI - People’s Archive of Rural India. Accessed: Mar. 19, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/the-broken-winged-bird-of-br-hills">https://ruralindiaonline.org/article/the-broken-winged-bird-of-br-hills</a></li>
+
+<li>“Lo Bir Sendra: A Hunter in the Burning Forest : Jaipal Singh: Amazon.in: Books.” Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://www.amazon.in/Lo-Bir-Sendra-Hunter-Burning/dp/B0F4DT66F4?s=books">https://www.amazon.in/Lo-Bir-Sendra-Hunter-Burning/dp/B0F4DT66F4?s=books</a></li>
+
+<li>C. Buddha, “For Adivasis, MGNREGA’s Undoing Will Have Devastating Consequences,” BehanBox. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://behanbox.com/2026/01/08/for-adivasis-mgnregas-undoing-will-have-devastating-consequences/">https://behanbox.com/2026/01/08/for-adivasis-mgnregas-undoing-will-have-devastating-consequences/</a></li>
+
+<li>Ashish Kothari, Ned Tapa on struggle for rights of Maori people &amp; of Whanganui River, Aotearoa (N. Zealand), Nov ’25, (Nov. 21, 2025). Accessed: Nov. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=7LpAAyaqrsQ">https://www.youtube.com/watch?v=7LpAAyaqrsQ</a></li>
+
+<li>“Forest Solutions: Showcasing solutions by Indigenous Peoples and Local Communities from the Amazon, Congo Basin, and Indonesia for Rights and Forest Protection,” Greenpeace International. Accessed: Nov. 15, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/publication/79742/forest-solutions-indigenous-peoples-local-communities-amazon-congo-basin-indonesia-rights-forest-protection/">https://www.greenpeace.org/international/publication/79742/forest-solutions-indigenous-peoples-local-communities-amazon-congo-basin-indonesia-rights-forest-protection/</a></li>
+
+<li>“Learning to walk lightly through the world: Lessons from Amazonian Indigenous praxis | Journal paper.” Accessed: Oct. 30, 2025. [Online]. Available: <a href="https://cusp.ac.uk/themes/nature/paper-pe-learning-to-walk-lightly/">https://cusp.ac.uk/themes/nature/paper-pe-learning-to-walk-lightly/</a></li>
+
+<li>T. Editors, “Honoring Indigenous Peoples’ Day: A Reading List,” JSTOR Daily. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://daily.jstor.org/honoring-indigenous-peoples-day-a-reading-list/">https://daily.jstor.org/honoring-indigenous-peoples-day-a-reading-list/</a></li>
+
+<li>A. Nigam, “Protest Assault on Adivasi Youth Leader Rama Kankonkar, Lawless Casino-based Development in Goa: NAPM,” KAFILA - COLLECTIVE EXPLORATIONS SINCE 2006. Accessed: Oct. 03, 2025. [Online]. Available: <a href="https://kafila.online/2025/10/03/protest-assault-on-adivasi-youth-leader-rama-kankonkar-lawless-casino-based-development-in-goa-napm/">https://kafila.online/2025/10/03/protest-assault-on-adivasi-youth-leader-rama-kankonkar-lawless-casino-based-development-in-goa-napm/</a></li>
+
+<li>S. Paul, “Adivasi Representation In West Bengal: Need For Genuine Inclusion Beyond The Public Holidays,” Feminism in India. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/22/adivasi-representation-in-west-bengal-need-for-genuine-inclusion-beyond-the-public-holidays/">https://feminisminindia.com/2025/09/22/adivasi-representation-in-west-bengal-need-for-genuine-inclusion-beyond-the-public-holidays/</a></li>
+
+<li>S. Paul, “Adivasi Representation In West Bengal: Need For Genuine Inclusion Beyond The Public Holidays,” Feminism in India. Accessed: Sep. 22, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/09/22/adivasi-representation-in-west-bengal-need-for-genuine-inclusion-beyond-the-public-holidays/">https://feminisminindia.com/2025/09/22/adivasi-representation-in-west-bengal-need-for-genuine-inclusion-beyond-the-public-holidays/</a></li>
+
+<li>“‘Not Going to Give Up’: Leonard Peltier on Indigenous Rights, 5 Decades in Prison &amp; Coming Home,” Democracy Now! Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/9/19/leonard_peltier_interview_democracy_now_exclusive">https://www.democracynow.org/2025/9/19/leonard_peltier_interview_democracy_now_exclusive</a></li>
+
+<li>“Revisiting First Fruit Ceremonies: the crisis in the cornerstone of indigenous knowledge and a possible way out,” Vikalp Sangam. Accessed: Sep. 17, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/revisiting-first-fruit-ceremonies-the-crisis-in-the-cornerstone-of-indigenous-knowledge-and-a-possible-way-out/">https://vikalpsangam.org/article/revisiting-first-fruit-ceremonies-the-crisis-in-the-cornerstone-of-indigenous-knowledge-and-a-possible-way-out/</a></li>
+
+<li>“A Family Committed to Protecting Strengths of Traditional Farming of Tribal Communities,” Countercurrents. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/09/a-family-committed-to-protecting-strengths-of-traditional-farming-of-tribal-communities/">https://countercurrents.org/2025/09/a-family-committed-to-protecting-strengths-of-traditional-farming-of-tribal-communities/</a></li>
+
+<li>“We, the Indigenous People of the forest, refuse to be ignored any longer,” Greenpeace International. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/78186/we-the-indigenous-people-of-the-forest-refuse-to-be-ignored-any-longer/">https://www.greenpeace.org/international/story/78186/we-the-indigenous-people-of-the-forest-refuse-to-be-ignored-any-longer/</a></li>
+
+<li>K. Hopkins, “Alaska Vowed to Resolve Murders of Indigenous People. Now It Refuses to Provide Their Names.,” ProPublica. Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.propublica.org/article/alaska-denies-indigenous-murders-records">https://www.propublica.org/article/alaska-denies-indigenous-murders-records</a></li>
+
+<li>“Situating Santhals within the Rubric of Adivasi Identity | Economic and Political Weekly.” Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/35/special-articles/situating-santhals-within-rubric-adivasi-identity.html">https://www.epw.in/journal/2025/35/special-articles/situating-santhals-within-rubric-adivasi-identity.html</a></li>
+
+<li>“Indigenous solutions for the cost of living crisis.” Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://theecologist.org/2025/aug/14/indigenous-solutions-cost-living-crisis">https://theecologist.org/2025/aug/14/indigenous-solutions-cost-living-crisis</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Day of the World’s Indigenous Peoples 2025 · Global Voices,” Global Voices. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://globalvoices.org/special/day-of-the-worlds-indigenous-peoples-2025/">https://globalvoices.org/special/day-of-the-worlds-indigenous-peoples-2025/</a></li>
+
+<li>“UNDP Announces Equator Prize 2025 Winners on the International Day of the World’s Indigenous Peoples,” UNDP. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://www.undp.org/press-releases/undp-announces-equator-prize-2025-winners-international-day-worlds-indigenous-peoples">https://www.undp.org/press-releases/undp-announces-equator-prize-2025-winners-international-day-worlds-indigenous-peoples</a></li>
+
+<li>“Ten lessons the Aztecs can teach us today,” The Guardian, Aug. 04, 2025. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://www.theguardian.com/commentisfree/2025/aug/04/aztecs-lessons-philosophy">https://www.theguardian.com/commentisfree/2025/aug/04/aztecs-lessons-philosophy</a></li>
+
+<li>A. Mishra, “Shibu Soren and the Making of Jharkhand: Legacy of a Tribal Icon,” Frontline. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/other/obituary/shibu-soren-jharkhand-tribal-leader-jmm-legacy/article69896727.ece">https://frontline.thehindu.com/other/obituary/shibu-soren-jharkhand-tribal-leader-jmm-legacy/article69896727.ece</a></li>
+
+<li>“The Indigenous Fight for Climate Justice in the US Today - Rosa-Luxemburg-Stiftung.” Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://www.rosalux.de/en/news/id/53679/the-indigenous-fight-for-climate-justice-in-the-us-today">https://www.rosalux.de/en/news/id/53679/the-indigenous-fight-for-climate-justice-in-the-us-today</a></li>
+
+<li>“Milada Ganguli: A Czech Woman Who Archived India’s Tribal Soul,” NewsClick. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://www.newsclick.in/milada-ganguli-czech-woman-who-archived-indias-tribal-soul">https://www.newsclick.in/milada-ganguli-czech-woman-who-archived-indias-tribal-soul</a></li>
+
+<li>A. Lakshman, “Centre announces Adi Karmyogi programme for nationwide capacity building in tribal scheme implementation,” The Hindu, Jun. 27, 2025. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/centre-announces-adi-karmyogi-programme-for-nationwide-capacity-building-in-tribal-scheme-implementation/article69745966.ece">https://www.thehindu.com/news/national/centre-announces-adi-karmyogi-programme-for-nationwide-capacity-building-in-tribal-scheme-implementation/article69745966.ece</a></li>
+
+<li>T. H. Bureau, “IIT Madras organises international conference on Birsa Munda,” The Hindu, Jun. 23, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/tamil-nadu/iit-madras-organises-international-conference-on-birsa-munda/article69722019.ece">https://www.thehindu.com/news/national/tamil-nadu/iit-madras-organises-international-conference-on-birsa-munda/article69722019.ece</a></li>
+
+<li>“The long struggle of Gutti Koyas for survival and rights.” Accessed: May 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/communities/long-struggle-gutti-koyas">https://caravanmagazine.in/communities/long-struggle-gutti-koyas</a></li>
+<li>“Paved with good intentions?” Accessed: Apr. 07, 2025. [Online]. Available: <a href="https://theecologist.org/2025/apr/07/paved-good-intentions">https://theecologist.org/2025/apr/07/paved-good-intentions</a></li>
+
+<li>“The wisdom of Indigenous conservation.” Accessed: Mar. 08, 2025. [Online]. Available: <a href="https://theecologist.org/2025/mar/04/wisdom-indigenous-conservation">https://theecologist.org/2025/mar/04/wisdom-indigenous-conservation</a></li>
+
+<li>“‘Sugarcane’: Oscar-Nominated Film Explores ‘Colonial Silence’ Around Indian Residential Schools,” Democracy Now! Accessed: Mar. 05, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/3/4/sugarcane">https://www.democracynow.org/2025/3/4/sugarcane</a></li>
+
+<li>“TN: Tribals Flay Govt Delay in Clearing FRA Applications, Issuing ST Certificates,” NewsClick. Accessed: Mar. 01, 2025. [Online]. Available: <a href="https://www.newsclick.in/tn-tribals-flay-govt-delay-clearing-fra-applications-issuing-st-certificates">https://www.newsclick.in/tn-tribals-flay-govt-delay-clearing-fra-applications-issuing-st-certificates</a></li>
+
+<li>J. Aprea, “Celebrating Indigenous Peoples and Cultures,” JSTOR Daily. Accessed: Feb. 27, 2025. [Online]. Available: <a href="https://daily.jstor.org/celebrating-indigenous-culture-indigenous-peoples-history/">https://daily.jstor.org/celebrating-indigenous-culture-indigenous-peoples-history/</a></li>
+
+<li>“‘Finally Free!’: Leonard Peltier Released After Nearly 50 Years Behind Bars,” Democracy Now! Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/2/19/leonard_peltier_release_return_home">https://www.democracynow.org/2025/2/19/leonard_peltier_release_return_home</a></li>
+
+<li>J. Clifford, Returns: Becoming Indigenous in the Twenty-First Century, Illustrated edition. Cambridge, Massachusetts: Harvard University Press, 2013.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>N. Minj, “At global indigenous studies meet, we presented the Adivasi view from India – for the first time,” Scroll.in. Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://scroll.in/article/1069970/at-a-conference-on-indigenous-studies-we-presented-the-adivasi-view-from-india-for-the-first-time">https://scroll.in/article/1069970/at-a-conference-on-indigenous-studies-we-presented-the-adivasi-view-from-india-for-the-first-time</a></li>
+<li>“Making do without blue in the Blue Mountains,” People’s Archive of Rural India. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/making-do-without-blue-in-the-blue-mountains/">https://ruralindiaonline.org/en/articles/making-do-without-blue-in-the-blue-mountains/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf6cdf5f"></a>Philosophy<br />
+<div class="outline-text-8" id="text-orgf6cdf5f">
+<ul class="org-ul">
+<li>S. Vickery, “Philosophy students explore a new way of thinking with Indigenous philosophy course,” Letters &amp; Science. Accessed: May 15, 2025. [Online]. Available: <a href="https://uwm.edu/letters-science/in-focus-2025/philosophy-students-explore-a-new-way-of-thinking-with-indigenous-philosophy-course/">https://uwm.edu/letters-science/in-focus-2025/philosophy-students-explore-a-new-way-of-thinking-with-indigenous-philosophy-course/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org564578c"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3b9dfae" class="outline-4">
+<h4 id="org3b9dfae"><span class="section-number-4">3.5.3.</span> Casteism</h4>
+<div class="outline-text-4" id="text-3-5-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6ce2321"></a>Casteism in Academia<br />
+<div class="outline-text-5" id="text-3-5-3-1">
+<ul class="org-ul">
+<li>M. Joshi, “The Silent Compulsion Of Caste: Caste Violence And Suicides In Educational Institutes,” Feminism in India. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/05/caste-violence-and-suicides-in-educational-institutes/">https://feminisminindia.com/2025/08/05/caste-violence-and-suicides-in-educational-institutes/</a></li>
+
+<li>“Caste Discrimination at IIM-B: Probe Finds Dalit Professor Faced Humiliation, Exclusion,” The Wire. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://thewire.in/rights/caste-discrimination-at-iim-b-probe-finds-dalit-professor-faced-humiliation-exclusion">https://thewire.in/rights/caste-discrimination-at-iim-b-probe-finds-dalit-professor-faced-humiliation-exclusion</a></li>
+
+<li>Sagar, “The Denial of Promotion to a Dalit Professor in JNU Is Symptomatic of a Deep-Rooted Caste Bias Within the University,” The Caravan. <a href="https://caravanmagazine.in/vantage/jnu-caste-discrimination-against-faculty">https://caravanmagazine.in/vantage/jnu-caste-discrimination-against-faculty</a> (accessed Jan. 20, 2022).</li>
+
+<li>A. Thaker, “In California, a Debate Over History Curricula Has Brought To Fore Denials of Caste in the Indian American Community,” The Caravan. <a href="https://caravanmagazine.in/vantage/california-history-denial-caste-indian-american-community">https://caravanmagazine.in/vantage/california-history-denial-caste-indian-american-community</a> (accessed Jan. 22, 2022).</li>
+
+<li>M. Kapur, “US universities are beginning to recognise the ugly truth of the caste system,” Scroll.in. <a href="https://scroll.in/article/1009446/american-universities-are-beginning-to-recognise-the-ugly-truth-of-the-caste-system">https://scroll.in/article/1009446/american-universities-are-beginning-to-recognise-the-ugly-truth-of-the-caste-system</a> (accessed Jan. 11, 2022).</li>
+
+<li>“JNU’s VC is Celebrating ‘Herstory’ With Men, a ‘Civilisation State’ With No Rights,” The Wire. <a href="https://thewire.in/education/jnus-vc-is-celebrating-herstory-with-men-a-civilisation-state-with-no-rights">https://thewire.in/education/jnus-vc-is-celebrating-herstory-with-men-a-civilisation-state-with-no-rights</a> (accessed Jun. 03, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org906083d"></a>Casteism in STEMM<br />
+<ol class="org-ol">
+<li><a id="org4898c1d"></a>Race<br />
+<div class="outline-text-6" id="text-3-5-3-2-1">
+<ul class="org-ul">
+<li>M. L. Gosztyla et al., “Responses to 10 common criticisms of anti-racism action in STEMM,” PLOS Computational Biology, vol. 17, no. 7, p. e1009141, Jul. 2021, doi: 10.1371/journal.pcbi.1009141.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbbad88e"></a>Higher Education<br />
+<div class="outline-text-6" id="text-3-5-3-2-2">
+<ul class="org-ul">
+<li>N. Arora, “Caste and the delusion of ‘merit’ in Indian higher education,” The Caravan. <a href="https://caravanmagazine.in/caste/the-delusion-of-merit-in-indian-higher-education">https://caravanmagazine.in/caste/the-delusion-of-merit-in-indian-higher-education</a> (accessed Jan. 18, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org92ec3aa"></a>Elite<br />
+<div class="outline-text-6" id="text-3-5-3-2-3">
+<ul class="org-ul">
+<li><i>“Brahmins on India’s elite campuses say studying science is natural to upper castes: Study,”</i> ThePrint, Mar. 13, 2020. <a href="https://theprint.in/opinion/brahmins-on-india-campuses-studying-science-is-natural-to-upper-castes/378901/">https://theprint.in/opinion/brahmins-on-india-campuses-studying-science-is-natural-to-upper-castes/378901/</a> (accessed Dec. 23, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org08d94ce"></a>Engineering, Tech, IT<br />
+<ul class="org-ul">
+<li><a id="orgf3fe06a"></a>IIT<br />
+<div class="outline-text-7" id="text-orgf3fe06a">
+<ul class="org-ul">
+<li>M. Som, “Fresh strife between IIT Kharagpur administration and teachers’ body,” The Hindu, Dec. 13, 2024. Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/west-bengal/fresh-strife-between-iit-kharagpur-administration-and-teachers-body/article68982756.ece">https://www.thehindu.com/news/national/west-bengal/fresh-strife-between-iit-kharagpur-administration-and-teachers-body/article68982756.ece</a></li>
+
+<li>A. Ram, “When Caste Shadows Dreams: RTI Unveils Educational Bias In IITs,” Feminism in India. Accessed: Mar. 24, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/03/22/when-caste-shadows-dreams-rti-unveils-educational-bias-in-iits/">https://feminisminindia.com/2024/03/22/when-caste-shadows-dreams-rti-unveils-educational-bias-in-iits/</a></li>
+
+<li>W. O. Roorkee IIT, “The Merit Myth: An Examination of Casteism in IITs,” Watch Out! News Agency. <a href="http://watchout.iitr.ac.in/2023/03/the-merit-myth">http://watchout.iitr.ac.in/2023/03/the-merit-myth</a> (accessed Jul. 01, 2023).</li>
+
+<li>“Parag Agrawal of Twitter signals Brahmin clout at IIT ending. Kota is now Baniya phenomenon,” ThePrint, Dec. 03, 2021. <a href="https://theprint.in/opinion/parag-agrawal-of-twitter-signals-brahmin-clout-at-iit-ending-kota-is-now-baniya-phenomenon/775595/">https://theprint.in/opinion/parag-agrawal-of-twitter-signals-brahmin-clout-at-iit-ending-kota-is-now-baniya-phenomenon/775595/</a> (accessed Jan. 05, 2022).</li>
+
+<li>“RTI Responses Provide Clear Proof of IITs Flouting Reservation Policy in Faculty Recruitment,” The Wire. <a href="https://thewire.in/caste/rti-iit-reservation-recruitment-caste">https://thewire.in/caste/rti-iit-reservation-recruitment-caste</a> (accessed Aug. 04, 2022).</li>
+
+<li>S. Chatterjee, “Show cause notice sent to 86 faculty members: IIT Kharagpur staff stage silent protest,” The Hindu, Dec. 07, 2024. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/west-bengal/show-cause-notice-sent-to-86-faculty-members-iit-kharagpur-staff-stage-silent-protest/article68959025.ece">https://www.thehindu.com/news/national/west-bengal/show-cause-notice-sent-to-86-faculty-members-iit-kharagpur-staff-stage-silent-protest/article68959025.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdea0c94"></a>Misc<br />
+<div class="outline-text-7" id="text-orgdea0c94">
+<ul class="org-ul">
+<li>S. Paul, “Trapped in Silicon Valley’s Hidden Caste System,” Wired. Accessed: Mar. 02, 2022. [Online]. Available: <a href="https://www.wired.com/story/trapped-in-silicon-valleys-hidden-caste-system/">https://www.wired.com/story/trapped-in-silicon-valleys-hidden-caste-system/</a></li>
+
+<li>M. Fernandez, The New Frontier: Merit vs. Caste in the Indian IT Sector. Oxford University Press, 2017.</li>
+
+<li>A. Subramanian, <b>The Caste of Merit: Engineering Education in India.</b> Harvard University Press, 2019.
+<ul class="org-ul">
+<li><b>“Tamil Brahmins were the earliest to frame merit as a caste claim, and it showed in IITs,”</b> ThePrint, Jan. 18, 2020. <a href="https://theprint.in/pageturner/excerpt/tamil-brahmins-were-the-earliest-to-frame-merit-as-a-caste-claim-and-it-showed-in-iits/351539/">https://theprint.in/pageturner/excerpt/tamil-brahmins-were-the-earliest-to-frame-merit-as-a-caste-claim-and-it-showed-in-iits/351539/</a> (accessed Dec. 23, 2021).</li>
+</ul></li>
+
+<li>“Tech was supposed to be a meritocracy. In India, it reinforces old caste divides in new ways,” Rest of World, Jan. 19, 2022. <a href="https://restofworld.org/2022/tech-india-caste-divides/">https://restofworld.org/2022/tech-india-caste-divides/</a> (accessed Jan. 20, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4bf7c8e"></a>Medicine<br />
+<div class="outline-text-6" id="text-3-5-3-2-5">
+<ul class="org-ul">
+<li><i>“The Myth of the Meritorious Doctor,”</i> The India Forum, Dec. 02, 2021. <a href="https://www.theindiaforum.in/article/myth-meritorious-doctor">https://www.theindiaforum.in/article/myth-meritorious-doctor</a> (accessed Dec. 28, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf1ccf8d"></a>Misc<br />
+<div class="outline-text-6" id="text-3-5-3-2-6">
+<ul class="org-ul">
+<li>A. Sur, <b>Dispersed Radiance: Caste, Gender, and Modern Science in India.</b> Navayana Publishing Private Limited, 2022.
+<ul class="org-ul">
+<li>“Dispersed Radiance,” Navayana Publishing. <a href="https://navayana.org/products/dispersed-radiance/">https://navayana.org/products/dispersed-radiance/</a> (accessed Apr. 09, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgf8737b4"></a>Casteism in SS<br />
+<div class="outline-text-5" id="text-3-5-3-3">
+<ul class="org-ul">
+<li>D. S. Wanjari, Inheritance, Hierarchy and Caste: Origins of Political Decay in India. SAGE Publishing India, 2022.</li>
+<li>S. Dam, <i>“India’s politically compromised judicial commissions,”</i> The Caravan. <a href="https://caravanmagazine.in/politics/judicial-commission-inquiry-judges-independence">https://caravanmagazine.in/politics/judicial-commission-inquiry-judges-independence</a> (accessed Jan. 02, 2022).</li>
+<li>D. Pattanaik, <i>“Hindutva’s caste masterstroke,”</i> The Hindu, Jan. 01, 2022. Accessed: Jan. 02, 2022. [Online]. Available: <a href="https://www.thehindu.com/society/history-and-culture/hindutvas-caste-masterstroke/article38077989.ece">https://www.thehindu.com/society/history-and-culture/hindutvas-caste-masterstroke/article38077989.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org865cfe4"></a>Casteism in BS<br />
+<div class="outline-text-5" id="text-3-5-3-4">
+<ul class="org-ul">
+<li>A. Jaisanker, “The Caste Dynamics Of Convenience Culture In India,” Feminism in India. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/07/31/the-caste-dynamics-of-convenience-culture-in-india/">https://feminisminindia.com/2025/07/31/the-caste-dynamics-of-convenience-culture-in-india/</a></li>
+<li>A. Deshpande, The Grammar of Caste: Economic Discrimination in Contemporary India. Oxford University Press, 2019.</li>
+<li>“Why Brahmins lead Western firms but rarely Indian ones,” The Economist, Jan. 01, 2022. Accessed: Jan. 04, 2022. [Online]. Available: <a href="https://www.economist.com/asia/2022/01/01/why-brahmins-lead-western-firms-but-rarely-indian-ones">https://www.economist.com/asia/2022/01/01/why-brahmins-lead-western-firms-but-rarely-indian-ones</a></li>
+<li>“Brahmins Claim to Be Victims of Affirmative Action. This ‘Untouchable’ Lawyer Begs to Differ.,” The Wire. <a href="https://thewire.in/caste/india-affirmative-action">https://thewire.in/caste/india-affirmative-action</a> (accessed Jan. 28, 2022).</li>
+
+<li>“What the Chettiar Story Reveals about Caste and Business,” The India Forum. Accessed: Nov. 10, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/what-chettiar-story-reveals-about-caste-and-economic-growth">https://www.theindiaforum.in/book-reviews/what-chettiar-story-reveals-about-caste-and-economic-growth</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org13ee9df"></a>Casteism in Arts<br /></li>
+
+<li><a id="orge51a8a4"></a>Misc<br />
+<div class="outline-text-5" id="text-3-5-3-6">
+<ul class="org-ul">
+<li>D. com Aasim Sajjad Akhtar, “In Pakistan, discrimination against Christians has more to do with caste than faith,” Scroll.in. <a href="https://scroll.in/article/1013584/in-pakistan-discrimination-against-christians-has-more-to-do-with-caste-than-faith">https://scroll.in/article/1013584/in-pakistan-discrimination-against-christians-has-more-to-do-with-caste-than-faith</a> (accessed Mar. 02, 2022).</li>
+
+<li>A. G. &amp; A. Kumar, “Casteism continues to thrive among Indians abroad – through surnames,” Scroll.in. <a href="https://scroll.in/global/970262/casteism-continues-to-thrive-among-indians-abroad-through-surnames">https://scroll.in/global/970262/casteism-continues-to-thrive-among-indians-abroad-through-surnames</a> (accessed Jan. 11, 2022).</li>
+
+<li>Sagar, “How the Aam Aadmi Party perpetuates Upper Caste Politics,” The Caravan. <a href="https://caravanmagazine.in/reportage/aam-admi-party-perpetuation-upper-caste-politics">https://caravanmagazine.in/reportage/aam-admi-party-perpetuation-upper-caste-politics</a> (accessed Jan. 20, 2022).</li>
+
+<li>“So the Term ‘Dalit’ Can’t Be Used But ‘Brahmin’ and 6,000 Other Caste Names Can,” The Wire. <a href="https://thewire.in/caste/dalit-brahmin-caste-names">https://thewire.in/caste/dalit-brahmin-caste-names</a> (accessed Jan. 11, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgcc2e12b" class="outline-4">
+<h4 id="orgcc2e12b"><span class="section-number-4">3.5.4.</span> Law</h4>
+<div class="outline-text-4" id="text-3-5-4">
+<ul class="org-ul">
+<li>A. Teltumbde, “Anand Teltumbde’s new book examines the treatment of the marginalised in the constitutional order,” Scroll.in. Accessed: Jan. 28, 2026. [Online]. Available: <a href="https://scroll.in/article/1089829/anand-teltumbdes-new-book-examines-the-treatment-of-the-marginalised-in-the-constitutional-order">https://scroll.in/article/1089829/anand-teltumbdes-new-book-examines-the-treatment-of-the-marginalised-in-the-constitutional-order</a></li>
+
+<li>“Caste Supremacism versus Constitutional Egalitarianism | Economic and Political Weekly.” Accessed: Oct. 18, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/42/editorials/caste-supremacism-versus-constitutional.html">https://www.epw.in/journal/2025/42/editorials/caste-supremacism-versus-constitutional.html</a></li>
+
+<li>“What Does Justice Mean for Survivors of Caste Atrocities?,” The India Forum. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/what-does-justice-mean-survivors-caste-atrocities">https://www.theindiaforum.in/book-reviews/what-does-justice-mean-survivors-caste-atrocities</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e71afd" class="outline-4">
+<h4 id="org8e71afd"><span class="section-number-4">3.5.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-5-5">
+<ul class="org-ul">
+<li>A. Teltumbde, “From Justice to Governance: Anand Teltumbde on the BJP’s Caste Census Politics,” Frontline. Accessed: Nov. 10, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/anand-teltumbde-caste-census-bjp-governance/article70256754.ece">https://frontline.thehindu.com/books/anand-teltumbde-caste-census-bjp-governance/article70256754.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7c8762e" class="outline-3">
+<h3 id="org7c8762e"><span class="section-number-3">3.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org48423fe" class="outline-4">
+<h4 id="org48423fe"><span class="section-number-4">3.6.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orga36d759" class="outline-3">
+<h3 id="orga36d759"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org41b9f70" class="outline-3">
+<h3 id="org41b9f70"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-3-8">
+</div>
+<div id="outline-container-org54a988c" class="outline-4">
+<h4 id="org54a988c"><span class="section-number-4">3.8.1.</span> Hindi</h4>
+<div class="outline-text-4" id="text-3-8-1">
+<ul class="org-ul">
+<li>S. S. Jodhka, Jati : Badalte Pariprekshya, First Edition. Rajkamal Prakashan, 2024.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7b45f2c" class="outline-3">
+<h3 id="org7b45f2c"><span class="section-number-3">3.9.</span> Special Topics</h3>
+<div class="outline-text-3" id="text-3-9">
+</div>
+<div id="outline-container-org3751d92" class="outline-4">
+<h4 id="org3751d92"><span class="section-number-4">3.9.1.</span> Economics</h4>
+<div class="outline-text-4" id="text-3-9-1">
+<ul class="org-ul">
+<li><a id="orga2455ed"></a> M. O. Jackson, <b>The Human Network: How We're Connected and Why It Matters.</b> Atlantic Books, 2019.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2324a5f" class="outline-3">
+<h3 id="org2324a5f"><span class="section-number-3">3.10.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-10">
+<ul class="org-ul">
+<li>“Why Does Odisha not have a Strong Dalit-Bahujan Movement?,” The India Forum. Accessed: Feb. 12, 2026. [Online]. Available: <a href="https://www.theindiaforum.in/forum/why-does-odisha-not-have-strong-dalit-bahujan-movement">https://www.theindiaforum.in/forum/why-does-odisha-not-have-strong-dalit-bahujan-movement</a></li>
+
+<li>S. Radhakrishna, “Caste in Indian Cities 2026: Why Urban India Isn’t Equal,” Frontline. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/social-justice/caste-urban-india-cities/article70545771.ece">https://frontline.thehindu.com/social-issues/social-justice/caste-urban-india-cities/article70545771.ece</a></li>
+
+<li>“Order Indian castes by average skin colour,” X (formerly Twitter). Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://x.com/i/grok/share/zrveipvna9klrzxqsvrtxqhja">https://x.com/i/grok/share/zrveipvna9klrzxqsvrtxqhja</a></li>
+
+<li>“Anand Teltumbde on the caste census and his prison memoir.” Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/caste/anand-teltumbde-interview-on-prison-memoir-and-caste-census">https://caravanmagazine.in/caste/anand-teltumbde-interview-on-prison-memoir-and-caste-census</a></li>
+
+<li>D. Ramesh, “Smiling Through The Sting: Everyday Casteism And Mental Health In Campuses,” Feminism in India. Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/10/17/everyday-casteism-and-mental-health-campuses/">https://feminisminindia.com/2025/10/17/everyday-casteism-and-mental-health-campuses/</a></li>
+
+<li>“We Need to Rethink Anti-Caste Politics in a Backsliding Democracy,” The Wire. Accessed: Oct. 03, 2025. [Online]. Available: <a href="https://thewire.in/caste/we-need-to-rethink-anti-caste-politics-in-a-backsliding-democracy">https://thewire.in/caste/we-need-to-rethink-anti-caste-politics-in-a-backsliding-democracy</a></li>
+
+<li>Scroll.in, “Bhadraloks think they are enlightened but Bengal among most casteist states” | Scroll Adda, (Jul. 04, 2025). Accessed: Sep. 27, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=xzFeL_sFkDs">https://www.youtube.com/watch?v=xzFeL_sFkDs</a></li>
+<li>A. Chauhan, “‘Meet the Savarnas’ scrutinises upper-caste silence and examines the structural injustices of caste,” Scroll.in. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://scroll.in/article/1086427/meet-the-savarnas-scrutinises-upper-caste-silence-and-examines-the-structural-injustices-of-caste">https://scroll.in/article/1086427/meet-the-savarnas-scrutinises-upper-caste-silence-and-examines-the-structural-injustices-of-caste</a></li>
+
+<li>“Ravikant Kisana,” National Law School of India University. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://www.nls.ac.in/faculty/ravikant-kisana/">https://www.nls.ac.in/faculty/ravikant-kisana/</a></li>
+<li>V. Kumar, “Meet the Savarnas: Ravikant Kisana’s Caste Ethnography,” Frontline. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/ravikant-kisana-ethnography-savarnas-caste/article69784240.ece">https://frontline.thehindu.com/books/ravikant-kisana-ethnography-savarnas-caste/article69784240.ece</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>M. Chongtham, “The Karnataka Reservation Bill And The Politics Of Caste And Gender Inclusion,” Feminism in India. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/28/the-karnataka-reservation-bill-and-the-politics-of-caste-and-gender-inclusion/">https://feminisminindia.com/2025/08/28/the-karnataka-reservation-bill-and-the-politics-of-caste-and-gender-inclusion/</a></li>
+
+<li>“Unpacking Privilege: The Other Side of Caste,” The Wire. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://thewire.in/books/unpacking-privilege-the-other-side-of-caste">https://thewire.in/books/unpacking-privilege-the-other-side-of-caste</a></li>
+
+<li>“The Fight for Anti-Caste Policing,” The Wire. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://thewire.in/caste/the-fight-for-anti-caste-policing">https://thewire.in/caste/the-fight-for-anti-caste-policing</a></li>
+
+<li>K. Chandru, “Why Tamil Nadu Leads in Inter-Caste Marriage Killings Despite Progressive Claims,” Frontline. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/politics/honour-killings-tamil-nadu-intercaste-laws/article69902087.ece">https://frontline.thehindu.com/politics/honour-killings-tamil-nadu-intercaste-laws/article69902087.ece</a></li>
+
+<li>V. Kumar, “Meet the Savarnas: Ravikant Kisana’s Caste Ethnography,” Frontline. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/ravikant-kisana-ethnography-savarnas-caste/article69784240.ece">https://frontline.thehindu.com/books/ravikant-kisana-ethnography-savarnas-caste/article69784240.ece</a></li>
+
+<li>N. Minj, “How separate lifts in Mumbai highrises sustain caste prejudice in the city,” Scroll.in. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://scroll.in/article/1084949/how-separate-lifts-in-mumbai-highrises-sustain-caste-prejudice-in-the-city">https://scroll.in/article/1084949/how-separate-lifts-in-mumbai-highrises-sustain-caste-prejudice-in-the-city</a></li>
+
+<li>“For Modi and RSS, Kashmir is a tool to consolidate their hold over the twice-born castes.” Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/for-modi-rss-kashmir-is-tool-consolidate-hold-over-twice-born-castes">https://caravanmagazine.in/politics/for-modi-rss-kashmir-is-tool-consolidate-hold-over-twice-born-castes</a></li>
+
+<li>“Why Does Narendra Modi Suddenly Want a Caste Census?,” The Wire. Accessed: Jun. 12, 2025. [Online]. Available: <a href="https://thewire.in/caste/why-does-narendra-modi-suddenly-want-a-caste-census">https://thewire.in/caste/why-does-narendra-modi-suddenly-want-a-caste-census</a></li>
+
+<li>“Guide to Investigating Caste.” Accessed: May 28, 2025. [Online]. Available: <a href="https://gijn.org/resource/guide-investigating-caste/">https://gijn.org/resource/guide-investigating-caste/</a></li>
+
+<li>A. Teltumbde, “Why Modi’s Caste Census Is a Political Weapon, Not a Social Reform,” Frontline. Accessed: May 09, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/social-issues/social-justice/bjp-modi-caste-census-political-strategy-problems-controversy/article69545262.ece">https://frontline.thehindu.com/social-issues/social-justice/bjp-modi-caste-census-political-strategy-problems-controversy/article69545262.ece</a></li>
+
+<li>“The Wire: The Wire News India, Latest News,News from India, Politics, External Affairs, Science, Economics, Gender and Culture.” Accessed: May 02, 2025. [Online]. Available: <a href="https://thewire.in/politics/caste-versus-hindutva-again">https://thewire.in/politics/caste-versus-hindutva-again</a></li>
+
+<li>G. Jamil, “Why ads rarely depict caste and religious minorities,” Scroll.in. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://scroll.in/article/1081171/poor-representation-or-deliberate-exclusion-why-ads-rarely-depict-caste-and-religious-minorities">https://scroll.in/article/1081171/poor-representation-or-deliberate-exclusion-why-ads-rarely-depict-caste-and-religious-minorities</a></li>
+
+<li>“Caste and Careers: Limited Mobility Over Three Generations,” The India Forum. Accessed: Apr. 11, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/caste/caste-and-careers-limited-mobility-over-three-generations">https://www.theindiaforum.in/caste/caste-and-careers-limited-mobility-over-three-generations</a></li>
+
+<li>V. A. Sayeed, “‘Buddha, Basava, and Ambedkar fought the same battle—against caste oppression’: Mudnakudu Chinnaswamy,” Frontline. Accessed: Mar. 26, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/mudnakudu-chinnaswamy-interview-dalit-literature-kannada-milk-of-equality-soured-buddha-basava-ambedkar/article69374189.ece">https://frontline.thehindu.com/books/mudnakudu-chinnaswamy-interview-dalit-literature-kannada-milk-of-equality-soured-buddha-basava-ambedkar/article69374189.ece</a></li>
+
+<li>J. Devika, “A Proposal for a Brahmanical Governance Index (in the background, the chorus: ‘Kerala Number One!’),” KAFILA - COLLECTIVE EXPLORATIONS SINCE 2006. Accessed: Mar. 21, 2025. [Online]. Available: <a href="https://kafila.online/2025/03/21/a-proposal-for-a-brahmanical-governance-index-in-the-background-the-chorus-kerala-number-one/">https://kafila.online/2025/03/21/a-proposal-for-a-brahmanical-governance-index-in-the-background-the-chorus-kerala-number-one/</a></li>
+
+<li>“The Year That Was-6: Sub-categorisation in Reservations,” NewsClick. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://www.newsclick.in/year-was-6-sub-categorisation-reservations">https://www.newsclick.in/year-was-6-sub-categorisation-reservations</a></li>
+
+<li>W. DESK, “Congress is ‘anti-Ambedkar, anti-reservation’, presenting facts in distorted way: Amit Shah,” Organiser. Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/18/269932/politics/congress-is-anti-ambedkar-anti-reservation-presenting-facts-in-distorted-way-amit-shah/">https://organiser.org/2024/12/18/269932/politics/congress-is-anti-ambedkar-anti-reservation-presenting-facts-in-distorted-way-amit-shah/</a></li>
+
+<li>“How the Aam Aadmi Party perpetuates Upper Caste Politics.” Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://caravanmagazine.in/reportage/aam-admi-party-perpetuation-upper-caste-politics">https://caravanmagazine.in/reportage/aam-admi-party-perpetuation-upper-caste-politics</a></li>
+
+<li>J. R. with S. I. and L. Pearson, Satish Kumar Abundant Love. Speaking Tiger, 2023.</li>
+
+<li>S. Mishra, “Reservation in Private Sector Jobs: An Idea Whose Time has Finally Come?,” Frontline. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/india-private-sector-job-reservation-debate-explained-2024/article68889283.ece">https://frontline.thehindu.com/politics/india-private-sector-job-reservation-debate-explained-2024/article68889283.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeedd48f" class="outline-2">
+<h2 id="orgeedd48f"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgc3b86da" class="outline-3">
+<h3 id="orgc3b86da"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgcf93adb" class="outline-4">
+<h4 id="orgcf93adb"><span class="section-number-4">4.1.1.</span> Publishers</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org21b976b"></a>Navayana<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<ul class="org-ul">
+<li>“Navayana Publishing,” Navayana Publishing. <a href="https://navayana.org/">https://navayana.org/</a> (accessed Apr. 13, 2023).</li>
+
+<li>“Navayana | Twitter, Instagram, Facebook,” Linktree. <a href="https://linktr.ee/NavayanaBooks">https://linktr.ee/NavayanaBooks</a> (accessed Apr. 13, 2023).</li>
+
+<li>S. Anand, “First person: How Navayana, publisher of anti-caste literature, was born, and where it is going now,” Scroll.in, Jul. 09, 2020. <a href="https://scroll.in/article/966829/first-person-how-navayana-publisher-of-dalit-literature-was-born-and-where-it-is-going-now">https://scroll.in/article/966829/first-person-how-navayana-publisher-of-dalit-literature-was-born-and-where-it-is-going-now</a> (accessed Apr. 14, 2023).</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>A. Saikia, “Navayana Beefs Up The Gandhi-Ambedkar Divide,” Newslaundry, Aug. 18, 2014. <a href="https://www.newslaundry.com/2014/08/18/navayana-beefs-up-the-gandhi-ambedkar-divide">https://www.newslaundry.com/2014/08/18/navayana-beefs-up-the-gandhi-ambedkar-divide</a> (accessed Apr. 14, 2023).</li>
+<li>B. S. says, “The Poet’s Logician,” Navayana Publishing, Aug. 27, 2014. <a href="https://navayana.org/blog/2014/08/27/the-poets-logician/">https://navayana.org/blog/2014/08/27/the-poets-logician/</a> (accessed Apr. 14, 2023).</li>
+<li>H. S. Shekhar, “Panther’s Paw Publications, founded and run by writer Yogesh Maitreya, is an independent, anti-caste publishing house,” The Hindu, Mar. 14, 2020. Accessed: Apr. 14, 2023. [Online]. Available: <a href="https://www.thehindu.com/books/the-publishing-house-thats-become-a-movement/article61962851.ece">https://www.thehindu.com/books/the-publishing-house-thats-become-a-movement/article61962851.ece</a></li>
+<li>A. Kumar, “Savarna India Under Permanent Siege: An Excerpt From ‘Hatred in the Belly,’” The Caravan. <a href="https://caravanmagazine.in/vantage/excerpt-hatred-belly-savarna-india-siege">https://caravanmagazine.in/vantage/excerpt-hatred-belly-savarna-india-siege</a> (accessed Apr. 14, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga0fb3bd" class="outline-3">
+<h3 id="orga0fb3bd"><span class="section-number-3">4.2.</span> Handbooks, Companions, Readers</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>S. S. Jodhka and J. Naudet, Eds., The Oxford Handbook Of Caste. New York: OUP Oxford, 2023.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1a16a1d" class="outline-2">
+<h2 id="org1a16a1d"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgf8e07ef" class="outline-3">
+<h3 id="orgf8e07ef"><span class="section-number-3">5.1.</span> Music</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>“Drums and dreams beyond pickle and papad,” People’s Archive of Rural India. Accessed: Jun. 16, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/drums-and-dreams-beyond-pickle-and-papad/">https://ruralindiaonline.org/en/articles/drums-and-dreams-beyond-pickle-and-papad/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Senthalir, “An anti-caste collective challenges oppression through music,” The Caravan. <a href="https://caravanmagazine.in/arts/anti-caste-collective-challenges-oppression-through-music">https://caravanmagazine.in/arts/anti-caste-collective-challenges-oppression-through-music</a> (accessed Jan. 18, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>K. Kalyani, “Music as an Anti-Caste Counterpublic: Notes From North India,” Social Change, May 2024, doi: 10.1177/00490857241252697.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Delibes: Lakmé - Duo des fleurs (Flower Duet), Sabine Devieilhe &amp; Marianne Crebassa, (Nov. 22, 2017). Accessed: Dec. 31, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=C1ZL5AxmK_A">https://www.youtube.com/watch?v=C1ZL5AxmK_A</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdadea8f" class="outline-3">
+<h3 id="orgdadea8f"><span class="section-number-3">5.2.</span> Films</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Phule on Screen: Containing the Revolutionary Legacy | Economic and Political Weekly.” Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/32/alternative-standpoint/phule-screen-containing-revolutionary-legacy.html">https://www.epw.in/journal/2025/32/alternative-standpoint/phule-screen-containing-revolutionary-legacy.html</a></li>
+
+<li>Harshi, “‘Dhadak 2’: A Reimagining That Finds Its Own Voice And Its Own Fury,” Feminism in India. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/08/13/dhadak-2-a-reimagining-that-finds-its-own-voice-and-its-own-fury/">https://feminisminindia.com/2025/08/13/dhadak-2-a-reimagining-that-finds-its-own-voice-and-its-own-fury/</a></li>
+
+<li>“B.R. Ambedkar Makes His Hollywood Debut in ‘Origin’ Which Explores Global Connections of Caste,” The Wire. Accessed: Feb. 20, 2024. [Online]. Available: <a href="https://thewire.in/caste/b-r-ambedkar-makes-his-hollywood-debut-in-origin-which-explores-global-connections-of-caste">https://thewire.in/caste/b-r-ambedkar-makes-his-hollywood-debut-in-origin-which-explores-global-connections-of-caste</a></li>
+
+<li>“Origin: This outstanding portrayal of India’s caste system is hugely important to Dalit people like me.” Accessed: Feb. 13, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/governance/origin-this-outstanding-portrayal-of-india-s-caste-system-is-hugely-important-to-dalit-people-like-me-94388">https://www.downtoearth.org.in/news/governance/origin-this-outstanding-portrayal-of-india-s-caste-system-is-hugely-important-to-dalit-people-like-me-94388</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org83f919e" class="outline-3">
+<h3 id="org83f919e"><span class="section-number-3">5.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>“‘Dhadak 2’ Is a Radical Anti-Caste Project,” The Wire. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://thewire.in/film/dhadak-2-is-a-radical-anti-caste-project">https://thewire.in/film/dhadak-2-is-a-radical-anti-caste-project</a></li>
+
+<li>“Commitment to Justice Was the Preeminent Note in Savitribai Phule’s Poetry,” The Wire. Accessed: Aug. 05, 2025. [Online]. Available: <a href="https://thewire.in/books/commitment-to-justice-was-the-preeminent-note-in-savitribai-phules-poetry">https://thewire.in/books/commitment-to-justice-was-the-preeminent-note-in-savitribai-phules-poetry</a></li>
+
+<li>“Decoding Brahminical-Gene Through Popular Films,” NewsClick. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://www.newsclick.in/decoding-brahminical-gene-through-popular-films">https://www.newsclick.in/decoding-brahminical-gene-through-popular-films</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Caste in the campus novel.” Accessed: May 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/literature/caste-campus-novels">https://caravanmagazine.in/literature/caste-campus-novels</a></li>
+
+<li>“‘Phule’: A Revolution on Screen,” NewsClick. Accessed: May 01, 2025. [Online]. Available: <a href="https://www.newsclick.in/phule-revolution-screen">https://www.newsclick.in/phule-revolution-screen</a></li>
+
+<li>S. Thube, “‘Phule’: A Sanitised Retelling of Jyotirao and Savitribai’s Fight Against Caste Oppression,” Frontline. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/cinema/phule-movie-review-savitribai-jyotirao-history-dalit-identity-caste-hinduism-criticism/article69500839.ece">https://frontline.thehindu.com/arts-and-culture/cinema/phule-movie-review-savitribai-jyotirao-history-dalit-identity-caste-hinduism-criticism/article69500839.ece</a></li>
+
+<li>“Anurag Kashyap apologises for remark on Brahmins, says his family getting rape, death threats.” Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://www.telegraphindia.com/entertainment/anurag-kashyap-apologises-for-remark-on-brahmins-says-his-family-getting-rape-death-threats/cid/2094860">https://www.telegraphindia.com/entertainment/anurag-kashyap-apologises-for-remark-on-brahmins-says-his-family-getting-rape-death-threats/cid/2094860</a></li>
+
+<li>A. Ashraf, “How Kabir Kala Manch, the anti-caste cultural troupe, challenges the hierarchical social order,” Scroll.in. Accessed: Jul. 31, 2024. [Online]. Available: <a href="https://scroll.in/article/1071087/how-kabir-kala-manch-the-anti-caste-cultural-troupe-challenges-the-hierarchical-social-order">https://scroll.in/article/1071087/how-kabir-kala-manch-the-anti-caste-cultural-troupe-challenges-the-hierarchical-social-order</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org44e4d49" class="outline-2">
+<h2 id="org44e4d49"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org731538e" class="outline-3">
+<h3 id="org731538e"><span class="section-number-3">6.1.</span> B. R. Ambedkar</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>B. R. Ambedkar, <b>Annihilation of Caste: The Annotated Critical Edition.</b> Verso Books, 2014.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Dr Ambedkar And Untouchability (Pb) : Christophe Jaff: Amazon.in: Books.” Accessed: Apr. 13, 2024. [Online]. Available: <a href="https://www.amazon.in/Dr-Ambedkar-Untouchability-Christophe-Jaff/dp/8178241560">https://www.amazon.in/Dr-Ambedkar-Untouchability-Christophe-Jaff/dp/8178241560</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga131f26" class="outline-3">
+<h3 id="orga131f26"><span class="section-number-3">6.2.</span> Teltumbde</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>A. Teltumbde, <i>The Persistence of Caste: The Khairlanji Murders and India’s Hidden Apartheid.</i> Bloomsbury Academic, 2010.</li>
+<li>A. Teltumbde, Dalits: Past, Present and Future. Routledge/Taylor &amp; Francis Group, 2020.</li>
+<li>A. Teltumbde and S. Yengde, The Radical in Ambedkar: Critical Reflections. Penguin Random House India Private Limited, 2018.</li>
+
+<li>A. Teltumbde, <b>Republic of Caste: Thinking Equality in the Time of Neoliberal Hindutva.</b> Navayana, 2018.
+<ul class="org-ul">
+<li>J. Drèze, “Republic of Caste: Anand Teltumbde’s thoughts strive to liberate us even as he is in jail,” Scroll.in. <a href="https://scroll.in/article/1028256/republic-of-caste-anand-teltumbdes-thoughts-strive-to-liberate-us-even-as-he-is-in-jail">https://scroll.in/article/1028256/republic-of-caste-anand-teltumbdes-thoughts-strive-to-liberate-us-even-as-he-is-in-jail</a> (accessed Jul. 15, 2022).</li>
+<li>“The Importance of Anand Teltumbde’s Thoughts in a Republic of Caste,” The Wire. <a href="https://thewire.in/caste/the-importance-of-anand-teltumbdes-thoughts-in-a-republic-of-caste">https://thewire.in/caste/the-importance-of-anand-teltumbdes-thoughts-in-a-republic-of-caste</a> (accessed Aug. 07, 2022).</li>
+</ul></li>
+
+<li>A. Teltumbde, Hindutva and Dalits: Perspectives for Understanding Communal Praxis. SAGE Publishing India, 2020.</li>
+<li>A. Teltumbde, Dalits: Past, present and future. Routledge, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4ac5acb" class="outline-3">
+<h3 id="org4ac5acb"><span class="section-number-3">6.3.</span> Kancha Ilaiah Shepherd</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>“Kancha Ilaiah Shepherd | Caste in the Age of Modi | The Institute for South Asia Studies.” <a href="https://southasia.berkeley.edu/kancha-ilaiah-shepherd-caste-age-modi">https://southasia.berkeley.edu/kancha-ilaiah-shepherd-caste-age-modi</a> (accessed Nov. 01, 2022).</li>
+<li>K. I. Shepherd, “How Arun Shourie was wrong about VP Singh, Narendra Modi – and BR Ambedkar,” Scroll.in. <a href="https://scroll.in/article/1022716/how-arun-shourie-was-wrong-about-vp-singh-narendra-modi-and-br-ambedkar">https://scroll.in/article/1022716/how-arun-shourie-was-wrong-about-vp-singh-narendra-modi-and-br-ambedkar</a> (accessed May 05, 2022).</li>
+<li>K. Shepherd, “A New Civilisational Discourse for India,” The India Forum, Feb. 08, 2022. <a href="https://www.theindiaforum.in/article/new-civilisational-discourse-india">https://www.theindiaforum.in/article/new-civilisational-discourse-india</a> (accessed Feb. 14, 2022).</li>
+<li>K. Shepherd, “Kancha Ilaiah Shepherd: ‘Saraswathi would kill our children.’” <a href="https://caravanmagazine.in/education/kancha-ilaiah-shephard-memoirs">https://caravanmagazine.in/education/kancha-ilaiah-shephard-memoirs</a> (accessed Jan. 12, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa6bec6" class="outline-3">
+<h3 id="orgaa6bec6"><span class="section-number-3">6.4.</span> S. S. Jodhka</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>S. Paliath, “‘We Need Extensive, Systematic Datasets To Counter Narratives Around Caste.’” Accessed: Feb. 10, 2024. [Online]. Available: <a href="https://www.indiaspend.com/indiaspend-interviews/we-need-extensive-systematic-datasets-to-counter-narratives-around-caste-894044">https://www.indiaspend.com/indiaspend-interviews/we-need-extensive-systematic-datasets-to-counter-narratives-around-caste-894044</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. S. Jodhka, Caste in Contemporary India, 2nd edition. Routledge India, 2017.</li>
+<li>S. S. J. and J. Manor, Contested Hierarchies Persisting Influence, First Edition. Hyderabad: The Orient Blackswan, 2017.</li>
+<li>S. S. Jodhka, Caste. New Delhi: Oxford University Press, 2012.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgce61c65" class="outline-3">
+<h3 id="orgce61c65"><span class="section-number-3">6.5.</span> D. Gupta</h3>
+<div class="outline-text-3" id="text-6-5">
+<ul class="org-ul">
+<li>D. Gupta, <b>Interrogating Caste: Understanding Hierarchy and Difference in Indian Society.</b> Penguin Books India, 2000.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb796a5d" class="outline-3">
+<h3 id="orgb796a5d"><span class="section-number-3">6.6.</span> G n S</h3>
+<div class="outline-text-3" id="text-6-6">
+<ul class="org-ul">
+<li>G. Guru and S. Sarukkai, <b>Experience, Caste, and the Everyday Social.</b> OUP India, 2019.</li>
+
+<li>G. Guru and S. Sarukkai, The Cracked Mirror: An Indian Debate on Experience and Theory, Reprint edition. OUP India, 2018.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7e53a15" class="outline-3">
+<h3 id="org7e53a15"><span class="section-number-3">6.7.</span> D. Dwivedi</h3>
+<div class="outline-text-3" id="text-6-7">
+<ul class="org-ul">
+<li>D. Dwivedi and S. Mohan, Indian Philosophy, Indian Revolution: On Caste and Politics. C Hurst &amp; Co Publishers Ltd, 2024.
+<ul class="org-ul">
+<li>D. D. &amp; S. Mohan, “From a new book of essays: Is ‘resistance’ futile? Is a ‘revolution’ necessary?,” Scroll.in. Accessed: May 15, 2024. [Online]. Available: <a href="https://scroll.in/article/1066701/from-a-new-book-of-essays-is-resistance-futile-is-a-revolution-necessary">https://scroll.in/article/1066701/from-a-new-book-of-essays-is-resistance-futile-is-a-revolution-necessary</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Of Bourgeois and Lumpen Brahminisms, and the Future of the Republic,” The Wire. Accessed: Feb. 05, 2024. [Online]. Available: <a href="https://thewire.in/caste/bourgeois-lumpen-brahminisms-republic-ayodhya">https://thewire.in/caste/bourgeois-lumpen-brahminisms-republic-ayodhya</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org97e7b3c" class="outline-2">
+<h2 id="org97e7b3c"><span class="section-number-2">7.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“Caste Census: Useful Affirmative Step, But No Magic Wand,” The India Forum. Accessed: Jul. 01, 2026. [Online]. Available: <a href="https://www.theindiaforum.in/forum/caste-census-useful-affirmative-step-no-magic-wand">https://www.theindiaforum.in/forum/caste-census-useful-affirmative-step-no-magic-wand</a></li>
+
+<li>H. O. Siddiqi, “‘The Ambedkar–Nietzsche Provocations’: A new perspective on Brahminism for future scholars of caste,” Scroll.in. Accessed: Jun. 27, 2026. [Online]. Available: <a href="https://scroll.in/article/1093621/the-ambedkar-nietzsche-provocations-a-new-perspective-on-brahminism-for-future-scholars-of-caste">https://scroll.in/article/1093621/the-ambedkar-nietzsche-provocations-a-new-perspective-on-brahminism-for-future-scholars-of-caste</a></li>
+
+<li>“Caste System: Intra-Upper Caste Exploitation | Shared Grok Conversation.” Accessed: Jun. 24, 2026. [Online]. Available: <a href="https://grok.com/share/c2hhcmQtMg_a1e2b916-02ea-441d-ab9e-5789948ee3f5">https://grok.com/share/c2hhcmQtMg_a1e2b916-02ea-441d-ab9e-5789948ee3f5</a></li>
+
+<li>S. R. Gnana, “Caste system, Dalitization and its implications in contemporary India,” IJSA, vol. 10, no. 7, pp. 65–71, Oct. 2018, doi: 10.5897/IJSA2017.0713.</li>
+
+<li>“How Common Sense Sustains Caste,” The India Forum. Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://www.theindiaforum.in/caste/how-common-sense-sustains-caste">https://www.theindiaforum.in/caste/how-common-sense-sustains-caste</a></li>
+
+<li>A. Kawade, “Mahad Satyagraha Day: A new book examines what connects Nietzsche, Ambedkar, and the Manusmriti,” Scroll.in. Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://scroll.in/article/1091478/mahad-satyagraha-day-a-new-book-examines-what-connects-nietzsche-ambedkar-and-the-manusmriti">https://scroll.in/article/1091478/mahad-satyagraha-day-a-new-book-examines-what-connects-nietzsche-ambedkar-and-the-manusmriti</a></li>
+
+<li>M. P. Kumar, “Caste in the classroom,” PARI - People’s Archive of Rural India. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://ruralindiaonline.org/article/caste-in-the-classroom">https://ruralindiaonline.org/article/caste-in-the-classroom</a></li>
+
+<li>“The Double Stage: Caste’s Schizophrenic Modernity between Spectacle and Shadow,” Countercurrents. Accessed: Feb. 20, 2026. [Online]. Available: <a href="https://countercurrents.org/2026/02/the-double-stage-castes-schizophrenic-modernity-between-spectacle-and-shadow/">https://countercurrents.org/2026/02/the-double-stage-castes-schizophrenic-modernity-between-spectacle-and-shadow/</a></li>
+
+<li>“Fangs Bared against Equality | Economic and Political Weekly.” Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://www.epw.in/journal/2026/6/editorials/fangs-bared-against-equality.html">https://www.epw.in/journal/2026/6/editorials/fangs-bared-against-equality.html</a></li>
+
+<li>“UGC Equity Rule and Student Movements in North Indian Universities,” Countercurrents. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://countercurrents.org/2026/02/ugc-equity-rule-and-student-movements-in-north-indian-universities/">https://countercurrents.org/2026/02/ugc-equity-rule-and-student-movements-in-north-indian-universities/</a></li>
+
+<li>CFA, “New UGC rules leads to protests by savarnas | Editorial,” Centre for Financial Accountability. Accessed: Feb. 01, 2026. [Online]. Available: <a href="https://www.cenfa.org/new-ugc-rules-leads-to-protests-by-savarnas-editorial/">https://www.cenfa.org/new-ugc-rules-leads-to-protests-by-savarnas-editorial/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Verma, “Refusal to see caste discrimination, not ‘false complaints’, is the real crisis on campus,” Scroll.in. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://scroll.in/article/1090344/refusal-to-see-caste-discrimination-not-false-complaints-is-the-real-crisis-on-campus">https://scroll.in/article/1090344/refusal-to-see-caste-discrimination-not-false-complaints-is-the-real-crisis-on-campus</a></li>
+
+<li>A. L. &amp; A. Butani, “IIT-Delhi initiates probe into conference on caste and race held over a week ago,” The Hindu, Jan. 26, 2026. Accessed: Jan. 27, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/iit-delhi-initiates-probe-into-conference-on-caste-and-race-held-over-a-week-ago/article70553001.ece">https://www.thehindu.com/news/cities/Delhi/iit-delhi-initiates-probe-into-conference-on-caste-and-race-held-over-a-week-ago/article70553001.ece</a></li>
+
+<li>UCL, 2014 UCL Lancet Lecture by Arundhati Roy - The Half-Life of Caste: The ill-health of a nation, (Nov. 28, 2014). Accessed: Oct. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nawWZYhUWBA">https://www.youtube.com/watch?v=nawWZYhUWBA</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Naming, Caste, and the Struggle for Equality,” The India Forum. Accessed: Sep. 29, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/caste/naming-caste-and-struggle-equality">https://www.theindiaforum.in/caste/naming-caste-and-struggle-equality</a></li>
+
+<li>A. R. Venkatachalapathy and K. R. Manoharan, Eds., The Cambridge Companion to Periyar. Cambridge University Press, 2025.</li>
+
+<li>“Increasing clout of Thakurs in Yogi Adityanath’s Uttar Pradesh leaves behind a trail of caste violence.” Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://caravanmagazine.in/crime/increasing-thakur-clout-in-uttar-pradesh-leaves-trail-of-caste-violence">https://caravanmagazine.in/crime/increasing-thakur-clout-in-uttar-pradesh-leaves-trail-of-caste-violence</a></li>
+
+<li>“Jotirao Phule and the history of Marathi print culture.” Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://caravanmagazine.in/books/jotirao-phule-marathi-print-culture">https://caravanmagazine.in/books/jotirao-phule-marathi-print-culture</a></li>
+
+<li>S. D. &amp; A. Mahtta, “Scroll Adda: Why this Ambedkarite academic wants more people to study India’s Savarnas,” Scroll.in. Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://scroll.in/video/1084200/scroll-adda-why-this-ambedkarite-academic-wants-more-people-to-study-india-s-savarnas">https://scroll.in/video/1084200/scroll-adda-why-this-ambedkarite-academic-wants-more-people-to-study-india-s-savarnas</a></li>
+
+<li>R. Kisana, “A new book examines caste privilege and how it has shaped – and limited – India after liberalisation,” Scroll.in. Accessed: Jun. 04, 2025. [Online]. Available: <a href="https://scroll.in/article/1082675/a-new-book-examines-caste-privilege-and-how-it-has-shaped-and-limited-india-after-liberalisation">https://scroll.in/article/1082675/a-new-book-examines-caste-privilege-and-how-it-has-shaped-and-limited-india-after-liberalisation</a></li>
+
+<li>CFA, “India’s Census Delay and Its Policy Fallout | Finance Matters, 02 May 2025 | Editorial,” Centre for Financial Accountability. Accessed: May 07, 2025. [Online]. Available: <a href="https://www.cenfa.org/indias-census-delay-and-its-policy-fallout-finance-matters-02-may-2025-editorial/">https://www.cenfa.org/indias-census-delay-and-its-policy-fallout-finance-matters-02-may-2025-editorial/</a></li>
+
+<li>R. Kisana, Meet The Savarnas: Indian Millennials Whose Mediocrity Broke Everything. Penguin, 2025.</li>
+
+<li>“Under Brahmin Feet: The Resurgence of a Ritual Fuels Fears of Caste Imposition in a Bengal Village,” The Wire. Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://thewire.in/religion/brahmin-bandana-purulia-caste-tribal-population">https://thewire.in/religion/brahmin-bandana-purulia-caste-tribal-population</a></li>
+
+<li>“It is Time to Rediscover Mahatma Phule,” The Wire. Accessed: Apr. 16, 2025. [Online]. Available: <a href="https://thewire.in/caste/it-is-time-to-rediscover-mahatma-phule">https://thewire.in/caste/it-is-time-to-rediscover-mahatma-phule</a></li>
+
+<li>B. Bhatia, India’s Forgotten Country: A View from the Margins. Viking, 2024.</li>
+
+<li>S. Gatade, “Kshama Sawant Honoured in Absentia – Press Release,” KAFILA - COLLECTIVE EXPLORATIONS SINCE 2006. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://kafila.online/2025/04/02/kshama-sawant-honoured-in-absentia-press-release/">https://kafila.online/2025/04/02/kshama-sawant-honoured-in-absentia-press-release/</a></li>
+
+<li>“TN: Tribals Flay Govt Delay in Clearing FRA Applications, Issuing ST Certificates,” NewsClick. Accessed: Mar. 01, 2025. [Online]. Available: <a href="https://www.newsclick.in/tn-tribals-flay-govt-delay-clearing-fra-applications-issuing-st-certificates">https://www.newsclick.in/tn-tribals-flay-govt-delay-clearing-fra-applications-issuing-st-certificates</a></li>
+
+<li>A. Sathyan, “Reading Savitribai Phule: Reflections On Education, Identity, And Liberation,” Feminism in India. Accessed: Jan. 03, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/01/03/reading-savitribai-phule-reflections-on-education-identity-and-liberation/">https://feminisminindia.com/2025/01/03/reading-savitribai-phule-reflections-on-education-identity-and-liberation/</a></li>
+
+<li>“Unmuting the Voice of Caste in Urban Studies | Economic and Political Weekly.” Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://www.epw.in/journal/2023/52/review-urban-affairs/unmuting-voice-caste-urban-studies.html">https://www.epw.in/journal/2023/52/review-urban-affairs/unmuting-voice-caste-urban-studies.html</a></li>
+
+<li>“Narendra Modi and the paradox of India’s elites | Op-eds – Gulf News.” Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://gulfnews.com/opinion/op-eds/narendra-modi-and-the-paradox-of-indias-elites-1.104895597">https://gulfnews.com/opinion/op-eds/narendra-modi-and-the-paradox-of-indias-elites-1.104895597</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‘Caste Is A Hydra-Headed Social Category, Constantly Morphing Across Borders.’” Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://www.article-14.com/post/-caste-is-a-hydra-headed-social-category-constantly-morphing-across-borders--675f9b7d9beab">https://www.article-14.com/post/-caste-is-a-hydra-headed-social-category-constantly-morphing-across-borders--675f9b7d9beab</a></li>
+
+<li>J. Deeksha, “A fearless police constable, caste fury, marriage, and a murder in Hyderabad,” Scroll.in. Accessed: Dec. 10, 2024. [Online]. Available: <a href="https://scroll.in/article/1076616/a-fearless-police-constable-caste-fury-marriage-and-a-murder-in-hyderabad">https://scroll.in/article/1076616/a-fearless-police-constable-caste-fury-marriage-and-a-murder-in-hyderabad</a></li>
+
+<li>“Redesigning Reservations: How Heterogeneous are the Scheduled Castes?,” The India Forum. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/caste/redesigning-reservations-how-heterogeneous-are-scheduled-castes">https://www.theindiaforum.in/caste/redesigning-reservations-how-heterogeneous-are-scheduled-castes</a></li>
+<li>“India’s Delimitation Dilemma: Challenges and Consequences,” The India Forum. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/politics/indias-delimitation-dilemma-challenges-and-consequences">https://www.theindiaforum.in/politics/indias-delimitation-dilemma-challenges-and-consequences</a></li>
+<li>“Delimitation, Democracy, and Federalism: Options and Solutions,” The India Forum. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/public-policy/delimitation-democracy-and-federalism-options-and-solutions">https://www.theindiaforum.in/public-policy/delimitation-democracy-and-federalism-options-and-solutions</a></li>
+
+<li>“Building Blocks of Brahmanical Patriarchy | Economic and Political Weekly.” Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://www.epw.in/engage/article/building-blocks-brahmanical-patriarchy">https://www.epw.in/engage/article/building-blocks-brahmanical-patriarchy</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Uttarakhand: What it takes to build an upper-caste state.” Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://caravanmagazine.in/caste/uttarakhand-atrocities-dalit-rights-land-reservation">https://caravanmagazine.in/caste/uttarakhand-atrocities-dalit-rights-land-reservation</a></li>
+
+<li>“On the varna system, Gandhi’s plan to empower the workers | Aeon Essays,” Aeon. Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://aeon.co/essays/on-the-varna-system-gandhis-plan-to-empower-the-workers">https://aeon.co/essays/on-the-varna-system-gandhis-plan-to-empower-the-workers</a></li>
+
+<li>A. Maass, “Our Unions Are Fighting to Get Caste Discrimination Addressed at Rutgers,” Rutgers AAUP-AFT. Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://rutgersaaup.org/our-unions-are-fighting-to-get-caste-discrimination-addressed-at-rutgers/">https://rutgersaaup.org/our-unions-are-fighting-to-get-caste-discrimination-addressed-at-rutgers/</a></li>
+
+<li>“Beauty, Caste and ‘Miss India’ Contests,” NewsClick. Accessed: Sep. 05, 2024. [Online]. Available: <a href="https://www.newsclick.in/beauty-caste-and-miss-india-contests">https://www.newsclick.in/beauty-caste-and-miss-india-contests</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Wire: The Wire News India, Latest News,News from India, Politics, External Affairs, Science, Economics, Gender and Culture.” Accessed: Aug. 10, 2024. [Online]. Available: <a href="https://thewire.in/politics/caste-versus-hindutva-again">https://thewire.in/politics/caste-versus-hindutva-again</a></li>
+
+<li>“Political Ramifications of SC/ST Sub-Classification,” NewsClick. Accessed: Aug. 06, 2024. [Online]. Available: <a href="https://www.newsclick.in/political-ramifications-scst-sub-classification">https://www.newsclick.in/political-ramifications-scst-sub-classification</a></li>
+
+<li>“Bhima Koregaon Challenging Caste: Brahminism’s Wrath Against Dreamers Of Equality by Ajaz Ashraf.” Accessed: Aug. 02, 2024. [Online]. Available: <a href="https://www.article-14.com/post/bhima-koregaon-challenging-caste-brahminism-s-wrath-against-dreamers-of-equality-by-ajaz-ashraf-66a720a2caac0">https://www.article-14.com/post/bhima-koregaon-challenging-caste-brahminism-s-wrath-against-dreamers-of-equality-by-ajaz-ashraf-66a720a2caac0</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Recent books that bear witness to the BK-16’s incarceration.” Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://caravanmagazine.in/politics/bhima-koregaon">https://caravanmagazine.in/politics/bhima-koregaon</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Casteist Slurs on JNU Walls: The Deep-Rooted Casteism in Indian Universities,” The Wire. Accessed: Jul. 24, 2024. [Online]. Available: <a href="https://thewire.in/caste/casteist-slurs-on-jnu-walls-the-deep-rooted-casteism-in-indian-universities">https://thewire.in/caste/casteist-slurs-on-jnu-walls-the-deep-rooted-casteism-in-indian-universities</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. S. and T. Sarkar, Caste In Modern India. The Orient Blackswan, 2015.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How tech platforms further casteist notions of food in Chennai.” Accessed: Jul. 15, 2024. [Online]. Available: <a href="https://caravanmagazine.in/caste/brahmin-food-businesses-tech-chennai">https://caravanmagazine.in/caste/brahmin-food-businesses-tech-chennai</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Punwani, “‘Bhima Koregaon case is a bellwether for the collapse of democracy in India,’ says Alpa Shah, author of The Incarcerations,” Frontline. Accessed: Jul. 05, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/books/interview-alpa-shah-author-the-incarcerations-bhima-koregaon-and-the-search-for-democracy-in-india/article68335467.ece">https://frontline.thehindu.com/books/interview-alpa-shah-author-the-incarcerations-bhima-koregaon-and-the-search-for-democracy-in-india/article68335467.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“A Rare Annihilator of Caste,” NewsClick. Accessed: Jul. 05, 2024. [Online]. Available: <a href="https://www.newsclick.in/rare-annihilator-caste">https://www.newsclick.in/rare-annihilator-caste</a></li>
+
+<li>The Battle of Bhima Koregaon: An Unending Journey | Documentary | Film By Somnath Waghamare, (Dec. 27, 2019). Accessed: Jul. 03, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=il8Yz-ywuZA">https://www.youtube.com/watch?v=il8Yz-ywuZA</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Ghandy, Scripting The Change. Daanish Books, 2012.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Guha, “Ramachandra Guha: Five decades after Lohia’s death, re-reading his perceptive writing on caste,” Scroll.in. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://scroll.in/article/1069954/ramachandra-guha-five-decades-after-lohias-death-re-reading-his-perceptive-writing-on-caste">https://scroll.in/article/1069954/ramachandra-guha-five-decades-after-lohias-death-re-reading-his-perceptive-writing-on-caste</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. A. Sathaye, Crossing the Lines of Caste: Visvamitra and the Construction of Brahmin Power in Hindu Mythology, Illustrated edition. Oxford ; New York: Oxford University Press Inc, 2015.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Renaming Caste, Retaining Privilege,” The India Forum. Accessed: Jun. 25, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/caste/renaming-caste-retaining-privilege">https://www.theindiaforum.in/caste/renaming-caste-retaining-privilege</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Drèze, “Time for a Census, come what may,” The Hindu, Jun. 18, 2024. Accessed: Jun. 19, 2024. [Online]. Available: <a href="https://www.thehindu.com/opinion/op-ed/time-for-a-census-come-what-may/article68303732.ece">https://www.thehindu.com/opinion/op-ed/time-for-a-census-come-what-may/article68303732.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Arora, The Lottery of Birth: On Inherited Social Inequalities. Gurgaon, Haryana, India: Three Essays Collective, 2017.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Ashraf, Bhima Koregaon: Challenging Caste. AuthorsUpFront, 2024.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. S. Jodhka, “Book review: Joel Lee, Deceptive Majority: Dalits, Hinduism and Underground Religion,” Social Change, May 2024, doi: 10.1177/00490857241247438.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Apoorvanand, “Why there should be no place for a ‘Brahmin conference’ at Indian universities,” Scroll.in. Accessed: May 18, 2024. [Online]. Available: <a href="https://scroll.in/article/1067884/why-there-should-be-no-place-for-a-brahmin-conference-at-indian-universities">https://scroll.in/article/1067884/why-there-should-be-no-place-for-a-brahmin-conference-at-indian-universities</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>K. R. Manoharan, “Did Periyar call for a genocide of Brahmins?,” Frontline. Accessed: Mar. 30, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/politics/periyar-genocide-brahmins-tm-krishna-sangita-kalanidhi-music-academy-madras-carnatic/article67997754.ece">https://frontline.thehindu.com/politics/periyar-genocide-brahmins-tm-krishna-sangita-kalanidhi-music-academy-madras-carnatic/article67997754.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Caste Hierarchies Are Not Just About Purity or Dominance, They Are Also About the State,” The Wire. Accessed: Mar. 02, 2024. [Online]. Available: <a href="https://thewire.in/books/book-excerpt-caste-purity-state-brahminical-hinduism">https://thewire.in/books/book-excerpt-caste-purity-state-brahminical-hinduism</a></li>
+
+<li>G. Guru, Humiliation: Claims and Context. Oxford University Press, 2011.</li>
+
+<li>“K. Balagopal’s Incisive Essays on Caste, Communalism and Rise of State Authoritarianism in India,” The Wire. Accessed: Feb. 11, 2024. [Online]. Available: <a href="https://thewire.in/books/k-balagopals-incisive-essays-on-caste-communalism-and-rise-of-state-authoritarianism-in-india">https://thewire.in/books/k-balagopals-incisive-essays-on-caste-communalism-and-rise-of-state-authoritarianism-in-india</a></li>
+
+<li>“‘Origin’: Ava DuVernay’s Film Dramatizes Isabel Wilkerson’s Book ‘Caste,’” Democracy Now! Accessed: Feb. 03, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/2/2/origin_ava_duvernay">https://www.democracynow.org/2024/2/2/origin_ava_duvernay</a></li>
+
+<li>R. Kochhar, “Caste discrimination: India must disown parts of ancient texts that contradict the Constitution,” Scroll.in. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://scroll.in/article/976824/caste-violence-india-must-disown-parts-of-ancient-texts-that-contradict-the-constitution">https://scroll.in/article/976824/caste-violence-india-must-disown-parts-of-ancient-texts-that-contradict-the-constitution</a></li>
+
+<li>“How Varna and Jati Were Consolidated by Two Distinct Processes,” The Wire. <a href="https://thewire.in/caste/how-varna-and-jati-were-consolidated">https://thewire.in/caste/how-varna-and-jati-were-consolidated</a> (accessed Jul. 04, 2023).</li>
+
+<li>“The perversions of caste | The Caravan.” <a href="https://caravanmagazine.in/tag/the-perversions-of-caste">https://caravanmagazine.in/tag/the-perversions-of-caste</a> (accessed Apr. 16, 2023).</li>
+
+<li>Beef, Brahmins &amp; Broken Men: An Annotated Critical Selection from The Untouchables (Launch Video), (Oct. 16, 2019). Accessed: Apr. 13, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pEqomTGFOFg">https://www.youtube.com/watch?v=pEqomTGFOFg</a></li>
+
+<li>D. M. Menon, The Blindness of Insight: Essays on Caste in Modern India. Navayana Pub., 2006.</li>
+
+<li>I. Wilkerson, Caste (Oprah’s Book Club): The Origins of Our Discontents. Random House Publishing Group, 2020.</li>
+
+<li>L. Dumont, Homo Hierarchicus: The Caste System and Its Implications. University of Chicago Press, 1980.</li>
+
+<li>N. B. Dirks, Castes of Mind: Colonialism and the Making of Modern India. Princeton University Press, 2011.</li>
+
+<li>C. Jaffrelot, Dr Ambedkar and Untouchability: Analysing and Fighting Caste. Orient Blackswan, 2006.</li>
+<li>C. Jaffrelot, Religion, Caste, and Politics in India. Primus Books, 2010.</li>
+
+<li>“‘Caste Control: Towards a Frank Reckoning of Who Represents Hinduism in History’ by Audrey Truschke,” Canopy Forum, Mar. 09, 2022. <a href="https://canopyforum.org/2022/03/09/caste-control-towards-a-frank-reckoning-of-who-represents-hinduism-in-history/">https://canopyforum.org/2022/03/09/caste-control-towards-a-frank-reckoning-of-who-represents-hinduism-in-history/</a> (accessed Mar. 22, 2022).</li>
+
+<li>J. Haq, “India’s cultural tradition and the early history of caste,” The Caravan. <a href="https://caravanmagazine.in/excerpt/the-shudra-jalalul-haq">https://caravanmagazine.in/excerpt/the-shudra-jalalul-haq</a> (accessed Mar. 07, 2022).</li>
+
+<li>N. Arora, The Lottery of Birth: On Inherited Social Inequalities. Three Essays Collective, 2017.</li>
+<li>N. Arora, “Caste and the delusion of ‘merit’ in Indian higher education,” The Caravan. <a href="https://caravanmagazine.in/caste/the-delusion-of-merit-in-indian-higher-education">https://caravanmagazine.in/caste/the-delusion-of-merit-in-indian-higher-education</a> (accessed Mar. 07, 2022).</li>
+
+<li>R. Vaidyanathan, <i>Caste as Social Capital: The Complex Place of Caste in Indian Society.</i> Westland, 2019.
+<ul class="org-ul">
+<li>I. Mitra, “Book Review | Caste As Social Capital: The Complex Place Of Caste In Indian Society By R. Vaidyanathan,” Feminism in India, Jun. 29, 2023. <a href="https://feminisminindia.com/?p=157105">https://feminisminindia.com/?p=157105</a> (accessed Jul. 01, 2023).</li>
+</ul></li>
+
+<li>T. K. Oommen, <i>Classes, Citizenship and Inequality: Emerging Perspectives.</i> Pearson Education India, 2010.</li>
+
+<li>D. M. Menon, <i>The Blindness of Insight: Essays on Caste in Modern India.</i> Navayana Pub., 2006.</li>
+
+<li>G. Omvedt, <i>Seeking Begumpura: The Social Vision of Anticaste Intellectuals.</i> Navayana Publ., 2011.</li>
+<li>G. Omvedt, Understanding Caste: From Buddha to Ambedkar and Beyond. Orient Blackswan, 2012.</li>
+
+<li>R. Viswanath, <i>The Pariah Problem: Caste, Religion, and the Social in Modern India.</i> Columbia University Press, 2014.</li>
+
+<li>S. Yengde, <i>Caste Matters.</i> Penguin Random House India Private Limited, 2019.</li>
+
+<li>P. Murugan and C. S. Lakshmi (Translator), Black Coffee in a Coconut Shell: Caste as Lived Experience. SAGE Publications, 2017.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 15:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
