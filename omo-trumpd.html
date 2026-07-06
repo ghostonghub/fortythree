@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Donald Trump</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Donald Trump</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org66585ed">1. General</a></li>
+<li><a href="#org7a2cb93">2. STEMM</a>
+<ul>
+<li><a href="#orgb3a48f1">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgebd2d1e">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgb31e2d2">3.1. News</a>
+<ul>
+<li><a href="#orgabd31a9">3.1.1. Democracy Now</a></li>
+</ul>
+</li>
+<li><a href="#org0c8ee7e">3.2. Business Studies, Misc</a>
+<ul>
+<li><a href="#org7799d57">3.2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3043eb3">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga01e097">4. Core</a>
+<ul>
+<li><a href="#org8c1953a">4.1. Works</a></li>
+</ul>
+</li>
+<li><a href="#orgbf8a01d">5. Arts</a>
+<ul>
+<li><a href="#orgf9d7060">5.1. Picture Books</a></li>
+<li><a href="#org593a1b0">5.2. Films</a></li>
+<li><a href="#org9aedd26">5.3. Humour</a>
+<ul>
+<li><a href="#org96b821d">5.3.1. The Onion</a></li>
+</ul>
+</li>
+<li><a href="#org630aa99">5.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org4cd10dd">6. Special Topics</a>
+<ul>
+<li><a href="#org4c4ec02">6.1. Texts</a></li>
+<li><a href="#org55fb344">6.2. Pro Trump Resources</a></li>
+<li><a href="#org0097fe5">6.3. Critical Studies</a>
+<ul>
+<li><a href="#org6be2e0d">6.3.1. General</a></li>
+<li><a href="#orgcc81c4d">6.3.2. <b>Noam Chomsky</b></a></li>
+<li><a href="#org9bccf0a">6.3.3. Special Topics</a></li>
+<li><a href="#org4718eec">6.3.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf49d2a5">7. Misc</a>
+<ul>
+<li><a href="#orgd8f1183">7.1. Misc</a></li>
+<li><a href="#org3ef91e1">7.2. Complexity Science Hub Vienna</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org66585ed" class="outline-2">
+<h2 id="org66585ed"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Donald Trump,” Wikipedia. Mar. 12, 2024. Accessed: Mar. 12, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Donald_Trump&amp;oldid=1213277065">https://en.wikipedia.org/w/index.php?title=Donald_Trump&amp;oldid=1213277065</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a2cb93" class="outline-2">
+<h2 id="org7a2cb93"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb3a48f1" class="outline-3">
+<h3 id="orgb3a48f1"><span class="section-number-3">2.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>J. McKenzie, “Pulling out of 66 international organizations, Trump turns his back on science, facts, reason,” Bulletin of the Atomic Scientists. Accessed: Jan. 13, 2026. [Online]. Available: <a href="https://thebulletin.org/2026/01/pulling-out-of-66-international-organizations-trump-turns-his-back-on-science-facts-reason/">https://thebulletin.org/2026/01/pulling-out-of-66-international-organizations-trump-turns-his-back-on-science-facts-reason/</a></li>
+
+<li>““Expertise is not only not valued by this administration, it’s inherently suspicious to them"—Nobel Prize-winning economist Paul Krugman,” Bulletin of the Atomic Scientists. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://thebulletin.org/premium/2025-09/expertise-is-not-only-not-valued-by-this-administration-its-inherently-suspicious-to-them-nobel-prize-winning-economist-paul-krugman/">https://thebulletin.org/premium/2025-09/expertise-is-not-only-not-valued-by-this-administration-its-inherently-suspicious-to-them-nobel-prize-winning-economist-paul-krugman/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. G. Richman Andrew Crocker, and Josh, “EFF Urges Appeals Court to Re-hear Case over Trump’s X Account,” Electronic Frontier Foundation. Accessed: Sep. 09, 2023. [Online]. Available: <a href="https://www.eff.org/deeplinks/2023/09/eff-urges-appeals-court-re-hear-case-over-trumps-x-account">https://www.eff.org/deeplinks/2023/09/eff-urges-appeals-court-re-hear-case-over-trumps-x-account</a></li>
+<li>Y. Ouyang and R. W. Waterman, Trump, Twitter, and the American Democracy: Political Communication in the Digital Age. Springer Nature, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>F. Diaz-Maurin, “Nuclear expert Mycle Schneider on the COP28 pledge to triple nuclear energy production: ‘Trumpism enters energy policy,’” Bulletin of the Atomic Scientists. Accessed: Dec. 24, 2023. [Online]. Available: <a href="https://thebulletin.org/2023/12/nuclear-expert-mycle-schneider-on-the-cop28-pledge-to-triple-nuclear-energy-production-trumpism-enters-energy-policy/">https://thebulletin.org/2023/12/nuclear-expert-mycle-schneider-on-the-cop28-pledge-to-triple-nuclear-energy-production-trumpism-enters-energy-policy/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgebd2d1e" class="outline-2">
+<h2 id="orgebd2d1e"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgb31e2d2" class="outline-3">
+<h3 id="orgb31e2d2"><span class="section-number-3">3.1.</span> News</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgabd31a9" class="outline-4">
+<h4 id="orgabd31a9"><span class="section-number-4">3.1.1.</span> Democracy Now</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>“Democracy Now! covers Donald Trump,” Democracy Now! Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://www.democracynow.org/topics/donald_trump">https://www.democracynow.org/topics/donald_trump</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Donald Trump Suggests Gen. Mark Milley Should Be Put to Death,” Democracy Now! Accessed: Sep. 28, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/9/26/headlines/donald_trump_suggests_gen_mark_milley_should_be_put_to_death">https://www.democracynow.org/2023/9/26/headlines/donald_trump_suggests_gen_mark_milley_should_be_put_to_death</a></li>
+<li>“Georgia Grand Jury That Indicted Trump and 18 Others Also Recommended Charging Sen. Lindsey Graham,” Democracy Now! Accessed: Sep. 12, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/9/11/headlines/georgia_grand_jury_that_indicted_trump_and_18_others_also_recommended_charging_sen_lindsey_graham">https://www.democracynow.org/2023/9/11/headlines/georgia_grand_jury_that_indicted_trump_and_18_others_also_recommended_charging_sen_lindsey_graham</a></li>
+<li>“Trump, Orwell and The Scottsboro Boys,” Democracy Now! Accessed: Sep. 01, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/8/31/trump_orwell_and_the_scottsboro_boys">https://www.democracynow.org/2023/8/31/trump_orwell_and_the_scottsboro_boys</a></li>
+<li>“‘Get Down to Business’: Harry Belafonte in 2016 on Trump, Socialism &amp; Fighting for Justice,” Democracy Now! Accessed: Jun. 20, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/6/19/get_down_to_business_harry_belafonte">https://www.democracynow.org/2023/6/19/get_down_to_business_harry_belafonte</a></li>
+<li>“History in the Making: David Cay Johnston on Why Trump’s Arraignment May Renew American Democracy,” Democracy Now! Accessed: Apr. 05, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/4/4/trump_arraignment">https://www.democracynow.org/2023/4/4/trump_arraignment</a></li>
+<li>“Indicted: Trump Faces Criminal Charges in NY; Three Other Investigations into Ex-President Continue,” Democracy Now! Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/3/31/donald_trump_indictment_hush_money_2016">https://www.democracynow.org/2023/3/31/donald_trump_indictment_hush_money_2016</a></li>
+<li>“Donald Trump Criminally Charged in New York, Will Be Arraigned Tuesday,” Democracy Now! Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.democracynow.org/2023/3/31/headlines/donald_trump_criminally_charged_in_new_york_will_be_arraigned_tuesday">https://www.democracynow.org/2023/3/31/headlines/donald_trump_criminally_charged_in_new_york_will_be_arraigned_tuesday</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0c8ee7e" class="outline-3">
+<h3 id="org0c8ee7e"><span class="section-number-3">3.2.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org7799d57" class="outline-4">
+<h4 id="org7799d57"><span class="section-number-4">3.2.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>“Profiting from the Presidency: Trump and Family Rake In Billions from Crypto, Real Estate &amp; More,” Democracy Now! Accessed: Jul. 03, 2026. [Online]. Available: <a href="https://www.democracynow.org/2026/7/2/trump_profitmaxxing">https://www.democracynow.org/2026/7/2/trump_profitmaxxing</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3043eb3" class="outline-3">
+<h3 id="org3043eb3"><span class="section-number-3">3.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“The U.S. oligarchy’s crime boss: Trump pocketed $2.2 billion in 2025,” World Socialist Web Site. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://www.wsws.org/en/articles/2026/07/02/jias-j02.html">https://www.wsws.org/en/articles/2026/07/02/jias-j02.html</a></li>
+
+<li>“Greenpeace unfolds massive anti-Trump banner ahead of US 250th celebration in Brussels,” Greenpeace International. Accessed: Jun. 29, 2026. [Online]. Available: <a href="https://www.greenpeace.org/international/press-release/84348/greenpeace-massive-anti-trump-banner-us-250th-celebration/">https://www.greenpeace.org/international/press-release/84348/greenpeace-massive-anti-trump-banner-us-250th-celebration/</a></li>
+
+<li>A. M. Barry-Jester, “‘A Huge Grab of Power’: Trump Is Defying Congress on Foreign Aid,” ProPublica. Accessed: Jun. 25, 2026. [Online]. Available: <a href="https://www.propublica.org/article/trump-defying-congress-foreign-aid-usaid-vought-rubio-constitutional-crisis">https://www.propublica.org/article/trump-defying-congress-foreign-aid-usaid-vought-rubio-constitutional-crisis</a></li>
+
+<li>R. Buettner and S. Craig, Lucky Loser: How Donald Trump Squandered His Father’s Fortune and Created the Illusion of Success. Bodley Head, 2024.</li>
+
+<li>“Trump Slams United Nations, Global Migration &amp; Climate Science in U.N. Speech,” Democracy Now! Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/9/24/trump_united_nations_general_assembly_2025">https://www.democracynow.org/2025/9/24/trump_united_nations_general_assembly_2025</a></li>
+
+<li>BY, “Trump Tightens the Vise.” Accessed: Sep. 24, 2025. [Online]. Available: <a href="https://jacobin.com/2025/09/donald-trump-administration-authoritarian-repression">https://jacobin.com/2025/09/donald-trump-administration-authoritarian-repression</a></li>
+
+<li>““He’s basically running a reality TV show": Francis Gavin on Trump’s impact on the US, its allies, and the post-war world order,” Bulletin of the Atomic Scientists. Accessed: Sep. 18, 2025. [Online]. Available: <a href="https://thebulletin.org/premium/2025-09/hes-basically-running-a-reality-tv-show-francis-gavin-on-trumps-impact-on-the-us-its-allies-and-the-post-war-world-order/">https://thebulletin.org/premium/2025-09/hes-basically-running-a-reality-tv-show-francis-gavin-on-trumps-impact-on-the-us-its-allies-and-the-post-war-world-order/</a></li>
+
+<li>“‘Chipocalypse’: Viet Thanh Nguyen on Trump Invoking ‘Apocalypse Now’ &amp; Speaking Out on Gaza Genocide,” Democracy Now! Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/9/9/viet_thanh_nguyen">https://www.democracynow.org/2025/9/9/viet_thanh_nguyen</a></li>
+
+<li>“Monthly Review | Trump in the White House: Tragedy and Farce,” Monthly Review. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://monthlyreview.org/product/trump_in_the_white_house/">https://monthlyreview.org/product/trump_in_the_white_house/</a></li>
+
+<li>““He’s basically running a reality TV show": Francis Gavin on Trump’s impact on the US, its allies, and the post-war world order,” Bulletin of the Atomic Scientists. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://thebulletin.org/premium/2025-09/hes-basically-running-a-reality-tv-show-francis-gavin-on-trumps-impact-on-the-us-its-allies-and-the-post-war-world-order/">https://thebulletin.org/premium/2025-09/hes-basically-running-a-reality-tv-show-francis-gavin-on-trumps-impact-on-the-us-its-allies-and-the-post-war-world-order/</a></li>
+
+<li>Y. Varoufakis, “Will Trump’s Working-Class Base Turn on Him?,” Project Syndicate. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-working-class-voters-may-remain-loyal-by-yanis-varoufakis-2025-08">https://www.project-syndicate.org/commentary/trump-working-class-voters-may-remain-loyal-by-yanis-varoufakis-2025-08</a></li>
+
+<li>T. Snyder, “Trump’s Alaska Folly,” Project Syndicate. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-foreign-policy-fantasy-ended-at-alaska-summit-by-timothy-snyder-2025-08">https://www.project-syndicate.org/commentary/trump-foreign-policy-fantasy-ended-at-alaska-summit-by-timothy-snyder-2025-08</a></li>
+
+<li>BY, “Trump Is Launching a Hostile Takeover of Puerto Rico.” Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://jacobin.com/2025/08/puerto-rico-trump-takeover-fomb">https://jacobin.com/2025/08/puerto-rico-trump-takeover-fomb</a></li>
+
+<li>M. Sledge, “Donald Trump Is Mostly a Crypto Billionaire Now, Group Says,” The Intercept. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://theintercept.com/2025/08/09/trump-crypto-billionaire-accountable/">https://theintercept.com/2025/08/09/trump-crypto-billionaire-accountable/</a></li>
+
+<li>“6 months of the Trump administration: The stench of fascism and political crisis,” World Socialist Web Site. Accessed: Jul. 22, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/07/22/frxa-j22.html">https://www.wsws.org/en/articles/2025/07/22/frxa-j22.html</a></li>
+
+<li>A. I. With, “Donald Trump Is Just Another Republican President.” Accessed: Jul. 15, 2025. [Online]. Available: <a href="https://jacobin.com/2025/07/trump-foreign-policy-budget-gop">https://jacobin.com/2025/07/trump-foreign-policy-budget-gop</a></li>
+
+<li>“Exclusive: Top Trump Adviser Sergio Gor Was Born in the Soviet Union,” OCCRP. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/exclusive-top-trump-advisor-sergio-gor-was-born-in-the-soviet-union">https://www.occrp.org/en/news/exclusive-top-trump-advisor-sergio-gor-was-born-in-the-soviet-union</a></li>
+
+<li>“Trump’s Man in El Salvador - Rosa-Luxemburg-Stiftung.” Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.rosalux.de/en/news/id/53567/trumps-man-in-el-salvador">https://www.rosalux.de/en/news/id/53567/trumps-man-in-el-salvador</a></li>
+
+<li>“Trump’s Man in El Salvador - Rosa-Luxemburg-Stiftung.” Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://www.rosalux.de/en/news/id/53567/trumps-man-in-el-salvador">https://www.rosalux.de/en/news/id/53567/trumps-man-in-el-salvador</a></li>
+
+<li>“Trump’s diplomacy of the absurd.” Accessed: Jul. 05, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/trump-south-africa-diplomacy-absurd">https://caravanmagazine.in/politics/trump-south-africa-diplomacy-absurd</a></li>
+
+<li>“What the Indian media gets wrong about Modi and Trump, and Modi and the world.” Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://caravanmagazine.in/politics/trump-modi-us-india-media">https://caravanmagazine.in/politics/trump-modi-us-india-media</a></li>
+
+<li>E. English, “The consequences of the Trump administration’s hostile empathy,” Bulletin of the Atomic Scientists. Accessed: Jun. 17, 2025. [Online]. Available: <a href="https://thebulletin.org/2025/06/the-consequences-of-the-trump-administrations-hostile-empathy/">https://thebulletin.org/2025/06/the-consequences-of-the-trump-administrations-hostile-empathy/</a></li>
+
+<li>R. Haass, “The Trump Doctrine | by Richard Haass,” Project Syndicate. Accessed: Jun. 05, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-doctrine-us-becoming-like-countries-it-criticized-by-richard-haass-2025-06">https://www.project-syndicate.org/commentary/trump-doctrine-us-becoming-like-countries-it-criticized-by-richard-haass-2025-06</a></li>
+
+<li>P. D. Grauwe, “The Quick and Easy Way to Put Trump in His Place | by Paul De Grauwe,” Project Syndicate. Accessed: May 05, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-tariffs-call-for-global-retaliation-to-eliminate-us-leverage-by-paul-de-grauwe-2025-05">https://www.project-syndicate.org/commentary/trump-tariffs-call-for-global-retaliation-to-eliminate-us-leverage-by-paul-de-grauwe-2025-05</a></li>
+
+<li>“Trump’s first 100 days of counterrevolution and criminality,” World Socialist Web Site. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/04/29/ubrm-a29.html">https://www.wsws.org/en/articles/2025/04/29/ubrm-a29.html</a></li>
+
+<li>“Pluralistic: Trump fought the law and Trump won (16 Apr 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Apr. 17, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/04/16/weaponized-admin-incompetence/">https://pluralistic.net/2025/04/16/weaponized-admin-incompetence/</a></li>
+
+<li>“Pluralistic: Private-sector Trumpism (31 Mar 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/03/31/madison-square-garden/">https://pluralistic.net/2025/03/31/madison-square-garden/</a></li>
+
+<li>“M. Gessen on Trump’s Authoritarian Policies at Home &amp; Abroad,” Democracy Now! Accessed: Mar. 16, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/3/14/m_gessen">https://www.democracynow.org/2025/3/14/m_gessen</a></li>
+
+<li>“Trump threatens to seize Panama Canal,” World Socialist Web Site. Accessed: Dec. 23, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/12/23/pewc-d23.html">https://www.wsws.org/en/articles/2024/12/23/pewc-d23.html</a></li>
+
+<li>“Trump’s Victory and Collapse of Liberal Centre,” NewsClick. Accessed: Nov. 18, 2024. [Online]. Available: <a href="https://www.newsclick.in/trumps-victory-and-collapse-liberal-centre">https://www.newsclick.in/trumps-victory-and-collapse-liberal-centre</a></li>
+
+<li>“Making counter-power out of madness - State of power 2018,” Longreads. Accessed: Oct. 17, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/making-counter-power-out-of-madness">https://longreads.tni.org/stateofpower/making-counter-power-out-of-madness</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga01e097" class="outline-2">
+<h2 id="orga01e097"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org8c1953a" class="outline-3">
+<h3 id="org8c1953a"><span class="section-number-3">4.1.</span> Works</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>D. J. Trump, TRUMP UNIVERSITY WEALTH BUILDING 101. Times Group Books, 2010.</li>
+<li>D. J. Trump and B. Zanker, Think Big: Make It Happen in Business and Life, Reprint edition. New York: Harper Business, 2008.</li>
+<li>D. J. Trump and T. Schwartz, Trump : The Art of the Deal, Reprint edition. New York: Ballantine Books, 2015.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbf8a01d" class="outline-2">
+<h2 id="orgbf8a01d"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgf9d7060" class="outline-3">
+<h3 id="orgf9d7060"><span class="section-number-3">5.1.</span> Picture Books</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Various, MAD About Trump: A Brilliant Look at Our Brainless President, Illustrated edition. New York: MAD, 2017.</li>
+<li>Various, MAD About the Trump Era, Illustrated edition. MAD, 2019.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org593a1b0" class="outline-3">
+<h3 id="org593a1b0"><span class="section-number-3">5.2.</span> Films</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>AFP, “Explosive Trump biopic hits Cannes Film Festival,” The Hindu, May 21, 2024. Accessed: May 22, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/explosive-trump-biopic-hits-cannes-film-festival/article68198862.ece">https://www.thehindu.com/news/international/explosive-trump-biopic-hits-cannes-film-festival/article68198862.ece</a></li>
+<li>AFP, “Donald Trump vows to sue over explosive biopic,” The Hindu, May 22, 2024. Accessed: May 22, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/donald-trump-vows-to-sue-over-explosive-biopic/article68202435.ece">https://www.thehindu.com/news/international/donald-trump-vows-to-sue-over-explosive-biopic/article68202435.ece</a></li>
+<li>M. W. Thompson, “For the Women Who Accused the Trump Campaign of Harassment, It’s Been More Harassment,” ProPublica. Accessed: May 24, 2024. [Online]. Available: <a href="https://www.propublica.org/article/trump-campaign-harassment-bullying-lawsuits">https://www.propublica.org/article/trump-campaign-harassment-bullying-lawsuits</a></li>
+<li>T. H. Bureau, “Donald Trump slaps Ali Abbasi’s ‘The Apprentice’ with a cease and desist order to halt US release,” The Hindu, May 26, 2024. Accessed: May 29, 2024. [Online]. Available: <a href="https://www.thehindu.com/entertainment/movies/donald-trump-slaps-ali-abbasis-the-apprentice-with-a-cease-and-desist-order-to-halt-us-release/article68218166.ece">https://www.thehindu.com/entertainment/movies/donald-trump-slaps-ali-abbasis-the-apprentice-with-a-cease-and-desist-order-to-halt-us-release/article68218166.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9aedd26" class="outline-3">
+<h3 id="org9aedd26"><span class="section-number-3">5.3.</span> Humour</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-org96b821d" class="outline-4">
+<h4 id="org96b821d"><span class="section-number-4">5.3.1.</span> The Onion</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li>T. O. Staff, “Congress Passes Blank Bill For Trump To Write Whatever Law He Wants,” The Onion. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://theonion.com/congress-passes-blank-bill-for-trump-to-write-whatever-law-he-wants/">https://theonion.com/congress-passes-blank-bill-for-trump-to-write-whatever-law-he-wants/</a></li>
+<li>T. O. Staff, “JD Vance Rushed To Walter Reed After Inner Hillbilly Returns,” The Onion. Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://theonion.com/jd-vance-rushed-to-walter-reed-after-inner-hillbilly-returns/">https://theonion.com/jd-vance-rushed-to-walter-reed-after-inner-hillbilly-returns/</a></li>
+<li>“Trump Executed,” The Onion. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://www.theonion.com/trump-executed-1850257714">https://www.theonion.com/trump-executed-1850257714</a></li>
+<li>T. O. Staff, “Trump Says Recession Unfortunate But Necessary Step To Get To Depression,” The Onion. Accessed: Mar. 11, 2025. [Online]. Available: <a href="https://theonion.com/trump-says-recession-unfortunate-but-necessary-step-to-get-to-depression/">https://theonion.com/trump-says-recession-unfortunate-but-necessary-step-to-get-to-depression/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org630aa99" class="outline-3">
+<h3 id="org630aa99"><span class="section-number-3">5.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>T. O. Staff, “JD Vance Cries In Bathroom After Trump Uses ‘Piggy’ Nickname On Someone Else,” The Onion. Accessed: Nov. 22, 2025. [Online]. Available: <a href="https://theonion.com/jd-vance-cries-in-bathroom-after-trump-uses-piggy-nickname-on-someone-else/">https://theonion.com/jd-vance-cries-in-bathroom-after-trump-uses-piggy-nickname-on-someone-else/</a></li>
+
+<li>T. O. Staff, “‘We’re Off To See The World!’ Shout Saluting Trump Boys Setting Sail On D.C. Reflecting Pool,” The Onion. Accessed: Nov. 20, 2025. [Online]. Available: <a href="https://theonion.com/were-off-to-see-the-world-shout-saluting-trump-boys-setting-sail-on-d-c-reflecting-pool/">https://theonion.com/were-off-to-see-the-world-shout-saluting-trump-boys-setting-sail-on-d-c-reflecting-pool/</a></li>
+
+<li>T. O. Staff, “Trump Imposes 100% Tax On Movies Where Slaves Escape,” The Onion. Accessed: Nov. 18, 2025. [Online]. Available: <a href="https://theonion.com/trump-imposes-100-tax-on-movies-where-slaves-escape/">https://theonion.com/trump-imposes-100-tax-on-movies-where-slaves-escape/</a></li>
+<li>T. O. Staff, “Trump To Vance: ‘I Need You To Say You Stole My Face In The 1990s,’” The Onion. Accessed: Nov. 18, 2025. [Online]. Available: <a href="https://theonion.com/trump-to-vance-i-need-you-to-say-you-stole-my-face-in-the-1990s/">https://theonion.com/trump-to-vance-i-need-you-to-say-you-stole-my-face-in-the-1990s/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump’s White House Renovations By The Numbers,” The Onion. Accessed: Nov. 14, 2025. [Online]. Available: <a href="https://theonion.com/trumps-white-house-renovations-by-the-numbers/">https://theonion.com/trumps-white-house-renovations-by-the-numbers/</a></li>
+
+<li>T. O. Staff, “Trump Imposes 25% Tariff On Chinese-Made Trump Products,” The Onion. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://theonion.com/trump-imposes-25-tariff-on-chinese-made-trump-products/">https://theonion.com/trump-imposes-25-tariff-on-chinese-made-trump-products/</a></li>
+
+<li>T. O. Staff, “Pros And Cons Of A 3rd Trump Term,” The Onion. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://theonion.com/pros-and-cons-of-a-3rd-trump-term/">https://theonion.com/pros-and-cons-of-a-3rd-trump-term/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Writes Netanyahu Strongly Worded Check,” The Onion. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://theonion.com/trump-writes-netanyahu-strongly-worded-check/">https://theonion.com/trump-writes-netanyahu-strongly-worded-check/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Soot-Covered Prince Andrew Begging On Street For Child To Molest,” The Onion. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://theonion.com/soot-covered-prince-andrew-begging-on-street-for-child-to-molest/">https://theonion.com/soot-covered-prince-andrew-begging-on-street-for-child-to-molest/</a></li>
+
+<li>T. O. Staff, “Trump Threatens To Sue BBC Over Misleading Edit Of ‘The Vicar Of Dibley,’” The Onion. Accessed: Nov. 11, 2025. [Online]. Available: <a href="https://theonion.com/trump-threatens-to-sue-bbc-over-misleading-edit-of-the-vicar-of-dibley/">https://theonion.com/trump-threatens-to-sue-bbc-over-misleading-edit-of-the-vicar-of-dibley/</a></li>
+
+<li>A. Edwards, “A brief history of comic book vampires – including a homage to Donald Trump,” The Conversation. Accessed: Nov. 01, 2025. [Online]. Available: <a href="http://theconversation.com/a-brief-history-of-comic-book-vampires-including-a-homage-to-donald-trump-266188">http://theconversation.com/a-brief-history-of-comic-book-vampires-including-a-homage-to-donald-trump-266188</a></li>
+
+<li>T. O. Staff, “Trump Touts Productive Call With Putin About Ballroom Sconces,” The Onion. Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://theonion.com/trump-touts-productive-call-with-putin-about-ballroom-sconces/">https://theonion.com/trump-touts-productive-call-with-putin-about-ballroom-sconces/</a></li>
+<li>T. O. Staff, “Trump Defends Demolition Of Yggdrasil, Ancient Tree Of Life,” The Onion. Accessed: Nov. 01, 2025. [Online]. Available: <a href="https://theonion.com/trump-defends-demolition-of-yggdrasil-ancient-tree-of-life/">https://theonion.com/trump-defends-demolition-of-yggdrasil-ancient-tree-of-life/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Accused Of Using Makeup To Conceal Ventilator,” The Onion. Accessed: Oct. 29, 2025. [Online]. Available: <a href="https://theonion.com/trump-accused-of-using-makeup-to-conceal-ventilator/">https://theonion.com/trump-accused-of-using-makeup-to-conceal-ventilator/</a></li>
+
+<li>T. O. Staff, “Trump To Travel With Own Escalator Following U.N. Embarrassment,” The Onion. Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://theonion.com/trump-to-travel-with-own-escalator-following-u-n-embarrassment/">https://theonion.com/trump-to-travel-with-own-escalator-following-u-n-embarrassment/</a></li>
+
+<li>T. O. Staff, “Trump: ‘Another Thing Epstein And I Never Did Is Play Nude Charades,’” The Onion. Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://theonion.com/trump-another-thing-epstein-and-i-never-did-is-play-nude-charades/">https://theonion.com/trump-another-thing-epstein-and-i-never-did-is-play-nude-charades/</a></li>
+
+<li>T. O. Staff, “Trump Attends Dogfighting Match,” The Onion. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://theonion.com/trump-attends-dogfighting-match/">https://theonion.com/trump-attends-dogfighting-match/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Signs Executive Order Making Official Language Of U.S. Remedial English,” The Onion. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://theonion.com/trump-signs-executive-order-making-official-language-of-u-s-remedial-english/">https://theonion.com/trump-signs-executive-order-making-official-language-of-u-s-remedial-english/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “‘You Think You Can Talk About Our Dad That Way?’ Scream Trump Boys, Beating TV With Bat,” The Onion. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://theonion.com/you-think-you-can-talk-about-our-dad-that-way-scream-trump-boys-beating-tv-with-bat/">https://theonion.com/you-think-you-can-talk-about-our-dad-that-way-scream-trump-boys-beating-tv-with-bat/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Bored Trump Spends Night Channel Surfing For New Shows To Cancel,” The Onion. Accessed: Sep. 24, 2025. [Online]. Available: <a href="https://theonion.com/bored-trump-spends-night-channel-surfing-for-new-shows-to-cancel/">https://theonion.com/bored-trump-spends-night-channel-surfing-for-new-shows-to-cancel/</a></li>
+
+<li>T. O. Staff, “Trump Spends Entire U.K. Trip Trying To Figure Out Where He Knows Prince Andrew From,” The Onion. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://theonion.com/trump-spends-entire-u-k-trip-trying-to-figure-out-where-he-knows-prince-andrew-from/">https://theonion.com/trump-spends-entire-u-k-trip-trying-to-figure-out-where-he-knows-prince-andrew-from/</a></li>
+
+<li>T. O. Staff, “Trump: ‘Political Violence Has No Place In My Inner Circle,’” The Onion. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://theonion.com/trump-political-violence-has-no-place-in-my-inner-circle/">https://theonion.com/trump-political-violence-has-no-place-in-my-inner-circle/</a></li>
+<li>T. O. Staff, “Visit From JD Vance Last Thing Utah Needs Right Now,” The Onion. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://theonion.com/visit-from-jd-vance-last-thing-utah-needs-right-now/">https://theonion.com/visit-from-jd-vance-last-thing-utah-needs-right-now/</a></li>
+<li>T. O. Staff, “Trump Renames White House Fridge Department Of Ham,” The Onion. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://theonion.com/trump-renames-white-house-fridge-department-of-ham/">https://theonion.com/trump-renames-white-house-fridge-department-of-ham/</a></li>
+
+<li>T. O. Staff, “Trump Boys Beg Father To Let Them Keep Homeless Man As Pet,” The Onion. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://theonion.com/trump-boys-beg-father-to-let-them-keep-homeless-man-as-pet/">https://theonion.com/trump-boys-beg-father-to-let-them-keep-homeless-man-as-pet/</a></li>
+<li>T. O. Staff, “Trump Aides Unsure Why Spalding Making Such Generous PAC Donations,” The Onion. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://theonion.com/trump-aides-unsure-why-spalding-making-such-generous-pac-donations/">https://theonion.com/trump-aides-unsure-why-spalding-making-such-generous-pac-donations/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Aides Unsure Why Spalding Making Such Generous PAC Donations,” The Onion. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://theonion.com/trump-aides-unsure-why-spalding-making-such-generous-pac-donations/">https://theonion.com/trump-aides-unsure-why-spalding-making-such-generous-pac-donations/</a></li>
+<li>T. O. Staff, “White House Downplays Trump Hand Bruise As Least Concerning Part Of Body,” The Onion. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://theonion.com/white-house-downplays-trump-hand-bruise-as-least-concerning-part-of-body/">https://theonion.com/white-house-downplays-trump-hand-bruise-as-least-concerning-part-of-body/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>JD Vance Rushed To Walter Reed After Inner Hillbilly Returns. Accessed: Sep. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/shorts/89-Yn2gnyNA">https://www.youtube.com/shorts/89-Yn2gnyNA</a></li>
+
+<li>T. O. Staff, “Book Character Straight Up Says She Hopes To Be Played By Nicole Kidman In Miniseries,” The Onion. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://theonion.com/book-character-straight-up-says-she-hopes-to-be-played-by-nicole-kidman-in-miniseries/">https://theonion.com/book-character-straight-up-says-she-hopes-to-be-played-by-nicole-kidman-in-miniseries/</a></li>
+<li>T. O. Staff, “Coveted Broadway Stage Role Landed By Juilliard-Trained Curtains,” The Onion. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://theonion.com/coveted-broadway-stage-role-landed-by-juilliard-trained-curtains/">https://theonion.com/coveted-broadway-stage-role-landed-by-juilliard-trained-curtains/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Jason Momoa Praised For Historical Accuracy Of ‘Chief Of War’ Ass,” The Onion. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://theonion.com/jason-momoa-praised-for-historical-accuracy-of-chief-of-war-ass/">https://theonion.com/jason-momoa-praised-for-historical-accuracy-of-chief-of-war-ass/</a></li>
+
+<li>T. O. Staff, “Trump, Zelensky Sit Across From Each Other In Awkward Silence At Georgetown Cupcake,” The Onion. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://theonion.com/trump-zelensky-sit-across-from-each-other-in-awkward-silence-at-georgetown-cupcake/">https://theonion.com/trump-zelensky-sit-across-from-each-other-in-awkward-silence-at-georgetown-cupcake/</a></li>
+
+<li>T. O. Staff, “Fact-Checking Trump On Crime,” The Onion. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://theonion.com/fact-checking-trump-on-crime/">https://theonion.com/fact-checking-trump-on-crime/</a></li>
+<li>T. O. Staff, “All The Demands Trump Is Making Of The Smithsonian,” The Onion. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://theonion.com/all-the-demands-trump-is-making-of-the-smithsonian/">https://theonion.com/all-the-demands-trump-is-making-of-the-smithsonian/</a></li>
+<li>T. O. Staff, “Trump Angry Not A Single Visiting European Leader Wearing Lederhosen, Tiny Hat,” The Onion. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://theonion.com/trump-angry-not-a-single-visiting-european-leader-wearing-lederhosen-tiny-hat/">https://theonion.com/trump-angry-not-a-single-visiting-european-leader-wearing-lederhosen-tiny-hat/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Fact-Checking Trump On Crime,” The Onion. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://theonion.com/fact-checking-trump-on-crime/">https://theonion.com/fact-checking-trump-on-crime/</a></li>
+<li>T. O. Staff, “Fun Getaway With Murderous Dictator Just What Exhausted Trump Been Needing,” The Onion. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://theonion.com/fun-getaway-with-murderous-dictator-just-what-exhausted-trump-been-needing/">https://theonion.com/fun-getaway-with-murderous-dictator-just-what-exhausted-trump-been-needing/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Announces Seal Team 6 Killed U.S. Protester In Daring Overnight Raid,” The Onion. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://theonion.com/trump-announces-seal-team-6-killed-u-s-protester-in-daring-overnight-raid-2/">https://theonion.com/trump-announces-seal-team-6-killed-u-s-protester-in-daring-overnight-raid-2/</a></li>
+<li>T. O. Staff, “We Need To Take Trump’s Rhetoric Seriously, But Not Literally vs. Have That Guy Killed,” The Onion. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://theonion.com/we-need-to-take-trumps-rhetoric-seriously-but-not-literally-vs-have-that-guy-killed/">https://theonion.com/we-need-to-take-trumps-rhetoric-seriously-but-not-literally-vs-have-that-guy-killed/</a></li>
+<li>T. O. Staff, “Protesters Urged Not To Give Trump Administration Pretext For What It Already Doing,” The Onion. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://theonion.com/protesters-urged-not-to-give-trump-administration-pretext-for-what-it-already-doing/">https://theonion.com/protesters-urged-not-to-give-trump-administration-pretext-for-what-it-already-doing/</a></li>
+
+<li>T. O. Staff, “Trump Rushed To Walter Reed To Watch Breast Exam,” The Onion. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://theonion.com/trump-rushed-to-walter-reed-to-watch-breast-exam/">https://theonion.com/trump-rushed-to-walter-reed-to-watch-breast-exam/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Readjusts Golf Tee In JD Vance’s Mouth,” The Onion. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://theonion.com/trump-readjusts-golf-tee-in-jd-vances-mouth/">https://theonion.com/trump-readjusts-golf-tee-in-jd-vances-mouth/</a></li>
+
+<li>T. O. Staff, “Trump Sues Safeway Circular For False Ham Claims,” The Onion. Accessed: Aug. 01, 2025. [Online]. Available: <a href="https://theonion.com/trump-sues-safeway-circular-for-false-ham-claims/">https://theonion.com/trump-sues-safeway-circular-for-false-ham-claims/</a></li>
+
+<li>T. O. Staff, “Trump Examined By Doctor After Acknowledging Existence Of Suffering,” The Onion. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://theonion.com/trump-examined-by-doctor-after-acknowledging-existence-of-suffering/">https://theonion.com/trump-examined-by-doctor-after-acknowledging-existence-of-suffering/</a></li>
+
+<li>T. O. Staff, “White House Evacuated After Trans Alarm Goes Off,” The Onion. Accessed: Jul. 25, 2025. [Online]. Available: <a href="https://theonion.com/white-house-evacuated-after-trans-alarm-goes-off-2/">https://theonion.com/white-house-evacuated-after-trans-alarm-goes-off-2/</a></li>
+<li>T. O. Staff, “Trump: ‘We Could Argue All Day About Who Is Or Isn’t A Child Rapist,’” The Onion. Accessed: Jul. 25, 2025. [Online]. Available: <a href="https://theonion.com/trump-we-could-argue-all-day-about-who-is-or-isnt-a-child-rapist/">https://theonion.com/trump-we-could-argue-all-day-about-who-is-or-isnt-a-child-rapist/</a></li>
+
+<li>T. O. Staff, “Trump: ‘I’m Not In These Nonexistent Files Concocted To Destroy Me,’” The Onion. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://theonion.com/trump-im-not-in-these-nonexistent-files-concocted-to-destroy-me/">https://theonion.com/trump-im-not-in-these-nonexistent-files-concocted-to-destroy-me/</a></li>
+<li>T. O. Staff, “Trump Announces $175 Billion Rosie O’Donnell Defense System,” The Onion. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://theonion.com/trump-announces-175-billion-rosie-odonnell-defense-system/">https://theonion.com/trump-announces-175-billion-rosie-odonnell-defense-system/</a></li>
+<li>T. O. Staff, “Trump Invites Jeffrey Epstein On Stage To Explain There No Conspiracy,” The Onion. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://theonion.com/trump-invites-jeffrey-epstein-on-stage-to-explain-there-no-conspiracy/">https://theonion.com/trump-invites-jeffrey-epstein-on-stage-to-explain-there-no-conspiracy/</a></li>
+<li>T. O. Staff, “Elderly Woman Keeps Mind Active Justifying Trump’s Actions,” The Onion. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://theonion.com/elderly-woman-keeps-mind-active-justifying-trumps-actions/">https://theonion.com/elderly-woman-keeps-mind-active-justifying-trumps-actions/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Trump Announces $175 Billion Rosie O’Donnell Defense System,” The Onion. Accessed: Jul. 15, 2025. [Online]. Available: <a href="https://theonion.com/trump-announces-175-billion-rosie-odonnell-defense-system/">https://theonion.com/trump-announces-175-billion-rosie-odonnell-defense-system/</a></li>
+<li>T. O. Staff, “Trump Urges Supporters To Move On From Societal Disdain For Pedophilia,” The Onion. Accessed: Jul. 15, 2025. [Online]. Available: <a href="https://theonion.com/trump-urges-supporters-to-move-on-from-societal-disdain-for-pedophilia/">https://theonion.com/trump-urges-supporters-to-move-on-from-societal-disdain-for-pedophilia/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. O. Staff, “Peter Thiel Shows Trump How To Sort Spreadsheet Of Americans By Ethnicity,” The Onion. Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://theonion.com/peter-thiel-shows-trump-how-to-sort-spreadsheet-of-americans-by-ethnicity/">https://theonion.com/peter-thiel-shows-trump-how-to-sort-spreadsheet-of-americans-by-ethnicity/</a></li>
+
+<li>T. O. Staff, “Trump Assures Nation Uncommonly Violent Ceasefire In Effect,” The Onion. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://theonion.com/trump-assures-nation-uncommonly-violent-ceasefire-in-effect/">https://theonion.com/trump-assures-nation-uncommonly-violent-ceasefire-in-effect/</a></li>
+
+<li>T. O. Staff, “Trump Mouths Lyrics To ‘Happy Birthday’ While National Anthem Plays,” The Onion. Accessed: Jun. 15, 2025. [Online]. Available: <a href="https://theonion.com/trump-mouths-lyrics-to-happy-birthday-while-national-anthem-plays/">https://theonion.com/trump-mouths-lyrics-to-happy-birthday-while-national-anthem-plays/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4cd10dd" class="outline-2">
+<h2 id="org4cd10dd"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org4c4ec02" class="outline-3">
+<h3 id="org4c4ec02"><span class="section-number-3">6.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>“Bibliography of Donald Trump,” Wikipedia. Jun. 13, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bibliography_of_Donald_Trump&amp;oldid=1295448759">https://en.wikipedia.org/w/index.php?title=Bibliography_of_Donald_Trump&amp;oldid=1295448759</a></li>
+
+<li>P. R. Cranley Ellen, “22 new books that reveal the inner workings of the Trump administration,” Business Insider. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://www.businessinsider.com/books-about-trump-white-house-2018-9">https://www.businessinsider.com/books-about-trump-white-house-2018-9</a></li>
+<li>F. Books, “The Best Donald Trump Books,” Five Books. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://fivebooks.com/best-books/donald-trump-tony-schwartz/">https://fivebooks.com/best-books/donald-trump-tony-schwartz/</a></li>
+<li>P. Conrad, “Eight of the best books about Donald Trump,” The Guardian, Nov. 01, 2020. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://www.theguardian.com/books/2020/nov/01/eight-of-the-best-books-about-donald-trump">https://www.theguardian.com/books/2020/nov/01/eight-of-the-best-books-about-donald-trump</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org55fb344" class="outline-3">
+<h3 id="org55fb344"><span class="section-number-3">6.2.</span> Pro Trump Resources</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>Pro US President D. Trump Resources: <a href="https://tinyurl.com/3ker79sd">https://tinyurl.com/3ker79sd</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0097fe5" class="outline-3">
+<h3 id="org0097fe5"><span class="section-number-3">6.3.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-6-3">
+</div>
+<div id="outline-container-org6be2e0d" class="outline-4">
+<h4 id="org6be2e0d"><span class="section-number-4">6.3.1.</span> General</h4>
+</div>
+<div id="outline-container-orgcc81c4d" class="outline-4">
+<h4 id="orgcc81c4d"><span class="section-number-4">6.3.2.</span> <b>Noam Chomsky</b></h4>
+<div class="outline-text-4" id="text-6-3-2">
+<ul class="org-ul">
+<li>I. Chotiner, “Noam Chomsky Believes Trump Is ‘the Worst Criminal in Human History,’” The New Yorker, Oct. 30, 2020. Accessed: Mar. 11, 2024. [Online]. Available: <a href="https://www.newyorker.com/news/q-and-a/noam-chomsky-believes-trump-is-the-worst-criminal-in-human-history">https://www.newyorker.com/news/q-and-a/noam-chomsky-believes-trump-is-the-worst-criminal-in-human-history</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9bccf0a" class="outline-4">
+<h4 id="org9bccf0a"><span class="section-number-4">6.3.3.</span> Special Topics</h4>
+</div>
+<div id="outline-container-org4718eec" class="outline-4">
+<h4 id="org4718eec"><span class="section-number-4">6.3.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-3-4">
+<ul class="org-ul">
+<li>J. B. Foster, Trump in the White House: Tragedy and Farce. Dev Publishers &amp; Distributors.
+<ul class="org-ul">
+<li>J. B. Foster, Trump in the White House: Tragedy and Farce | HINDI | (John Bellamy Foster) | | ट्रम्प व्हाइटहाउस में त्रासदी और प्रहसन. GARGI.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf49d2a5" class="outline-2">
+<h2 id="orgf49d2a5"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgd8f1183" class="outline-3">
+<h3 id="orgd8f1183"><span class="section-number-3">7.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>“‘MAGA Inc.’: CorpWatch on Trump’s World of Tech Titans, Crypto Czars &amp; Prison Profiteers,” Democracy Now! Accessed: Jun. 24, 2026. [Online]. Available: <a href="https://www.democracynow.org/2026/6/23/maga_inc">https://www.democracynow.org/2026/6/23/maga_inc</a></li>
+
+<li>S. Žižek, “Trump the Rebel King,” Project Syndicate. Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-both-top-law-enforcement-officer-and-criminal-gang-leader-by-slavoj-zizek-2026-02">https://www.project-syndicate.org/commentary/trump-both-top-law-enforcement-officer-and-criminal-gang-leader-by-slavoj-zizek-2026-02</a></li>
+
+<li>“Pluralistic: Trump antitrust is dead (13 Feb 2026) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://pluralistic.net/2026/02/13/khanservatives/">https://pluralistic.net/2026/02/13/khanservatives/</a></li>
+
+<li>BY, “In Melania, the Emperor Has a Lot of Clothes.” Accessed: Feb. 05, 2026. [Online]. Available: <a href="https://jacobin.com/2026/02/melania-trump-documentary-film-ratner">https://jacobin.com/2026/02/melania-trump-documentary-film-ratner</a></li>
+
+<li>J. Blakely, “In the Land of the Data Blind: Why political science can’t grasp Trumpism,” Harper’s Magazine, vol. January 2026. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://harpers.org/archive/2026/01/in-the-land-of-the-data-blind-jason-blakely-political-science-trumpism/">https://harpers.org/archive/2026/01/in-the-land-of-the-data-blind-jason-blakely-political-science-trumpism/</a></li>
+
+<li>“World Leader Compares Trump to Hitler in Front of Entire U.N.,” The New Republic. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://newrepublic.com/post/200952/colombian-president-compares-trump-hitler-un-speech">https://newrepublic.com/post/200952/colombian-president-compares-trump-hitler-un-speech</a></li>
+
+<li>B. Chellaney, “Trump’s Peacemaker Hype,” Project Syndicate. Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-absurd-unga-claim-to-have-ended-seven-wars-in-seven-months-by-brahma-chellaney-2025-09">https://www.project-syndicate.org/commentary/trump-absurd-unga-claim-to-have-ended-seven-wars-in-seven-months-by-brahma-chellaney-2025-09</a></li>
+
+<li>“Žižek: ‘Trump did what The Left couldn’t.’” Accessed: Sep. 27, 2025. [Online]. Available: <a href="https://iai.tv/video/the-hope-you-find-at-rock-bottom">https://iai.tv/video/the-hope-you-find-at-rock-bottom</a></li>
+
+<li>“Royalty celebrates oligarchy—Trump’s second state visit to the UK,” World Socialist Web Site. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/09/19/kvxx-s19.html">https://www.wsws.org/en/articles/2025/09/19/kvxx-s19.html</a></li>
+
+<li>“Stop Trump Coalition.” Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://stoptrump.org.uk/">https://stoptrump.org.uk/</a></li>
+
+<li>T. O. Staff, “Rudy Giuliani Awarded Presidential Medal Of Incest,” The Onion. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://theonion.com/rudy-giuliani-awarded-presidential-medal-of-incest/">https://theonion.com/rudy-giuliani-awarded-presidential-medal-of-incest/</a></li>
+
+<li>N. L. Khrushcheva, “Trump’s Nobel Delusions,” Project Syndicate. Accessed: Aug. 23, 2025. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-nobel-peace-prize-ambition-is-delusional-by-nina-l-khrushcheva-2025-08">https://www.project-syndicate.org/commentary/trump-nobel-peace-prize-ambition-is-delusional-by-nina-l-khrushcheva-2025-08</a></li>
+
+<li>“Donald Trump wants a Nobel : Peoples Dispatch.” Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://peoplesdispatch.org/2025/08/20/donald-trump-wants-a-nobel/">https://peoplesdispatch.org/2025/08/20/donald-trump-wants-a-nobel/</a></li>
+
+<li>“Trump’s tariffs and the threat of World War III,” World Socialist Web Site. Accessed: Jul. 14, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/07/12/qndd-j12.html">https://www.wsws.org/en/articles/2025/07/12/qndd-j12.html</a></li>
+
+<li>Paco, “What They Are Actually Saying – and What The Trump Administration is Ignoring: Roadless Rule Rescission,” Organic Consumers. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://organicconsumers.org/what-they-are-actually-saying-and-what-the-trump-administration-is-ignoring-roadless-rule-rescission/">https://organicconsumers.org/what-they-are-actually-saying-and-what-the-trump-administration-is-ignoring-roadless-rule-rescission/</a></li>
+
+<li>“What Donald Trump has in Common with Colonial-Era Indian Thinkers,” The India Forum. Accessed: May 21, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/history/what-donald-trump-has-common-colonial-era-indian-thinkers">https://www.theindiaforum.in/history/what-donald-trump-has-common-colonial-era-indian-thinkers</a></li>
+
+<li>S. Narain, “Donald Trump joins the Leftist Seattle protesters,” Down To Earth. Accessed: Apr. 08, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/donald-trump-joins-the-leftist-seattle-protesters">https://www.downtoearth.org.in/governance/donald-trump-joins-the-leftist-seattle-protesters</a></li>
+
+<li>T. Editors, “The Art of the Deal or the Dirt?,” JSTOR Daily. Accessed: Feb. 15, 2025. [Online]. Available: <a href="https://daily.jstor.org/the-art-of-the-deal-or-the-dirt/">https://daily.jstor.org/the-art-of-the-deal-or-the-dirt/</a></li>
+
+<li>“The poverty of extreme wealth.” Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://theecologist.org/2025/feb/07/poverty-extreme-wealth">https://theecologist.org/2025/feb/07/poverty-extreme-wealth</a></li>
+
+<li>“Let Us Find Our Lost Diamonds: The Sixth Newsletter (2025),” Tricontinental: Institute for Social Research. Accessed: Feb. 07, 2025. [Online]. Available: <a href="https://thetricontinental.org/newsletterissue/golden-age-of-imperialism/">https://thetricontinental.org/newsletterissue/golden-age-of-imperialism/</a></li>
+
+<li>B. M. Barry-Jester Anna Maria, “‘People Will Die’: The Trump Administration Said It Lifted Its Ban on Lifesaving Humanitarian Aid. That’s Not True.,” ProPublica. Accessed: Feb. 01, 2025. [Online]. Available: <a href="https://www.propublica.org/article/trump-state-department-usaid-humanitarian-aid-freeze-ukraine-gaza-sudan">https://www.propublica.org/article/trump-state-department-usaid-humanitarian-aid-freeze-ukraine-gaza-sudan</a></li>
+
+<li>Trump’s Smug Decisions, India Also Under Threat | NewsClick, (Jan. 24, 2025). Accessed: Jan. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XTjuGJ66dvA">https://www.youtube.com/watch?v=XTjuGJ66dvA</a></li>
+
+<li>S. Narain, “The Age of Trump,” Down To Earth. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/the-age-of-trump">https://www.downtoearth.org.in/climate-change/the-age-of-trump</a></li>
+
+<li>“Citizens United Helped Elon Musk &amp; Other Billionaires Bankroll Trump Victory,” Democracy Now! Accessed: Jan. 23, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/1/22/citizens_united">https://www.democracynow.org/2025/1/22/citizens_united</a></li>
+
+<li>S. Musgrave, “Trump’s Executive Orders Are Full of Deadlines. We’re Tracking Them.,” The Intercept. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://theintercept.com/2025/01/21/trump-executive-order-tracker-deadlines/">https://theintercept.com/2025/01/21/trump-executive-order-tracker-deadlines/</a></li>
+<li>“What is in Trump’s executive orders on immigration?,” World Socialist Web Site. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/22/rlzo-j22.html">https://www.wsws.org/en/articles/2025/01/22/rlzo-j22.html</a></li>
+<li>“Democrats, media fall in line as Trump begins administration of ‘shock and awe,’” World Socialist Web Site. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/22/rzmb-j22.html">https://www.wsws.org/en/articles/2025/01/22/rzmb-j22.html</a></li>
+<li>“Trump White House signals new phase in ethnic cleansing of Palestine,” World Socialist Web Site. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/22/qjxm-j22.html">https://www.wsws.org/en/articles/2025/01/22/qjxm-j22.html</a></li>
+<li>“Trump pardons all January 6 far-right foot soldiers and commutes sentences of high-level fascist militia leaders,” World Socialist Web Site. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/22/cpkb-j22.html">https://www.wsws.org/en/articles/2025/01/22/cpkb-j22.html</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>C. O. Conversation The, “Power in chaos: Trump’s brand of ‘disaster politics’ could inspire more autocrats – and democracies,” Scroll.in. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://scroll.in/article/1078144/power-in-chaos-trumps-brand-of-disaster-politics-could-inspire-more-autocrats-and-democracies">https://scroll.in/article/1078144/power-in-chaos-trumps-brand-of-disaster-politics-could-inspire-more-autocrats-and-democracies</a></li>
+
+<li>“Will Trump Be Able to Deport 13.3 Million Undocumented Immigrants?,” The Wire. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://thewire.in/world/trump-able-to-deport-13-3-million-undocumented-immigrants">https://thewire.in/world/trump-able-to-deport-13-3-million-undocumented-immigrants</a></li>
+<li>C. O. Conversation The, “Power in chaos: Trump’s brand of ‘disaster politics’ could inspire more autocrats – and democracies,” Scroll.in. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://scroll.in/article/1078144/power-in-chaos-trumps-brand-of-disaster-politics-could-inspire-more-autocrats-and-democracies">https://scroll.in/article/1078144/power-in-chaos-trumps-brand-of-disaster-politics-could-inspire-more-autocrats-and-democracies</a></li>
+<li>E. S. Conversation The, “In Trump’s second term, a focus on immigration, nationalism – and retribution,” Scroll.in. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://scroll.in/article/1078175/in-trumps-second-term-a-focus-on-immigration-nationalism-and-retribution">https://scroll.in/article/1078175/in-trumps-second-term-a-focus-on-immigration-nationalism-and-retribution</a></li>
+<li>“Social media erupts over Trump inauguration, TikTok ban and Gaza ceasefire,” Middle East Eye. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/trending/social-media-erupts-over-trump-inauguration-tiktok-ban-and-gaza-ceasefire">https://www.middleeasteye.net/trending/social-media-erupts-over-trump-inauguration-tiktok-ban-and-gaza-ceasefire</a></li>
+<li>“Trump to sign close to 100 executive orders on day one in office,” Middle East Eye. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/news/trump-sign-close-100-executive-orders-day-one-office">https://www.middleeasteye.net/news/trump-sign-close-100-executive-orders-day-one-office</a></li>
+<li>“Social media erupts over Trump inauguration, TikTok ban and Gaza ceasefire,” Middle East Eye. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/trending/social-media-erupts-over-trump-inauguration-tiktok-ban-and-gaza-ceasefire">https://www.middleeasteye.net/trending/social-media-erupts-over-trump-inauguration-tiktok-ban-and-gaza-ceasefire</a></li>
+<li>“Three press freedom threats to watch during Trump 2.0,” Freedom of the Press. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://freedom.press/issues/three-press-freedom-threats-during-trump-20/">https://freedom.press/issues/three-press-freedom-threats-during-trump-20/</a></li>
+<li>Reuters, “Trump signs executive order, U.S. withdraws from WHO,” The Hindu, Jan. 21, 2025. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/international/trump-signs-executive-order-withdrawing-us-from-the-world-health-organization/article69122110.ece">https://www.thehindu.com/news/international/trump-signs-executive-order-withdrawing-us-from-the-world-health-organization/article69122110.ece</a></li>
+<li>D. T. E. Staff, “Gulf of America, tariffs and abortion: All about executive orders to be signed by Donald Trump concerning the environment on Day 1,” Down To Earth. Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/gulf-of-america-tariffs-and-abortion-all-about-executive-orders-to-be-signed-by-donald-trump-concerning-the-environment-on-day-1">https://www.downtoearth.org.in/environment/gulf-of-america-tariffs-and-abortion-all-about-executive-orders-to-be-signed-by-donald-trump-concerning-the-environment-on-day-1</a></li>
+
+<li>“American degradation: Trump returns to the White House,” World Socialist Web Site. Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/20/uirp-j20.html">https://www.wsws.org/en/articles/2025/01/20/uirp-j20.html</a></li>
+
+<li>T. Gaulkin, “Memos to Trump: Policy recommen­dations the new president might actually like,” Bulletin of the Atomic Scientists. Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://thebulletin.org/2025/01/memos-to-trump-policy-recommendations-the-new-president-might-actually-like/">https://thebulletin.org/2025/01/memos-to-trump-policy-recommendations-the-new-president-might-actually-like/</a></li>
+
+<li>“Trump Inauguration to Bring in Record-Breaking $250M from Billionaires &amp; Corporations,” Democracy Now! Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://www.democracynow.org/2025/1/17/trump_inauguration_committee_billionaire_donations">https://www.democracynow.org/2025/1/17/trump_inauguration_committee_billionaire_donations</a></li>
+
+<li>J. Feffer, “Trump: Isolationist in Instinct, Unpredictable in Action - FPIF,” Foreign Policy In Focus. Accessed: Jan. 17, 2025. [Online]. Available: <a href="https://fpif.org/trump-isolationist-in-instinct-unpredictable-in-action/">https://fpif.org/trump-isolationist-in-instinct-unpredictable-in-action/</a></li>
+
+<li>“Arch-criminal Trump to assume the presidency,” World Socialist Web Site. Accessed: Jan. 15, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/15/pvvz-j15.html">https://www.wsws.org/en/articles/2025/01/15/pvvz-j15.html</a></li>
+
+<li>AP, “Supreme Court rejects Trump’s bid to delay sentencing in his New York hush money case,” The Hindu, Jan. 10, 2025. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/international/supreme-court-rejects-trumps-bid-to-delay-sentencing-in-his-new-york-hush-money-case/article69083333.ece">https://www.thehindu.com/news/international/supreme-court-rejects-trumps-bid-to-delay-sentencing-in-his-new-york-hush-money-case/article69083333.ece</a></li>
+
+<li>“How Does Trump Plan to Carry Out Mass Deportations?,” NewsClick. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://www.newsclick.in/how-does-trump-plan-carry-out-mass-deportations">https://www.newsclick.in/how-does-trump-plan-carry-out-mass-deportations</a></li>
+
+<li>“Trump’s Use of Tariff Wall as a Weapon,” NewsClick. Accessed: Dec. 29, 2024. [Online]. Available: <a href="https://www.newsclick.in/trumps-use-tariff-wall-weapon">https://www.newsclick.in/trumps-use-tariff-wall-weapon</a></li>
+
+<li>R. Ghai, “As Donald Trump eyes buying Greenland, an explainer on other territorial acquisitions by the US,” Down To Earth. Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/as-donald-trump-eyes-buying-greenland-an-explainer-on-other-territorial-acquisitions-by-the-us">https://www.downtoearth.org.in/governance/as-donald-trump-eyes-buying-greenland-an-explainer-on-other-territorial-acquisitions-by-the-us</a></li>
+
+<li>E. Posner, “Trump’s Pro-Corporate Populism Cannot Last | by Eric Posner,” Project Syndicate. Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/unitedhealthcare-ceo-populism-expanding-to-target-business-by-eric-posner-2024-12">https://www.project-syndicate.org/commentary/unitedhealthcare-ceo-populism-expanding-to-target-business-by-eric-posner-2024-12</a></li>
+
+<li>J. Radack, “Trump was prosecuted under the Espionage Act — now he’ll turn it against his ‘enemies,’” Salon. Accessed: Dec. 24, 2024. [Online]. Available: <a href="https://www.salon.com/2024/12/15/was-prosecuted-under-the-espionage-act--now-hell-turn-it-against-his-enemies/">https://www.salon.com/2024/12/15/was-prosecuted-under-the-espionage-act--now-hell-turn-it-against-his-enemies/</a></li>
+
+<li>World Diplomacy: Trump Warns India, Warms to China? | NewsClick, (Dec. 21, 2024). Accessed: Dec. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9xn3VM19a8g">https://www.youtube.com/watch?v=9xn3VM19a8g</a></li>
+
+<li>V. Nanjappa, “Even before his inaugural, Trump has shaken Trudeau: What options does the Canadian PM have,” Organiser. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/19/269962/world/even-before-his-inaugural-trump-has-shaken-trudeau-what-options-does-the-canadian-pm-have/">https://organiser.org/2024/12/19/269962/world/even-before-his-inaugural-trump-has-shaken-trudeau-what-options-does-the-canadian-pm-have/</a></li>
+
+<li>K. Bhattacherjee, “Trump selects farmers agitation supporter Harmeet K. Dhillon as Assistant Attorney General for civil rights,” The Hindu, Dec. 10, 2024. Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/trump-nominates-indian-american-harmeet-dhillon-as-assistant-attorney-general-for-civil-rights/article68968153.ece">https://www.thehindu.com/news/international/trump-nominates-indian-american-harmeet-dhillon-as-assistant-attorney-general-for-civil-rights/article68968153.ece</a></li>
+
+<li>V. Sharma, “Why American Women Are Choosing The 4B Movement After Trump’s Win,” Feminism in India. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://feminisminindia.com/?p=179246">https://feminisminindia.com/?p=179246</a></li>
+
+<li>C. Q. and E. Galperin, “Top Ten EFF Digital Security Resources for People Concerned About the Incoming Trump Administration,” Electronic Frontier Foundation. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.eff.org/deeplinks/2024/12/top-ten-eff-digital-security-resources-people-concerned-about-incoming-trump">https://www.eff.org/deeplinks/2024/12/top-ten-eff-digital-security-resources-people-concerned-about-incoming-trump</a></li>
+
+<li>“Trump 2.0 Means More Pain in the Middle East.” Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://jacobin.com/2024/11/trump-biden-israel-middle-east">https://jacobin.com/2024/11/trump-biden-israel-middle-east</a></li>
+
+<li>S. Darbhamulla, “Jay Bhattacharya: Trump’s research czar,” The Hindu, Nov. 30, 2024. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/jay-bhattacharya-trumps-research-czar/article68932474.ece">https://www.thehindu.com/news/international/jay-bhattacharya-trumps-research-czar/article68932474.ece</a></li>
+
+<li>D. Dayen, “Trump at the Lobbyist Trough,” The American Prospect. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://prospect.org/api/content/aeadee1e-a929-11ef-bfb2-12163087a831/">https://prospect.org/api/content/aeadee1e-a929-11ef-bfb2-12163087a831/</a></li>
+
+<li>“Trump and the Triumph of America’s New Elite,” Bloomberg.com, Nov. 20, 2024. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://www.bloomberg.com/news/articles/2024-11-20/trump-s-victory-ushers-in-a-new-ruling-class">https://www.bloomberg.com/news/articles/2024-11-20/trump-s-victory-ushers-in-a-new-ruling-class</a></li>
+
+<li>M. Redden, “How Trump Plans to Seize the Power of the Purse From Congress,” ProPublica. Accessed: Nov. 27, 2024. [Online]. Available: <a href="https://www.propublica.org/article/trump-impoundment-appropriations-congress-budget">https://www.propublica.org/article/trump-impoundment-appropriations-congress-budget</a></li>
+
+<li>J. Ghosh, “Trump’s Bad COP | by Jayati Ghosh,” Project Syndicate. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.project-syndicate.org/commentary/trump-reelection-does-not-mark-end-of-fight-against-climate-change-by-jayati-ghosh-2024-11">https://www.project-syndicate.org/commentary/trump-reelection-does-not-mark-end-of-fight-against-climate-change-by-jayati-ghosh-2024-11</a></li>
+
+<li>N. Turse, “‘Absolutely Insane’: Pentagon Officials on Trump’s Military Deportation Plan,” The Intercept. Accessed: Nov. 20, 2024. [Online]. Available: <a href="https://theintercept.com/2024/11/19/trump-deportation-plan-military/">https://theintercept.com/2024/11/19/trump-deportation-plan-military/</a></li>
+
+<li>“Trump’s Victory and Collapse of Liberal Centre,” NewsClick. Accessed: Nov. 17, 2024. [Online]. Available: <a href="https://www.newsclick.in/trumps-victory-and-collapse-liberal-centre">https://www.newsclick.in/trumps-victory-and-collapse-liberal-centre</a></li>
+
+<li>T. H. Bureau, “Donald Trump Cabinet: From vaccine sceptic Robert F. Kennedy Jr to Elon Musk,” The Hindu, Nov. 15, 2024. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/donald-trump-cabinet-from-vaccine-sceptic-robert-f-kennedy-jr-to-elon-musk/article68871062.ece">https://www.thehindu.com/news/international/donald-trump-cabinet-from-vaccine-sceptic-robert-f-kennedy-jr-to-elon-musk/article68871062.ece</a></li>
+
+<li>“The socialist response to the election of Trump,” World Socialist Web Site. Accessed: Nov. 13, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/12/jcwg-n12.html">https://www.wsws.org/en/articles/2024/11/12/jcwg-n12.html</a></li>
+<li>K. Bhattacherjee, “The Hindu Explains | How will Trump treat illegal Indians?,” The Hindu, Nov. 09, 2024. Accessed: Nov. 13, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/international/how-will-trump-treat-illegal-indians/article68850162.ece">https://www.thehindu.com/news/international/how-will-trump-treat-illegal-indians/article68850162.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Will Trump’s Return Intensify Trade Wars? | NewsClick, (Nov. 11, 2024). Accessed: Nov. 12, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XosJJ_UEdLw">https://www.youtube.com/watch?v=XosJJ_UEdLw</a></li>
+
+<li>N. Hurowitz, “Congress Is About to Gift Trump Sweeping Powers to Crush His Political Enemies,” The Intercept. Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://theintercept.com/2024/11/10/trump-nonprofit-tax-exempt-political-enemies/">https://theintercept.com/2024/11/10/trump-nonprofit-tax-exempt-political-enemies/</a></li>
+
+<li>“The socialist response to the election of Trump,” World Socialist Web Site. Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/12/jcwg-n12.html">https://www.wsws.org/en/articles/2024/11/12/jcwg-n12.html</a></li>
+
+<li>“Trump Is Planning a Presidency of, by, and for the Rich.” Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://jacobin.com/2024/11/trump-musk-billionaires-tax-cuts">https://jacobin.com/2024/11/trump-musk-billionaires-tax-cuts</a></li>
+
+<li>N. S. Conversation The, “Deportation, denaturalisation, ending birthright citizenship: How Trump’s plans could spell havoc,” Scroll.in. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://scroll.in/article/1075420/deportation-denaturalisation-ending-birthright-citizenship-how-trumps-plans-could-spell-havoc">https://scroll.in/article/1075420/deportation-denaturalisation-ending-birthright-citizenship-how-trumps-plans-could-spell-havoc</a></li>
+<li>“The unholy alliance between India and the new global wave of white supremacy.” Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://caravanmagazine.in/reportage/unholy-alliance-india-white-supremacy">https://caravanmagazine.in/reportage/unholy-alliance-india-white-supremacy</a></li>
+<li>“2024 US Presidential Polls: What Trump’s Win Means,” NewsClick. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://www.newsclick.in/2024-us-presidential-polls-what-trumps-win-means">https://www.newsclick.in/2024-us-presidential-polls-what-trumps-win-means</a></li>
+<li>“South Asia’s governments rush to congratulate America’s fascist president-elect Trump,” World Socialist Web Site. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/09/jmjw-n09.html">https://www.wsws.org/en/articles/2024/11/09/jmjw-n09.html</a></li>
+<li>R. T. November 2024, “‘It could be a catastrophe’: Déjà vu and panic for scientists as Trump wins second term,” Chemistry World. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://www.chemistryworld.com/news/it-could-be-a-catastrophe-deja-vu-and-panic-for-scientists-as-trump-wins-second-term/4020486.article">https://www.chemistryworld.com/news/it-could-be-a-catastrophe-deja-vu-and-panic-for-scientists-as-trump-wins-second-term/4020486.article</a></li>
+<li>R. T. November 2024, “Trump’s re-election could empower peddlers of some of the worst anti-science ideas,” Chemistry World. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://www.chemistryworld.com/news/trumps-re-election-could-empower-peddlers-of-some-of-the-worst-anti-science-ideas/4020494.article">https://www.chemistryworld.com/news/trumps-re-election-could-empower-peddlers-of-some-of-the-worst-anti-science-ideas/4020494.article</a></li>
+<li>J. Catanoso, “U.S. policy experts confident of future climate action despite Trump election,” Mongabay Environmental News. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://news.mongabay.com/2024/11/u-s-policy-experts-confident-of-future-climate-action-despite-trump-election/">https://news.mongabay.com/2024/11/u-s-policy-experts-confident-of-future-climate-action-despite-trump-election/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Author Fatima Bhutto on How Gaza Hypocrisy Impacted Harris Election Loss,” Democracy Now! Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/11/7/fatima_bhutto">https://www.democracynow.org/2024/11/7/fatima_bhutto</a></li>
+<li>R. T. November 2024, “‘It could be a catastrophe’: Déjà vu and panic for scientists as Trump wins second term,” Chemistry World. Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://www.chemistryworld.com/news/it-could-be-a-catastrophe-deja-vu-and-panic-for-scientists-as-trump-wins-second-term/4020486.article">https://www.chemistryworld.com/news/it-could-be-a-catastrophe-deja-vu-and-panic-for-scientists-as-trump-wins-second-term/4020486.article</a></li>
+<li>“A New Trump Era Lies Ahead. Here’s How UCS Is Responding.,” The Equation. Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://blog.ucsusa.org/kim-waddell/a-new-trump-era-lies-ahead-heres-how-ucs-is-responding/">https://blog.ucsusa.org/kim-waddell/a-new-trump-era-lies-ahead-heres-how-ucs-is-responding/</a></li>
+
+<li>“Waiting for Justice: The Baghjan Oil Blow Out,” The India Forum. Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/environment/waiting-justice-baghjan-oil-blow-out">https://www.theindiaforum.in/environment/waiting-justice-baghjan-oil-blow-out</a></li>
+<li>What’s Behind Trump’s Victory in US Elections? | NewsClick, (Nov. 07, 2024). Accessed: Nov. 08, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XpxlqSTqRo8">https://www.youtube.com/watch?v=XpxlqSTqRo8</a></li>
+<li>“After campaigning for Clinton, Biden and Harris, Bernie Sanders accuses Democrats of ‘abandoning working class,’” World Socialist Web Site. Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/08/imjf-n08.html">https://www.wsws.org/en/articles/2024/11/08/imjf-n08.html</a></li>
+<li>“Democrats grovel before Trump,” World Socialist Web Site. Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/08/yide-n08.html">https://www.wsws.org/en/articles/2024/11/08/yide-n08.html</a></li>
+<li>“Requiem for the Obama Coalition.” Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://jacobin.com/2024/11/obama-democrats-2024-election-race">https://jacobin.com/2024/11/obama-democrats-2024-election-race</a></li>
+<li>“Staring Into the Trumpian Abyss.” Accessed: Nov. 08, 2024. [Online]. Available: <a href="https://jacobin.com/2024/11/trump-president-2024-election-left">https://jacobin.com/2024/11/trump-president-2024-election-left</a></li>
+</ul>
+
+
+
+
+
+
+<ul class="org-ul">
+<li>“Amid the uncertainty, here’s what Trump’s victory might mean for U.S. science.” Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.science.org/content/article/amid-uncertainty-here-s-what-trump-s-victory-might-mean-u-s-science">https://www.science.org/content/article/amid-uncertainty-here-s-what-trump-s-victory-might-mean-u-s-science</a></li>
+
+<li>C. Cohn, “The 2024 U.S. Election is Over. EFF is Ready for What’s Next.,” Electronic Frontier Foundation. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.eff.org/deeplinks/2024/11/2024-us-election-over-eff-ready-whats-next">https://www.eff.org/deeplinks/2024/11/2024-us-election-over-eff-ready-whats-next</a></li>
+<li>M. Field, “What Trump might do on vaccines, pandemics, global health, and more,” Bulletin of the Atomic Scientists. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/11/what-trump-might-do-on-vaccines-pandemics-global-health-and-more/">https://thebulletin.org/2024/11/what-trump-might-do-on-vaccines-pandemics-global-health-and-more/</a></li>
+<li>J. McKenzie, “Americans elect a climate change denier (again),” Bulletin of the Atomic Scientists. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/11/americans-elect-a-climate-change-denier-again/">https://thebulletin.org/2024/11/americans-elect-a-climate-change-denier-again/</a></li>
+<li>F. Diaz-Maurin, “After Trump’s victory, a divided Europe braces for its security without the United States,” Bulletin of the Atomic Scientists. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/11/after-trumps-victory-a-divided-europe-braces-for-its-security-without-the-united-states/">https://thebulletin.org/2024/11/after-trumps-victory-a-divided-europe-braces-for-its-security-without-the-united-states/</a></li>
+<li>S. Goudarzi, “Trump’s potential impact on emerging and disruptive technologies,” Bulletin of the Atomic Scientists. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/11/trumps-potential-impact-on-emerging-and-disruptive-technologies/">https://thebulletin.org/2024/11/trumps-potential-impact-on-emerging-and-disruptive-technologies/</a></li>
+<li>“‘A Devastating Result’: John Nichols on GOP Taking White House and the Senate,” Democracy Now! Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/11/6/john_nichols_2024">https://www.democracynow.org/2024/11/6/john_nichols_2024</a></li>
+<li>“‘This Is a Collapse of the Democratic Party’: Ralph Nader on Roots of Trump’s Win Over Harris,” Democracy Now! Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/11/6/ralph_nader_on_trumps_win">https://www.democracynow.org/2024/11/6/ralph_nader_on_trumps_win</a></li>
+<li>“‘The Confederacy Won’: Why Donald Trump’s Reelection Is a Win for White Supremacy, Xenophobia &amp; Hate,” Democracy Now! Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/11/6/carol_anderson_michele_goodwin_2024_trump">https://www.democracynow.org/2024/11/6/carol_anderson_michele_goodwin_2024_trump</a></li>
+<li>“How Trump won the election.” Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://theecologist.org/2024/nov/06/how-trump-won-election">https://theecologist.org/2024/nov/06/how-trump-won-election</a></li>
+<li>B. G. Young Andrea Thompson, Tanya Lewis, Lauren J., “Project 2025’s Blueprint for a Second Trump Presidency Spells Out How to Harm U.S. Science,” Scientific American. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.scientificamerican.com/article/project-2025-plan-for-trump-presidency-has-far-reaching-threats-to-science/">https://www.scientificamerican.com/article/project-2025-plan-for-trump-presidency-has-far-reaching-threats-to-science/</a></li>
+<li>B. S. News Corbin Hiar, E&amp;E, “Trump Victory Is a ‘Gut Punch’ to U.S. Climate Action,” Scientific American. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.scientificamerican.com/article/trump-victory-is-a-gut-punch-to-u-s-climate-action/">https://www.scientificamerican.com/article/trump-victory-is-a-gut-punch-to-u-s-climate-action/</a></li>
+<li>“What a Second Trump Administration Means for Food and Farms,” The Equation. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://blog.ucsusa.org/karen-perry-stillerman/what-a-second-trump-administration-means-for-food-and-farms/">https://blog.ucsusa.org/karen-perry-stillerman/what-a-second-trump-administration-means-for-food-and-farms/</a></li>
+<li>“A New Trump Era Lies Ahead. Here’s How UCS Is Responding.,” The Equation. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://blog.ucsusa.org/kim-waddell/a-new-trump-era-lies-ahead-heres-how-ucs-is-responding/">https://blog.ucsusa.org/kim-waddell/a-new-trump-era-lies-ahead-heres-how-ucs-is-responding/</a></li>
+<li>“The unholy alliance between India and the new global wave of white supremacy.” Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://caravanmagazine.in/reportage/unholy-alliance-india-white-supremacy">https://caravanmagazine.in/reportage/unholy-alliance-india-white-supremacy</a></li>
+<li>What’s Behind Trump’s Victory in US Elections? | NewsClick, (Nov. 07, 2024). Accessed: Nov. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XpxlqSTqRo8">https://www.youtube.com/watch?v=XpxlqSTqRo8</a></li>
+<li>“Trump will try to destroy press freedom. We won’t let him,” Freedom of the Press. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://freedom.press/issues/trump-will-try-to-destroy-press-freedom-we-wont-let-him/">https://freedom.press/issues/trump-will-try-to-destroy-press-freedom-we-wont-let-him/</a></li>
+<li>“On the election of Donald Trump,” World Socialist Web Site. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/06/fsbs-n06.html">https://www.wsws.org/en/articles/2024/11/06/fsbs-n06.html</a></li>
+<li>“Trump has two choices: Obliterate Palestine or end the war,” Middle East Eye. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.middleeasteye.net/opinion/trump-two-choices-obliterate-palestine-end-war">https://www.middleeasteye.net/opinion/trump-two-choices-obliterate-palestine-end-war</a></li>
+<li>“Trump won. Is NIH in for a major shake-up?” Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.science.org/content/article/trump-won-nih-major-shake">https://www.science.org/content/article/trump-won-nih-major-shake</a></li>
+<li>S. Engelberg, “What We’ll Be Covering in a Second Trump Administration,” ProPublica. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.propublica.org/article/second-trump-administration-investigative-journalism">https://www.propublica.org/article/second-trump-administration-investigative-journalism</a></li>
+<li>“On the election of Donald Trump,” World Socialist Web Site. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/11/06/fsbs-n06.html">https://www.wsws.org/en/articles/2024/11/06/fsbs-n06.html</a></li>
+<li>N. Lennard, “The Answer to Trump’s Victory Is Radical Action,” The Intercept. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://theintercept.com/2024/11/06/trump-harris-election-results-action/">https://theintercept.com/2024/11/06/trump-harris-election-results-action/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Trump’s Hateful Rally Has No Real Answer From Democrats.” Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://jacobin.com/2024/10/trump-msg-nyc-rally">https://jacobin.com/2024/10/trump-msg-nyc-rally</a></li>
+<li>“Trump’s fascist rally at Madison Square Garden,” World Socialist Web Site. Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/10/29/cnmy-o29.html">https://www.wsws.org/en/articles/2024/10/29/cnmy-o29.html</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>T. Gaulkin, “An existential timeline of the Trump/Pence and Biden/Harris presidencies,” Bulletin of the Atomic Scientists. Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/10/an-existential-timeline-of-the-trump-pence-and-biden-harris-presidencies/">https://thebulletin.org/2024/10/an-existential-timeline-of-the-trump-pence-and-biden-harris-presidencies/</a></li>
+
+<li>“Harris admits Trump seeks dictatorial rule,” World Socialist Web Site. Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/10/24/pxyn-o24.html">https://www.wsws.org/en/articles/2024/10/24/pxyn-o24.html</a></li>
+
+<li>A. M. Rana Chetan, “Trump 2.0 would be a disaster for climate policy,” Down To Earth. Accessed: Oct. 22, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/trump-20-would-be-a-disaster-for-climate-policy">https://www.downtoearth.org.in/climate-change/trump-20-would-be-a-disaster-for-climate-policy</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Facing Federal Probes, Elon Musk Spends Millions to Help Elect Trump,” Democracy Now! Accessed: Oct. 22, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/10/21/eric_lipton_elon_musk_2024_election">https://www.democracynow.org/2024/10/21/eric_lipton_elon_musk_2024_election</a></li>
+
+<li>“Why liberals fear-mongering about Trump should read Hobbes | Aeon Essays,” Aeon. Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://aeon.co/essays/why-liberals-fear-mongering-about-trump-should-read-hobbes">https://aeon.co/essays/why-liberals-fear-mongering-about-trump-should-read-hobbes</a></li>
+
+<li>J. Hawkins, “A new book reveals much of Trump’s success is based on a myth he is a self-made billionaire,” The Conversation. Accessed: Oct. 17, 2024. [Online]. Available: <a href="http://theconversation.com/a-new-book-reveals-much-of-trumps-success-is-based-on-a-myth-he-is-a-self-made-billionaire-240648">http://theconversation.com/a-new-book-reveals-much-of-trumps-success-is-based-on-a-myth-he-is-a-self-made-billionaire-240648</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>thejuicemedia, Honest Government Ad | TRUMP 2024 🇺🇸🦅, (Sep. 27, 2024). Accessed: Oct. 12, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KHuMjIhS6t0">https://www.youtube.com/watch?v=KHuMjIhS6t0</a></li>
+
+<li>“New Film Opens Despite Trump’s Attempts to Block Anyone from Seeing It,” Democracy Now! Accessed: Oct. 12, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/10/11/the_apprentice">https://www.democracynow.org/2024/10/11/the_apprentice</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Risen, “Why the Media Won’t Report the Truth About Trump,” The Intercept. Accessed: Aug. 31, 2024. [Online]. Available: <a href="https://theintercept.com/2024/08/28/trump-campaign-election-media-coverage-journalists/">https://theintercept.com/2024/08/28/trump-campaign-election-media-coverage-journalists/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>H. H. IV, “How Project 2025 Puts Young People’s Futures at Risk,” Teen Vogue. Accessed: Aug. 17, 2024. [Online]. Available: <a href="https://www.teenvogue.com/story/project-2025-whats-in-it-gen-z-millennials">https://www.teenvogue.com/story/project-2025-whats-in-it-gen-z-millennials</a></li>
+
+<li>“How Elon Musk Broke with the Democrats to Spend Millions on Donald Trump’s Reelection Campaign,” Democracy Now! Accessed: Aug. 15, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/8/14/elon_musk_donald_trump">https://www.democracynow.org/2024/8/14/elon_musk_donald_trump</a></li>
+
+<li>“Donald Trump and the ’80s Aesthetic.” Accessed: Aug. 10, 2024. [Online]. Available: <a href="https://jacobin.com/2024/08/donald-trump-nostalgia-80s-aesthetic">https://jacobin.com/2024/08/donald-trump-nostalgia-80s-aesthetic</a></li>
+
+<li>“Trump Makes More False Promises to the Working Class,” NewsClick. Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://www.newsclick.in/trump-makes-more-false-promises-working-class">https://www.newsclick.in/trump-makes-more-false-promises-working-class</a></li>
+
+<li>“Donald Trump’s Near Death Has Reenergized His Movement.” Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://jacobin.com/2024/07/donald-trump-rnc-assassination-attempt">https://jacobin.com/2024/07/donald-trump-rnc-assassination-attempt</a></li>
+
+<li>“On the attempted assassination of Donald Trump,” World Socialist Web Site. Accessed: Jul. 16, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/07/15/pers-j15.html">https://www.wsws.org/en/articles/2024/07/15/pers-j15.html</a></li>
+
+<li>A. P. Conversation The, “‘One inch away from civil war’: Trump shooting puts American democracy in peril,” Scroll.in. Accessed: Jul. 15, 2024. [Online]. Available: <a href="https://scroll.in/article/1070615/one-inch-away-from-civil-war-trump-shooting-puts-american-democracy-in-peril">https://scroll.in/article/1070615/one-inch-away-from-civil-war-trump-shooting-puts-american-democracy-in-peril</a></li>
+
+<li>J. Mecklin, “An attempted assassination and the conspiratorial disinformation that followed,” Bulletin of the Atomic Scientists. Accessed: Jul. 15, 2024. [Online]. Available: <a href="https://thebulletin.org/2024/07/an-attempted-assassination-and-the-conspiratorial-disinformation-that-followed/">https://thebulletin.org/2024/07/an-attempted-assassination-and-the-conspiratorial-disinformation-that-followed/</a></li>
+
+<li>B. McKibben, “The Planet Could Bear the Scars of a Second Trump Term&#x2026; Forever,” Jun. 05, 2024. Accessed: Jun. 10, 2024. [Online]. Available: <a href="https://www.thenation.com/article/environment/project-2025-trump-climate-change/">https://www.thenation.com/article/environment/project-2025-trump-climate-change/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>P. Wade, “Protesters Crash Trump Rally, Call Him ‘Climate Criminal’: Watch,” Rolling Stone. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://www.rollingstone.com/politics/politics-news/protesters-crash-trump-rally-climate-criminal-1234946695/">https://www.rollingstone.com/politics/politics-news/protesters-crash-trump-rally-climate-criminal-1234946695/</a></li>
+<li>A. Bernstein, “What Donald Trump’s Criminal Trial May Indicate About a Second Trump Term,” ProPublica. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://www.propublica.org/article/donald-trump-criminal-trial-second-term">https://www.propublica.org/article/donald-trump-criminal-trial-second-term</a></li>
+
+<li>“Trump Warns Supporters Might Reach ‘Breaking Point’ If He Is Sentenced to Prison,” Democracy Now! Accessed: Jun. 04, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/6/3/headlines/trump_warns_supporters_might_reach_breaking_point_if_he_is_sentenced_to_prison">https://www.democracynow.org/2024/6/3/headlines/trump_warns_supporters_might_reach_breaking_point_if_he_is_sentenced_to_prison</a></li>
+
+<li>R. F. Mierjeski Justin Elliott,Alex, “Multiple Trump Witnesses Have Received Significant Financial Benefits From His Businesses, Campaign,” ProPublica. Accessed: Jun. 04, 2024. [Online]. Available: <a href="https://www.propublica.org/article/donald-trump-criminal-cases-witnesses-financial-benefits">https://www.propublica.org/article/donald-trump-criminal-cases-witnesses-financial-benefits</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Guilty: Trump Becomes First Ex-President Felon in U.S. History,” Democracy Now! Accessed: Jun. 02, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case">https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case</a></li>
+<li>“Trump’s conviction in New York and the 2024 crisis election - World Socialist Web Site.” Accessed: Jun. 01, 2024. [Online]. Available: <a href="https://www.wsws.org/en/articles/2024/06/01/bxnz-j01.html">https://www.wsws.org/en/articles/2024/06/01/bxnz-j01.html</a></li>
+<li>D. Welle, “Can Donald Trump still become US President?,” Frontline. Accessed: Jun. 01, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/news/donald-trump-convicted-hush-money-trial-united-states-can-he-still-become-us-president-explainer/article68235734.ece">https://frontline.thehindu.com/news/donald-trump-convicted-hush-money-trial-united-states-can-he-still-become-us-president-explainer/article68235734.ece</a></li>
+<li>“‘Unprecedented’: Historian on Trump Verdict &amp; GOP Extremism,” Democracy Now! Accessed: Jun. 01, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case_historic">https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case_historic</a></li>
+<li>“Guilty: Trump Becomes First Ex-President Felon in U.S. History,” Democracy Now! Accessed: Jun. 01, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case">https://www.democracynow.org/2024/5/31/trump_guilty_hush_money_case</a></li>
+
+<li>Slavoj Zizek on Trump and Brexit - BBC News, (Jan. 18, 2017). Accessed: Apr. 09, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2ZUCemb2plE">https://www.youtube.com/watch?v=2ZUCemb2plE</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3ef91e1" class="outline-3">
+<h3 id="org3ef91e1"><span class="section-number-3">7.2.</span> Complexity Science Hub Vienna</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>“Why Traditional Polls Were Wrong About Trump – And May Be Wrong Again.” Accessed: Jan. 21, 2025. [Online]. Available: <a href="https://csh.ac.at/news/why-traditional-polls-were-wrong-about-trump-and-may-be-wrong-again/">https://csh.ac.at/news/why-traditional-polls-were-wrong-about-trump-and-may-be-wrong-again/</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:15</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
