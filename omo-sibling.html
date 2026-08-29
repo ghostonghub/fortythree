@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-29 Sat 11:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Siblings</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Siblings</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2472bfd">1. General</a></li>
+<li><a href="#orga84c8ee">2. STEMM</a></li>
+<li><a href="#org51b5a0f">3. Worldly Matters</a>
+<ul>
+<li><a href="#org2b7516c">3.1. Events</a>
+<ul>
+<li><a href="#orgca4c890">3.1.1. SD</a></li>
+<li><a href="#orgd525e3f">3.1.2. RB</a></li>
+<li><a href="#org8419fd6">3.1.3. BD</a></li>
+</ul>
+</li>
+<li><a href="#org448cb11">3.2. Relationships, Gender, Feminism, Misc</a>
+<ul>
+<li><a href="#orga749e15">3.2.1. Sex</a>
+<ul>
+<li><a href="#orgcd694bb">3.2.1.1. Incest</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgce3feb3">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org39b9e3f">4. Core</a>
+<ul>
+<li><a href="#org95a2bd0">4.1. Brave AI</a>
+<ul>
+<li><a href="#org92b5257">4.1.1. Q</a></li>
+<li><a href="#org027a75d">4.1.2. A</a>
+<ul>
+<li><a href="#orge1d59c2">4.1.2.1. Introduction</a></li>
+<li><a href="#org6717767">4.1.2.2. Top Memoirs &amp; Narrative Non-Fiction: These titles are personal accounts exploring sibling bonds, trauma, mental illness, and survival</a></li>
+<li><a href="#org814561b">4.1.2.3. Top Psychology &amp; Parenting Guides: These texts provide strategies for managing sibling rivalry and understanding birth order</a></li>
+<li><a href="#orgfdc708e">4.1.2.4. Notable Mentions &amp; Emerging Titles</a></li>
+<li><a href="#orgcee306d">4.1.2.5. EndNotes, Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5219060">4.2. Sister</a></li>
+<li><a href="#org54745ee">4.3. Brother</a></li>
+<li><a href="#orga6e9e27">4.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org55f0f31">5. Arts, Misc</a></li>
+<li><a href="#orgd0e213c">6. Special Topics</a></li>
+<li><a href="#org84fc01b">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org2472bfd" class="outline-2">
+<h2 id="org2472bfd"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Sibling,” Wikipedia. Aug. 07, 2026. Accessed: Aug. 26, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sibling&amp;oldid=1368248530">https://en.wikipedia.org/w/index.php?title=Sibling&amp;oldid=1368248530</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga84c8ee" class="outline-2">
+<h2 id="orga84c8ee"><span class="section-number-2">2.</span> STEMM</h2>
+</div>
+<div id="outline-container-org51b5a0f" class="outline-2">
+<h2 id="org51b5a0f"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org2b7516c" class="outline-3">
+<h3 id="org2b7516c"><span class="section-number-3">3.1.</span> Events</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgca4c890" class="outline-4">
+<h4 id="orgca4c890"><span class="section-number-4">3.1.1.</span> SD</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>“Siblings Day,” Wikipedia. Jul. 05, 2022. Accessed: Nov. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Siblings_Day&amp;oldid=1096578337">https://en.wikipedia.org/w/index.php?title=Siblings_Day&amp;oldid=1096578337</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd525e3f" class="outline-4">
+<h4 id="orgd525e3f"><span class="section-number-4">3.1.2.</span> RB</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-rakshab.html">Raksha Bandhan</a>
+<ul class="org-ul">
+<li>Raksha Bandhan: <a href="https://tiny.cc/7cw8101">https://tiny.cc/7cw8101</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8419fd6" class="outline-4">
+<h4 id="org8419fd6"><span class="section-number-4">3.1.3.</span> BD</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-bhaid.html">Bhai Dooj</a></li>
+<li>Bhai Dooj: <a href="https://tiny.cc/7kb9101">https://tiny.cc/7kb9101</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org448cb11" class="outline-3">
+<h3 id="org448cb11"><span class="section-number-3">3.2.</span> Relationships, Gender, Feminism, Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orga749e15" class="outline-4">
+<h4 id="orga749e15"><span class="section-number-4">3.2.1.</span> Sex</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<div id="outline-container-orgcd694bb" class="outline-5">
+<h5 id="orgcd694bb"><span class="section-number-5">3.2.1.1.</span> Incest</h5>
+<div class="outline-text-5" id="text-3-2-1-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortythree/blob/main/omo-incest.html">Incest</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce3feb3" class="outline-3">
+<h3 id="orgce3feb3"><span class="section-number-3">3.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org39b9e3f" class="outline-2">
+<h2 id="org39b9e3f"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org95a2bd0" class="outline-3">
+<h3 id="org95a2bd0"><span class="section-number-3">4.1.</span> Brave AI</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org92b5257" class="outline-4">
+<h4 id="org92b5257"><span class="section-number-4">4.1.1.</span> Q</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>Top 20 Non Fiction Texts On Siblings With Links To Them On Amazon.Com Are</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org027a75d" class="outline-4">
+<h4 id="org027a75d"><span class="section-number-4">4.1.2.</span> A</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<div id="outline-container-orge1d59c2" class="outline-5">
+<h5 id="orge1d59c2"><span class="section-number-5">4.1.2.1.</span> Introduction</h5>
+<div class="outline-text-5" id="text-4-1-2-1">
+<ul class="org-ul">
+<li>Based on current Amazon Best Sellers in the <b><b>Sibling Relationships</b></b> and <b><b>Family Dynamics</b></b> categories, here are the top non-fiction texts (memoirs, psychology, and parenting guides) focusing on siblings. <b>Note: Amazon rankings fluctuate hourly. Direct URLs are dynamic, but searching the <b>*Title + Author</b></b> on Amazon.com will locate the specific edition.*</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6717767" class="outline-5">
+<h5 id="org6717767"><span class="section-number-5">4.1.2.2.</span> Top Memoirs &amp; Narrative Non-Fiction: These titles are personal accounts exploring sibling bonds, trauma, mental illness, and survival</h5>
+<div class="outline-text-5" id="text-4-1-2-2">
+<ul class="org-ul">
+<li><b><b>Brother &amp; Sister: A Memoir</b></b> by Diane Keaton
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> A poignant exploration of Keaton’s relationship with her younger brother Randy, contrasting her stardom with his struggle with mental illness.</li>
+<li><b><b>Status:</b></b> Consistently ranked #1 in Sibling Relationships.</li>
+</ul></li>
+<li><b><b>Etched in Sand</b></b> by Regina Calcaterra
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> The true story of five siblings who survived an abusive childhood in the foster care system on Long Island.</li>
+<li><b><b>Related:</b></b> Also by Calcaterra, <b>Girl Unbroken</b> (sister’s perspective).</li>
+</ul></li>
+<li><b><b>The Wild Truth</b></b> by Carine McCandless
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> The untold story of sibling survival that inspired the film <b>Into the Wild</b>, detailing the author's relationship with her brother Chris.</li>
+</ul></li>
+<li><b><b>Angelhead: My Brother's Descent into Madness</b></b> by Greg Bottoms
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> A memoir about growing up with a schizophrenic brother and the impact on the family unit.</li>
+</ul></li>
+<li><b><b>Did Ye Hear Mammy Died?</b></b> by Séamas O'Reilly
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> A darkly humorous memoir about losing a mother young and the bond between brothers in a chaotic household.</li>
+</ul></li>
+<li><b><b>The Fabulous Bouvier Sisters</b></b> by Sam Kashner and Nancy Schoenberger
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> The tragic and glamorous lives of Jackie Kennedy and Lee Radziwill.</li>
+</ul></li>
+<li><b><b>Annie's Ghosts</b></b> by Steve Luxenberg
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> A journey into a family secret involving a hidden aunt and the impact of silence on sibling generations.</li>
+</ul></li>
+<li><b><b>Trailer Park Parable</b></b> by Tyler Zed
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> Three brothers striving to rise above a broken past and find forgiveness.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org814561b" class="outline-5">
+<h5 id="org814561b"><span class="section-number-5">4.1.2.3.</span> Top Psychology &amp; Parenting Guides: These texts provide strategies for managing sibling rivalry and understanding birth order</h5>
+<div class="outline-text-5" id="text-4-1-2-3">
+<ul class="org-ul">
+<li><b><b>Siblings Without Rivalry</b></b> by Adele Faber and Elaine Mazlish
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> The definitive guide on helping children live together so parents can live too; a perennial bestseller.</li>
+</ul></li>
+<li><b><b>Peaceful Parent, Happy Siblings</b></b> by Dr. Laura Markham
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> Practical tools to foster lifelong connections and minimize conflict.</li>
+</ul></li>
+<li><b><b>The Birth Order Book</b></b> by Dr. Kevin Leman
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> Explains how birth order shapes personality, career, and sibling dynamics.</li>
+</ul></li>
+<li><b><b>Surviving the Death of a Sibling</b></b> by T.J. Wray
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> Living through grief when an adult brother or sister dies; fills a gap in grief literature.</li>
+</ul></li>
+<li><b><b>Same But Different</b></b> by Holly Robinson Peete, Ryan Elizabeth Peete, and RJ Peete
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> Teen life on the autism express, written by a family with twins where one has autism.</li>
+</ul></li>
+<li><b><b>The Family Dynamic</b></b> by Susan Dominus
+<ul class="org-ul">
+<li><b><b>Focus:</b></b> A journalistic deep dive into the mystery of sibling success and divergence.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfdc708e" class="outline-5">
+<h5 id="orgfdc708e"><span class="section-number-5">4.1.2.4.</span> Notable Mentions &amp; Emerging Titles</h5>
+<div class="outline-text-5" id="text-4-1-2-4">
+<ul class="org-ul">
+<li><b><b>How to Talk So Kids Will Listen &amp; Listen So Kids Will Talk</b></b> by Adele Faber and Elaine Mazlish (Includes significant sections on sibling conflict).</li>
+<li><b><b>Mary Boleyn</b></b> by Alison Weir (Historical non-fiction focusing on the sister of Anne Boleyn).</li>
+<li><b><b>Knucklehead</b></b> by Jon Scieszka (Memoir about growing up as one of six brothers).</li>
+<li><b><b>I Will Protect You</b></b> by Eva Mozes Kor (True story of twins surviving Auschwitz).</li>
+<li><b><b>Take Two!</b></b> by J. Patrick Lewis and Jane Yolen (A celebration of twins in history and literature).</li>
+<li><b><b>My Brother Is a Preemie</b></b> by Joseph A. Vitterito II (Guide for siblings of premature babies).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcee306d" class="outline-5">
+<h5 id="orgcee306d"><span class="section-number-5">4.1.2.5.</span> EndNotes, Misc</h5>
+<div class="outline-text-5" id="text-4-1-2-5">
+<ul class="org-ul">
+<li>To purchase, copy the <b><b>Title</b></b> and <b><b>Author</b></b> into the Amazon.com search bar. Most are available in Kindle, Hardcover, Paperback, and Audiobook formats.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5219060" class="outline-3">
+<h3 id="org5219060"><span class="section-number-3">4.2.</span> Sister</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“Sister,” Wikipedia. Jul. 07, 2026. Accessed: Aug. 26, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sister&amp;oldid=1362990205">https://en.wikipedia.org/w/index.php?title=Sister&amp;oldid=1362990205</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org54745ee" class="outline-3">
+<h3 id="org54745ee"><span class="section-number-3">4.3.</span> Brother</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>“Brother,” Wikipedia. Jul. 02, 2026. Accessed: Aug. 26, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Brother&amp;oldid=1362178989">https://en.wikipedia.org/w/index.php?title=Brother&amp;oldid=1362178989</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga6e9e27" class="outline-3">
+<h3 id="orga6e9e27"><span class="section-number-3">4.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>D. L. Markham, Peaceful Parent, Happy Siblings: How to Stop the Fighting and Raise Friends for Life. Tarcher.</li>
+<li>A. Faber and E. Mazlish, Siblings Without Rivalry: How to Help Your Children Live Together So You Can Live Too. New York, NY: WmMorrowPB, 1988.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org55f0f31" class="outline-2">
+<h2 id="org55f0f31"><span class="section-number-2">5.</span> Arts, Misc</h2>
+</div>
+<div id="outline-container-orgd0e213c" class="outline-2">
+<h2 id="orgd0e213c"><span class="section-number-2">6.</span> Special Topics</h2>
+</div>
+<div id="outline-container-org84fc01b" class="outline-2">
+<h2 id="org84fc01b"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-08-29 Sat 11:31</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
